@@ -1,0 +1,900 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<title>Creating a CI/CD Pipeline to Deploy Spring Boot App to Kubernetes</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content="">
+
+<meta property="og:type" content="article"/>
+<meta property="og:title" content="Creating a CI/CD Pipeline to Deploy Spring Boot App to Kubernetes"/>
+<meta property="og:description" content=""/>
+<meta property="og:image" content=""/>
+<meta property="og:url" content="https://kubesphere-v3.netlify.app/tr/conferences/cicd-jenkinsfile/"/>
+
+<meta name="docsearch:language" content="tr-TR" /><link rel="stylesheet" href="/fonts/Roboto/stylesheet.css">
+<link rel="stylesheet" href="/fonts/ProximaNova/stylesheet.css">
+<link rel="stylesheet" href="/css/jquery.modal.min.css">
+<link rel="stylesheet" href="/css/viewer.min.css">
+
+
+<link rel="stylesheet" href="/scss/common.min.fd2f2584615728a729ee87ecf658d2f2e62d4c55dc6ca4c90029116aa21ee2e8.css">
+
+
+
+
+
+
+
+
+
+
+
+<script src='/js/jquery-3.5.0.min.js'></script>
+<script src='/js/viewer.min.js'></script>
+<script src='/js/jquery.modal.min.js'></script>
+
+
+
+
+
+
+
+
+
+
+<script type='text/javascript'>
+!function(e,t,n,g,i){e[i]=e[i]||function(){(e[i].q=e[i].q||[]).push(arguments)},n=t.createElement("script"),tag=t.getElementsByTagName("script")[0],n.async=1,n.src=('https:'==document.location.protocol?'https://':'http://')+g,tag.parentNode.insertBefore(n,tag)}(window,document,"script","assets.giocdn.com/2.1/gio.js","gio");
+  gio('init', '8a24ae300cbf8b8c', {});
+  
+  
+  gio('send');
+</script>
+
+
+
+
+
+    <link rel="stylesheet" href="/scss/content.min.cd01785de7a83de330d32ac3aef7e5f4e0aa8c5e62c21008e4779016e3fd9517.css">
+    
+    
+    <link rel="stylesheet" href="/scss/markdown.min.0de31cde2c91847e0e6c6f43d52658e6347b056a9da347546c21a7786900bfcf.css">
+</head>
+
+
+<body>
+   
+  
+<header class="navigation">
+    
+    <div class="common-layout">
+        <div class="header-container">
+            <a href="/tr/">
+                <img src="/images/header/logo.svg" alt="" class="logo">
+            </a>
+
+            <ul class="nav">
+                
+                
+                
+
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+
+                <li  class="menu-li" >
+                    <span class='menu-span'>Senaryolar</span>
+                    <ul class="dropdown-menu menu-2">
+                        
+                        <li >
+                            
+                            <a href="/tr/multi-cluster">Multi-cluster</a>
+                            
+                        </li>
+                        
+                        <li >
+                            
+                            <a href="/tr/devOps">DevOps</a>
+                            
+                        </li>
+                        
+                        <li >
+                            
+                            <a href="/tr/network">Network</a>
+                            
+                        </li>
+                        
+                        <li >
+                            
+                            <a href="/tr/service-mesh">Service Mesh</a>
+                            
+                        </li>
+                        
+                        <li >
+                            
+                            <a href="/tr/storage">Storage</a>
+                            
+                        </li>
+                        
+                        <li >
+                            
+                            <a href="/tr/app-store">AppStore</a>
+                            
+                        </li>
+                        
+                        <li >
+                            
+                            <a href="/tr/multi-tenancy">Multi-tenancy</a>
+                            
+                        </li>
+                        
+                        <li >
+                            
+                            <a href="/tr/observability">Observability</a>
+                            
+                        </li>
+                        
+                    </ul>
+                </li>
+                
+
+                
+                
+
+                
+                
+                    
+                
+                    
+                        
+                    
+                
+                    
+                
+                    
+                
+
+                <li  class="menu-li menu-active" >
+                    <span class='menu-span'>Kaynaklar</span>
+                    <ul class="dropdown-menu menu-3">
+                        
+                        <li >
+                            
+                            <a href="/tr/projects">Open Source Projeler</a>
+                            
+                        </li>
+                        
+                        <li  class="active">
+                            
+                            <a href="/tr/conferences">KubeCon & QCon</a>
+                            
+                        </li>
+                        
+                        <li >
+                            
+                            <a href="/tr/blogs">Blog Yazıları</a>
+                            
+                        </li>
+                        
+                        <li >
+                            
+                            <a href="/tr/videos">Videolar</a>
+                            
+                        </li>
+                        
+                    </ul>
+                </li>
+                
+
+                
+                
+                <li >
+                    
+                    <a data-docs="Dokümantasyon" href="/tr/docs">Dokümantasyon</a>
+                    
+                </li>
+                
+
+                
+                
+
+                
+                
+                    
+                
+                    
+                
+                    
+                
+
+                <li  class="menu-li" >
+                    <span class='menu-span'>Topluluk</span>
+                    <ul class="dropdown-menu menu-5">
+                        
+                        <li >
+                            
+                            <a href="/tr/contribution">Contribution</a>
+                            
+                        </li>
+                        
+                        <li >
+                            
+                            <a href="/tr/case">Case Studies</a>
+                            
+                        </li>
+                        
+                        <li >
+                            
+                            <a href="/tr/partner">Partnerler</a>
+                            
+                        </li>
+                        
+                    </ul>
+                </li>
+                
+
+                
+
+            </ul>
+            <div class="right-menu">
+                <ul>
+                    <li class="language-menu">
+                        <div>
+                            <img src="/images/header/black.svg" alt="">
+                            <span>Türkçe</span>
+                        </div>
+                        
+                        <ul class="dropdown-menu">
+                            
+                            <li onclick="location = '\/tr\/conferences\/cicd-jenkinsfile\/'">Türkçe</li>
+                            
+                        </ul>
+                        
+                    </li>
+                    <li class='btn-li'>
+                        <a href="https://demo.kubesphere.io/login" target="_blank" rel="noopener noreferrer">
+                            <button class="demo-btn">Demo →</button>
+                        </a>
+                        <ol class="dropdown-menu">
+                            <li>1.Experience account: demo1 / Demo123</li>
+                            <li>2.This account is only allowed to view parts of UI</li>
+                            <li>3.It&#39;s recommended that install KubeSphere in your environment</li>
+                        </ol>
+                    </li>
+                    <li class='link-li'>
+                        <a class='link-1' href="https://join.slack.com/t/kubesphere/shared_invite/enQtNTE3MDIxNzUxNzQ0LTZkNTdkYWNiYTVkMTM5ZThhODY1MjAyZmVlYWEwZmQ3ODQ1NmM1MGVkNWEzZTRhNzk0MzM5MmY4NDc3ZWVhMjE" target="_blank" rel="noopener noreferrer"></a>
+                        <a class='link-2' href="https://twitter.com/KubeSphere" target="_blank" rel="noopener noreferrer"></a>
+                        <a class='link-3' href="https://github.com/kubesphere/kubesphere" target="_blank" rel="noopener noreferrer"></a>
+                    </li>
+                    <li class="menu-icon">
+                        <img src="/images/header/menu.svg" alt="">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-for-menu" class="modal">
+        <ul class="nav">
+            
+            
+            
+
+            
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+
+            <li data-check="0"  class="menu-li" >
+                <span class='menu-span'>Senaryolar</span>
+                <ul class="dropdown-menu">
+                    
+                    <li >
+                        <a href="/tr/multi-cluster">Multi-cluster</a>
+                    </li>
+                    
+                    <li >
+                        <a href="/tr/devOps">DevOps</a>
+                    </li>
+                    
+                    <li >
+                        <a href="/tr/network">Network</a>
+                    </li>
+                    
+                    <li >
+                        <a href="/tr/service-mesh">Service Mesh</a>
+                    </li>
+                    
+                    <li >
+                        <a href="/tr/storage">Storage</a>
+                    </li>
+                    
+                    <li >
+                        <a href="/tr/app-store">AppStore</a>
+                    </li>
+                    
+                    <li >
+                        <a href="/tr/multi-tenancy">Multi-tenancy</a>
+                    </li>
+                    
+                    <li >
+                        <a href="/tr/observability">Observability</a>
+                    </li>
+                    
+                </ul>
+            </li>
+            
+
+            
+            
+
+            
+            
+                
+            
+                
+                    
+                
+            
+                
+            
+                
+            
+
+            <li data-check="0"  class="menu-li menu-active" >
+                <span class='menu-span'>Kaynaklar</span>
+                <ul class="dropdown-menu">
+                    
+                    <li >
+                        <a href="/tr/projects">Open Source Projeler</a>
+                    </li>
+                    
+                    <li  class="active">
+                        <a href="/tr/conferences">KubeCon & QCon</a>
+                    </li>
+                    
+                    <li >
+                        <a href="/tr/blogs">Blog Yazıları</a>
+                    </li>
+                    
+                    <li >
+                        <a href="/tr/videos">Videolar</a>
+                    </li>
+                    
+                </ul>
+            </li>
+            
+
+            
+            
+            <li ><a data-docs="Dokümantasyon" href="/tr/docs">Dokümantasyon</a></li>
+            
+
+            
+            
+
+            
+            
+                
+            
+                
+            
+                
+            
+
+            <li data-check="0"  class="menu-li" >
+                <span class='menu-span'>Topluluk</span>
+                <ul class="dropdown-menu">
+                    
+                    <li >
+                        <a href="/tr/contribution">Contribution</a>
+                    </li>
+                    
+                    <li >
+                        <a href="/tr/case">Case Studies</a>
+                    </li>
+                    
+                    <li >
+                        <a href="/tr/partner">Partnerler</a>
+                    </li>
+                    
+                </ul>
+            </li>
+            
+
+            
+
+        </ul>
+        <div class="btn-div">
+            <a href="https://demo.kubesphere.io/login" target="_blank" rel="noopener noreferrer">
+                <button class="demo-btn">Demo →</button>
+            </a>
+        </div>
+        <div class="link-div">
+            <a href="https://join.slack.com/t/kubesphere/shared_invite/enQtNTE3MDIxNzUxNzQ0LTZkNTdkYWNiYTVkMTM5ZThhODY1MjAyZmVlYWEwZmQ3ODQ1NmM1MGVkNWEzZTRhNzk0MzM5MmY4NDc3ZWVhMjE" target="_blank" rel="noopener noreferrer">
+                <img src="/images/header/slack-hover.svg" alt="">
+            </a>
+            <a href="https://twitter.com/KubeSphere" target="_blank" rel="noopener noreferrer">
+                <img src="/images/header/twitter-hover.svg" alt="">
+            </a>
+            <a href="https://github.com/kubesphere/kubesphere" target="_blank" rel="noopener noreferrer">
+                <img src="/images/header/github-hover.svg" alt="">
+            </a>
+        </div>
+    </div>
+</header>
+<script>
+var bindNavMouseEvent = function(selector) {
+    var flag = false
+    $(selector).mouseenter(function() {
+        if (flag) {
+            return false
+        }
+        flag = true
+        $(this).find('.dropdown-menu').fadeIn(200, function() {
+            flag = false
+        })
+    });
+    $(selector).mouseleave(function() {
+        $(this).find('.dropdown-menu').fadeOut(200)
+    });
+}
+
+var bindScrollChangeHeader = function() {
+    var check = 100
+    var header = $('header')
+    window.addEventListener('scroll', function() {
+        var scrollY = window.scrollY;
+        if (scrollY > 100) {
+            header.addClass('navigationScroll')
+        } else {
+            header.removeClass('navigationScroll')
+        }
+    })
+}
+
+var bindClickShowMenu = function() {
+    $('.menu-icon').click(function() {
+        $('#modal-for-menu').modal()
+    })
+}
+
+var bindClickModalLi = function() {
+    $('.modal .menu-li').click(function() {
+        var check = $(this).data('check')
+        if (check === 0) {
+            $(this).data('check', 1)
+            $(this).find('.dropdown-menu').slideDown(200)
+        } else {
+            $(this).data('check', 0)
+            $(this).find('.dropdown-menu').slideUp(200)
+        }
+        $(this).find('.menu-span').toggleClass('up')
+    })
+}
+
+var bindClickClose = function() {
+    $('#close-join').click(function() {
+        $('.navigation .join-div').hide()
+        $('.main-section').removeClass('padding')
+    })
+}
+
+var language = 'tr'
+
+bindClickClose()
+
+bindScrollChangeHeader()
+
+bindNavMouseEvent('.header-container .menu-li')
+bindNavMouseEvent('.header-container .language-menu')
+bindNavMouseEvent('.header-container .btn-li')
+
+bindClickShowMenu()
+bindClickModalLi()
+
+
+</script>
+
+  <section class="main-section ">
+      <div class="common-layout">
+          <div class='breadcrumb'>
+              
+              <span><a href='/tr/conferences'>KubeCon &amp; QCon</a> > </span>
+              <span>Creating a CI/CD Pipeline to Deploy Spring Boot App to Kubernetes</span>
+          </div>
+          <div class='main-div middle-div'>
+              <div class='author'>xxx</div>
+              <div class='date'>Published on：</div>
+              <h1>Creating a CI/CD Pipeline to Deploy Spring Boot App to Kubernetes</h1>
+              <div class="share-1">
+                  <div class="share">
+  <a href="http://twitter.com/share?url=https%3a%2f%2fkubesphere-v3.netlify.app%2ftr%2fconferences%2fcicd-jenkinsfile%2f&text=Creating%20a%20CI%2fCD%20Pipeline%20to%20Deploy%20Spring%20Boot%20App%20to%20Kubernetes" target="_blank" rel="noopener noreferrer">
+    <img src="/images/share/Twitter.svg" alt="twitter icon">
+  </a>
+  <a href="http://reddit.com/submit?url=https%3a%2f%2fkubesphere-v3.netlify.app%2ftr%2fconferences%2fcicd-jenkinsfile%2f&title=Creating%20a%20CI%2fCD%20Pipeline%20to%20Deploy%20Spring%20Boot%20App%20to%20Kubernetes" target="_blank" rel="noopener noreferrer">
+    <img src="/images/share/Reddit.svg" alt="reddit icon">
+  </a>
+  <a href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fkubesphere-v3.netlify.app%2ftr%2fconferences%2fcicd-jenkinsfile%2f" target="_blank" rel="noopener noreferrer">
+    <img src="/images/share/Facebook.svg" alt="facebook icon">
+  </a>
+  <a href="http://www.linkedin.com/shareArticle?mini=true&url=https%3a%2f%2fkubesphere-v3.netlify.app%2ftr%2fconferences%2fcicd-jenkinsfile%2f" target="_blank" rel="noopener noreferrer">
+    <img src="/images/share/Linkedin.svg" alt="linkedin icon">
+  </a>
+  <a href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fkubesphere-v3.netlify.app%2ftr%2fconferences%2fcicd-jenkinsfile%2f&t=Creating%20a%20CI%2fCD%20Pipeline%20to%20Deploy%20Spring%20Boot%20App%20to%20Kubernetes" target="_blank" rel="noopener noreferrer">
+    <img src="/images/share/HackerNews.svg" alt="hackernews icon">
+  </a>
+</div>
+              </div>
+              <div class='content'>
+                  <div class='md-body'>
+                      <h2 id="objective">Objective</h2>
+<p>This tutorial shows you how to create a CI/CD Pipeline within DevOps project, which is intended for deploying a Spring Boot sample application to Kubernetes.</p>
+<h2 id="overview">Overview</h2>
+<p>Based on the existing Jenkinsfile in the sample GitHub repository, we can create a pipeline to build and complete the stages and steps (e.g. unit test, sonarqube analysis), which totally consists of eight stages as shown below.</p>
+<p><img src="https://pek3b.qingstor.com/kubesphere-docs/png/20190719005547.png" alt=""></p>
+<h2 id="prerequisites">Prerequisites</h2>
+<p>You&rsquo;ve completed all steps in <a href="admin-quick-start.md">Tutorial 1</a>.</p>
+<h2 id="hands-on-lab">Hands-on Lab</h2>
+<h3 id="step-1-create-credentials">Step 1: Create Credentials</h3>
+<p>To get started, we need to create 3 credentials, i.e. DockerHub、GitHub and kubeconfig.</p>
+<p>1.1. Sign in with <code>project-regular</code> account and enter into the <code>demo-devops</code>, navigate to <strong>Credentials</strong>, then click on the <strong>Create Credentials</strong>.</p>
+<p><img src="https://pek3b.qingstor.com/kubesphere-docs/png/20190719010621.png" alt=""></p>
+<table>
+<thead>
+<tr>
+<th>Credential ID</th>
+<th>Type</th>
+<th>Username/Password/Secret</th>
+<th>Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>dockerhub-id</td>
+<td>Account Credentials</td>
+<td>Enter your personal DockerHub account information</td>
+<td>|</td>
+</tr>
+<tr>
+<td>github-id</td>
+<td>Account Credentials</td>
+<td>Enter your personal GitHub account information</td>
+<td>|</td>
+</tr>
+<tr>
+<td>kube-config</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>demo-kubeconfig</td>
+<td>kubeconfig</td>
+<td>|It will be automatically filled with the kubeconfig of the cluster</td>
+<td></td>
+</tr>
+<tr>
+<td>sonar-token</td>
+<td>secret_text</td>
+<td>You can get secret by creating SonarQube token</td>
+<td>\</td>
+</tr>
+</tbody>
+</table>
+
+                  </div>
+              </div>
+              <div class="share-2">
+                  <div class="share">
+  <a href="http://twitter.com/share?url=https%3a%2f%2fkubesphere-v3.netlify.app%2ftr%2fconferences%2fcicd-jenkinsfile%2f&text=Creating%20a%20CI%2fCD%20Pipeline%20to%20Deploy%20Spring%20Boot%20App%20to%20Kubernetes" target="_blank" rel="noopener noreferrer">
+    <img src="/images/share/Twitter.svg" alt="twitter icon">
+  </a>
+  <a href="http://reddit.com/submit?url=https%3a%2f%2fkubesphere-v3.netlify.app%2ftr%2fconferences%2fcicd-jenkinsfile%2f&title=Creating%20a%20CI%2fCD%20Pipeline%20to%20Deploy%20Spring%20Boot%20App%20to%20Kubernetes" target="_blank" rel="noopener noreferrer">
+    <img src="/images/share/Reddit.svg" alt="reddit icon">
+  </a>
+  <a href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fkubesphere-v3.netlify.app%2ftr%2fconferences%2fcicd-jenkinsfile%2f" target="_blank" rel="noopener noreferrer">
+    <img src="/images/share/Facebook.svg" alt="facebook icon">
+  </a>
+  <a href="http://www.linkedin.com/shareArticle?mini=true&url=https%3a%2f%2fkubesphere-v3.netlify.app%2ftr%2fconferences%2fcicd-jenkinsfile%2f" target="_blank" rel="noopener noreferrer">
+    <img src="/images/share/Linkedin.svg" alt="linkedin icon">
+  </a>
+  <a href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fkubesphere-v3.netlify.app%2ftr%2fconferences%2fcicd-jenkinsfile%2f&t=Creating%20a%20CI%2fCD%20Pipeline%20to%20Deploy%20Spring%20Boot%20App%20to%20Kubernetes" target="_blank" rel="noopener noreferrer">
+    <img src="/images/share/HackerNews.svg" alt="hackernews icon">
+  </a>
+</div>
+              </div>
+          </div>
+          <div class='aside'>
+              <div class="inner-div">
+                <div class='title'>Table of Contents</div>
+                <div class='tabs'><nav id="TableOfContents">
+  <ul>
+    <li><a href="#objective">Objective</a></li>
+    <li><a href="#overview">Overview</a></li>
+    <li><a href="#prerequisites">Prerequisites</a></li>
+    <li><a href="#hands-on-lab">Hands-on Lab</a>
+      <ul>
+        <li><a href="#step-1-create-credentials">Step 1: Create Credentials</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+              </div>
+          </div>
+      </div>
+  </section>
+  <footer>
+    
+    <div class="footer">
+        <div class="footer-main common-layout">
+            <div class="up-main">
+                <div class="left-div">
+                    <img src="/images/logo.svg" alt="" class="foot-logo">
+                    <p>KubeSphere&#39;den son haberleri almak için haber ağımıza abone olabilirsiniz.</p>
+                    <div>
+                        <form
+                            action="https://kubesphere.us10.list-manage.com/subscribe/post?u=c85ea2b944b08b951f607bdd4&amp;id=83f673a2d9"
+                            method="post"
+                            target="_blank"
+                            novalidate
+                        >
+                            <input name="EMAIL" id="email-input" type="text" placeholder='Lütfen e-posta adresinizi girin.'>
+                            <button type="submit" id="email-submit">Abone Ol</button>
+                        </form>
+                    </div>
+                    <span id="message" data-message1='email is required!' data-message2='Please enter a valid email address!'></span>
+                </div>
+                <div class="right-div">
+                    <ul class="common-flex-layout">
+                        
+                        
+                            <li>
+                                <div class="h3">Products</div>
+                                
+                                
+                                <a href="/tr">KubeSphere</a>
+                                
+                                
+                                
+                                <a href="/tr">Porter</a>
+                                
+                                
+                                
+                                <a href="/tr">OpenPitrix</a>
+                                
+                                
+                                
+                                <a href="/tr">Fluentbit-Operator</a>
+                                
+                                
+                                
+                                <a href="/tr">KubeKey</a>
+                                
+                                
+                                
+                                <a href="/tr">Notification Manager</a>
+                                
+                                
+                            </li>
+                        
+                            <li>
+                                <div class="h3">Kaynaklar</div>
+                                
+                                
+                                <a href="/tr">Projeler</a>
+                                
+                                
+                                
+                                <a href="/tr">Blog Yazıları</a>
+                                
+                                
+                                
+                                <a href="/tr">KubeCon &amp; QCon</a>
+                                
+                                
+                                
+                                <a href="/tr">Videolar</a>
+                                
+                                
+                            </li>
+                        
+                            <li>
+                                <div class="h3">KubeSphere Dokümantasyon</div>
+                                
+                                
+                                <a href="/tr">Giriş/Önsöz</a>
+                                
+                                
+                                
+                                <a href="/tr">Kurulum</a>
+                                
+                                
+                                
+                                <a href="/tr">Eğitim</a>
+                                
+                                
+                                
+                                <a href="/tr">API Dokümantasyonu</a>
+                                
+                                
+                            </li>
+                        
+                            <li>
+                                <div class="h3">Topluluk</div>
+                                
+                                
+                                <a href="/tr">Contribution</a>
+                                
+                                
+                                
+                                <a href="/tr">Müşteri Senaryoları</a>
+                                
+                                
+                                
+                                <a href="/tr">Partnerler</a>
+                                
+                                
+                                
+                                <a href="/tr">Yol Haritası</a>
+                                
+                                
+                            </li>
+                        
+                        
+                    </ul>
+                </div>
+            </div>
+            <div class="down-main">
+                <div class='img-div'>
+                    <a class='wechat' href="javascript:void(0);">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28" height="28" viewBox="0 0 28 28">
+    <defs>
+        <path id="a" d="M0 0h15.673v12.156H0z"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd" transform="translate(1 1)">
+        <circle cx="13" cy="13" r="13" stroke="#B6C2CD"/>
+        <g transform="translate(5 7)">
+            <mask id="b" fill="#fff">
+                <use xlink:href="#a"/>
+            </mask>
+            <path fill="currentColor" d="M15.673 7.898c0-2.061-2.173-3.74-4.619-3.74-2.59 0-4.625 1.679-4.625 3.74 0 2.066 2.035 3.738 4.625 3.738.542 0 1.09-.13 1.632-.256l1.493.776-.408-1.29c1.09-.776 1.902-1.81 1.902-2.968zm-6.119-.645c-.27 0-.541-.257-.541-.514 0-.256.27-.514.541-.514.41 0 .681.258.681.514 0 .257-.271.514-.681.514zm2.994 0c-.27 0-.541-.257-.541-.514 0-.256.27-.514.54-.514.41 0 .681.258.681.514 0 .257-.277.514-.68.514z" mask="url(#b)"/>
+            <path fill="currentColor" d="M10.602 3.674c.177 0 .356.011.533.029C10.657 1.576 8.27 0 5.543 0 2.498 0 0 1.974 0 4.485c0 1.45.829 2.64 2.216 3.564l-.552 1.588 1.94-.929c.693.129 1.251.263 1.94.263.17 0 .343-.005.515-.022a3.68 3.68 0 0 1-.172-1.104c0-2.302 2.081-4.171 4.715-4.171zM7.618 2.243c.417 0 .693.263.693.66s-.276.66-.693.66c-.418 0-.835-.263-.835-.66.006-.398.423-.66.835-.66zm-3.88 1.319c-.417 0-.834-.263-.834-.66s.417-.66.834-.66c.418 0 .695.263.695.66 0 .392-.277.66-.695.66z" mask="url(#b)"/>
+        </g>
+    </g>
+</svg>
+
+                        <div class="hide-div">
+                            <p>Follow the official account</p>
+                            <img src="/images/footer/wechat_code.svg" alt="">
+                        </div>
+                    </a>
+                    <a class='facebook-a' href="https://www.facebook.com/kubesphere" target="_blank"></a>
+                    <a class='twitter-a' href="https://twitter.com/KubeSphere" target="_blank" rel="noopener noreferrer"></a>
+                    <a class='linkedin-a' href="https://www.linkedin.com/company/kubesphere/" target="_blank" rel="noopener noreferrer"></a>
+                    
+                    <a class='youtube-a' href="https://www.youtube.com/channel/UCyTdUQUYjf7XLjxECx63Hpw" target="_blank" rel="noopener noreferrer"></a>
+                    <a class='slack-a' href="https://join.slack.com/t/kubesphere/shared_invite/enQtNTE3MDIxNzUxNzQ0LTZkNTdkYWNiYTVkMTM5ZThhODY1MjAyZmVlYWEwZmQ3ODQ1NmM1MGVkNWEzZTRhNzk0MzM5MmY4NDc3ZWVhMjE" target="_blank" rel="noopener noreferrer"></a>
+                    <a class='github-a' href="https://github.com/kubesphere/kubesphere" target="_blank" rel="noopener noreferrer"></a>
+                    <a class='medium-a' href="https://itnext.io/@kubesphere" target="_blank" rel="noopener noreferrer"></a>
+                </div>
+                <p class='p1'>KubeSphere®️ 2020 Tüm Hakları Saklıdır.</p>
+                
+            </div>
+        </div>
+    </div>
+
+</footer>
+
+<script>
+    var bindSubmit = function() {
+        var input = $('#email-input')
+        $('#email-submit').click(function(event) {
+            event.stopPropagation()
+            var email = input.val()
+            var message1 = $('#message').data('message1')
+            var message2 = $('#message').data('message2')
+            if (!email) {
+                event.preventDefault()
+                showMessage(message1)
+            } else if (!validateEmail(email)) {
+                event.preventDefault()
+                showMessage(message2)
+            }
+        })
+    }
+
+    var bindHideMessage = function() {
+        $(window).click(function() {
+            $('#message').hide()
+        })
+    }
+
+    var showMessage = function(message) {
+        $('#message').html(message).show()
+    }
+
+    var validateEmail = function(email) {
+        var reg = /^[A-Za-z0-9]+([_\.][A-Za-z0-9]+)*@([A-Za-z0-9\-]+\.)+[A-Za-z]{2,6}$/
+        return reg.test(email)
+    }
+
+    var lazyLoad = function(allImg, imgNum) {
+        for (var i = 0; i < imgNum; i++) {
+            var img = allImg.eq(i)
+            var loaded = img.attr("data-loaded");
+            if (loaded) {
+                continue
+            }
+            if (img.offset().top < parseInt($(window).height()) + parseInt($(window).scrollTop())) {
+                var src = img.attr("src")
+                img.attr("src", src)
+                img.attr("data-loaded", true)
+            }
+        }
+    }
+
+    var bindLayLoad = function() {
+        var allImg = $('img')
+        var imgNum = allImg.length
+        lazyLoad(allImg, imgNum)
+        $(window).scroll(function() {
+            lazyLoad(allImg, imgNum)
+        });
+    }
+
+    
+    bindSubmit()
+    bindHideMessage()
+</script>
+
+  
+  
+  <script type="text/javascript" src="/js/aside.34d4ca232760855916fede489417772adb45cdceab8541c6f6826e5d83a0b68e071a44f76a077fe90e39afe213cc1aab40272900f7cbdffb45068c7746c7b183.js" integrity="sha512-NNTKIydghVkW/t5IlBd3KttFzc6rhUHG9oJuXYOgto4HGkT3agd/6Q45r&#43;ITzBqrQCcpAPfL3/tFBox3Rsexgw=="></script>
+  
+  
+  
+  <script type="text/javascript" src="/js/markdown-tab.224c8a343197870e80877ad07e19b932b807d3fde3abccde667f2156378cb00497ebb11d2f872f09ea91e7282e87655f8cb4ef163da46e34d00dca44dbf52aad.js" integrity="sha512-IkyKNDGXhw6Ah3rQfhm5MrgH0/3jq8zeZn8hVjeMsASX67EdL4cvCeqR5yguh2VfjLTvFj2kbjTQDcpE2/UqrQ=="></script>
+  
+  <script>
+    var viewer = new Viewer(document.querySelector('.md-body'), {
+        url: 'src'
+    })
+  </script>
+</body>
+
+</html>

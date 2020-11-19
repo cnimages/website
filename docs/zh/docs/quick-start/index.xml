@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>快速入门 on </title>
+    <link>https://kubesphere-v3.netlify.app/zh/docs/quick-start/</link>
+    <description>Recent content in 快速入门 on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    
+	<atom:link href="https://kubesphere-v3.netlify.app/zh/docs/quick-start/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Linux 上的 All-in-one 安装</title>
+      <link>https://kubesphere-v3.netlify.app/zh/docs/quick-start/all-in-one-on-linux/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kubesphere-v3.netlify.app/zh/docs/quick-start/all-in-one-on-linux/</guid>
+      <description>对于那些刚接触 KubeSphere 的并且想快速上手的用户，all-in-one 安装模式是最佳的选择，它能够帮助您零配置快速部署 KubeSphere 和 Kubernetes。
+前提条件 按照文档打开需要开放的端口。
+步骤 1: 准备 Linux 机器 请参考下面对机器硬件和操作系统的要求准备一台主机。
+建议的机器硬件配置    操作系统 最低要求     Ubuntu 16.04, 18.04 CPU: 2 Cores, Memory: 4 G, Disk Space: 40 G   Debian Buster, Stretch CPU: 2 Cores, Memory: 4 G, Disk Space: 40 G   CentOS 7.x CPU: 2 Cores, Memory: 4 G, Disk Space: 40 G   Red Hat Enterprise Linux 7 CPU: 2 Cores, Memory: 4 G, Disk Space: 40 G   SUSE Linux Enterprise Server 15/openSUSE Leap 15.</description>
+    </item>
+    
+    <item>
+      <title>在 Kubernetes 最小化安装 KubeSphere</title>
+      <link>https://kubesphere-v3.netlify.app/zh/docs/quick-start/minimal-kubesphere-on-k8s/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kubesphere-v3.netlify.app/zh/docs/quick-start/minimal-kubesphere-on-k8s/</guid>
+      <description>除了在 Linux 机器上安装 KubeSphere 之外，您还可以将其直接部署在现有的 Kubernetes 集群上。本快速入门指南将引导您完成在 Kubernetes 上最小化安装 KubeSphere 的一般步骤。有关更多信息，请参阅在 Kubernetes 上安装。
+备注
+ Kubernetes 版本必须为 “1.15.x，1.16.x，1.17.x 或 1.18.x”； 确保您的计算机满足最低硬件要求：CPU &amp;gt; 1 核，内存 &amp;gt; 2 G； 在安装之前，需要配置 Kubernetes 集群中的默认存储类； 当使用 --cluster-signing-cert-file 和 --cluster-signing-key-file 参数启动时，在 kube-apiserver 中会激活 CSR 签名功能。 请参阅 RKE 安装问题； 有关在 Kubernetes 上安装 KubeSphere 的前提条件的详细信息，请参阅前提条件。   部署 KubeSphere 确保您的计算机满足前提条件之后，您可以按照以下步骤安装 KubeSphere。
+ 在执行命令开始安装之前，请阅读以下注释：  kubectl apply -f https://github.com/kubesphere/ks-installer/releases/download/v3.0.0/kubesphere-installer.yaml kubectl apply -f https://github.com/kubesphere/ks-installer/releases/download/v3.0.0/cluster-configuration.yaml 备注
+如果您的服务器无法访问 GitHub，则可以分别复制 kubesphere-installer.yaml 和 cluster-configuration.</description>
+    </item>
+    
+    <item>
+      <title>Create Workspace, Project, Account and Role</title>
+      <link>https://kubesphere-v3.netlify.app/zh/docs/quick-start/create-workspace-and-project/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kubesphere-v3.netlify.app/zh/docs/quick-start/create-workspace-and-project/</guid>
+      <description>Objective This guide demonstrates how to create roles and user accounts which are required for the following tutorials. Meanwhile, you will learn how to create projects and DevOps projects within your workspace where your workloads are running. After this tutorial, you will become familiar with KubeSphere multi-tenant management system.
+Prerequisites KubeSphere needs to be installed in your machine.
+Estimated Time About 15 minutes.
+Architecture The multi-tenant system of KubeSphere features three levels of hierarchical structure which are cluster, workspace and project.</description>
+    </item>
+    
+    <item>
+      <title>Deploy Bookinfo and Manage Traffic</title>
+      <link>https://kubesphere-v3.netlify.app/zh/docs/quick-start/deploy-bookinfo-to-k8s/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kubesphere-v3.netlify.app/zh/docs/quick-start/deploy-bookinfo-to-k8s/</guid>
+      <description>Istio, as an open-source service mesh solution, provides powerful features of traffic management for microservices. Here is the introduction of traffic management from the official website of Istio:
+Istio’s traffic routing rules let you easily control the flow of traffic and API calls between services. Istio simplifies configuration of service-level properties like circuit breakers, timeouts, and retries, and makes it easy to set up important tasks like A/B testing, canary rollouts, and staged rollouts with percentage-based traffic splits.</description>
+    </item>
+    
+    <item>
+      <title>创建 Wordpress 应用并发布至 Kubernetes</title>
+      <link>https://kubesphere-v3.netlify.app/zh/docs/quick-start/wordpress-deployment/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kubesphere-v3.netlify.app/zh/docs/quick-start/wordpress-deployment/</guid>
+      <description>WordPress 简介 WordPress 是使用 PHP 语言开发的内容管理系统软件，用户可以在支持 PHP 和 MySQL 数据库的服务器上使用自己的博客，一个完整的 Wordpress 应用程序包括以下 Kubernetes 对象。
+目的 本教程演示如何在 KubeSphere 中创建应用程序（以 WordPress 为例）并在集群外访问它。
+准备工作 需要一个 project regular 帐户，并在其中一个项目中分配角色 operator（该用户已被邀请参加该项目）。有关详细信息，请参见创建企业空间、项目、帐户和角色.
+预计操作时间 大约15分钟。
+动手操作 任务 1: 创建密钥 创建 MySQL 密钥 环境变量 WORDPRESS_DB_PASSWORD 是连接到 WORDPRESS 数据库的密码。在这一步中，您需要创建一个 ConfigMap 来存储将在 MySQL pod 模板中使用的环境变量。
+ 使用project regular帐户登录 KubeSphere 控制台。转到demo project的详细页面并导航到 配置。在 密钥 中，单击右侧的 创建。  输入基本信息 (例如，将其命名为 mysql-secret) ，然后单击 下一步。在下一页中, 选择 类型 为 默认 ，然后单击 添加数据 来添加一个键值对。 输入键（Key） MYSQL_ROOT_PASSWORD 和值（Value） 123456 单击右下角 √ 的确认按钮, 完成后，单击 创建 按钮并继续.</description>
+    </item>
+    
+    <item>
+      <title>启用可插拔功能组件</title>
+      <link>https://kubesphere-v3.netlify.app/zh/docs/quick-start/enable-pluggable-components/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kubesphere-v3.netlify.app/zh/docs/quick-start/enable-pluggable-components/</guid>
+      <description>本教程演示如何在安装前或安装后启用 KubeSphere 的可插拔组件。KubeSphere 具有以下列出的十个可插拔组件。
+   配置项 功能组件 描述     alerting KubeSphere 告警通知系统 使用户能够自定义警报策略，以不同的时间间隔和警报级别及时向接收者发送消息。   auditing KubeSphere 审计日志系统 按时间顺序记录不同租户在平台中的操作活动。   devops KubeSphere DevOps 系统 一站式 DevOps 方案，内置 Jenkins 流水线与 B2I &amp;amp; S2I。   events KubeSphere 事件系统 提供一个图形化的web控制台，用于导出、过滤和警告多租户 Kubernetes 集群中的 Kubernetes 事件。   logging KubeSphere 日志系统 在统一的控制台中提供灵活的日志查询、收集和管理日志功能。可以添加其他日志收集器，例如Elasticsearch、Kafka 和 Fluentd。   metrics_server HPA 能够根据 pod 数量进行动态伸缩，使运行在上面的服务对指标的变化有一定的自适应能力。   networkpolicy 网络策略 可以在同一个集群内部之间设置网络策略（比如限制或阻止某些实例 pod 之间的网络请求）。   notification KubeSphere 通知系统 允许用户将 AlertManager 设置为发件人并发送告警邮件。可以使用的方式有：电子邮件、微信和 Slack。   openpitrix KubeSphere 应用商店 基于 Helm 的应用程序商店，允许用户在整个生命周期中管理应用程序。   servicemesh KubeSphere 服务网格 (基于 Istio) 支持灰度发布、流量拓扑、流量治理、Tracing。    有关每个组件的更多信息，请参见启用可插拔组件概述。</description>
+    </item>
+    
+  </channel>
+</rss>

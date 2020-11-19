@@ -1,0 +1,1001 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<title>Porter: An Open Source Load Balancer for Kubernetes in a Bare Metal Environment</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="description" content="KubeSphere is a distributed operating system managing cloud native applications with Kubernetes as its kernel, and provides plug-and-play architecture for the seamless integration of third-party applications to boost its ecosystem.">
+<meta name="keywords" content="KubeSphere, Kubernetes, container platform, DevOps, hybrid cloud, cloud native">
+
+<meta property="og:type" content="article"/>
+<meta property="og:title" content="Porter: An Open Source Load Balancer for Kubernetes in a Bare Metal Environment"/>
+<meta property="og:description" content="KubeSphere is a distributed operating system managing cloud native applications with Kubernetes as its kernel, and provides plug-and-play architecture for the seamless integration of third-party applications to boost its ecosystem."/>
+<meta property="og:image" content="https://kubesphere-v3.netlify.app/images/common/snapshot-en.png"/>
+<meta property="og:url" content="https://kubesphere-v3.netlify.app/conferences/porter/"/>
+
+<meta name="docsearch:language" content="en-US" /><link rel="stylesheet" href="/fonts/Roboto/stylesheet.css">
+<link rel="stylesheet" href="/fonts/ProximaNova/stylesheet.css">
+<link rel="stylesheet" href="/css/jquery.modal.min.css">
+<link rel="stylesheet" href="/css/viewer.min.css">
+
+
+<link rel="stylesheet" href="/scss/common.min.fd2f2584615728a729ee87ecf658d2f2e62d4c55dc6ca4c90029116aa21ee2e8.css">
+
+
+
+
+
+
+
+
+
+
+
+<script src='/js/jquery-3.5.0.min.js'></script>
+<script src='/js/viewer.min.js'></script>
+<script src='/js/jquery.modal.min.js'></script>
+
+
+
+
+
+
+
+
+
+
+<script type='text/javascript'>
+!function(e,t,n,g,i){e[i]=e[i]||function(){(e[i].q=e[i].q||[]).push(arguments)},n=t.createElement("script"),tag=t.getElementsByTagName("script")[0],n.async=1,n.src=('https:'==document.location.protocol?'https://':'http://')+g,tag.parentNode.insertBefore(n,tag)}(window,document,"script","assets.giocdn.com/2.1/gio.js","gio");
+  gio('init', '8a24ae300cbf8b8c', {});
+  
+  
+  gio('send');
+</script>
+
+
+
+
+
+    <link rel="stylesheet" href="/scss/content.min.cd01785de7a83de330d32ac3aef7e5f4e0aa8c5e62c21008e4779016e3fd9517.css">
+    
+    
+    <link rel="stylesheet" href="/scss/markdown.min.0de31cde2c91847e0e6c6f43d52658e6347b056a9da347546c21a7786900bfcf.css">
+</head>
+
+
+<body>
+   
+  
+<header class="navigation">
+    
+    <div class="common-layout">
+        <div class="header-container">
+            <a href="/">
+                <img src="/images/header/logo.svg" alt="" class="logo">
+            </a>
+
+            <ul class="nav">
+                
+                
+                
+
+                
+                
+                    
+                
+                    
+                
+                    
+                
+
+                <li  class="menu-li" >
+                    <span class='menu-span'>Scenarios</span>
+                    <ul class="dropdown-menu menu-2">
+                        
+                        <li >
+                            
+                            <a href="/devops/">Embracing One-stop DevOps Workflow</a>
+                            
+                        </li>
+                        
+                        <li >
+                            
+                            <a href="/service-mesh/">Running Microservices on Kubernetes</a>
+                            
+                        </li>
+                        
+                        <li >
+                            
+                            <a href="/observability/">Building Cloud Native Observability</a>
+                            
+                        </li>
+                        
+                    </ul>
+                </li>
+                
+
+                
+                
+
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+
+                <li  class="menu-li" >
+                    <span class='menu-span'>Resources</span>
+                    <ul class="dropdown-menu menu-3">
+                        
+                        <li >
+                            
+                            <a href="/projects/">Open Source Projects</a>
+                            
+                        </li>
+                        
+                        <li >
+                            
+                            <a href="/conferences/">KubeCon & QCon</a>
+                            
+                        </li>
+                        
+                        <li >
+                            
+                            <a href="/blogs/">Technology Blogs</a>
+                            
+                        </li>
+                        
+                        <li >
+                            
+                            <a href="/videos/">Video Resources</a>
+                            
+                        </li>
+                        
+                    </ul>
+                </li>
+                
+
+                
+                
+
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+
+                <li  class="menu-li" >
+                    <span class='menu-span'>Documentation</span>
+                    <ul class="dropdown-menu menu-4">
+                        
+                        <li >
+                            
+                            <a href="/docs/">v3.0.0 <img src='/images/header/star.svg' alt='star'></a>
+                            
+                        </li>
+                        
+                        <li >
+                            
+                            <a href="https://v2-1.docs.kubesphere.io/docs" target="_blank" rel="noopener noreferrer">v2.1.x</a>
+                            
+                        </li>
+                        
+                        <li >
+                            
+                            <a href="https://v2-0.docs.kubesphere.io/docs/" target="_blank" rel="noopener noreferrer">v2.0.x</a>
+                            
+                        </li>
+                        
+                        <li >
+                            
+                            <a href="https://v1-0.docs.kubesphere.io/docs/" target="_blank" rel="noopener noreferrer">v1.0.0</a>
+                            
+                        </li>
+                        
+                    </ul>
+                </li>
+                
+
+                
+                
+
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+
+                <li  class="menu-li" >
+                    <span class='menu-span'>Community</span>
+                    <ul class="dropdown-menu menu-5">
+                        
+                        <li >
+                            
+                            <a href="/contribution/">Contribution</a>
+                            
+                        </li>
+                        
+                        <li >
+                            
+                            <a href="/case/">Case Studies</a>
+                            
+                        </li>
+                        
+                        <li >
+                            
+                            <a href="/partner/">Partner</a>
+                            
+                        </li>
+                        
+                        <li >
+                            
+                            <a href="/news/">News</a>
+                            
+                        </li>
+                        
+                        <li >
+                            
+                            <a href="https://github.com/kubesphere/kubesphere/blob/master/docs/roadmap.md" target="_blank" rel="noopener noreferrer">RoadMap</a>
+                            
+                        </li>
+                        
+                    </ul>
+                </li>
+                
+
+                
+
+            </ul>
+            <div class="right-menu">
+                <ul>
+                    <li class="language-menu">
+                        <div>
+                            <img src="/images/header/black.svg" alt="">
+                            <span>English</span>
+                        </div>
+                        
+                        <ul class="dropdown-menu">
+                            
+                            <li onclick="location = '\/conferences\/porter\/'">English</li>
+                            
+                            <li onclick="location = '\/zh\/conferences\/porter\/'">简体中文</li>
+                            
+                        </ul>
+                        
+                    </li>
+                    <li class='btn-li'>
+                        <a href="https://demo.kubesphere.io/login" target="_blank" rel="noopener noreferrer">
+                            <button class="demo-btn">Demo →</button>
+                        </a>
+                        <ol class="dropdown-menu">
+                            <li>1.Experience account: demo1 / Demo123</li>
+                            <li>2.This account is only allowed to view parts of UI</li>
+                            <li>3.It&#39;s recommended that install KubeSphere in your environment</li>
+                        </ol>
+                    </li>
+                    <li class='link-li'>
+                        <a class='link-1' href="https://join.slack.com/t/kubesphere/shared_invite/enQtNTE3MDIxNzUxNzQ0LTZkNTdkYWNiYTVkMTM5ZThhODY1MjAyZmVlYWEwZmQ3ODQ1NmM1MGVkNWEzZTRhNzk0MzM5MmY4NDc3ZWVhMjE" target="_blank" rel="noopener noreferrer"></a>
+                        <a class='link-2' href="https://twitter.com/KubeSphere" target="_blank" rel="noopener noreferrer"></a>
+                        <a class='link-3' href="https://github.com/kubesphere/kubesphere" target="_blank" rel="noopener noreferrer"></a>
+                    </li>
+                    <li class="menu-icon">
+                        <img src="/images/header/menu.svg" alt="">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-for-menu" class="modal">
+        <ul class="nav">
+            
+            
+            
+
+            
+            
+                
+            
+                
+            
+                
+            
+
+            <li data-check="0"  class="menu-li" >
+                <span class='menu-span'>Scenarios</span>
+                <ul class="dropdown-menu">
+                    
+                    <li >
+                        <a href="/devops/">Embracing One-stop DevOps Workflow</a>
+                    </li>
+                    
+                    <li >
+                        <a href="/service-mesh/">Running Microservices on Kubernetes</a>
+                    </li>
+                    
+                    <li >
+                        <a href="/observability/">Building Cloud Native Observability</a>
+                    </li>
+                    
+                </ul>
+            </li>
+            
+
+            
+            
+
+            
+            
+                
+            
+                
+            
+                
+            
+                
+            
+
+            <li data-check="0"  class="menu-li" >
+                <span class='menu-span'>Resources</span>
+                <ul class="dropdown-menu">
+                    
+                    <li >
+                        <a href="/projects/">Open Source Projects</a>
+                    </li>
+                    
+                    <li >
+                        <a href="/conferences/">KubeCon & QCon</a>
+                    </li>
+                    
+                    <li >
+                        <a href="/blogs/">Technology Blogs</a>
+                    </li>
+                    
+                    <li >
+                        <a href="/videos/">Video Resources</a>
+                    </li>
+                    
+                </ul>
+            </li>
+            
+
+            
+            
+
+            
+            
+                
+            
+                
+            
+                
+            
+                
+            
+
+            <li data-check="0"  class="menu-li" >
+                <span class='menu-span'>Documentation</span>
+                <ul class="dropdown-menu">
+                    
+                    <li >
+                        <a href="/docs/">v3.0.0 <img src='/images/header/star.svg' alt='star'></a>
+                    </li>
+                    
+                    <li >
+                        <a href="https://v2-1.docs.kubesphere.io/docs">v2.1.x</a>
+                    </li>
+                    
+                    <li >
+                        <a href="https://v2-0.docs.kubesphere.io/docs/">v2.0.x</a>
+                    </li>
+                    
+                    <li >
+                        <a href="https://v1-0.docs.kubesphere.io/docs/">v1.0.0</a>
+                    </li>
+                    
+                </ul>
+            </li>
+            
+
+            
+            
+
+            
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+
+            <li data-check="0"  class="menu-li" >
+                <span class='menu-span'>Community</span>
+                <ul class="dropdown-menu">
+                    
+                    <li >
+                        <a href="/contribution/">Contribution</a>
+                    </li>
+                    
+                    <li >
+                        <a href="/case/">Case Studies</a>
+                    </li>
+                    
+                    <li >
+                        <a href="/partner/">Partner</a>
+                    </li>
+                    
+                    <li >
+                        <a href="/news/">News</a>
+                    </li>
+                    
+                    <li >
+                        <a href="https://github.com/kubesphere/kubesphere/blob/master/docs/roadmap.md">RoadMap</a>
+                    </li>
+                    
+                </ul>
+            </li>
+            
+
+            
+
+        </ul>
+        <div class="btn-div">
+            <a href="https://demo.kubesphere.io/login" target="_blank" rel="noopener noreferrer">
+                <button class="demo-btn">Demo →</button>
+            </a>
+        </div>
+        <div class="link-div">
+            <a href="https://join.slack.com/t/kubesphere/shared_invite/enQtNTE3MDIxNzUxNzQ0LTZkNTdkYWNiYTVkMTM5ZThhODY1MjAyZmVlYWEwZmQ3ODQ1NmM1MGVkNWEzZTRhNzk0MzM5MmY4NDc3ZWVhMjE" target="_blank" rel="noopener noreferrer">
+                <img src="/images/header/slack-hover.svg" alt="">
+            </a>
+            <a href="https://twitter.com/KubeSphere" target="_blank" rel="noopener noreferrer">
+                <img src="/images/header/twitter-hover.svg" alt="">
+            </a>
+            <a href="https://github.com/kubesphere/kubesphere" target="_blank" rel="noopener noreferrer">
+                <img src="/images/header/github-hover.svg" alt="">
+            </a>
+        </div>
+    </div>
+</header>
+<script>
+var bindNavMouseEvent = function(selector) {
+    var flag = false
+    $(selector).mouseenter(function() {
+        if (flag) {
+            return false
+        }
+        flag = true
+        $(this).find('.dropdown-menu').fadeIn(200, function() {
+            flag = false
+        })
+    });
+    $(selector).mouseleave(function() {
+        $(this).find('.dropdown-menu').fadeOut(200)
+    });
+}
+
+var bindScrollChangeHeader = function() {
+    var check = 100
+    var header = $('header')
+    window.addEventListener('scroll', function() {
+        var scrollY = window.scrollY;
+        if (scrollY > 100) {
+            header.addClass('navigationScroll')
+        } else {
+            header.removeClass('navigationScroll')
+        }
+    })
+}
+
+var bindClickShowMenu = function() {
+    $('.menu-icon').click(function() {
+        $('#modal-for-menu').modal()
+    })
+}
+
+var bindClickModalLi = function() {
+    $('.modal .menu-li').click(function() {
+        var check = $(this).data('check')
+        if (check === 0) {
+            $(this).data('check', 1)
+            $(this).find('.dropdown-menu').slideDown(200)
+        } else {
+            $(this).data('check', 0)
+            $(this).find('.dropdown-menu').slideUp(200)
+        }
+        $(this).find('.menu-span').toggleClass('up')
+    })
+}
+
+var bindClickClose = function() {
+    $('#close-join').click(function() {
+        $('.navigation .join-div').hide()
+        $('.main-section').removeClass('padding')
+    })
+}
+
+var language = 'en'
+
+bindClickClose()
+
+bindScrollChangeHeader()
+
+bindNavMouseEvent('.header-container .menu-li')
+bindNavMouseEvent('.header-container .language-menu')
+bindNavMouseEvent('.header-container .btn-li')
+
+bindClickShowMenu()
+bindClickModalLi()
+
+
+</script>
+
+  <section class="main-section ">
+      <div class="common-layout">
+          <div class='breadcrumb'>
+              
+              <span><a href='/conferences'>KubeCon &amp; QCon</a> > </span>
+              <span>Porter: An Open Source Load Balancer for Kubernetes in a Bare Metal Environment</span>
+          </div>
+          <div class='main-div middle-div'>
+              <div class='author'>Xuetao Song</div>
+              <div class='date'>Published on：2019-06-25</div>
+              <h1>Porter: An Open Source Load Balancer for Kubernetes in a Bare Metal Environment</h1>
+              <div class="share-1">
+                  <div class="share">
+  <a href="http://twitter.com/share?url=https%3a%2f%2fkubesphere-v3.netlify.app%2fconferences%2fporter%2f&text=Porter%3a%20An%20Open%20Source%20Load%20Balancer%20for%20Kubernetes%20in%20a%20Bare%20Metal%20Environment" target="_blank" rel="noopener noreferrer">
+    <img src="/images/share/Twitter.svg" alt="twitter icon">
+  </a>
+  <a href="http://reddit.com/submit?url=https%3a%2f%2fkubesphere-v3.netlify.app%2fconferences%2fporter%2f&title=Porter%3a%20An%20Open%20Source%20Load%20Balancer%20for%20Kubernetes%20in%20a%20Bare%20Metal%20Environment" target="_blank" rel="noopener noreferrer">
+    <img src="/images/share/Reddit.svg" alt="reddit icon">
+  </a>
+  <a href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fkubesphere-v3.netlify.app%2fconferences%2fporter%2f" target="_blank" rel="noopener noreferrer">
+    <img src="/images/share/Facebook.svg" alt="facebook icon">
+  </a>
+  <a href="http://www.linkedin.com/shareArticle?mini=true&url=https%3a%2f%2fkubesphere-v3.netlify.app%2fconferences%2fporter%2f" target="_blank" rel="noopener noreferrer">
+    <img src="/images/share/Linkedin.svg" alt="linkedin icon">
+  </a>
+  <a href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fkubesphere-v3.netlify.app%2fconferences%2fporter%2f&t=Porter%3a%20An%20Open%20Source%20Load%20Balancer%20for%20Kubernetes%20in%20a%20Bare%20Metal%20Environment" target="_blank" rel="noopener noreferrer">
+    <img src="/images/share/HackerNews.svg" alt="hackernews icon">
+  </a>
+</div>
+              </div>
+              <div class='content'>
+                  <div class='md-body'>
+                      <p>We know that we can use the service of LoadBalancer in the Kubernetes cluster to expose backend workloads externally. Cloud providers often offer cloud LoadBalancer plugins, which requires the cluster to be deployed on a specific IaaS platform. However, many enterprise users often deploy the Kubernetes cluster on bare metal, especially when it is used for the production environment. For the local bare metal cluster, Kubernetes does not provide LB implementation. Porter is an open source load balancer designed specifically for the bare metal Kubernetes cluster, which serves as an excellent solution to this problem.</p>
+<h2 id="kubernetes-service-introduction">Kubernetes Service Introduction</h2>
+<p>In the Kubernetes cluster, network represents a very basic and important part. For large-scale nodes and containers, it entails very complicated and delicate design if it is to ensure the connectivity and efficiency in the network. What’s more, IP addresses and ports need to be automatically assigned and managed in the network, with a user-friendly approach in place for the direct and quick access to applications in need.</p>
+<p>Kubernetes has made great efforts in this connection. With CNI, Service, DNS and Ingress, it has solved the problem of service discovery and load balancing, providing an easier way in usage and configuration. Among them, Service underlies Kubernetes microservices. And services are made possible through kube-proxy in Kubernetes.</p>
+<p>This component runs on each node, monitoring the change in the service object in API Server and achieving network forwarding by managing iptables. Users can create different forms of Services such as those based on Label Selector, Headless or ExternalName. Kube-proxy will create a virtual IP (or cluster IP) for the service for the internal access of the cluster.</p>
+<h2 id="three-methods-to-expose-services">Three Methods to Expose Services</h2>
+<p>If the access is required outside the cluster, or to expose the service to users, Kubernetes Service provides two methods: NodePort and LoadBalancer. Besides, Ingress is also a very common option to expose services.</p>
+<h3 id="nodeport">NodePort</h3>
+<p>If the service type is set to NodePort, kube-proxy will apply for a port for the service which is above 3000 (by default). Iptables rules will be configured for all the hosts in the cluster. In this way, users can access the service through any node in the cluster with the assigned port. Please see the image below:</p>
+<p><img src="https://pek3b.qingstor.com/kubesphere-docs/png/20200611115837.png" alt="NodePort"></p>
+<p>NodePort is the most convenient way to expose services while it also has obvious shortcomings:</p>
+<ol>
+<li>The real IP is not visible in Pod through the access based on SNAT.</li>
+<li>A host in the cluster is used as a jumper server to access the backend service, which means all the traffic will go to the server first. This can easily lead to performance bottlenecks and a single point of failure, making it difficult to be used in the production environment.</li>
+<li>Generally, NodePort uses large port numbers which are hard to remember.</li>
+</ol>
+<p>Initially, NodePort is not designed for the exposure of services in the production environment which is why large port numbers are used by default.</p>
+<h3 id="loadbalancer">LoadBalancer</h3>
+<p>LoadBalancer is a preferred solution by Kubernetes to service exposure. However, this cannot be done without the load balancer offered by cloud providers, which means the Kubernetes cluster has to be deployed in the cloud. Here is how LoadBalancer works:</p>
+<p><img src="https://pek3b.qingstor.com/kubesphere-docs/png/20200611115859.png" alt="LoadBalancer"></p>
+<p>The LoadBalancer service is achieved through the LB plugin offered by cloud providers. The package Kubernetes.io/cloud-provider will choose the appropriate backend service and expose it to the LB plugin, which creates a load balancer accordingly. That means network traffic will be distributed in the cloud service, avoiding a single point of failure and performance bottlenecks that may occur in NodePort. As mentioned above, LoadBalancer is a preferred solution by Kubernetes to service exposure, but it is only limited to the Kubernetes service offered by cloud providers. For the Kubernetes cluster that is deployed in a bare metal environment or in a non-cloud environment, this approach may not be applicable.</p>
+<h3 id="ingress">Ingress</h3>
+<p>Kubernetes itself does not provide the way to expose services through Ingress. Rather, Ingress exposes multiple services simultaneously with the help of applications just like a router. This plugin identifies different services through domains and uses annotations to control the way services are exposed externally. Here is how it works:</p>
+<p><img src="https://pek3b.qingstor.com/kubesphere-docs/png/20200611115920.png" alt="Ingress"></p>
+<p>Ingress is the most used method in a business environment than NodePort and LoadBalancer. The reasons include:</p>
+<ol>
+<li>Compared with the load balancing way of kube-proxy, Ingress Controller is more capable (e.g. traffic control and security strategy).</li>
+<li>It is more direct to identify services through domains; large port numbers in NodePort are also not needed for Ingress.</li>
+</ol>
+<p>Nevertheless, the following problems need to be solved for Ingress:</p>
+<ol>
+<li>Ingress is used more often for L7, with limited support for L4.</li>
+<li>All the traffic will go to Ingress Controller, which requires a LB to expose Ingress Controller.</li>
+</ol>
+<p>For the first problem, Ingress can be used for L4 but the configuration of Ingress is too complicated for L4 applications. The best practice is to use LB directly for exposure. For the second problem, Ingress Controller can be exposed in a test environment with NodePort (or hostnetwork), while a single point of failure and performance bottlenecks may happen inevitably and the HA feature of Ingress-controller has not been properly used.</p>
+<h2 id="porter-introduction">Porter Introduction</h2>
+<p><a href="https://porterlb.io" target="_blank" rel="noopener noreferrer">Porter</a> is an open source cloud native load balancing plugin designed by the KubeSphere development team based on Border Gateway Protocol (BGP). It meanly features:</p>
+<ol>
+<li>ECMP routing load balancing</li>
+<li>BGP dynamic routing configuration</li>
+<li>VIP management</li>
+</ol>
+<p><img src="https://pek3b.qingstor.com/kubesphere-docs/png/20200611120450.png" alt="Portter"></p>
+<p>All Porter codes are open source and documents are available in <a href="https://github.com/kubesphere/porter" target="_blank" rel="noopener noreferrer">GitHub</a>. You are welcome to star and use it.</p>
+<h2 id="how-to-install-porter">How to Install Porter</h2>
+<p>Porter has been deployed and tested in two environments so far as below. You can see more details in GitHub about the deployment, test and process by clicking the link below. It is recommended to have a try:</p>
+<ul>
+<li><a href="https://github.com/kubesphere/porter/blob/master/doc/deploy_baremetal.md" target="_blank" rel="noopener noreferrer">Deploy Porter on Bare Metal Kubernetes Cluster</a></li>
+<li><a href="https://github.com/kubesphere/porter/blob/master/doc/simulate_with_bird.md" target="_blank" rel="noopener noreferrer">Test in the QingCloud Platform Using a Simulated Router</a></li>
+</ul>
+<h2 id="principle">Principle</h2>
+<h3 id="ecmp">ECMP</h3>
+<p>Equal-Cost Multi-Path (ECMP) means the package forwarding to a same destination can occur along multiple paths of equal cost. When the device supports ECMP, the three-layer traffic that is sent to the target IP or network segment can be distributed by different paths, achieving network load balancing. Besides, once a certain path malfunctions, other paths can finish the forwarding process instead,  serving as the routing redundant backup. Please refer to the image below:</p>
+<p><img src="https://pek3b.qingstor.com/kubesphere-docs/png/20200611115936.png" alt="ECMP Principle"></p>
+<p>With the help of the virtual router, ECMP can select the next hop (Pod) according to Hash algorithm from the existing routing paths for a certain IP (the corresponding VIP of the service). This is how load balancing is achieved. As virtual routers support ECMP in general, Porter only needs to check the Kubernetes API server and deliver the corresponding information of backend Pod of a service to the router.</p>
+<h3 id="bgp">BGP</h3>
+<p>A Pod may be scheduled to other nodes in Kubernetes. For a router, the next hop of a service VIP is not fixed as the equal-cost routing information will often be updated. Calico, for example, uses BGP (Border Gateway Protocol) to advertise routes. BGP is a commonly used essential decentralized protocol to exchange routing information among autonomous systems on the Internet. Unlike other routing protocols, BGP uses L4 to ensure the update security of routing information. As BGP is decentralized, it is very easy to establish a routing layer of high availability to ensure network continuity.</p>
+<p><img src="https://pek3b.qingstor.com/kubesphere-docs/png/20200611120800.png" alt="BGP"></p>
+<p>The image above briefly demonstrates how BGP works in Porter. In the bottom-left corner, it is a two-node Kubernetes cluster with two routers (Leaf1 and Leaf2) above it. These two routers are connected to two kernel switches (Spine layer). Users are on the right side, whose routers are Border1 and Border2 (also connected to Spine).</p>
+<p>The three layers of users and Kubernetes server are reachable. Services are created in the Kubernetes cluster and Porter is also used. A VIP (or other manually assigned IP) 1.1.1.1 is assigned by Porter, which sends the information to Leaf1 and Leaf2 through BGP. The next hop to access 1.1.1.1 can be Node1 or Node2. Meanwhile, the Leaf layer also sends the message to the Spine layer, which also knows the next hop to access 1.1.1.1 can be Leaf1 or Leaf2 based on its BGP.</p>
+<p>According to the same logic, the routing information will also be updated on Border, meaning the path for users to access 1.1.1.1 is complete. At the same time, as each layer in the image features HA, a total of 16 (<code>2*2*2*2</code>) paths are available to use for external access. Traffic can be distributed across the network and any downtime that occurs in the router in any layer will not affect user’s access.</p>
+<h2 id="architecture">Architecture</h2>
+<p><img src="https://pek3b.qingstor.com/kubesphere-docs/png/20200611120827.png" alt="Porter Architecture"></p>
+<p>Porter has two components: a core controller and an agent deployed on each node. The main functions of the controller include:</p>
+<ol>
+<li>Monitor cluster Services and corresponding endpoints; acquire the Scheduling information of Pods</li>
+<li>VIP storage and assignment</li>
+<li>Establish BGP and advertise routes</li>
+</ol>
+<p><img src="https://pek3b.qingstor.com/kubesphere-docs/png/20200611120857.png" alt="Porter Logic"></p>
+<p>The image above shows the working principle of Porter&rsquo;s core controller.</p>
+<p>Agent is a lightweight component to monitor VIP resources and add Iptables rules for external access to the VIP. By default, the kernel Forward table will drop any external access to VIP.</p>
+<h2 id="designed-for-cloud-natives">Designed for Cloud Natives</h2>
+<p>All resources in Porter are CRD, including VIP, BGPPeer and BGPConfig. Users who are used to Kubectl will find Porter very easy to use. For advanced users who want to customize Porter, Kubernetes API can be called directly for tailor-made development. The core controller of Porter will soon support high availability (HA).</p>
+<h2 id="cautions">Cautions</h2>
+<p>The VIP traffic of user access will go to a node in the Kubernetes cluster under BGP. This is because the routes advertised by Porter are also nodes instead of Pod IP which is inaccessible externally. The path from a node to a pod is maintained by kube-proxy as below:</p>
+<p><img src="https://pek3b.qingstor.com/kubesphere-docs/png/20200611120948.png" alt="Cautions"></p>
+<p>The traffic will be sent to a pod randomly after the SNAT process. As Port will adjust routes based on the dynamic change of Service Endpoints to make sure a pod is available in a node for the next hop, we can change kube-proxy which is set by default. You can set <strong>ExternalTrafficPolicy=local</strong> in a Service and the result is shown as follows:</p>
+<p><img src="https://pek3b.qingstor.com/kubesphere-docs/png/20200611121114.png" alt="ExternalTrafficPolicy"></p>
+<p>There are two advantages in this method:</p>
+<ol>
+<li>SourceIP will not go through the process of NAT</li>
+<li>Traffic will go locally, reducing a hop in the network</li>
+</ol>
+<h2 id="future-plans">Future Plans</h2>
+<ol>
+<li>Support of other simple routing protocols</li>
+<li>More convenient VIP management</li>
+<li>Policy support of BGP</li>
+<li>Integration into KubeSphere with UI provided</li>
+</ol>
+<h2 id="related-resources">Related Resources</h2>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=EjU1yAVxXYQ" target="_blank" rel="noopener noreferrer">KubeCon Shanghai: Porter - An Open Source Load Balancer for Bare Metal Kubernetes</a></li>
+<li><a href="https://porterlb.io" target="_blank" rel="noopener noreferrer">Porter Website</a></li>
+</ul>
+
+                  </div>
+              </div>
+              <div class="share-2">
+                  <div class="share">
+  <a href="http://twitter.com/share?url=https%3a%2f%2fkubesphere-v3.netlify.app%2fconferences%2fporter%2f&text=Porter%3a%20An%20Open%20Source%20Load%20Balancer%20for%20Kubernetes%20in%20a%20Bare%20Metal%20Environment" target="_blank" rel="noopener noreferrer">
+    <img src="/images/share/Twitter.svg" alt="twitter icon">
+  </a>
+  <a href="http://reddit.com/submit?url=https%3a%2f%2fkubesphere-v3.netlify.app%2fconferences%2fporter%2f&title=Porter%3a%20An%20Open%20Source%20Load%20Balancer%20for%20Kubernetes%20in%20a%20Bare%20Metal%20Environment" target="_blank" rel="noopener noreferrer">
+    <img src="/images/share/Reddit.svg" alt="reddit icon">
+  </a>
+  <a href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fkubesphere-v3.netlify.app%2fconferences%2fporter%2f" target="_blank" rel="noopener noreferrer">
+    <img src="/images/share/Facebook.svg" alt="facebook icon">
+  </a>
+  <a href="http://www.linkedin.com/shareArticle?mini=true&url=https%3a%2f%2fkubesphere-v3.netlify.app%2fconferences%2fporter%2f" target="_blank" rel="noopener noreferrer">
+    <img src="/images/share/Linkedin.svg" alt="linkedin icon">
+  </a>
+  <a href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fkubesphere-v3.netlify.app%2fconferences%2fporter%2f&t=Porter%3a%20An%20Open%20Source%20Load%20Balancer%20for%20Kubernetes%20in%20a%20Bare%20Metal%20Environment" target="_blank" rel="noopener noreferrer">
+    <img src="/images/share/HackerNews.svg" alt="hackernews icon">
+  </a>
+</div>
+              </div>
+          </div>
+          <div class='aside'>
+              <div class="inner-div">
+                <div class='title'>Table of Contents</div>
+                <div class='tabs'><nav id="TableOfContents">
+  <ul>
+    <li><a href="#kubernetes-service-introduction">Kubernetes Service Introduction</a></li>
+    <li><a href="#three-methods-to-expose-services">Three Methods to Expose Services</a>
+      <ul>
+        <li><a href="#nodeport">NodePort</a></li>
+        <li><a href="#loadbalancer">LoadBalancer</a></li>
+        <li><a href="#ingress">Ingress</a></li>
+      </ul>
+    </li>
+    <li><a href="#porter-introduction">Porter Introduction</a></li>
+    <li><a href="#how-to-install-porter">How to Install Porter</a></li>
+    <li><a href="#principle">Principle</a>
+      <ul>
+        <li><a href="#ecmp">ECMP</a></li>
+        <li><a href="#bgp">BGP</a></li>
+      </ul>
+    </li>
+    <li><a href="#architecture">Architecture</a></li>
+    <li><a href="#designed-for-cloud-natives">Designed for Cloud Natives</a></li>
+    <li><a href="#cautions">Cautions</a></li>
+    <li><a href="#future-plans">Future Plans</a></li>
+    <li><a href="#related-resources">Related Resources</a></li>
+  </ul>
+</nav></div>
+              </div>
+          </div>
+      </div>
+  </section>
+  <footer>
+    
+    <div class="footer">
+        <div class="footer-main common-layout">
+            <div class="up-main">
+                <div class="left-div">
+                    <img src="/images/logo.svg" alt="" class="foot-logo">
+                    <p>Receive the latest news, articles and updates from KubeSphere</p>
+                    <div>
+                        <form
+                            action="https://kubesphere.us10.list-manage.com/subscribe/post?u=c85ea2b944b08b951f607bdd4&amp;id=83f673a2d9"
+                            method="post"
+                            target="_blank"
+                            novalidate
+                        >
+                            <input name="EMAIL" id="email-input" type="text" placeholder='Please enter your email address'>
+                            <button type="submit" id="email-submit">Subscribe</button>
+                        </form>
+                    </div>
+                    <span id="message" data-message1='email is required!' data-message2='Please enter a valid email address!'></span>
+                </div>
+                <div class="right-div">
+                    <ul class="common-flex-layout">
+                        
+                        
+                            <li>
+                                <div class="h3">Scenarios</div>
+                                
+                                
+                                <a href="/devops/">Embrace DevOps</a>
+                                
+                                
+                                
+                                <a href="/service-mesh/">Microservices on K8s</a>
+                                
+                                
+                                
+                                <a href="/observability/">Cloud Native Observability</a>
+                                
+                                
+                                
+                                <a href="https://porterlb.io/" target="_blank" rel="noopener noreferrer">Bare Metal LoadBalancer</a>
+                                
+                                
+                                
+                                <a href="https://github.com/openpitrix/openpitrix" target="_blank" rel="noopener noreferrer">Multi-cloud Apps Mgmt</a>
+                                
+                                
+                                
+                                <a href="https://github.com/kubesphere/fluentbit-operator" target="_blank" rel="noopener noreferrer">Logging management</a>
+                                
+                                
+                            </li>
+                        
+                            <li>
+                                <div class="h3">Resources</div>
+                                
+                                
+                                <a href="/projects/">Projects</a>
+                                
+                                
+                                
+                                <a href="/blogs/">Blogs</a>
+                                
+                                
+                                
+                                <a href="/conferences/">KubeCon &amp; QCon</a>
+                                
+                                
+                                
+                                <a href="/videos/">Videos</a>
+                                
+                                
+                            </li>
+                        
+                            <li>
+                                <div class="h3">KubeSphere Docs</div>
+                                
+                                
+                                <a href="/../../../docs/introduction/what-is-kubesphere/">Introduction</a>
+                                
+                                
+                                
+                                <a href="/../../../docs/quick-start/all-in-one-on-linux/">Installation</a>
+                                
+                                
+                                
+                                <a href="/../../../docs/quick-start/create-workspace-and-project/">Tutorial</a>
+                                
+                                
+                                
+                                <a href="/../../../docs/api-reference/api-docs/">API Documentation</a>
+                                
+                                
+                            </li>
+                        
+                            <li>
+                                <div class="h3">Community</div>
+                                
+                                
+                                <a href="/contribution/">Contribution</a>
+                                
+                                
+                                
+                                <a href="/case/">Case Studies</a>
+                                
+                                
+                                
+                                <a href="/partner/">Partners</a>
+                                
+                                
+                                
+                                <a href="https://github.com/kubesphere/kubesphere/blob/master/docs/roadmap.md" target="_blank" rel="noopener noreferrer">Roadmap</a>
+                                
+                                
+                                
+                                <a href="https://kubesphere.io" target="_blank" rel="noopener noreferrer">Global Site</a>
+                                
+                                
+                                
+                                <a href="https://kubesphere.com.cn/" target="_blank" rel="noopener noreferrer">China Site</a>
+                                
+                                
+                                
+                                <a href="https://kubesphere.eu" target="_blank" rel="noopener noreferrer">Europe Site</a>
+                                
+                                
+                                
+                                <a href="https://kubesphereturkey.com" target="_blank" rel="noopener noreferrer">Turkey Site</a>
+                                
+                                
+                                
+                                <a href="https://kubesphere.es" target="_blank" rel="noopener noreferrer">Spain Site</a>
+                                
+                                
+                            </li>
+                        
+                        
+                    </ul>
+                </div>
+            </div>
+            <div class="down-main">
+                <div class='img-div'>
+                    <a class='wechat' href="javascript:void(0);">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28" height="28" viewBox="0 0 28 28">
+    <defs>
+        <path id="a" d="M0 0h15.673v12.156H0z"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd" transform="translate(1 1)">
+        <circle cx="13" cy="13" r="13" stroke="#B6C2CD"/>
+        <g transform="translate(5 7)">
+            <mask id="b" fill="#fff">
+                <use xlink:href="#a"/>
+            </mask>
+            <path fill="currentColor" d="M15.673 7.898c0-2.061-2.173-3.74-4.619-3.74-2.59 0-4.625 1.679-4.625 3.74 0 2.066 2.035 3.738 4.625 3.738.542 0 1.09-.13 1.632-.256l1.493.776-.408-1.29c1.09-.776 1.902-1.81 1.902-2.968zm-6.119-.645c-.27 0-.541-.257-.541-.514 0-.256.27-.514.541-.514.41 0 .681.258.681.514 0 .257-.271.514-.681.514zm2.994 0c-.27 0-.541-.257-.541-.514 0-.256.27-.514.54-.514.41 0 .681.258.681.514 0 .257-.277.514-.68.514z" mask="url(#b)"/>
+            <path fill="currentColor" d="M10.602 3.674c.177 0 .356.011.533.029C10.657 1.576 8.27 0 5.543 0 2.498 0 0 1.974 0 4.485c0 1.45.829 2.64 2.216 3.564l-.552 1.588 1.94-.929c.693.129 1.251.263 1.94.263.17 0 .343-.005.515-.022a3.68 3.68 0 0 1-.172-1.104c0-2.302 2.081-4.171 4.715-4.171zM7.618 2.243c.417 0 .693.263.693.66s-.276.66-.693.66c-.418 0-.835-.263-.835-.66.006-.398.423-.66.835-.66zm-3.88 1.319c-.417 0-.834-.263-.834-.66s.417-.66.834-.66c.418 0 .695.263.695.66 0 .392-.277.66-.695.66z" mask="url(#b)"/>
+        </g>
+    </g>
+</svg>
+
+                        <div class="hide-div">
+                            <p>Follow the official account</p>
+                            <img src="/images/footer/wechat_code.svg" alt="">
+                        </div>
+                    </a>
+                    <a class='facebook-a' href="https://www.facebook.com/kubesphere" target="_blank"></a>
+                    <a class='twitter-a' href="https://twitter.com/KubeSphere" target="_blank" rel="noopener noreferrer"></a>
+                    <a class='linkedin-a' href="https://www.linkedin.com/company/kubesphere/" target="_blank" rel="noopener noreferrer"></a>
+                    
+                    <a class='youtube-a' href="https://www.youtube.com/channel/UCyTdUQUYjf7XLjxECx63Hpw" target="_blank" rel="noopener noreferrer"></a>
+                    <a class='slack-a' href="https://join.slack.com/t/kubesphere/shared_invite/enQtNTE3MDIxNzUxNzQ0LTZkNTdkYWNiYTVkMTM5ZThhODY1MjAyZmVlYWEwZmQ3ODQ1NmM1MGVkNWEzZTRhNzk0MzM5MmY4NDc3ZWVhMjE" target="_blank" rel="noopener noreferrer"></a>
+                    <a class='github-a' href="https://github.com/kubesphere/kubesphere" target="_blank" rel="noopener noreferrer"></a>
+                    <a class='medium-a' href="https://itnext.io/@kubesphere" target="_blank" rel="noopener noreferrer"></a>
+                </div>
+                <p class='p1'>KubeSphere®️ 2020 All Rights Reserved.</p>
+                
+            </div>
+        </div>
+    </div>
+
+</footer>
+
+<script>
+    var bindSubmit = function() {
+        var input = $('#email-input')
+        $('#email-submit').click(function(event) {
+            event.stopPropagation()
+            var email = input.val()
+            var message1 = $('#message').data('message1')
+            var message2 = $('#message').data('message2')
+            if (!email) {
+                event.preventDefault()
+                showMessage(message1)
+            } else if (!validateEmail(email)) {
+                event.preventDefault()
+                showMessage(message2)
+            }
+        })
+    }
+
+    var bindHideMessage = function() {
+        $(window).click(function() {
+            $('#message').hide()
+        })
+    }
+
+    var showMessage = function(message) {
+        $('#message').html(message).show()
+    }
+
+    var validateEmail = function(email) {
+        var reg = /^[A-Za-z0-9]+([_\.][A-Za-z0-9]+)*@([A-Za-z0-9\-]+\.)+[A-Za-z]{2,6}$/
+        return reg.test(email)
+    }
+
+    var lazyLoad = function(allImg, imgNum) {
+        for (var i = 0; i < imgNum; i++) {
+            var img = allImg.eq(i)
+            var loaded = img.attr("data-loaded");
+            if (loaded) {
+                continue
+            }
+            if (img.offset().top < parseInt($(window).height()) + parseInt($(window).scrollTop())) {
+                var src = img.attr("src")
+                img.attr("src", src)
+                img.attr("data-loaded", true)
+            }
+        }
+    }
+
+    var bindLayLoad = function() {
+        var allImg = $('img')
+        var imgNum = allImg.length
+        lazyLoad(allImg, imgNum)
+        $(window).scroll(function() {
+            lazyLoad(allImg, imgNum)
+        });
+    }
+
+    
+    bindSubmit()
+    bindHideMessage()
+</script>
+
+  
+  
+  <script type="text/javascript" src="/js/aside.34d4ca232760855916fede489417772adb45cdceab8541c6f6826e5d83a0b68e071a44f76a077fe90e39afe213cc1aab40272900f7cbdffb45068c7746c7b183.js" integrity="sha512-NNTKIydghVkW/t5IlBd3KttFzc6rhUHG9oJuXYOgto4HGkT3agd/6Q45r&#43;ITzBqrQCcpAPfL3/tFBox3Rsexgw=="></script>
+  
+  
+  
+  <script type="text/javascript" src="/js/markdown-tab.224c8a343197870e80877ad07e19b932b807d3fde3abccde667f2156378cb00497ebb11d2f872f09ea91e7282e87655f8cb4ef163da46e34d00dca44dbf52aad.js" integrity="sha512-IkyKNDGXhw6Ah3rQfhm5MrgH0/3jq8zeZn8hVjeMsASX67EdL4cvCeqR5yguh2VfjLTvFj2kbjTQDcpE2/UqrQ=="></script>
+  
+  <script>
+    var viewer = new Viewer(document.querySelector('.md-body'), {
+        url: 'src'
+    })
+  </script>
+</body>
+
+</html>

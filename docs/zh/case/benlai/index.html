@@ -1,0 +1,1061 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>Benlai</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="description" content="KubeSphere 是在 Kubernetes 之上构建的以应用为中心的多租户容器平台，提供全栈的 IT 自动化运维的能力，简化企业的 DevOps 工作流。KubeSphere 提供了运维友好的向导式操作界面，帮助企业快速构建一个强大和功能丰富的容器云平台。">
+<meta name="keywords" content="KubeSphere, Kubernetes, 容器平台, DevOps, 混合云">
+
+<meta property="og:type" content="article"/>
+<meta property="og:title" content="Benlai"/>
+<meta property="og:description" content="KubeSphere 是在 Kubernetes 之上构建的以应用为中心的多租户容器平台，提供全栈的 IT 自动化运维的能力，简化企业的 DevOps 工作流。KubeSphere 提供了运维友好的向导式操作界面，帮助企业快速构建一个强大和功能丰富的容器云平台。"/>
+<meta property="og:image" content="https://kubesphere-v3.netlify.app/images/common/snapshot-zh.png"/>
+<meta property="og:url" content="https://kubesphere-v3.netlify.app/zh/case/benlai/"/>
+
+<meta name="docsearch:language" content="zh-CN" /><link rel="stylesheet" href="/fonts/Roboto/stylesheet.css">
+<link rel="stylesheet" href="/fonts/ProximaNova/stylesheet.css">
+<link rel="stylesheet" href="/css/jquery.modal.min.css">
+<link rel="stylesheet" href="/css/viewer.min.css">
+
+
+<link rel="stylesheet" href="/scss/common.min.fd2f2584615728a729ee87ecf658d2f2e62d4c55dc6ca4c90029116aa21ee2e8.css">
+
+
+
+
+
+<link rel="stylesheet" href="/scss/case-detail.min.9620acd0b3c08fdb470da9f401acba4542f811e3b632e21e16ca7257cbcd126c.css">
+
+
+
+
+
+
+
+
+<script src='/js/jquery-3.5.0.min.js'></script>
+<script src='/js/viewer.min.js'></script>
+<script src='/js/jquery.modal.min.js'></script>
+
+
+
+
+
+
+
+
+
+
+<script type='text/javascript'>
+!function(e,t,n,g,i){e[i]=e[i]||function(){(e[i].q=e[i].q||[]).push(arguments)},n=t.createElement("script"),tag=t.getElementsByTagName("script")[0],n.async=1,n.src=('https:'==document.location.protocol?'https://':'http://')+g,tag.parentNode.insertBefore(n,tag)}(window,document,"script","assets.giocdn.com/2.1/gio.js","gio");
+  gio('init', '8a24ae300cbf8b8c', {});
+  
+  
+  gio('send');
+</script>
+
+
+
+
+</head>
+
+<body>
+
+<header class="navigation">
+    
+    <div class="join-div">
+        <div class="content">
+            🚀 KubeSphere v3.0.0 正式 GA！<a href="https://www.qingcloud.com/kubesphere2020#tz2" target="_blank" rel="noopener noreferrer">免费回看 v3.0 发布会视频 📺</a>
+            <a href="https://kubesphere.com.cn/forum/d/2062-awesome-kubesphere-kubesphere-3-0" target="_blank" rel="noopener noreferrer">了解一键快速安装入门的最佳方式📚 →</a>
+            <img id="close-join" src="/images/header/close.svg" alt="close">
+        </div>
+    </div>
+    
+    <div class="common-layout">
+        <div class="header-container">
+            <a href="/zh/">
+                <img src="/images/header/logo.svg" alt="" class="logo">
+            </a>
+
+            <ul class="nav">
+                
+                
+                
+
+                
+                
+                    
+                
+                    
+                
+                    
+                
+
+                <li  class="menu-li" >
+                    <span class='menu-span'>应用场景</span>
+                    <ul class="dropdown-menu menu-2">
+                        
+                        <li >
+                            
+                            <a href="/zh/devops/">拥抱一站式 DevOps 工作流</a>
+                            
+                        </li>
+                        
+                        <li >
+                            
+                            <a href="/zh/service-mesh/">在 Kubernetes 运行微服务</a>
+                            
+                        </li>
+                        
+                        <li >
+                            
+                            <a href="/zh/observability/">构建丰富的云原生可观察性</a>
+                            
+                        </li>
+                        
+                    </ul>
+                </li>
+                
+
+                
+                
+
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+
+                <li  class="menu-li" >
+                    <span class='menu-span'>资源</span>
+                    <ul class="dropdown-menu menu-3">
+                        
+                        <li >
+                            
+                            <a href="/zh/projects/">开源项目</a>
+                            
+                        </li>
+                        
+                        <li >
+                            
+                            <a href="/zh/conferences/">开源峰会</a>
+                            
+                        </li>
+                        
+                        <li >
+                            
+                            <a href="/zh/blogs/">技术博客</a>
+                            
+                        </li>
+                        
+                        <li >
+                            
+                            <a href="/zh/videos/">视频资源</a>
+                            
+                        </li>
+                        
+                    </ul>
+                </li>
+                
+
+                
+                
+
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+
+                <li  class="menu-li" >
+                    <span class='menu-span'>文档中心</span>
+                    <ul class="dropdown-menu menu-4">
+                        
+                        <li >
+                            
+                            <a href="/zh/docs/">v3.0.0 <img src='/images/header/star.svg' alt='star'></a>
+                            
+                        </li>
+                        
+                        <li >
+                            
+                            <a href="https://v2-1.docs.kubesphere.io/docs/zh-CN/" target="_blank" rel="noopener noreferrer">v2.1.x</a>
+                            
+                        </li>
+                        
+                        <li >
+                            
+                            <a href="https://v2-0.docs.kubesphere.io/docs/zh-CN/" target="_blank" rel="noopener noreferrer">v2.0.x</a>
+                            
+                        </li>
+                        
+                        <li >
+                            
+                            <a href="https://v1-0.docs.kubesphere.io/docs/zh-CN/" target="_blank" rel="noopener noreferrer">v1.0.0</a>
+                            
+                        </li>
+                        
+                    </ul>
+                </li>
+                
+
+                
+                
+
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+
+                <li  class="menu-li" >
+                    <span class='menu-span'>开源社区</span>
+                    <ul class="dropdown-menu menu-5">
+                        
+                        <li >
+                            
+                            <a href="/zh/contribution/">参与贡献</a>
+                            
+                        </li>
+                        
+                        <li >
+                            
+                            <a href="/zh/case/">案例学习</a>
+                            
+                        </li>
+                        
+                        <li >
+                            
+                            <a href="/zh/partner/">合作伙伴</a>
+                            
+                        </li>
+                        
+                        <li >
+                            
+                            <a href="/zh/news/">动态</a>
+                            
+                        </li>
+                        
+                        <li >
+                            
+                            <a href="https://github.com/kubesphere/kubesphere/blob/master/docs/roadmap.md" target="_blank" rel="noopener noreferrer">版本计划</a>
+                            
+                        </li>
+                        
+                        <li >
+                            
+                            <a href="https://kubesphere.com.cn/" target="_blank" rel="noopener noreferrer">中国站</a>
+                            
+                        </li>
+                        
+                    </ul>
+                </li>
+                
+
+                
+                
+                <li >
+                    
+                    <a data-docs="用户论坛" href="https://kubesphere.com.cn/forum" target="_blank" rel="noopener noreferrer">用户论坛</a>
+                    
+                </li>
+                
+
+                
+
+            </ul>
+            <div class="right-menu">
+                <ul>
+                    <li class="language-menu">
+                        <div>
+                            <img src="/images/header/black.svg" alt="">
+                            <span>简体中文</span>
+                        </div>
+                        
+                        <ul class="dropdown-menu">
+                            
+                            <li onclick="location = '\/case\/benlai\/'">English</li>
+                            
+                            <li onclick="location = '\/zh\/case\/benlai\/'">简体中文</li>
+                            
+                        </ul>
+                        
+                    </li>
+                    <li class='btn-li'>
+                        <a href="https://demo.kubesphere.io/login" target="_blank" rel="noopener noreferrer">
+                            <button class="demo-btn">Demo →</button>
+                        </a>
+                        <ol class="dropdown-menu">
+                            <li>1.体验账号： demo1 / Demo123</li>
+                            <li>2.该账号仅开放了部分 UI 界面查看权限</li>
+                            <li>3.建议自行安装体验完整的管理功能</li>
+                        </ol>
+                    </li>
+                    <li class='link-li'>
+                        <a class='link-1' href="https://join.slack.com/t/kubesphere/shared_invite/enQtNTE3MDIxNzUxNzQ0LTZkNTdkYWNiYTVkMTM5ZThhODY1MjAyZmVlYWEwZmQ3ODQ1NmM1MGVkNWEzZTRhNzk0MzM5MmY4NDc3ZWVhMjE" target="_blank" rel="noopener noreferrer"></a>
+                        <a class='link-2' href="https://twitter.com/KubeSphere" target="_blank" rel="noopener noreferrer"></a>
+                        <a class='link-3' href="https://github.com/kubesphere/kubesphere" target="_blank" rel="noopener noreferrer"></a>
+                    </li>
+                    <li class="menu-icon">
+                        <img src="/images/header/menu.svg" alt="">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-for-menu" class="modal">
+        <ul class="nav">
+            
+            
+            
+
+            
+            
+                
+            
+                
+            
+                
+            
+
+            <li data-check="0"  class="menu-li" >
+                <span class='menu-span'>应用场景</span>
+                <ul class="dropdown-menu">
+                    
+                    <li >
+                        <a href="/zh/devops/">拥抱一站式 DevOps 工作流</a>
+                    </li>
+                    
+                    <li >
+                        <a href="/zh/service-mesh/">在 Kubernetes 运行微服务</a>
+                    </li>
+                    
+                    <li >
+                        <a href="/zh/observability/">构建丰富的云原生可观察性</a>
+                    </li>
+                    
+                </ul>
+            </li>
+            
+
+            
+            
+
+            
+            
+                
+            
+                
+            
+                
+            
+                
+            
+
+            <li data-check="0"  class="menu-li" >
+                <span class='menu-span'>资源</span>
+                <ul class="dropdown-menu">
+                    
+                    <li >
+                        <a href="/zh/projects/">开源项目</a>
+                    </li>
+                    
+                    <li >
+                        <a href="/zh/conferences/">开源峰会</a>
+                    </li>
+                    
+                    <li >
+                        <a href="/zh/blogs/">技术博客</a>
+                    </li>
+                    
+                    <li >
+                        <a href="/zh/videos/">视频资源</a>
+                    </li>
+                    
+                </ul>
+            </li>
+            
+
+            
+            
+
+            
+            
+                
+            
+                
+            
+                
+            
+                
+            
+
+            <li data-check="0"  class="menu-li" >
+                <span class='menu-span'>文档中心</span>
+                <ul class="dropdown-menu">
+                    
+                    <li >
+                        <a href="/zh/docs/">v3.0.0 <img src='/images/header/star.svg' alt='star'></a>
+                    </li>
+                    
+                    <li >
+                        <a href="https://v2-1.docs.kubesphere.io/docs/zh-CN/">v2.1.x</a>
+                    </li>
+                    
+                    <li >
+                        <a href="https://v2-0.docs.kubesphere.io/docs/zh-CN/">v2.0.x</a>
+                    </li>
+                    
+                    <li >
+                        <a href="https://v1-0.docs.kubesphere.io/docs/zh-CN/">v1.0.0</a>
+                    </li>
+                    
+                </ul>
+            </li>
+            
+
+            
+            
+
+            
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+
+            <li data-check="0"  class="menu-li" >
+                <span class='menu-span'>开源社区</span>
+                <ul class="dropdown-menu">
+                    
+                    <li >
+                        <a href="/zh/contribution/">参与贡献</a>
+                    </li>
+                    
+                    <li >
+                        <a href="/zh/case/">案例学习</a>
+                    </li>
+                    
+                    <li >
+                        <a href="/zh/partner/">合作伙伴</a>
+                    </li>
+                    
+                    <li >
+                        <a href="/zh/news/">动态</a>
+                    </li>
+                    
+                    <li >
+                        <a href="https://github.com/kubesphere/kubesphere/blob/master/docs/roadmap.md">版本计划</a>
+                    </li>
+                    
+                    <li >
+                        <a href="https://kubesphere.com.cn/">中国站</a>
+                    </li>
+                    
+                </ul>
+            </li>
+            
+
+            
+            
+            <li ><a data-docs="用户论坛" href="https://kubesphere.com.cn/forum">用户论坛</a></li>
+            
+
+            
+
+        </ul>
+        <div class="btn-div">
+            <a href="https://demo.kubesphere.io/login" target="_blank" rel="noopener noreferrer">
+                <button class="demo-btn">Demo →</button>
+            </a>
+        </div>
+        <div class="link-div">
+            <a href="https://join.slack.com/t/kubesphere/shared_invite/enQtNTE3MDIxNzUxNzQ0LTZkNTdkYWNiYTVkMTM5ZThhODY1MjAyZmVlYWEwZmQ3ODQ1NmM1MGVkNWEzZTRhNzk0MzM5MmY4NDc3ZWVhMjE" target="_blank" rel="noopener noreferrer">
+                <img src="/images/header/slack-hover.svg" alt="">
+            </a>
+            <a href="https://twitter.com/KubeSphere" target="_blank" rel="noopener noreferrer">
+                <img src="/images/header/twitter-hover.svg" alt="">
+            </a>
+            <a href="https://github.com/kubesphere/kubesphere" target="_blank" rel="noopener noreferrer">
+                <img src="/images/header/github-hover.svg" alt="">
+            </a>
+        </div>
+    </div>
+</header>
+<script>
+var bindNavMouseEvent = function(selector) {
+    var flag = false
+    $(selector).mouseenter(function() {
+        if (flag) {
+            return false
+        }
+        flag = true
+        $(this).find('.dropdown-menu').fadeIn(200, function() {
+            flag = false
+        })
+    });
+    $(selector).mouseleave(function() {
+        $(this).find('.dropdown-menu').fadeOut(200)
+    });
+}
+
+var bindScrollChangeHeader = function() {
+    var check = 100
+    var header = $('header')
+    window.addEventListener('scroll', function() {
+        var scrollY = window.scrollY;
+        if (scrollY > 100) {
+            header.addClass('navigationScroll')
+        } else {
+            header.removeClass('navigationScroll')
+        }
+    })
+}
+
+var bindClickShowMenu = function() {
+    $('.menu-icon').click(function() {
+        $('#modal-for-menu').modal()
+    })
+}
+
+var bindClickModalLi = function() {
+    $('.modal .menu-li').click(function() {
+        var check = $(this).data('check')
+        if (check === 0) {
+            $(this).data('check', 1)
+            $(this).find('.dropdown-menu').slideDown(200)
+        } else {
+            $(this).data('check', 0)
+            $(this).find('.dropdown-menu').slideUp(200)
+        }
+        $(this).find('.menu-span').toggleClass('up')
+    })
+}
+
+var bindClickClose = function() {
+    $('#close-join').click(function() {
+        $('.navigation .join-div').hide()
+        $('.main-section').removeClass('padding')
+    })
+}
+
+var language = 'zh'
+
+bindClickClose()
+
+bindScrollChangeHeader()
+
+bindNavMouseEvent('.header-container .menu-li')
+bindNavMouseEvent('.header-container .language-menu')
+bindNavMouseEvent('.header-container .btn-li')
+
+bindClickShowMenu()
+bindClickModalLi()
+
+
+</script>
+<main class='main-section  padding'>
+
+
+<section class="section-1 bg-cover" style='background-image: url("/images/case/case-detail-bg.png");'>
+    <div class="common-layout">
+        <h1 class="title-h1">Benlai</h1>
+        <p class="common-p">Founded in 2012, Benlai is an e-commerce website focused on food, including fruits and vegetables.</p>
+    </div>
+</section>
+
+
+<section class='section-2'>
+  
+  <div class="common-layout">
+    <div>
+      
+      <img src="/images/case/section6-benlai.jpg" alt="">
+      <ul class='ul-right'>
+        
+        <li>
+          <p class='p1'>INDUSTRY</p>
+          <p class='p2'>E-Business</p>
+        </li>
+        
+        <li>
+          <p class='p1'>LOCATION</p>
+          <p class='p2'>China</p>
+        </li>
+        
+        <li>
+          <p class='p1'>CLOUD TYPE</p>
+          <p class='p2'>Private</p>
+        </li>
+        
+        <li>
+          <p class='p1'>CHALLENGES</p>
+          <p class='p2'>Resources Utilization, Delivery Efficiency, Costs</p>
+        </li>
+        
+        <li>
+          <p class='p1'>ADOPTED FEATURES</p>
+          <p class='p2'>CI/CD, DevOps, Jenkins</p>
+        </li>
+        
+      </ul>
+      
+    </div>
+    <ul class='ul-left'>
+      
+      <li>
+        
+          <h2>Company Introduction</h2>
+          
+          <p>We work closely with select food providers and supply bases. We are committed to improving food safety in China as we strive to provide cold chain delivery services and direct home delivery services from our bases. This is how we work to become a quality food provider in China.</p>
+          
+          
+          <img src="https://pek3b.qingstor.com/kubesphere-docs/png/20200611182545.png" alt="">
+          
+        
+      </li>
+      
+      <li>
+        
+          <h2>Technology Condition: Infrastructure</h2>
+          
+          <p>Deployed in IDC</p>
+          
+          <p>Over 100 physical machines</p>
+          
+          <p>Virtualized deployment</p>
+          
+          
+        
+      </li>
+      
+      <li>
+        
+          <h2>Existing Issues</h2>
+          
+          <p>Occupancy rate of physical machines is over 95%</p>
+          
+          <p>Many idle resources</p>
+          
+          <p>Application scaling up process is relatively slow</p>
+          
+          
+        
+      </li>
+      
+      <li>
+        
+          <h2>Embrace DevOps and Kubernetes</h2>
+          
+          <p>We have three main objectives as we embark on the road of DevOps:</p>
+          
+          <p>1. Improve resource utilization</p>
+          
+          <p>2. Enhance release efficiency</p>
+          
+          <p>3. Reduce the working cost of O&amp;M</p>
+          
+          <p>The most important part is cost efficiency. Here is how we work to update our business toward DevOps.</p>
+          
+          
+        
+      </li>
+      
+      <li>
+        
+        <ul>
+          
+          <li>
+            <p>Improved Resource Utilization</p>
+          </li>
+          
+          <li>
+            <p>Enhanced Release Efficiency</p>
+          </li>
+          
+          <li>
+            <p>Reduced Working Costs</p>
+          </li>
+          
+        </ul>
+        
+      </li>
+      
+      <li>
+        
+          <h2>Level 1: DevOps Tool Selection</h2>
+          
+          <p>As we began to learn DevOps, an open-source platform KubeSphere had come to our awareness. KubeSphere is an enterprise-grade container platform built on Kubernetes with applications as its kernel. It supports multiple business scenarios, including agile development and automated O&amp;M, DevOps, microservices governance, grayscale release, multi-tenant management, monitoring and alerting, log query and collection, application store, storage management and network management.</p>
+          
+          <p>The Jenkins-based DevOps pipeline built in KubeSphere is very appropriate for us to use as it provides all necessary cloud native tools across the whole ecosystem for O&amp;M.</p>
+          
+          <p>Therefore, we began to create a proper CI/CD process by learning the operation, grammar and plugins related to KubeSphere and Jenkins. With the support of KubeSphere container platform, our level 1 CI/CD process had taken shape.</p>
+          
+          <p>At Level 1, we successfully achieved some processes, such as code pulling, application programming, pushing images to a local repository and deploying them to a Kubernetes cluster.</p>
+          
+          
+          <img src="https://pek3b.qingstor.com/kubesphere-docs/png/20200611182621.png" alt="">
+          
+        
+      </li>
+      
+      <li>
+        
+          <h2>Gaining Expertise</h2>
+          
+          <p>With a general CI/CD process in place, we continued to work on the pipeline. For example, we succeeded in the dynamical generation of application information after we studied how to customize a Jenkins pipeline. A large part of the reason why Jenkins becomes a major enterprise-grade CI/CD application is that it features an abundant plugin ecosystem. This has driven us to continue to work on Jenkins plugins, achieving a series of processes in the pipeline, such as FTP uploading, dynamic deployment of ConfigMap with commands and storage deployment.</p>
+          
+          
+          <img src="https://pek3b.qingstor.com/kubesphere-docs/png/20200611182839.png" alt="">
+          
+        
+      </li>
+      
+      <li>
+        
+        <div>
+          <p class='p1'>The Jenkins-based DevOps pipeline built in KubeSphere is very appropriate for us to use as it provides all necessary cloud native tools across the whole ecosystem for O&amp;M.</p>
+          <p class='p2'>Yang Yang</p>
+          <img src="/images/case/ic-quote-right.svg" alt="">
+        </div>
+        
+      </li>
+      
+      <li>
+        
+          <h2>Level 2: Improve the Pipeline</h2>
+          
+          <p>We had upgraded our CI/CD process to Level 2 as we learned more about the Jenkinsfile grammar and plugins. We added more elements in the pipeline, such as configuration deployment, storage deployment and CND uploading.</p>
+          
+          <p>Based on our business, our CI/CD process needs to be divided into varied types for release with different parameters for each type. At the beginning, we tried to use “when” first followed by “Input” to provide different parameters. However, the running order did not come the way we expected. Alternatively, we were aware of another kind of Input grammar to serve as a perfect solution to our issue.</p>
+          
+          
+        
+      </li>
+      
+      <li>
+        
+          <h2>Level 3: Rollback</h2>
+          
+          <p>After our struggle with the dynamic parameter, we had upgraded our CI/CD process to Level 3 where dynamic parameters could be generated for different types of tasks.</p>
+          
+          <p>For a rollback, the application and ConfigMap must both be included in the rollback while the ConfigMap version controlling feature is not supported in Kubernetes, which poses a great challenge for management. In this connection, we have to acquire the ConfigMap from the configuration center every time an application is released. When a ConfigMap is generated, the version number will be added following its name. This is how we work to perform a rollback for both the application and ConfigMap.</p>
+          
+          
+        
+      </li>
+      
+      <li>
+        
+          <h2>Standardized Process</h2>
+          
+          <p>We have learned from our previous lessons and wondered whether we can standardize the whole process once we have a well-placed CI/CD process. That means all applications can go through the same process before they are released. This serves as a more efficient way than to write the CI/CD process into the pipeline of every application. This is because it will be quite difficult to change the process of various applications once the CI/CD process needs to be modified.</p>
+          
+          <p>We searched for related information of standardization and finally found Shared Libraries of Jenkins, which helped us to divide the CI/CD process into two parts. Now, we only need to input parameters in the Jenkins pipeline of each application and call the method to execute the process. What’s more, the code of the Jenkins pipeline for each application has decreased from over 500 lines to less than 30 lines.</p>
+          
+          
+        
+      </li>
+      
+      <li>
+        
+          <h2>Level 9: One-click Deployment</h2>
+          
+          <p>Through our unremitting efforts, we have developed great expertise all the way up to Level 9, as the CI/CD process sees a considerable improvement.</p>
+          
+          <p>For future releases, we only need to select the release type and environment and perhaps a cup of coffee ☕️, waiting for the service to be released by KubeSphere all with one click.</p>
+          
+          
+        
+      </li>
+      
+    </ul>
+  </div>
+  <img src="/images/common/hexagon.svg" alt="">
+  
+</section>
+
+</main><footer>
+    
+    <div class="footer">
+        <div class="footer-main common-layout">
+            <div class="up-main">
+                <div class="left-div">
+                    <img src="/images/logo.svg" alt="" class="foot-logo">
+                    <p>通过邮件接收 KubeSphere 最新的技术博客与产品更新的通知</p>
+                    <div>
+                        <form
+                            action="https://kubesphere.us10.list-manage.com/subscribe/post?u=c85ea2b944b08b951f607bdd4&amp;id=83f673a2d9"
+                            method="post"
+                            target="_blank"
+                            novalidate
+                        >
+                            <input name="EMAIL" id="email-input" type="text" placeholder='请输入你的邮箱地址'>
+                            <button type="submit" id="email-submit">订阅</button>
+                        </form>
+                    </div>
+                    <span id="message" data-message1='请提供您的邮箱' data-message2='请输入有效的邮箱地址!'></span>
+                </div>
+                <div class="right-div">
+                    <ul class="common-flex-layout">
+                        
+                        
+                            <li>
+                                <div class="h3">应用场景</div>
+                                
+                                
+                                <a href="/zh/devops/">拥抱一站式 DevOps</a>
+                                
+                                
+                                
+                                <a href="/zh/service-mesh/">在 K8s 运行微服务</a>
+                                
+                                
+                                
+                                <a href="/zh/observability/">构建云原生可观察性</a>
+                                
+                                
+                                
+                                <a href="https://porterlb.io" target="_blank" rel="noopener noreferrer">物理机 K8s 暴露服务</a>
+                                
+                                
+                                
+                                <a href="https://github.com/kubesphere/kubekey" target="_blank" rel="noopener noreferrer">K8s 一键部署与运维</a>
+                                
+                                
+                                
+                                <a href="https://openpitrix.io/" target="_blank" rel="noopener noreferrer">多云应用管理平台</a>
+                                
+                                
+                                
+                                <a href="https://github.com/kubesphere/fluentbit-operator" target="_blank" rel="noopener noreferrer">Fluent-Bit 管理日志</a>
+                                
+                                
+                            </li>
+                        
+                            <li>
+                                <div class="h3">资源</div>
+                                
+                                
+                                <a href="/zh/projects/">开源项目</a>
+                                
+                                
+                                
+                                <a href="/zh/blogs/">技术博客</a>
+                                
+                                
+                                
+                                <a href="/zh/conferences/">开源峰会</a>
+                                
+                                
+                                
+                                <a href="/zh/videos/">视频资源</a>
+                                
+                                
+                            </li>
+                        
+                            <li>
+                                <div class="h3">文档中心</div>
+                                
+                                
+                                <a href="/../../zh/docs/introduction/what-is-kubesphere/">产品介绍</a>
+                                
+                                
+                                
+                                <a href="/../../zh/docs/quick-start/all-in-one-on-linux/">如何安装</a>
+                                
+                                
+                                
+                                <a href="/../../zh/docs/quick-start/create-workspace-and-project/">快速入门</a>
+                                
+                                
+                                
+                                <a href="/../../docs/api-reference/api-docs/">API 文档</a>
+                                
+                                
+                            </li>
+                        
+                            <li>
+                                <div class="h3">开源社区</div>
+                                
+                                
+                                <a href="/zh/contribution">参与贡献</a>
+                                
+                                
+                                
+                                <a href="/zh/case/">案例学习</a>
+                                
+                                
+                                
+                                <a href="/zh/partner/">合作伙伴</a>
+                                
+                                
+                                
+                                <a href="https://github.com/kubesphere/kubesphere/blob/master/docs/roadmap.md" target="_blank" rel="noopener noreferrer">版本计划</a>
+                                
+                                
+                                
+                                <a href="https://kubesphere.com.cn/" target="_blank" rel="noopener noreferrer">中国站</a>
+                                
+                                
+                                
+                                <a href="https://kubesphere.com.cn/forum" target="_blank" rel="noopener noreferrer">中文论坛</a>
+                                
+                                
+                                
+                                <a href="https://kubesphere.io" target="_blank" rel="noopener noreferrer">全球站</a>
+                                
+                                
+                                
+                                <a href="https://kubesphere.eu" target="_blank" rel="noopener noreferrer">欧洲站</a>
+                                
+                                
+                                
+                                <a href="https://kubesphereturkey.com" target="_blank" rel="noopener noreferrer">土耳其站</a>
+                                
+                                
+                                
+                                <a href="https://kubesphere.es" target="_blank" rel="noopener noreferrer">西班牙站</a>
+                                
+                                
+                            </li>
+                        
+                        
+                    </ul>
+                </div>
+            </div>
+            <div class="down-main">
+                <div class='img-div'>
+                    <a class='wechat' href="javascript:void(0);">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28" height="28" viewBox="0 0 28 28">
+    <defs>
+        <path id="a" d="M0 0h15.673v12.156H0z"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd" transform="translate(1 1)">
+        <circle cx="13" cy="13" r="13" stroke="#B6C2CD"/>
+        <g transform="translate(5 7)">
+            <mask id="b" fill="#fff">
+                <use xlink:href="#a"/>
+            </mask>
+            <path fill="currentColor" d="M15.673 7.898c0-2.061-2.173-3.74-4.619-3.74-2.59 0-4.625 1.679-4.625 3.74 0 2.066 2.035 3.738 4.625 3.738.542 0 1.09-.13 1.632-.256l1.493.776-.408-1.29c1.09-.776 1.902-1.81 1.902-2.968zm-6.119-.645c-.27 0-.541-.257-.541-.514 0-.256.27-.514.541-.514.41 0 .681.258.681.514 0 .257-.271.514-.681.514zm2.994 0c-.27 0-.541-.257-.541-.514 0-.256.27-.514.54-.514.41 0 .681.258.681.514 0 .257-.277.514-.68.514z" mask="url(#b)"/>
+            <path fill="currentColor" d="M10.602 3.674c.177 0 .356.011.533.029C10.657 1.576 8.27 0 5.543 0 2.498 0 0 1.974 0 4.485c0 1.45.829 2.64 2.216 3.564l-.552 1.588 1.94-.929c.693.129 1.251.263 1.94.263.17 0 .343-.005.515-.022a3.68 3.68 0 0 1-.172-1.104c0-2.302 2.081-4.171 4.715-4.171zM7.618 2.243c.417 0 .693.263.693.66s-.276.66-.693.66c-.418 0-.835-.263-.835-.66.006-.398.423-.66.835-.66zm-3.88 1.319c-.417 0-.834-.263-.834-.66s.417-.66.834-.66c.418 0 .695.263.695.66 0 .392-.277.66-.695.66z" mask="url(#b)"/>
+        </g>
+    </g>
+</svg>
+
+                        <div class="hide-div">
+                            <p>Follow the official account</p>
+                            <img src="/images/footer/wechat_code.svg" alt="">
+                        </div>
+                    </a>
+                    <a class='facebook-a' href="https://www.facebook.com/kubesphere" target="_blank"></a>
+                    <a class='twitter-a' href="https://twitter.com/KubeSphere" target="_blank" rel="noopener noreferrer"></a>
+                    <a class='linkedin-a' href="https://www.linkedin.com/company/kubesphere/" target="_blank" rel="noopener noreferrer"></a>
+                    
+                    <a class='youtube-a' href="https://www.youtube.com/channel/UCyTdUQUYjf7XLjxECx63Hpw" target="_blank" rel="noopener noreferrer"></a>
+                    <a class='slack-a' href="https://join.slack.com/t/kubesphere/shared_invite/enQtNTE3MDIxNzUxNzQ0LTZkNTdkYWNiYTVkMTM5ZThhODY1MjAyZmVlYWEwZmQ3ODQ1NmM1MGVkNWEzZTRhNzk0MzM5MmY4NDc3ZWVhMjE" target="_blank" rel="noopener noreferrer"></a>
+                    <a class='github-a' href="https://github.com/kubesphere/kubesphere" target="_blank" rel="noopener noreferrer"></a>
+                    <a class='medium-a' href="https://itnext.io/@kubesphere" target="_blank" rel="noopener noreferrer"></a>
+                </div>
+                <p class='p1'>KubeSphere®️ 2020 All Rights Reserved.</p>
+                
+            </div>
+        </div>
+    </div>
+
+</footer>
+
+<script>
+    var bindSubmit = function() {
+        var input = $('#email-input')
+        $('#email-submit').click(function(event) {
+            event.stopPropagation()
+            var email = input.val()
+            var message1 = $('#message').data('message1')
+            var message2 = $('#message').data('message2')
+            if (!email) {
+                event.preventDefault()
+                showMessage(message1)
+            } else if (!validateEmail(email)) {
+                event.preventDefault()
+                showMessage(message2)
+            }
+        })
+    }
+
+    var bindHideMessage = function() {
+        $(window).click(function() {
+            $('#message').hide()
+        })
+    }
+
+    var showMessage = function(message) {
+        $('#message').html(message).show()
+    }
+
+    var validateEmail = function(email) {
+        var reg = /^[A-Za-z0-9]+([_\.][A-Za-z0-9]+)*@([A-Za-z0-9\-]+\.)+[A-Za-z]{2,6}$/
+        return reg.test(email)
+    }
+
+    var lazyLoad = function(allImg, imgNum) {
+        for (var i = 0; i < imgNum; i++) {
+            var img = allImg.eq(i)
+            var loaded = img.attr("data-loaded");
+            if (loaded) {
+                continue
+            }
+            if (img.offset().top < parseInt($(window).height()) + parseInt($(window).scrollTop())) {
+                var src = img.attr("src")
+                img.attr("src", src)
+                img.attr("data-loaded", true)
+            }
+        }
+    }
+
+    var bindLayLoad = function() {
+        var allImg = $('img')
+        var imgNum = allImg.length
+        lazyLoad(allImg, imgNum)
+        $(window).scroll(function() {
+            lazyLoad(allImg, imgNum)
+        });
+    }
+
+    
+    bindSubmit()
+    bindHideMessage()
+</script>
+</body>
+
+</html>

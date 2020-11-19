@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>FAQ on </title>
+    <link>https://kubesphere-v3.netlify.app/docs/faq/</link>
+    <description>Recent content in FAQ on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    
+	<atom:link href="https://kubesphere-v3.netlify.app/docs/faq/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Questions about KubeSphere Console</title>
+      <link>https://kubesphere-v3.netlify.app/docs/faq/console-faq/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kubesphere-v3.netlify.app/docs/faq/console-faq/</guid>
+      <description>What kind of browsers does KubeSphere support?
+In general, KubeSphere console supports major web browsers including Chrome, Firefox, Safari, Opera, and Edge. You only need to consider the supported versions of these browsers listed in the green box of the table below:</description>
+    </item>
+    
+    <item>
+      <title>Telemetry in KubeSphere</title>
+      <link>https://kubesphere-v3.netlify.app/docs/faq/telemetry/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kubesphere-v3.netlify.app/docs/faq/telemetry/</guid>
+      <description>Telemetry collects aggregate information about the size of KubeSphere clusters installed, KubeSphere and Kubernetes versions, components enabled, cluster running time, error logs, etc. KubeSphere promises that the information is only used by the KubeSphere community to improve products and will not be shared with any third parties.
+What Information Is Collected  External network IP Download date Kubernetes version KubeSphere version Kubernetes cluster size The type of the operating system Installer error logs Components enabled The running time of Kubernetes clusters The running time of KubeSphere clusters Cluster ID Machine ID  Disable Telemetry Telemetry is enabled by default when you install KubeSphere, while you also have the option to disable it either before or after the installation.</description>
+    </item>
+    
+  </channel>
+</rss>

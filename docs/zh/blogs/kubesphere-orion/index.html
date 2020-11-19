@@ -1,0 +1,1124 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<title>在 KubeSphere 安装 Orion vGPU 使用 TensorFlow 运行深度学习训练</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="description" content="KubeSphere 是在 Kubernetes 之上构建的以应用为中心的多租户容器平台，提供全栈的 IT 自动化运维的能力，简化企业的 DevOps 工作流。KubeSphere 提供了运维友好的向导式操作界面，帮助企业快速构建一个强大和功能丰富的容器云平台。">
+<meta name="keywords" content="KubeSphere, Kubernetes, 容器平台, DevOps, 混合云">
+
+<meta property="og:type" content="article"/>
+<meta property="og:title" content="在 KubeSphere 安装 Orion vGPU 使用 TensorFlow 运行深度学习训练"/>
+<meta property="og:description" content="KubeSphere 是在 Kubernetes 之上构建的以应用为中心的多租户容器平台，提供全栈的 IT 自动化运维的能力，简化企业的 DevOps 工作流。KubeSphere 提供了运维友好的向导式操作界面，帮助企业快速构建一个强大和功能丰富的容器云平台。"/>
+<meta property="og:image" content="https://pek3b.qingstor.com/kubesphere-docs/png/20200116192941.png"/>
+<meta property="og:url" content="https://kubesphere-v3.netlify.app/zh/blogs/kubesphere-orion/"/>
+
+<meta name="docsearch:language" content="zh-CN" /><link rel="stylesheet" href="/fonts/Roboto/stylesheet.css">
+<link rel="stylesheet" href="/fonts/ProximaNova/stylesheet.css">
+<link rel="stylesheet" href="/css/jquery.modal.min.css">
+<link rel="stylesheet" href="/css/viewer.min.css">
+
+
+<link rel="stylesheet" href="/scss/common.min.fd2f2584615728a729ee87ecf658d2f2e62d4c55dc6ca4c90029116aa21ee2e8.css">
+
+
+
+
+
+
+
+
+
+
+
+<script src='/js/jquery-3.5.0.min.js'></script>
+<script src='/js/viewer.min.js'></script>
+<script src='/js/jquery.modal.min.js'></script>
+
+
+
+
+
+
+
+
+
+
+<script type='text/javascript'>
+!function(e,t,n,g,i){e[i]=e[i]||function(){(e[i].q=e[i].q||[]).push(arguments)},n=t.createElement("script"),tag=t.getElementsByTagName("script")[0],n.async=1,n.src=('https:'==document.location.protocol?'https://':'http://')+g,tag.parentNode.insertBefore(n,tag)}(window,document,"script","assets.giocdn.com/2.1/gio.js","gio");
+  gio('init', '8a24ae300cbf8b8c', {});
+  
+  
+  gio('send');
+</script>
+
+
+
+
+
+    <link rel="stylesheet" href="/scss/content.min.cd01785de7a83de330d32ac3aef7e5f4e0aa8c5e62c21008e4779016e3fd9517.css">
+    
+    
+    <link rel="stylesheet" href="/scss/markdown.min.0de31cde2c91847e0e6c6f43d52658e6347b056a9da347546c21a7786900bfcf.css">
+</head>
+
+
+<body>
+   
+  
+<header class="navigation">
+    
+    <div class="join-div">
+        <div class="content">
+            🚀 KubeSphere v3.0.0 正式 GA！<a href="https://www.qingcloud.com/kubesphere2020#tz2" target="_blank" rel="noopener noreferrer">免费回看 v3.0 发布会视频 📺</a>
+            <a href="https://kubesphere.com.cn/forum/d/2062-awesome-kubesphere-kubesphere-3-0" target="_blank" rel="noopener noreferrer">了解一键快速安装入门的最佳方式📚 →</a>
+            <img id="close-join" src="/images/header/close.svg" alt="close">
+        </div>
+    </div>
+    
+    <div class="common-layout">
+        <div class="header-container">
+            <a href="/zh/">
+                <img src="/images/header/logo.svg" alt="" class="logo">
+            </a>
+
+            <ul class="nav">
+                
+                
+                
+
+                
+                
+                    
+                
+                    
+                
+                    
+                
+
+                <li  class="menu-li" >
+                    <span class='menu-span'>应用场景</span>
+                    <ul class="dropdown-menu menu-2">
+                        
+                        <li >
+                            
+                            <a href="/zh/devops/">拥抱一站式 DevOps 工作流</a>
+                            
+                        </li>
+                        
+                        <li >
+                            
+                            <a href="/zh/service-mesh/">在 Kubernetes 运行微服务</a>
+                            
+                        </li>
+                        
+                        <li >
+                            
+                            <a href="/zh/observability/">构建丰富的云原生可观察性</a>
+                            
+                        </li>
+                        
+                    </ul>
+                </li>
+                
+
+                
+                
+
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+
+                <li  class="menu-li" >
+                    <span class='menu-span'>资源</span>
+                    <ul class="dropdown-menu menu-3">
+                        
+                        <li >
+                            
+                            <a href="/zh/projects/">开源项目</a>
+                            
+                        </li>
+                        
+                        <li >
+                            
+                            <a href="/zh/conferences/">开源峰会</a>
+                            
+                        </li>
+                        
+                        <li >
+                            
+                            <a href="/zh/blogs/">技术博客</a>
+                            
+                        </li>
+                        
+                        <li >
+                            
+                            <a href="/zh/videos/">视频资源</a>
+                            
+                        </li>
+                        
+                    </ul>
+                </li>
+                
+
+                
+                
+
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+
+                <li  class="menu-li" >
+                    <span class='menu-span'>文档中心</span>
+                    <ul class="dropdown-menu menu-4">
+                        
+                        <li >
+                            
+                            <a href="/zh/docs/">v3.0.0 <img src='/images/header/star.svg' alt='star'></a>
+                            
+                        </li>
+                        
+                        <li >
+                            
+                            <a href="https://v2-1.docs.kubesphere.io/docs/zh-CN/" target="_blank" rel="noopener noreferrer">v2.1.x</a>
+                            
+                        </li>
+                        
+                        <li >
+                            
+                            <a href="https://v2-0.docs.kubesphere.io/docs/zh-CN/" target="_blank" rel="noopener noreferrer">v2.0.x</a>
+                            
+                        </li>
+                        
+                        <li >
+                            
+                            <a href="https://v1-0.docs.kubesphere.io/docs/zh-CN/" target="_blank" rel="noopener noreferrer">v1.0.0</a>
+                            
+                        </li>
+                        
+                    </ul>
+                </li>
+                
+
+                
+                
+
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+
+                <li  class="menu-li" >
+                    <span class='menu-span'>开源社区</span>
+                    <ul class="dropdown-menu menu-5">
+                        
+                        <li >
+                            
+                            <a href="/zh/contribution/">参与贡献</a>
+                            
+                        </li>
+                        
+                        <li >
+                            
+                            <a href="/zh/case/">案例学习</a>
+                            
+                        </li>
+                        
+                        <li >
+                            
+                            <a href="/zh/partner/">合作伙伴</a>
+                            
+                        </li>
+                        
+                        <li >
+                            
+                            <a href="/zh/news/">动态</a>
+                            
+                        </li>
+                        
+                        <li >
+                            
+                            <a href="https://github.com/kubesphere/kubesphere/blob/master/docs/roadmap.md" target="_blank" rel="noopener noreferrer">版本计划</a>
+                            
+                        </li>
+                        
+                        <li >
+                            
+                            <a href="https://kubesphere.com.cn/" target="_blank" rel="noopener noreferrer">中国站</a>
+                            
+                        </li>
+                        
+                    </ul>
+                </li>
+                
+
+                
+                
+                <li >
+                    
+                    <a data-docs="用户论坛" href="https://kubesphere.com.cn/forum" target="_blank" rel="noopener noreferrer">用户论坛</a>
+                    
+                </li>
+                
+
+                
+
+            </ul>
+            <div class="right-menu">
+                <ul>
+                    <li class="language-menu">
+                        <div>
+                            <img src="/images/header/black.svg" alt="">
+                            <span>简体中文</span>
+                        </div>
+                        
+                        <ul class="dropdown-menu">
+                            
+                            <li onclick="location = '\/zh\/blogs\/kubesphere-orion\/'">简体中文</li>
+                            
+                        </ul>
+                        
+                    </li>
+                    <li class='btn-li'>
+                        <a href="https://demo.kubesphere.io/login" target="_blank" rel="noopener noreferrer">
+                            <button class="demo-btn">Demo →</button>
+                        </a>
+                        <ol class="dropdown-menu">
+                            <li>1.体验账号： demo1 / Demo123</li>
+                            <li>2.该账号仅开放了部分 UI 界面查看权限</li>
+                            <li>3.建议自行安装体验完整的管理功能</li>
+                        </ol>
+                    </li>
+                    <li class='link-li'>
+                        <a class='link-1' href="https://join.slack.com/t/kubesphere/shared_invite/enQtNTE3MDIxNzUxNzQ0LTZkNTdkYWNiYTVkMTM5ZThhODY1MjAyZmVlYWEwZmQ3ODQ1NmM1MGVkNWEzZTRhNzk0MzM5MmY4NDc3ZWVhMjE" target="_blank" rel="noopener noreferrer"></a>
+                        <a class='link-2' href="https://twitter.com/KubeSphere" target="_blank" rel="noopener noreferrer"></a>
+                        <a class='link-3' href="https://github.com/kubesphere/kubesphere" target="_blank" rel="noopener noreferrer"></a>
+                    </li>
+                    <li class="menu-icon">
+                        <img src="/images/header/menu.svg" alt="">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-for-menu" class="modal">
+        <ul class="nav">
+            
+            
+            
+
+            
+            
+                
+            
+                
+            
+                
+            
+
+            <li data-check="0"  class="menu-li" >
+                <span class='menu-span'>应用场景</span>
+                <ul class="dropdown-menu">
+                    
+                    <li >
+                        <a href="/zh/devops/">拥抱一站式 DevOps 工作流</a>
+                    </li>
+                    
+                    <li >
+                        <a href="/zh/service-mesh/">在 Kubernetes 运行微服务</a>
+                    </li>
+                    
+                    <li >
+                        <a href="/zh/observability/">构建丰富的云原生可观察性</a>
+                    </li>
+                    
+                </ul>
+            </li>
+            
+
+            
+            
+
+            
+            
+                
+            
+                
+            
+                
+            
+                
+            
+
+            <li data-check="0"  class="menu-li" >
+                <span class='menu-span'>资源</span>
+                <ul class="dropdown-menu">
+                    
+                    <li >
+                        <a href="/zh/projects/">开源项目</a>
+                    </li>
+                    
+                    <li >
+                        <a href="/zh/conferences/">开源峰会</a>
+                    </li>
+                    
+                    <li >
+                        <a href="/zh/blogs/">技术博客</a>
+                    </li>
+                    
+                    <li >
+                        <a href="/zh/videos/">视频资源</a>
+                    </li>
+                    
+                </ul>
+            </li>
+            
+
+            
+            
+
+            
+            
+                
+            
+                
+            
+                
+            
+                
+            
+
+            <li data-check="0"  class="menu-li" >
+                <span class='menu-span'>文档中心</span>
+                <ul class="dropdown-menu">
+                    
+                    <li >
+                        <a href="/zh/docs/">v3.0.0 <img src='/images/header/star.svg' alt='star'></a>
+                    </li>
+                    
+                    <li >
+                        <a href="https://v2-1.docs.kubesphere.io/docs/zh-CN/">v2.1.x</a>
+                    </li>
+                    
+                    <li >
+                        <a href="https://v2-0.docs.kubesphere.io/docs/zh-CN/">v2.0.x</a>
+                    </li>
+                    
+                    <li >
+                        <a href="https://v1-0.docs.kubesphere.io/docs/zh-CN/">v1.0.0</a>
+                    </li>
+                    
+                </ul>
+            </li>
+            
+
+            
+            
+
+            
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+
+            <li data-check="0"  class="menu-li" >
+                <span class='menu-span'>开源社区</span>
+                <ul class="dropdown-menu">
+                    
+                    <li >
+                        <a href="/zh/contribution/">参与贡献</a>
+                    </li>
+                    
+                    <li >
+                        <a href="/zh/case/">案例学习</a>
+                    </li>
+                    
+                    <li >
+                        <a href="/zh/partner/">合作伙伴</a>
+                    </li>
+                    
+                    <li >
+                        <a href="/zh/news/">动态</a>
+                    </li>
+                    
+                    <li >
+                        <a href="https://github.com/kubesphere/kubesphere/blob/master/docs/roadmap.md">版本计划</a>
+                    </li>
+                    
+                    <li >
+                        <a href="https://kubesphere.com.cn/">中国站</a>
+                    </li>
+                    
+                </ul>
+            </li>
+            
+
+            
+            
+            <li ><a data-docs="用户论坛" href="https://kubesphere.com.cn/forum">用户论坛</a></li>
+            
+
+            
+
+        </ul>
+        <div class="btn-div">
+            <a href="https://demo.kubesphere.io/login" target="_blank" rel="noopener noreferrer">
+                <button class="demo-btn">Demo →</button>
+            </a>
+        </div>
+        <div class="link-div">
+            <a href="https://join.slack.com/t/kubesphere/shared_invite/enQtNTE3MDIxNzUxNzQ0LTZkNTdkYWNiYTVkMTM5ZThhODY1MjAyZmVlYWEwZmQ3ODQ1NmM1MGVkNWEzZTRhNzk0MzM5MmY4NDc3ZWVhMjE" target="_blank" rel="noopener noreferrer">
+                <img src="/images/header/slack-hover.svg" alt="">
+            </a>
+            <a href="https://twitter.com/KubeSphere" target="_blank" rel="noopener noreferrer">
+                <img src="/images/header/twitter-hover.svg" alt="">
+            </a>
+            <a href="https://github.com/kubesphere/kubesphere" target="_blank" rel="noopener noreferrer">
+                <img src="/images/header/github-hover.svg" alt="">
+            </a>
+        </div>
+    </div>
+</header>
+<script>
+var bindNavMouseEvent = function(selector) {
+    var flag = false
+    $(selector).mouseenter(function() {
+        if (flag) {
+            return false
+        }
+        flag = true
+        $(this).find('.dropdown-menu').fadeIn(200, function() {
+            flag = false
+        })
+    });
+    $(selector).mouseleave(function() {
+        $(this).find('.dropdown-menu').fadeOut(200)
+    });
+}
+
+var bindScrollChangeHeader = function() {
+    var check = 100
+    var header = $('header')
+    window.addEventListener('scroll', function() {
+        var scrollY = window.scrollY;
+        if (scrollY > 100) {
+            header.addClass('navigationScroll')
+        } else {
+            header.removeClass('navigationScroll')
+        }
+    })
+}
+
+var bindClickShowMenu = function() {
+    $('.menu-icon').click(function() {
+        $('#modal-for-menu').modal()
+    })
+}
+
+var bindClickModalLi = function() {
+    $('.modal .menu-li').click(function() {
+        var check = $(this).data('check')
+        if (check === 0) {
+            $(this).data('check', 1)
+            $(this).find('.dropdown-menu').slideDown(200)
+        } else {
+            $(this).data('check', 0)
+            $(this).find('.dropdown-menu').slideUp(200)
+        }
+        $(this).find('.menu-span').toggleClass('up')
+    })
+}
+
+var bindClickClose = function() {
+    $('#close-join').click(function() {
+        $('.navigation .join-div').hide()
+        $('.main-section').removeClass('padding')
+    })
+}
+
+var language = 'zh'
+
+bindClickClose()
+
+bindScrollChangeHeader()
+
+bindNavMouseEvent('.header-container .menu-li')
+bindNavMouseEvent('.header-container .language-menu')
+bindNavMouseEvent('.header-container .btn-li')
+
+bindClickShowMenu()
+bindClickModalLi()
+
+
+</script>
+
+  <section class="main-section  padding">
+      <div class="common-layout">
+          <div class='breadcrumb'>
+              
+              <span><a href='/zh/blogs'>技术博客</a> > </span>
+              <span>在 KubeSphere 安装 Orion vGPU 使用 TensorFlow 运行深度学习训练</span>
+          </div>
+          <div class='main-div middle-div'>
+              <div class='author'>Ellaye, Feynman</div>
+              <div class='date'>发布于：2020-01-16</div>
+              <h1>在 KubeSphere 安装 Orion vGPU 使用 TensorFlow 运行深度学习训练</h1>
+              <div class="share-1">
+                  <div class="share">
+  <a href="http://twitter.com/share?url=https%3a%2f%2fkubesphere-v3.netlify.app%2fzh%2fblogs%2fkubesphere-orion%2f&text=%e5%9c%a8%20KubeSphere%20%e5%ae%89%e8%a3%85%20Orion%20vGPU%20%e4%bd%bf%e7%94%a8%20TensorFlow%20%e8%bf%90%e8%a1%8c%e6%b7%b1%e5%ba%a6%e5%ad%a6%e4%b9%a0%e8%ae%ad%e7%bb%83" target="_blank" rel="noopener noreferrer">
+    <img src="/images/share/Twitter.svg" alt="twitter icon">
+  </a>
+  <a href="http://reddit.com/submit?url=https%3a%2f%2fkubesphere-v3.netlify.app%2fzh%2fblogs%2fkubesphere-orion%2f&title=%e5%9c%a8%20KubeSphere%20%e5%ae%89%e8%a3%85%20Orion%20vGPU%20%e4%bd%bf%e7%94%a8%20TensorFlow%20%e8%bf%90%e8%a1%8c%e6%b7%b1%e5%ba%a6%e5%ad%a6%e4%b9%a0%e8%ae%ad%e7%bb%83" target="_blank" rel="noopener noreferrer">
+    <img src="/images/share/Reddit.svg" alt="reddit icon">
+  </a>
+  <a href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fkubesphere-v3.netlify.app%2fzh%2fblogs%2fkubesphere-orion%2f" target="_blank" rel="noopener noreferrer">
+    <img src="/images/share/Facebook.svg" alt="facebook icon">
+  </a>
+  <a href="http://www.linkedin.com/shareArticle?mini=true&url=https%3a%2f%2fkubesphere-v3.netlify.app%2fzh%2fblogs%2fkubesphere-orion%2f" target="_blank" rel="noopener noreferrer">
+    <img src="/images/share/Linkedin.svg" alt="linkedin icon">
+  </a>
+  <a href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fkubesphere-v3.netlify.app%2fzh%2fblogs%2fkubesphere-orion%2f&t=%e5%9c%a8%20KubeSphere%20%e5%ae%89%e8%a3%85%20Orion%20vGPU%20%e4%bd%bf%e7%94%a8%20TensorFlow%20%e8%bf%90%e8%a1%8c%e6%b7%b1%e5%ba%a6%e5%ad%a6%e4%b9%a0%e8%ae%ad%e7%bb%83" target="_blank" rel="noopener noreferrer">
+    <img src="/images/share/HackerNews.svg" alt="hackernews icon">
+  </a>
+</div>
+              </div>
+              <div class='content'>
+                  <div class='md-body'>
+                      <p><img src="https://pek3b.qingstor.com/kubesphere-docs/png/20200116193908.png" alt=""></p>
+<h2 id="概览">概览</h2>
+<p>本文将使用 <a href="https://github.com/kubesphere/kubesphere" target="_blank" rel="noopener noreferrer">KubeSphere 容器平台</a>，在 Kubernetes 上部署 <a href="https://github.com/virtaitech/orion" target="_blank" rel="noopener noreferrer">Orion vGPU 软件</a> 进行深度学习加速，并基于 Orion vGPU 软件使用经典的 Jupyter Notebook 进行模型训练与推理。</p>
+<p>在开始安装 Orion vGPU 和演示深度学习训练之前，先简单了解一下，什么是 <strong>vGPU</strong> 以及什么是 <strong>Orion vGPU</strong>。</p>
+<h2 id="什么是-vgpu">什么是 vGPU</h2>
+<p>vGPU 又称 <strong>虚拟 GPU</strong>，早在几年前就由 <a href="https://www.nvidia.cn/data-center/virtual-gpu-technology/" target="_blank" rel="noopener noreferrer">NVIDIA</a> 推出了这个概念以及相关的产品。<strong>vGPU 是通过对数据中心（物理机）的 GPU 进行虚拟化</strong>，用户可在多个虚拟机或容器中 <strong>共享该数据中心的物理 GPU 资源</strong>，有效地提高性能并降低成本。vGPU 使得 GPU 与用户之间的关系不再是一对一，而是 <strong>一对多</strong>。</p>
+<h2 id="为什么需要-vgpu">为什么需要 vGPU</h2>
+<p>随着 AI 技术的快速发展，越来越多的企业开始将 AI 技术应用到自身业务之中。目前，云端 AI 算力主要由三类 AI 加速器来提供：GPU，FPGA 和 AI ASIC 芯片。这些加速器的优点是性能非常高，缺点是 <strong>成本高昂，缺少异构加速管理和调度</strong>。大部分企业因无法构建高效的加速器资源池，而不得不独占式地使用这些昂贵的加速器资源，导致 <strong>资源利用率低，成本高</strong>。</p>
+<p>以 GPU 为例，通过创新的 vGPU 虚拟化技术，能够帮助用户无需任务修改就能透明地共享和使用数据中心内任何服务器之上的 AI 加速器，不但能够帮助用户提高资源利用率，而且可以 <strong>极大便利 AI 应用的部署，构建数据中心级的 AI 加速器资源池</strong>。</p>
+<h2 id="什么是-orion-vgpu">什么是 Orion vGPU</h2>
+<p>Orion vGPU 软件由 <a href="https://virtai.tech/" target="_blank" rel="noopener noreferrer">VirtAI Tech 趋动科技</a> 开发，是一个 <strong>为云或者数据中心内的 AI 应用、CUDA 应用提供 GPU 资源池化、GPU 虚拟化能力</strong> 的系统软件。通过高效的通讯机制连接应用与 GPU 资源池，使得 AI 应用、CUDA 应用可以不受 GPU 物理位置的限制，部署在云或者数据中心内任何一个 <strong>物理机、Container 或者 VM</strong> 内。</p>
+<p><img src="https://pek3b.qingstor.com/kubesphere-docs/png/20200116162207.png" alt=""></p>
+<h2 id="orion-vgpu-软件架构">Orion vGPU 软件架构</h2>
+<p>由于我们将在 KubeSphere 容器平台上部署 Orion vGPU 软件至 Kubernetes，在部署前我们先简单了解一下 Orion vGPU 的软件架构。</p>
+<p><img src="https://pek3b.qingstor.com/kubesphere-docs/png/20200116162958.png" alt=""></p>
+<h3 id="orion-client">Orion Client</h3>
+<p>Orion Client 为一个运行时环境，模拟了 NVidia CUDA 的运行库环境，为 CUDA 程序提供了 API 接口兼容的全新实现。通过和 Orion 其他功能组件的配合，为 CUDA 应用程序虚拟化了一定数量的虚拟 GPU（Orion vGPU）。由于 Orion Client 模拟了 NVidia CUDA 运行环境，因此 CUDA 应用程序可以透明无修改地直接运行在 Orion vGPU 之上。</p>
+<h3 id="orion-controller">Orion Controller</h3>
+<p>Orion Controller 是一个长期运行的服务程序，其负责整个 GPU 资源池的资源管理。其响应 Orion Client 的 vGPU 请求，并从 GPU 资源池中为 Orion Client 端的 CUDA 应用程序分配并返回 Orion vGPU 资源。该组件可以部署在数据中心任何网络可到达的系统当中，每个资源池部署一个 Orion Controller。资源池的大小取决于 IT 管理的需求，可以是整个数据中心的所有 GPU 作为一个资源池，也可以每个 GPU 服务器作为一个独立的资源池。可以认为它就像一个中介，帮忙沟通 Orion Client 和 Server。</p>
+<h3 id="orion-server">Orion Server</h3>
+<p>该组件为一个长运行的系统服务，负责 GPU 资源化的后端服务。Orion Server 部署在每一个物理 GPU 服务器上，接管本机内的所有物理 GPU。Orion Server 通过和 Orion Controller 的交互把本机的 GPU 加入到由 Orion Controller 管理维护的 GPU 资源池当中。</p>
+<p>当 Orion Client 端应用程序运行时，通过 Orion Controller 的资源调度，建立和 Orion Server 的连接。Orion Server 为其应用程序的所有 CUDA 调用提供一个隔离的运行环境以及真实 GPU 硬件算力。</p>
+<h2 id="场景演示">场景演示</h2>
+<p>Orion vGPU 的使用包括以下三类场景：</p>
+<ul>
+<li>场景一：Docker 容器中使用本地节点 GPU 资源</li>
+<li>场景二：KVM 虚拟机中使用本地节点 GPU 资源</li>
+<li>场景三：在没有 GPU 的节点上使用远程节点上的 GPU 资源</li>
+</ul>
+<p>本文仅对场景一进行演示说明，该场景非常适用于教学及推理场景，后续的文章会对场景三说明如何通过 RDMA 使用远程节点 GPU 资源。</p>
+<p><img src="https://pek3b.qingstor.com/kubesphere-docs/png/20200116184604.png" alt=""></p>
+<h2 id="准备-gpu-节点并安装-nvidia-驱动和插件">准备 GPU 节点并安装 NVIDIA 驱动和插件</h2>
+<p>假设您已有 KubeSphere 集群环境，那么可参考 KubeSphere 官方文档扩容一个 GPU 主机作为新的 GPU 节点。本文使用了一台 Ubuntu 18.04 的 GPU 节点通过 KubeSphere 加入了 Kubernetes 集群，并在 GPU 节点安装 NVIDIA 驱动和 NVIDIA Docker 插件，在本文中暂不对该步骤进行详细说明。</p>
+<p><img src="https://pek3b.qingstor.com/kubesphere-docs/png/20200117135711.png" alt=""></p>
+<h2 id="安装-orion-vgpu-软件">安装 Orion vGPU 软件</h2>
+<p>通过安装 Orion vGPU 软件，容器得以使用 Orion vGPU 资源加速计算。安装完成后，我们将会在容器中运行与测试 TensorFlow 的部分深度学习训练。</p>
+<p>如下我们可以使用 KubeSphere 在 Kubernetes 之上容器化部署 Orion vGPU 的三个组件以及它的 Kubernetes Device Plugin。</p>
+<h3 id="安装-orion-controller">安装 Orion Controller</h3>
+<p>在上述已经对 Orion Controller 进行过介绍，它可以部署在集群的任意节点。一般说来，会通过选择器让 Controller 运行在指定的节点上，从而把 Controller 的 IP 地址确定下来。本文为了配置简单，仅安装在了 GPU 物理节点上：</p>
+<p>（1）代码克隆到集群中任意主机节点本地。</p>
+<pre><code>$ git clone https://github.com/virtaitech/orion
+</code></pre><p>（2）部署 Orion Controller，默认只部署一份 Orion Controller：</p>
+<pre><code>$ cd orion/orion-kubernetes-deploy
+$ vi deploy-controller.yaml
+</code></pre><p><img src="https://pek3b.qingstor.com/kubesphere-docs/png/20200116171855.png" alt=""></p>
+<p>添加节点选择器，如上图，保存。然后执行如下命令部署 Controller：</p>
+<pre><code>$ kubectl create -f deploy-controller.yaml
+</code></pre><p>执行完成后在 KubeSphere 界面的 default 项目中可以看到 Controller 的 Pod：</p>
+<p><img src="https://pek3b.qingstor.com/kubesphere-docs/png/20200116173959.png" alt=""></p>
+<h3 id="安装-orion-kubernetes-device-plugin">安装 Orion Kubernetes Device Plugin</h3>
+<p>Orion Kubernetes device plugin 是符合 Kubernetes device plugin 接口规范的设备扩展插件。配合 Orion GPU 可以无缝地在一个 Kubernetes 集群里添加 Oiron vGPU 资源，从而在部署应用的时候，在容器中使用 Orion vGPU。</p>
+<p>如下，修改 <code>deploy-plugin.yaml</code> 文件，添加节点选择器，使 Device Plugin 将以 DaemonSet 安装在物理 GPU 节点上。</p>
+<p><img src="https://pek3b.qingstor.com/kubesphere-docs/png/20200116172940.png" alt=""></p>
+<pre><code>$ kubectl create -f deploy-plugin.yaml
+</code></pre><p>执行完成后，等待一段时间，在 KubeSphere 界面的 default 项目中可以看到 <code>deploy-plugin</code> 的 Pod。</p>
+<p><img src="https://pek3b.qingstor.com/kubesphere-docs/png/20200116173803.png" alt=""></p>
+<h3 id="安装-orion-server">安装 Orion Server</h3>
+<p>Orion Server 将在物理 GPU 节点以 DaemonSet 形式部署，以部署支持 CUDA 10.0 的 Orion Server 为例。</p>
+<pre><code>$ vi deploy-server-cuda10.0.yaml
+</code></pre><p>添加节点选择器，使 Orion Server 安装在物理 GPU 节点上。</p>
+<p><img src="https://pek3b.qingstor.com/kubesphere-docs/png/20200116180143.png" alt=""></p>
+<p>修改后保存即可执行安装：</p>
+<pre><code>kubectl create -f deploy-server-cuda10.0.yaml
+</code></pre><p>执行完之后，等待一段时间，在 KubeSphere 界面的 default 项目中可以看到 orion-server 的 Pod。</p>
+<p><img src="https://pek3b.qingstor.com/kubesphere-docs/png/20200116180620.png" alt=""></p>
+<h3 id="安装-orion-client-应用">安装 Orion Client 应用</h3>
+<p>Orion Client 将安装在物理 GPU 节点，并且使用一个 Jupyter Notebook 作为 Client 应用来使用 vGPU。在 <code>deploy-client.yaml</code> 中添加标签，并且参考如下修改 args：</p>
+<blockquote>
+<ul>
+<li>resource limit： 可以设置应用能使用的 virtaitech.com:gpu 的数目；</li>
+<li>ORION_GMEM：容器内应用申请的 vGPU 显存大小。</li>
+</ul>
+</blockquote>
+<p><img src="https://pek3b.qingstor.com/kubesphere-docs/png/20200116180912.png" alt=""></p>
+<pre><code>$ kubectl create -f deploy-client.yaml
+</code></pre><p>执行完之后，等待一段时间，default 项目中可以看到 orion-client 的 Pod。</p>
+<p><img src="https://pek3b.qingstor.com/kubesphere-docs/png/20200116181303.png" alt=""></p>
+<p>新建一个 deploy-service.yaml 文件用来为 orion-client 创建服务，内容如下：</p>
+<pre><code>kind: Service
+apiVersion: v1
+metadata:
+  name: orion-client
+  labels:
+    app: jupyter
+  annotations:
+    kubesphere.io/serviceType: statelessservice
+spec:
+  ports:
+    - name: tcp-8888
+      protocol: TCP
+      port: 8888
+      targetPort: 8888
+      nodePort: 30110
+  selector:
+    app: jupyter
+  type: NodePort
+  externalTrafficPolicy: Cluster
+</code></pre><p>其中 labels 与 deploy-client.yaml 中的 Pod 一致，NodePort 为需要暴露的外网服务
+然后执行如下命令创建服务：</p>
+<pre><code>kubectl create -f deploy-service.yaml
+</code></pre><p>此时可通过外网访问 Jupyter Notebook。查看 orion-client 的日志拿到 token，即可登录 Jupyter Notebook。</p>
+<p><img src="https://pek3b.qingstor.com/kubesphere-docs/png/20200116183236.png" alt=""></p>
+<h2 id="训练一个简单的-cnn-模型">训练一个简单的 CNN 模型</h2>
+<p>以下将在 Jupyter Notebook 训练一个简单的 CNN 模型实现 mnist 手写数字分类。</p>
+<ol>
+<li>在 Jupyter Notebook 页面点击 <code>new-python3</code>。</li>
+</ol>
+<p><img src="https://pek3b.qingstor.com/kubesphere-docs/png/20200116184405.png" alt=""></p>
+<ol start="2">
+<li>将 <code>mnist.txt</code> 文件中的内容拷贝到上面新建的文件中。鼠标放到代码上，点击运行，运行结果如下：</li>
+</ol>
+<blockquote>
+<p>提示：<strong>mnist.txt</strong> 文件下载地址：https://kubesphere-docs.pek3b.qingstor.com/files/AI/mnist.txt</p>
+</blockquote>
+<p><img src="https://pek3b.qingstor.com/kubesphere-docs/png/20200116184421.png" alt=""></p>
+<ol start="3">
+<li>训练的过程中，我们可以在宿主机上通过 nvidia-smi 工作监视物理 GPU 的使用情况：</li>
+</ol>
+<p><img src="https://pek3b.qingstor.com/kubesphere-docs/png/20200116204740.png" alt=""></p>
+<ol start="4">
+<li>从图中可以看到，真正使用物理 GPU 的进程是 Orion Server 的服务进程  <code>/usr/bin/oriond</code>，而不是容器中正在执行 TensorFlow 任务的 Python 进程。这表明容器中的应用程序使用的是 Orion vGPU 资源，对物理 GPU 的访问完全由 Orion Server 所接管。</li>
+</ol>
+<h2 id="gpu-深度学习训练测试人脸识别">GPU 深度学习训练测试：人脸识别</h2>
+<ol>
+<li>在 Jupyter 页面上传 <code>facenet.tar</code> 文件：</li>
+</ol>
+<blockquote>
+<p>提示：facenet 下载地址： <a href="https://kubesphere-docs.pek3b.qingstor.com/files/AI/facenet.tar">https://kubesphere-docs.pek3b.qingstor.com/files/AI/facenet.tar</a></p>
+</blockquote>
+<p><img src="https://pek3b.qingstor.com/kubesphere-docs/png/20200116190941.png" alt=""></p>
+<ol start="2">
+<li>进入 <code>orion-client</code> 容器：</li>
+</ol>
+<pre><code>$ kubectl exec -it orion-client-td2jl -n default /bin/bash
+</code></pre><ol start="3">
+<li>安装 Python 依赖包：</li>
+</ol>
+<pre><code>$ pip3 install scikit-image==0.10
+$ pip3 install numpy==1.16.0
+</code></pre><ol start="4">
+<li>解压文件 facenet.tar 文件：</li>
+</ol>
+<pre><code>$ tar xvf facenet.tar
+</code></pre><ol start="5">
+<li>在 Jupyer 页面进入 <code>facenet/src</code>，点击 <code>facecomp.ipynb</code>：</li>
+</ol>
+<p><img src="https://pek3b.qingstor.com/kubesphere-docs/png/20200116190957.png" alt=""></p>
+<ol start="6">
+<li>打开 facecomp.ipynb 后，鼠标放到代码中，点击运行，在提示输入 <code>model file path</code> 时，输入预训练权重路径 <code>20180408-102900</code>，按下 Enter 键：</li>
+</ol>
+<p><img src="https://pek3b.qingstor.com/kubesphere-docs/png/20200116191008.png" alt=""></p>
+<ol start="7">
+<li>提示输入需要计算的照片时，输入 <code>a1.jpg a2.jpg b1.jpg b2.jpg c1.jpg c2.jpg</code> (这里随机选择了 VGGFace2 数据集中 3 个人共 6 张照片作为示例)，按下 Enter 键。</li>
+</ol>
+<p>将计算并显示 6 张人脸照片相互之间的距离，同一个人的照片，距离较近。如下图所示：</p>
+<p><img src="https://pek3b.qingstor.com/kubesphere-docs/png/20200116191053.png" alt=""></p>
+<ol start="8">
+<li>训练的过程中，我们可以在宿主机上通过 <code>nvidia-smi</code> 工作监视物理 GPU 的使用情况：</li>
+</ol>
+<p><img src="https://pek3b.qingstor.com/kubesphere-docs/png/20200116191110.png" alt=""></p>
+<ol start="9">
+<li>结论与上一个训练相同，真正使用物理 GPU 的进程是 Orion Server 的服务进程  <code>/usr/bin/oriond</code>，表明容器中的应用程序使用的是 Orion vGPU 资源。</li>
+</ol>
+<h2 id="总结">总结</h2>
+<p>本文通过 Step-by-step 向大家介绍了 vCPU，以及如何使用 <strong>KubeSphere 容器平台</strong> 在 Kubernetes 之上安装部署 Orion vGPU，并使用官方 TensorFlow 的两个示例进行模型训练与推理，最终演示了 vGPU 的第一个应用场景 <strong>Docker 容器中使用本地节点 GPU 资源</strong>。</p>
+<p>充分证明了 vGPU 能够兼容已有的 AI 应用和 CUDA 应用，无需修改已有应用程序。并且，借助 Orion vGPU 对 GPU 资源池的管理和优化，提高了整个云和数据中心 GPU 的利用率和吞吐率。</p>
+<p>后续我们将推出第二篇文章并结合示例说明 vGPU 的另一个典型应用场景 <strong>如何通过 RDMA 使用远程节点 GPU 资源</strong>。</p>
+<h2 id="参考">参考</h2>
+<ul>
+<li><a href="https://virtai.tech/" target="_blank" rel="noopener noreferrer">VirtAI Tech 官网</a></li>
+<li><a href="https://github.com/virtaitech/orion" target="_blank" rel="noopener noreferrer">GitHub virtaitech/orion</a></li>
+<li><a href="https://www.nvidia.cn/data-center/virtual-gpu-technology/" target="_blank" rel="noopener noreferrer">NVIDIA 虚拟 GPU 技术</a></li>
+</ul>
+
+                  </div>
+              </div>
+              <div class="share-2">
+                  <div class="share">
+  <a href="http://twitter.com/share?url=https%3a%2f%2fkubesphere-v3.netlify.app%2fzh%2fblogs%2fkubesphere-orion%2f&text=%e5%9c%a8%20KubeSphere%20%e5%ae%89%e8%a3%85%20Orion%20vGPU%20%e4%bd%bf%e7%94%a8%20TensorFlow%20%e8%bf%90%e8%a1%8c%e6%b7%b1%e5%ba%a6%e5%ad%a6%e4%b9%a0%e8%ae%ad%e7%bb%83" target="_blank" rel="noopener noreferrer">
+    <img src="/images/share/Twitter.svg" alt="twitter icon">
+  </a>
+  <a href="http://reddit.com/submit?url=https%3a%2f%2fkubesphere-v3.netlify.app%2fzh%2fblogs%2fkubesphere-orion%2f&title=%e5%9c%a8%20KubeSphere%20%e5%ae%89%e8%a3%85%20Orion%20vGPU%20%e4%bd%bf%e7%94%a8%20TensorFlow%20%e8%bf%90%e8%a1%8c%e6%b7%b1%e5%ba%a6%e5%ad%a6%e4%b9%a0%e8%ae%ad%e7%bb%83" target="_blank" rel="noopener noreferrer">
+    <img src="/images/share/Reddit.svg" alt="reddit icon">
+  </a>
+  <a href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fkubesphere-v3.netlify.app%2fzh%2fblogs%2fkubesphere-orion%2f" target="_blank" rel="noopener noreferrer">
+    <img src="/images/share/Facebook.svg" alt="facebook icon">
+  </a>
+  <a href="http://www.linkedin.com/shareArticle?mini=true&url=https%3a%2f%2fkubesphere-v3.netlify.app%2fzh%2fblogs%2fkubesphere-orion%2f" target="_blank" rel="noopener noreferrer">
+    <img src="/images/share/Linkedin.svg" alt="linkedin icon">
+  </a>
+  <a href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fkubesphere-v3.netlify.app%2fzh%2fblogs%2fkubesphere-orion%2f&t=%e5%9c%a8%20KubeSphere%20%e5%ae%89%e8%a3%85%20Orion%20vGPU%20%e4%bd%bf%e7%94%a8%20TensorFlow%20%e8%bf%90%e8%a1%8c%e6%b7%b1%e5%ba%a6%e5%ad%a6%e4%b9%a0%e8%ae%ad%e7%bb%83" target="_blank" rel="noopener noreferrer">
+    <img src="/images/share/HackerNews.svg" alt="hackernews icon">
+  </a>
+</div>
+              </div>
+          </div>
+          <div class='aside'>
+              <div class="inner-div">
+                <div class='title'>目录</div>
+                <div class='tabs'><nav id="TableOfContents">
+  <ul>
+    <li><a href="#概览">概览</a></li>
+    <li><a href="#什么是-vgpu">什么是 vGPU</a></li>
+    <li><a href="#为什么需要-vgpu">为什么需要 vGPU</a></li>
+    <li><a href="#什么是-orion-vgpu">什么是 Orion vGPU</a></li>
+    <li><a href="#orion-vgpu-软件架构">Orion vGPU 软件架构</a>
+      <ul>
+        <li><a href="#orion-client">Orion Client</a></li>
+        <li><a href="#orion-controller">Orion Controller</a></li>
+        <li><a href="#orion-server">Orion Server</a></li>
+      </ul>
+    </li>
+    <li><a href="#场景演示">场景演示</a></li>
+    <li><a href="#准备-gpu-节点并安装-nvidia-驱动和插件">准备 GPU 节点并安装 NVIDIA 驱动和插件</a></li>
+    <li><a href="#安装-orion-vgpu-软件">安装 Orion vGPU 软件</a>
+      <ul>
+        <li><a href="#安装-orion-controller">安装 Orion Controller</a></li>
+        <li><a href="#安装-orion-kubernetes-device-plugin">安装 Orion Kubernetes Device Plugin</a></li>
+        <li><a href="#安装-orion-server">安装 Orion Server</a></li>
+        <li><a href="#安装-orion-client-应用">安装 Orion Client 应用</a></li>
+      </ul>
+    </li>
+    <li><a href="#训练一个简单的-cnn-模型">训练一个简单的 CNN 模型</a></li>
+    <li><a href="#gpu-深度学习训练测试人脸识别">GPU 深度学习训练测试：人脸识别</a></li>
+    <li><a href="#总结">总结</a></li>
+    <li><a href="#参考">参考</a></li>
+  </ul>
+</nav></div>
+              </div>
+          </div>
+      </div>
+  </section>
+  <footer>
+    
+    <div class="footer">
+        <div class="footer-main common-layout">
+            <div class="up-main">
+                <div class="left-div">
+                    <img src="/images/logo.svg" alt="" class="foot-logo">
+                    <p>通过邮件接收 KubeSphere 最新的技术博客与产品更新的通知</p>
+                    <div>
+                        <form
+                            action="https://kubesphere.us10.list-manage.com/subscribe/post?u=c85ea2b944b08b951f607bdd4&amp;id=83f673a2d9"
+                            method="post"
+                            target="_blank"
+                            novalidate
+                        >
+                            <input name="EMAIL" id="email-input" type="text" placeholder='请输入你的邮箱地址'>
+                            <button type="submit" id="email-submit">订阅</button>
+                        </form>
+                    </div>
+                    <span id="message" data-message1='请提供您的邮箱' data-message2='请输入有效的邮箱地址!'></span>
+                </div>
+                <div class="right-div">
+                    <ul class="common-flex-layout">
+                        
+                        
+                            <li>
+                                <div class="h3">应用场景</div>
+                                
+                                
+                                <a href="/zh/devops/">拥抱一站式 DevOps</a>
+                                
+                                
+                                
+                                <a href="/zh/service-mesh/">在 K8s 运行微服务</a>
+                                
+                                
+                                
+                                <a href="/zh/observability/">构建云原生可观察性</a>
+                                
+                                
+                                
+                                <a href="https://porterlb.io" target="_blank" rel="noopener noreferrer">物理机 K8s 暴露服务</a>
+                                
+                                
+                                
+                                <a href="https://github.com/kubesphere/kubekey" target="_blank" rel="noopener noreferrer">K8s 一键部署与运维</a>
+                                
+                                
+                                
+                                <a href="https://openpitrix.io/" target="_blank" rel="noopener noreferrer">多云应用管理平台</a>
+                                
+                                
+                                
+                                <a href="https://github.com/kubesphere/fluentbit-operator" target="_blank" rel="noopener noreferrer">Fluent-Bit 管理日志</a>
+                                
+                                
+                            </li>
+                        
+                            <li>
+                                <div class="h3">资源</div>
+                                
+                                
+                                <a href="/zh/projects/">开源项目</a>
+                                
+                                
+                                
+                                <a href="/zh/blogs/">技术博客</a>
+                                
+                                
+                                
+                                <a href="/zh/conferences/">开源峰会</a>
+                                
+                                
+                                
+                                <a href="/zh/videos/">视频资源</a>
+                                
+                                
+                            </li>
+                        
+                            <li>
+                                <div class="h3">文档中心</div>
+                                
+                                
+                                <a href="/../../zh/docs/introduction/what-is-kubesphere/">产品介绍</a>
+                                
+                                
+                                
+                                <a href="/../../zh/docs/quick-start/all-in-one-on-linux/">如何安装</a>
+                                
+                                
+                                
+                                <a href="/../../zh/docs/quick-start/create-workspace-and-project/">快速入门</a>
+                                
+                                
+                                
+                                <a href="/../../docs/api-reference/api-docs/">API 文档</a>
+                                
+                                
+                            </li>
+                        
+                            <li>
+                                <div class="h3">开源社区</div>
+                                
+                                
+                                <a href="/zh/contribution">参与贡献</a>
+                                
+                                
+                                
+                                <a href="/zh/case/">案例学习</a>
+                                
+                                
+                                
+                                <a href="/zh/partner/">合作伙伴</a>
+                                
+                                
+                                
+                                <a href="https://github.com/kubesphere/kubesphere/blob/master/docs/roadmap.md" target="_blank" rel="noopener noreferrer">版本计划</a>
+                                
+                                
+                                
+                                <a href="https://kubesphere.com.cn/" target="_blank" rel="noopener noreferrer">中国站</a>
+                                
+                                
+                                
+                                <a href="https://kubesphere.com.cn/forum" target="_blank" rel="noopener noreferrer">中文论坛</a>
+                                
+                                
+                                
+                                <a href="https://kubesphere.io" target="_blank" rel="noopener noreferrer">全球站</a>
+                                
+                                
+                                
+                                <a href="https://kubesphere.eu" target="_blank" rel="noopener noreferrer">欧洲站</a>
+                                
+                                
+                                
+                                <a href="https://kubesphereturkey.com" target="_blank" rel="noopener noreferrer">土耳其站</a>
+                                
+                                
+                                
+                                <a href="https://kubesphere.es" target="_blank" rel="noopener noreferrer">西班牙站</a>
+                                
+                                
+                            </li>
+                        
+                        
+                    </ul>
+                </div>
+            </div>
+            <div class="down-main">
+                <div class='img-div'>
+                    <a class='wechat' href="javascript:void(0);">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28" height="28" viewBox="0 0 28 28">
+    <defs>
+        <path id="a" d="M0 0h15.673v12.156H0z"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd" transform="translate(1 1)">
+        <circle cx="13" cy="13" r="13" stroke="#B6C2CD"/>
+        <g transform="translate(5 7)">
+            <mask id="b" fill="#fff">
+                <use xlink:href="#a"/>
+            </mask>
+            <path fill="currentColor" d="M15.673 7.898c0-2.061-2.173-3.74-4.619-3.74-2.59 0-4.625 1.679-4.625 3.74 0 2.066 2.035 3.738 4.625 3.738.542 0 1.09-.13 1.632-.256l1.493.776-.408-1.29c1.09-.776 1.902-1.81 1.902-2.968zm-6.119-.645c-.27 0-.541-.257-.541-.514 0-.256.27-.514.541-.514.41 0 .681.258.681.514 0 .257-.271.514-.681.514zm2.994 0c-.27 0-.541-.257-.541-.514 0-.256.27-.514.54-.514.41 0 .681.258.681.514 0 .257-.277.514-.68.514z" mask="url(#b)"/>
+            <path fill="currentColor" d="M10.602 3.674c.177 0 .356.011.533.029C10.657 1.576 8.27 0 5.543 0 2.498 0 0 1.974 0 4.485c0 1.45.829 2.64 2.216 3.564l-.552 1.588 1.94-.929c.693.129 1.251.263 1.94.263.17 0 .343-.005.515-.022a3.68 3.68 0 0 1-.172-1.104c0-2.302 2.081-4.171 4.715-4.171zM7.618 2.243c.417 0 .693.263.693.66s-.276.66-.693.66c-.418 0-.835-.263-.835-.66.006-.398.423-.66.835-.66zm-3.88 1.319c-.417 0-.834-.263-.834-.66s.417-.66.834-.66c.418 0 .695.263.695.66 0 .392-.277.66-.695.66z" mask="url(#b)"/>
+        </g>
+    </g>
+</svg>
+
+                        <div class="hide-div">
+                            <p>Follow the official account</p>
+                            <img src="/images/footer/wechat_code.svg" alt="">
+                        </div>
+                    </a>
+                    <a class='facebook-a' href="https://www.facebook.com/kubesphere" target="_blank"></a>
+                    <a class='twitter-a' href="https://twitter.com/KubeSphere" target="_blank" rel="noopener noreferrer"></a>
+                    <a class='linkedin-a' href="https://www.linkedin.com/company/kubesphere/" target="_blank" rel="noopener noreferrer"></a>
+                    
+                    <a class='youtube-a' href="https://www.youtube.com/channel/UCyTdUQUYjf7XLjxECx63Hpw" target="_blank" rel="noopener noreferrer"></a>
+                    <a class='slack-a' href="https://join.slack.com/t/kubesphere/shared_invite/enQtNTE3MDIxNzUxNzQ0LTZkNTdkYWNiYTVkMTM5ZThhODY1MjAyZmVlYWEwZmQ3ODQ1NmM1MGVkNWEzZTRhNzk0MzM5MmY4NDc3ZWVhMjE" target="_blank" rel="noopener noreferrer"></a>
+                    <a class='github-a' href="https://github.com/kubesphere/kubesphere" target="_blank" rel="noopener noreferrer"></a>
+                    <a class='medium-a' href="https://itnext.io/@kubesphere" target="_blank" rel="noopener noreferrer"></a>
+                </div>
+                <p class='p1'>KubeSphere®️ 2020 All Rights Reserved.</p>
+                
+            </div>
+        </div>
+    </div>
+
+</footer>
+
+<script>
+    var bindSubmit = function() {
+        var input = $('#email-input')
+        $('#email-submit').click(function(event) {
+            event.stopPropagation()
+            var email = input.val()
+            var message1 = $('#message').data('message1')
+            var message2 = $('#message').data('message2')
+            if (!email) {
+                event.preventDefault()
+                showMessage(message1)
+            } else if (!validateEmail(email)) {
+                event.preventDefault()
+                showMessage(message2)
+            }
+        })
+    }
+
+    var bindHideMessage = function() {
+        $(window).click(function() {
+            $('#message').hide()
+        })
+    }
+
+    var showMessage = function(message) {
+        $('#message').html(message).show()
+    }
+
+    var validateEmail = function(email) {
+        var reg = /^[A-Za-z0-9]+([_\.][A-Za-z0-9]+)*@([A-Za-z0-9\-]+\.)+[A-Za-z]{2,6}$/
+        return reg.test(email)
+    }
+
+    var lazyLoad = function(allImg, imgNum) {
+        for (var i = 0; i < imgNum; i++) {
+            var img = allImg.eq(i)
+            var loaded = img.attr("data-loaded");
+            if (loaded) {
+                continue
+            }
+            if (img.offset().top < parseInt($(window).height()) + parseInt($(window).scrollTop())) {
+                var src = img.attr("src")
+                img.attr("src", src)
+                img.attr("data-loaded", true)
+            }
+        }
+    }
+
+    var bindLayLoad = function() {
+        var allImg = $('img')
+        var imgNum = allImg.length
+        lazyLoad(allImg, imgNum)
+        $(window).scroll(function() {
+            lazyLoad(allImg, imgNum)
+        });
+    }
+
+    
+    bindSubmit()
+    bindHideMessage()
+</script>
+
+  
+  
+  <script type="text/javascript" src="/js/aside.34d4ca232760855916fede489417772adb45cdceab8541c6f6826e5d83a0b68e071a44f76a077fe90e39afe213cc1aab40272900f7cbdffb45068c7746c7b183.js" integrity="sha512-NNTKIydghVkW/t5IlBd3KttFzc6rhUHG9oJuXYOgto4HGkT3agd/6Q45r&#43;ITzBqrQCcpAPfL3/tFBox3Rsexgw=="></script>
+  
+  
+  
+  <script type="text/javascript" src="/js/markdown-tab.224c8a343197870e80877ad07e19b932b807d3fde3abccde667f2156378cb00497ebb11d2f872f09ea91e7282e87655f8cb4ef163da46e34d00dca44dbf52aad.js" integrity="sha512-IkyKNDGXhw6Ah3rQfhm5MrgH0/3jq8zeZn8hVjeMsASX67EdL4cvCeqR5yguh2VfjLTvFj2kbjTQDcpE2/UqrQ=="></script>
+  
+  <script>
+    var viewer = new Viewer(document.querySelector('.md-body'), {
+        url: 'src'
+    })
+  </script>
+</body>
+
+</html>

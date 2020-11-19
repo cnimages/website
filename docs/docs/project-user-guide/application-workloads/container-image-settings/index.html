@@ -1,0 +1,2798 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<title>Container Image Settings</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="description" content="How to set container images in KubeSphere.">
+<meta name="keywords" content="KubeSphere, Kubernetes, image, workload, setting, container">
+
+<meta property="og:type" content="article"/>
+<meta property="og:title" content="Container Image Settings"/>
+<meta property="og:description" content="How to set container images in KubeSphere."/>
+<meta property="og:image" content="https://kubesphere-v3.netlify.app/images/common/snapshot-en.png"/>
+<meta property="og:url" content="https://kubesphere-v3.netlify.app/docs/project-user-guide/application-workloads/container-image-settings/"/>
+
+<meta name="docsearch:language" content="en-US" /><link rel="stylesheet" href="/fonts/Roboto/stylesheet.css">
+<link rel="stylesheet" href="/fonts/ProximaNova/stylesheet.css">
+<link rel="stylesheet" href="/css/jquery.modal.min.css">
+<link rel="stylesheet" href="/css/viewer.min.css">
+
+
+<link rel="stylesheet" href="/scss/common.min.fd2f2584615728a729ee87ecf658d2f2e62d4c55dc6ca4c90029116aa21ee2e8.css">
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
+
+
+<link rel="stylesheet" href="/scss/doc.min.7723111c35b5fc4449bfc0d9f2cf1dd6823ae712e792e1d40a0baabf350dccd3.css">
+
+
+
+
+<script src='/js/jquery-3.5.0.min.js'></script>
+<script src='/js/viewer.min.js'></script>
+<script src='/js/jquery.modal.min.js'></script>
+
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+
+
+
+
+
+
+
+
+
+<script type='text/javascript'>
+!function(e,t,n,g,i){e[i]=e[i]||function(){(e[i].q=e[i].q||[]).push(arguments)},n=t.createElement("script"),tag=t.getElementsByTagName("script")[0],n.async=1,n.src=('https:'==document.location.protocol?'https://':'http://')+g,tag.parentNode.insertBefore(n,tag)}(window,document,"script","assets.giocdn.com/2.1/gio.js","gio");
+  gio('init', '8a24ae300cbf8b8c', {});
+  
+  
+  gio('send');
+</script>
+
+
+
+
+</head>
+
+<body>
+
+<header class="navigation">
+    
+    <div class="common-layout">
+        <div class="header-container">
+            <a href="/">
+                <img src="/images/header/logo.svg" alt="" class="logo">
+            </a>
+
+            <ul class="nav">
+                
+                
+                
+
+                
+                
+                    
+                
+                    
+                
+                    
+                
+
+                <li  class="menu-li" >
+                    <span class='menu-span'>Scenarios</span>
+                    <ul class="dropdown-menu menu-2">
+                        
+                        <li >
+                            
+                            <a href="/devops/">Embracing One-stop DevOps Workflow</a>
+                            
+                        </li>
+                        
+                        <li >
+                            
+                            <a href="/service-mesh/">Running Microservices on Kubernetes</a>
+                            
+                        </li>
+                        
+                        <li >
+                            
+                            <a href="/observability/">Building Cloud Native Observability</a>
+                            
+                        </li>
+                        
+                    </ul>
+                </li>
+                
+
+                
+                
+
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+
+                <li  class="menu-li" >
+                    <span class='menu-span'>Resources</span>
+                    <ul class="dropdown-menu menu-3">
+                        
+                        <li >
+                            
+                            <a href="/projects/">Open Source Projects</a>
+                            
+                        </li>
+                        
+                        <li >
+                            
+                            <a href="/conferences/">KubeCon & QCon</a>
+                            
+                        </li>
+                        
+                        <li >
+                            
+                            <a href="/blogs/">Technology Blogs</a>
+                            
+                        </li>
+                        
+                        <li >
+                            
+                            <a href="/videos/">Video Resources</a>
+                            
+                        </li>
+                        
+                    </ul>
+                </li>
+                
+
+                
+                
+
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+
+                <li  class="menu-li" >
+                    <span class='menu-span'>Documentation</span>
+                    <ul class="dropdown-menu menu-4">
+                        
+                        <li >
+                            
+                            <a href="/docs/">v3.0.0 <img src='/images/header/star.svg' alt='star'></a>
+                            
+                        </li>
+                        
+                        <li >
+                            
+                            <a href="https://v2-1.docs.kubesphere.io/docs" target="_blank" rel="noopener noreferrer">v2.1.x</a>
+                            
+                        </li>
+                        
+                        <li >
+                            
+                            <a href="https://v2-0.docs.kubesphere.io/docs/" target="_blank" rel="noopener noreferrer">v2.0.x</a>
+                            
+                        </li>
+                        
+                        <li >
+                            
+                            <a href="https://v1-0.docs.kubesphere.io/docs/" target="_blank" rel="noopener noreferrer">v1.0.0</a>
+                            
+                        </li>
+                        
+                    </ul>
+                </li>
+                
+
+                
+                
+
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+
+                <li  class="menu-li" >
+                    <span class='menu-span'>Community</span>
+                    <ul class="dropdown-menu menu-5">
+                        
+                        <li >
+                            
+                            <a href="/contribution/">Contribution</a>
+                            
+                        </li>
+                        
+                        <li >
+                            
+                            <a href="/case/">Case Studies</a>
+                            
+                        </li>
+                        
+                        <li >
+                            
+                            <a href="/partner/">Partner</a>
+                            
+                        </li>
+                        
+                        <li >
+                            
+                            <a href="/news/">News</a>
+                            
+                        </li>
+                        
+                        <li >
+                            
+                            <a href="https://github.com/kubesphere/kubesphere/blob/master/docs/roadmap.md" target="_blank" rel="noopener noreferrer">RoadMap</a>
+                            
+                        </li>
+                        
+                    </ul>
+                </li>
+                
+
+                
+
+            </ul>
+            <div class="right-menu">
+                <ul>
+                    <li class="language-menu">
+                        <div>
+                            <img src="/images/header/black.svg" alt="">
+                            <span>English</span>
+                        </div>
+                        
+                        <ul class="dropdown-menu">
+                            
+                            <li onclick="location = '\/docs\/project-user-guide\/application-workloads\/container-image-settings\/'">English</li>
+                            
+                        </ul>
+                        
+                    </li>
+                    <li class='btn-li'>
+                        <a href="https://demo.kubesphere.io/login" target="_blank" rel="noopener noreferrer">
+                            <button class="demo-btn">Demo →</button>
+                        </a>
+                        <ol class="dropdown-menu">
+                            <li>1.Experience account: demo1 / Demo123</li>
+                            <li>2.This account is only allowed to view parts of UI</li>
+                            <li>3.It&#39;s recommended that install KubeSphere in your environment</li>
+                        </ol>
+                    </li>
+                    <li class='link-li'>
+                        <a class='link-1' href="https://join.slack.com/t/kubesphere/shared_invite/enQtNTE3MDIxNzUxNzQ0LTZkNTdkYWNiYTVkMTM5ZThhODY1MjAyZmVlYWEwZmQ3ODQ1NmM1MGVkNWEzZTRhNzk0MzM5MmY4NDc3ZWVhMjE" target="_blank" rel="noopener noreferrer"></a>
+                        <a class='link-2' href="https://twitter.com/KubeSphere" target="_blank" rel="noopener noreferrer"></a>
+                        <a class='link-3' href="https://github.com/kubesphere/kubesphere" target="_blank" rel="noopener noreferrer"></a>
+                    </li>
+                    <li class="menu-icon">
+                        <img src="/images/header/menu.svg" alt="">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-for-menu" class="modal">
+        <ul class="nav">
+            
+            
+            
+
+            
+            
+                
+            
+                
+            
+                
+            
+
+            <li data-check="0"  class="menu-li" >
+                <span class='menu-span'>Scenarios</span>
+                <ul class="dropdown-menu">
+                    
+                    <li >
+                        <a href="/devops/">Embracing One-stop DevOps Workflow</a>
+                    </li>
+                    
+                    <li >
+                        <a href="/service-mesh/">Running Microservices on Kubernetes</a>
+                    </li>
+                    
+                    <li >
+                        <a href="/observability/">Building Cloud Native Observability</a>
+                    </li>
+                    
+                </ul>
+            </li>
+            
+
+            
+            
+
+            
+            
+                
+            
+                
+            
+                
+            
+                
+            
+
+            <li data-check="0"  class="menu-li" >
+                <span class='menu-span'>Resources</span>
+                <ul class="dropdown-menu">
+                    
+                    <li >
+                        <a href="/projects/">Open Source Projects</a>
+                    </li>
+                    
+                    <li >
+                        <a href="/conferences/">KubeCon & QCon</a>
+                    </li>
+                    
+                    <li >
+                        <a href="/blogs/">Technology Blogs</a>
+                    </li>
+                    
+                    <li >
+                        <a href="/videos/">Video Resources</a>
+                    </li>
+                    
+                </ul>
+            </li>
+            
+
+            
+            
+
+            
+            
+                
+            
+                
+            
+                
+            
+                
+            
+
+            <li data-check="0"  class="menu-li" >
+                <span class='menu-span'>Documentation</span>
+                <ul class="dropdown-menu">
+                    
+                    <li >
+                        <a href="/docs/">v3.0.0 <img src='/images/header/star.svg' alt='star'></a>
+                    </li>
+                    
+                    <li >
+                        <a href="https://v2-1.docs.kubesphere.io/docs">v2.1.x</a>
+                    </li>
+                    
+                    <li >
+                        <a href="https://v2-0.docs.kubesphere.io/docs/">v2.0.x</a>
+                    </li>
+                    
+                    <li >
+                        <a href="https://v1-0.docs.kubesphere.io/docs/">v1.0.0</a>
+                    </li>
+                    
+                </ul>
+            </li>
+            
+
+            
+            
+
+            
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+
+            <li data-check="0"  class="menu-li" >
+                <span class='menu-span'>Community</span>
+                <ul class="dropdown-menu">
+                    
+                    <li >
+                        <a href="/contribution/">Contribution</a>
+                    </li>
+                    
+                    <li >
+                        <a href="/case/">Case Studies</a>
+                    </li>
+                    
+                    <li >
+                        <a href="/partner/">Partner</a>
+                    </li>
+                    
+                    <li >
+                        <a href="/news/">News</a>
+                    </li>
+                    
+                    <li >
+                        <a href="https://github.com/kubesphere/kubesphere/blob/master/docs/roadmap.md">RoadMap</a>
+                    </li>
+                    
+                </ul>
+            </li>
+            
+
+            
+
+        </ul>
+        <div class="btn-div">
+            <a href="https://demo.kubesphere.io/login" target="_blank" rel="noopener noreferrer">
+                <button class="demo-btn">Demo →</button>
+            </a>
+        </div>
+        <div class="link-div">
+            <a href="https://join.slack.com/t/kubesphere/shared_invite/enQtNTE3MDIxNzUxNzQ0LTZkNTdkYWNiYTVkMTM5ZThhODY1MjAyZmVlYWEwZmQ3ODQ1NmM1MGVkNWEzZTRhNzk0MzM5MmY4NDc3ZWVhMjE" target="_blank" rel="noopener noreferrer">
+                <img src="/images/header/slack-hover.svg" alt="">
+            </a>
+            <a href="https://twitter.com/KubeSphere" target="_blank" rel="noopener noreferrer">
+                <img src="/images/header/twitter-hover.svg" alt="">
+            </a>
+            <a href="https://github.com/kubesphere/kubesphere" target="_blank" rel="noopener noreferrer">
+                <img src="/images/header/github-hover.svg" alt="">
+            </a>
+        </div>
+    </div>
+</header>
+<script>
+var bindNavMouseEvent = function(selector) {
+    var flag = false
+    $(selector).mouseenter(function() {
+        if (flag) {
+            return false
+        }
+        flag = true
+        $(this).find('.dropdown-menu').fadeIn(200, function() {
+            flag = false
+        })
+    });
+    $(selector).mouseleave(function() {
+        $(this).find('.dropdown-menu').fadeOut(200)
+    });
+}
+
+var bindScrollChangeHeader = function() {
+    var check = 100
+    var header = $('header')
+    window.addEventListener('scroll', function() {
+        var scrollY = window.scrollY;
+        if (scrollY > 100) {
+            header.addClass('navigationScroll')
+        } else {
+            header.removeClass('navigationScroll')
+        }
+    })
+}
+
+var bindClickShowMenu = function() {
+    $('.menu-icon').click(function() {
+        $('#modal-for-menu').modal()
+    })
+}
+
+var bindClickModalLi = function() {
+    $('.modal .menu-li').click(function() {
+        var check = $(this).data('check')
+        if (check === 0) {
+            $(this).data('check', 1)
+            $(this).find('.dropdown-menu').slideDown(200)
+        } else {
+            $(this).data('check', 0)
+            $(this).find('.dropdown-menu').slideUp(200)
+        }
+        $(this).find('.menu-span').toggleClass('up')
+    })
+}
+
+var bindClickClose = function() {
+    $('#close-join').click(function() {
+        $('.navigation .join-div').hide()
+        $('.main-section').removeClass('padding')
+    })
+}
+
+var language = 'en'
+
+bindClickClose()
+
+bindScrollChangeHeader()
+
+bindNavMouseEvent('.header-container .menu-li')
+bindNavMouseEvent('.header-container .language-menu')
+bindNavMouseEvent('.header-container .btn-li')
+
+bindClickShowMenu()
+bindClickModalLi()
+
+
+</script>
+<main class='main-section '>
+    <section class='section-1 bg-cover'>
+        <div class="common-layout">
+            <ol  class="breadcrumbnav">
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+
+
+<li>
+  <a href="/docs/">Documentation&nbsp;/&nbsp;</a>
+</li>
+
+
+
+  
+
+
+<li>
+  <a href="/docs/project-user-guide/">Project User Guide&nbsp;/&nbsp;</a>
+</li>
+
+
+
+  
+
+
+<li>
+  <a href="">Application Workloads&nbsp;/&nbsp;</a>
+</li>
+
+
+
+  
+
+
+<li class="active">
+  <a href="/docs/project-user-guide/application-workloads/container-image-settings/">Container Image Settings</a>
+</li>
+
+
+
+</ol>
+
+
+    
+            <div class="title-div">
+                
+                
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                        
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                <h1>Project User Guide</h1>
+                <div class="menu section-control">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+    
+            <div class="search-div">
+                <div class="search-input-div">
+  <input id="search" type="text" placeholder="Search Documentation">
+  <svg width="1em" height="1em" viewBox="0 0 18 18">
+    <g fill="none" fill-rule="evenodd">
+      <path d="M12.606 11.192l5.24 5.24-1.415 1.414-5.239-5.24a7.041 7.041 0 0 0 1.414-1.414z" fill="#324558"></path>
+      <path d="M7 14A7 7 0 1 1 7 0a7 7 0 0 1 0 14zm0-2A5 5 0 1 0 7 2a5 5 0 0 0 0 10z" fill="#B6C2CD"></path>
+    </g>
+  </svg>
+</div>
+<script>
+docsearch({
+  apiKey: '221332a85783d16a5b930969fe4a934a',
+  indexName: 'kubesphere',
+  inputSelector: '#search',
+  algoliaOptions: {
+      facetFilters: [`lang:${language}`],
+      hitsPerPage: 10,
+  },
+  transformData: function(hits) {
+    hits.forEach(hit => {
+      if (typeof window !== undefined) {
+        var host = window.location.host
+        if (host == 'kubesphere.com.cn') {
+          if (language == 'en') {
+            host = host + '/en'
+            hit.url = hit.url.replace('kubesphere.io', host)
+          } else if (language == 'zh') {
+            hit.url = hit.url.replace('kubesphere.io/zh', host)
+          }
+        } else {
+          hit.url = hit.url.replace('kubesphere.io', host)
+        }
+      }
+    })
+    return hits
+  },
+  debug: false,
+})
+</script>
+            </div>
+        </div>
+    </section>
+    
+    <section class="section-menu">
+    
+        <div class="common-layout">
+            
+<ul class="common-flex-layout">
+    
+    <li>
+        <h2>
+            <span><img src="/images/docs/docs.svg" alt="Release Notes"></span>
+            <a href="/docs/release/">Release Notes</a>
+        </h2>
+        
+        
+        <ul>
+
+            
+                
+                <li>
+                    
+                    <a href="/docs/release/release-v300/" title="Release Notes - 3.0.0">Release Notes - 3.0.0</a>
+                    
+                </li>
+                
+                <li>
+                    
+                    <a href="/docs/release/release-v211/" title="Release Notes - 2.1.1">Release Notes - 2.1.1</a>
+                    
+                </li>
+                
+                <li>
+                    
+                    <a href="/docs/release/release-v210/" title="Release Notes - 2.1.0">Release Notes - 2.1.0</a>
+                    
+                </li>
+                
+                <li>
+                    
+                    <a href="/docs/release/release-v202/" title="Release Notes - 2.0.2">Release Notes - 2.0.2</a>
+                    
+                </li>
+                
+                <li>
+                    
+                    <a href="/docs/release/release-v201/" title="Release Notes - 2.0.1">Release Notes - 2.0.1</a>
+                    
+                </li>
+                
+                <li>
+                    
+                    <a href="/docs/release/release-v200/" title="Release Notes - 2.0.0">Release Notes - 2.0.0</a>
+                    
+                </li>
+                
+            
+        </ul>
+    </li>
+    
+    <li>
+        <h2>
+            <span><img src="/images/docs/docs.svg" alt="Introduction"></span>
+            <a href="/docs/introduction/">Introduction</a>
+        </h2>
+        
+        
+        <ul>
+
+            
+                
+                <li>
+                    
+                    <a href="/docs/introduction/what-is-kubesphere/" title="What is KubeSphere">What is KubeSphere</a>
+                    
+                </li>
+                
+                <li>
+                    
+                    <a href="/docs/introduction/features/" title="Features">Features</a>
+                    
+                </li>
+                
+                <li>
+                    
+                    <a href="/docs/introduction/architecture/" title="Architecture">Architecture</a>
+                    
+                </li>
+                
+                <li>
+                    
+                    <a href="/docs/introduction/advantages/" title="Advantages">Advantages</a>
+                    
+                </li>
+                
+                <li>
+                    
+                    <a href="/docs/introduction/scenarios/" title="Use Cases">Use Cases</a>
+                    
+                </li>
+                
+                <li>
+                    
+                    <a href="/docs/introduction/glossary/" title="Glossary">Glossary</a>
+                    
+                </li>
+                
+            
+        </ul>
+    </li>
+    
+    <li>
+        <h2>
+            <span><img src="/images/docs/docs.svg" alt="Quickstarts"></span>
+            <a href="/docs/quick-start/">Quickstarts</a>
+        </h2>
+        
+        
+        <ul>
+
+            
+                
+                <li>
+                    
+                    <a href="/docs/quick-start/all-in-one-on-linux/" title="All-in-one Installation on Linux">All-in-one Installation on Linux</a>
+                    
+                </li>
+                
+                <li>
+                    
+                    <a href="/docs/quick-start/minimal-kubesphere-on-k8s/" title="Minimal KubeSphere on Kubernetes">Minimal KubeSphere on Kubernetes</a>
+                    
+                </li>
+                
+                <li>
+                    
+                    <a href="/docs/quick-start/create-workspace-and-project/" title="Create Workspace, Project, Account and Role">Create Workspace, Project, Account and Role</a>
+                    
+                </li>
+                
+                <li>
+                    
+                    <a href="/docs/quick-start/deploy-bookinfo-to-k8s/" title="Deploy Bookinfo and Manage Traffic">Deploy Bookinfo and Manage Traffic</a>
+                    
+                </li>
+                
+                <li>
+                    
+                    <a href="/docs/quick-start/wordpress-deployment/" title="Compose and Deploy WordPress">Compose and Deploy WordPress</a>
+                    
+                </li>
+                
+                <li>
+                    
+                    <a href="/docs/quick-start/enable-pluggable-components/" title="Enable Pluggable Components">Enable Pluggable Components</a>
+                    
+                </li>
+                
+            
+        </ul>
+    </li>
+    
+    <li>
+        <h2>
+            <span><img src="/images/docs/docs.svg" alt="Installing on Linux"></span>
+            <a href="/docs/installing-on-linux/">Installing on Linux</a>
+        </h2>
+        
+        
+        <ul>
+
+            
+                
+                <li>
+                    
+                    
+
+
+
+
+    
+        <a href="/docs/installing-on-linux/introduction/intro/">Introduction</a>
+    
+
+
+                    
+                </li>
+                
+                <li>
+                    
+                    
+
+
+
+
+    
+        <a href="/docs/installing-on-linux/on-premises/install-kubesphere-on-vmware-vsphere/">Installing in On-premises Environments</a>
+    
+
+
+                    
+                </li>
+                
+                <li>
+                    
+                    
+
+
+
+
+    
+        <a href="/docs/installing-on-linux/public-cloud/install-ks-on-azure-vms/">Installing on Public Cloud</a>
+    
+
+
+                    
+                </li>
+                
+                <li>
+                    
+                    
+
+
+
+
+    
+        <a href="/docs/installing-on-linux/cluster-operation/add-new-nodes/">Add/Delete Nodes</a>
+    
+
+
+                    
+                </li>
+                
+                <li>
+                    
+                    
+
+
+
+
+    
+        <a href="/docs/installing-on-linux/uninstalling/uninstalling-kubesphere-and-kubernetes/">Uninstalling</a>
+    
+
+
+                    
+                </li>
+                
+                <li>
+                    
+                    
+
+
+
+
+    
+        <a href="/docs/installing-on-linux/faq/configure-booster/">FAQ</a>
+    
+
+
+                    
+                </li>
+                
+            
+        </ul>
+    </li>
+    
+    <li>
+        <h2>
+            <span><img src="/images/docs/docs.svg" alt="Installing on Kubernetes"></span>
+            <a href="/docs/installing-on-kubernetes/">Installing on Kubernetes</a>
+        </h2>
+        
+        
+        <ul>
+
+            
+                
+                <li>
+                    
+                    
+
+
+
+
+    
+        <a href="/docs/installing-on-kubernetes/introduction/overview/">Introduction</a>
+    
+
+
+                    
+                </li>
+                
+                <li>
+                    
+                    
+
+
+
+
+    
+        <a href="/docs/installing-on-kubernetes/hosted-kubernetes/install-kubesphere-on-aks/">Installing on Hosted Kubernetes</a>
+    
+
+
+                    
+                </li>
+                
+                <li>
+                    
+                    
+
+
+
+
+    
+        <a href="/docs/installing-on-kubernetes/on-prem-kubernetes/install-ks-on-linux-airgapped/">Installing on On-premises Kubernetes</a>
+    
+
+
+                    
+                </li>
+                
+                <li>
+                    
+                    
+
+
+
+
+    
+        <a href="/docs/installing-on-kubernetes/uninstalling/uninstalling-kubesphere-from-k8s/">Uninstalling</a>
+    
+
+
+                    
+                </li>
+                
+                <li>
+                    
+                    
+
+
+
+
+    
+        <a href="/docs/installing-on-kubernetes/faq/faq1/">FAQ</a>
+    
+
+
+                    
+                </li>
+                
+            
+        </ul>
+    </li>
+    
+    <li>
+        <h2>
+            <span><img src="/images/docs/docs.svg" alt="Multi-cluster Management"></span>
+            <a href="/docs/multicluster-management/">Multi-cluster Management</a>
+        </h2>
+        
+        
+        <ul>
+
+            
+                
+                <li>
+                    
+                    
+
+
+
+
+    
+        <a href="/docs/multicluster-management/introduction/overview/">Introduction</a>
+    
+
+
+                    
+                </li>
+                
+                <li>
+                    
+                    
+
+
+
+
+    
+        <a href="/docs/multicluster-management/enable-multicluster/direct-connection/">Enable Multi-cluster in KubeSphere</a>
+    
+
+
+                    
+                </li>
+                
+                <li>
+                    
+                    
+
+
+
+
+    
+        <a href="/docs/multicluster-management/import-cloud-hosted-k8s/import-aliyun-ack/">Import Cloud-hosted Kubernetes Cluster</a>
+    
+
+
+                    
+                </li>
+                
+                <li>
+                    
+                    
+
+
+
+
+    
+        <a href="/docs/multicluster-management/import-on-prem-k8s/import-kubeadm-k8s/">Import On-prem Kubernetes Cluster</a>
+    
+
+
+                    
+                </li>
+                
+                <li>
+                    
+                    
+
+
+
+
+    
+        <a href="/docs/multicluster-management/remove-cluster/kubefed-in-kubesphere/">Remove Cluster</a>
+    
+
+
+                    
+                </li>
+                
+            
+        </ul>
+    </li>
+    
+    <li>
+        <h2>
+            <span><img src="/images/docs/docs.svg" alt="Enable Pluggable Components"></span>
+            <a href="/docs/pluggable-components/">Enable Pluggable Components</a>
+        </h2>
+        
+        
+        <ul>
+
+            
+                
+                <li>
+                    
+                    <a href="/docs/pluggable-components/overview/" title="Overview">Overview</a>
+                    
+                </li>
+                
+                <li>
+                    
+                    <a href="/docs/pluggable-components/app-store/" title="KubeSphere App Store">KubeSphere App Store</a>
+                    
+                </li>
+                
+                <li>
+                    
+                    <a href="/docs/pluggable-components/devops/" title="KubeSphere DevOps System">KubeSphere DevOps System</a>
+                    
+                </li>
+                
+                <li>
+                    
+                    <a href="/docs/pluggable-components/auditing-logs/" title="KubeSphere Auditing Logs">KubeSphere Auditing Logs</a>
+                    
+                </li>
+                
+                <li>
+                    
+                    <a href="/docs/pluggable-components/events/" title="KubeSphere Events">KubeSphere Events</a>
+                    
+                </li>
+                
+                <li><a href="/docs/pluggable-components/">Learn More...</a></li>
+            
+        </ul>
+    </li>
+    
+    <li>
+        <h2>
+            <span><img src="/images/docs/docs.svg" alt="Upgrade"></span>
+            <a href="/docs/upgrade/">Upgrade</a>
+        </h2>
+        
+        
+        <ul>
+
+            
+                
+                <li>
+                    
+                    <a href="/docs/upgrade/upgrade-overview/" title="Overview">Overview</a>
+                    
+                </li>
+                
+                <li>
+                    
+                    <a href="/docs/upgrade/upgrade-with-kubekey/" title="Upgrade with KubeKey">Upgrade with KubeKey</a>
+                    
+                </li>
+                
+                <li>
+                    
+                    <a href="/docs/upgrade/upgrade-with-ks-installer/" title="Upgrade with ks-installer">Upgrade with ks-installer</a>
+                    
+                </li>
+                
+                <li>
+                    
+                    <a href="/docs/upgrade/what-changed/" title="Changes after Upgrade">Changes after Upgrade</a>
+                    
+                </li>
+                
+                <li>
+                    
+                    <a href="/docs/upgrade/upgrade-faq/" title="FAQ">FAQ</a>
+                    
+                </li>
+                
+            
+        </ul>
+    </li>
+    
+    <li>
+        <h2>
+            <span><img src="/images/docs/docs.svg" alt="Cluster Administration"></span>
+            <a href="/docs/cluster-administration/">Cluster Administration</a>
+        </h2>
+        
+        
+        <ul>
+
+            
+                
+                <li>
+                    
+                    <a href="/docs/cluster-administration/persistent-volume-and-storage-class/" title="Persistent Volume and Storage Class">Persistent Volume and Storage Class</a>
+                    
+                </li>
+                
+                <li>
+                    
+                    <a href="/docs/cluster-administration/nodes/" title="Node Management">Node Management</a>
+                    
+                </li>
+                
+                <li>
+                    
+                    <a href="/docs/cluster-administration/cluster-status-monitoring/" title="Cluster Status Monitoring">Cluster Status Monitoring</a>
+                    
+                </li>
+                
+                <li>
+                    
+                    <a href="/docs/cluster-administration/application-resources-monitoring/" title="Application Resources Monitoring">Application Resources Monitoring</a>
+                    
+                </li>
+                
+                <li>
+                    
+                    
+
+
+
+
+    
+        <a href="/docs/cluster-administration/cluster-wide-alerting-and-notification/alertmanager/">Cluster-wide Alerting and Notification</a>
+    
+
+
+                    
+                </li>
+                
+                <li><a href="/docs/cluster-administration/">Learn More...</a></li>
+            
+        </ul>
+    </li>
+    
+    <li>
+        <h2>
+            <span><img src="/images/docs/docs.svg" alt="Workspace Administration and User Guide"></span>
+            <a href="/docs/workspace-administration/">Workspace Administration and User Guide</a>
+        </h2>
+        
+        
+        <ul>
+
+            
+                
+                <li>
+                    
+                    <a href="/docs/workspace-administration/workspace-overview/" title="Workspace Overview">Workspace Overview</a>
+                    
+                </li>
+                
+                <li>
+                    
+                    <a href="/docs/workspace-administration/upload-helm-based-application/" title="Upload Helm-based Applications">Upload Helm-based Applications</a>
+                    
+                </li>
+                
+                <li>
+                    
+                    <a href="/docs/workspace-administration/role-and-member-management/" title="Role and Member Management">Role and Member Management</a>
+                    
+                </li>
+                
+                <li>
+                    
+                    <a href="/docs/workspace-administration/workspace-network-isolation/" title="Workspace Network Isolation">Workspace Network Isolation</a>
+                    
+                </li>
+                
+                <li>
+                    
+                    
+
+
+
+
+    
+        <a href="/docs/workspace-administration/app-repository/import-helm-repository/">App Repository</a>
+    
+
+
+                    
+                </li>
+                
+            
+        </ul>
+    </li>
+    
+    <li>
+        <h2>
+            <span><img src="/images/docs/docs.svg" alt="Project User Guide"></span>
+            <a href="/docs/project-user-guide/">Project User Guide</a>
+        </h2>
+        
+        
+        <ul>
+
+            
+                
+                <li>
+                    
+                    
+
+
+
+
+    
+        <a href="/docs/project-user-guide/application/app-template/">Applications</a>
+    
+
+
+                    
+                </li>
+                
+                <li>
+                    
+                    
+
+
+
+
+    
+        <a href="/docs/project-user-guide/application-workloads/deployments/">Application Workloads</a>
+    
+
+
+                    
+                </li>
+                
+                <li>
+                    
+                    
+
+
+
+
+    
+        <a href="/docs/project-user-guide/configuration/configmaps/">Configurations</a>
+    
+
+
+                    
+                </li>
+                
+                <li>
+                    
+                    
+
+
+
+
+    
+        <a href="/docs/project-user-guide/custom-application-monitoring/introduction/">Custom Application Monitoring</a>
+    
+
+
+                    
+                </li>
+                
+                <li>
+                    
+                    
+
+
+
+
+    
+        <a href="/docs/project-user-guide/grayscale-release/overview/">Grayscale Release</a>
+    
+
+
+                    
+                </li>
+                
+                <li><a href="/docs/project-user-guide/">Learn More...</a></li>
+            
+        </ul>
+    </li>
+    
+    <li>
+        <h2>
+            <span><img src="/images/docs/docs.svg" alt="DevOps User Guide"></span>
+            <a href="/docs/devops-user-guide/">DevOps User Guide</a>
+        </h2>
+        
+        
+        <ul>
+
+            
+                
+                <li>
+                    
+                    
+
+
+
+
+    
+        <a href="/docs/devops-user-guide/how-to-use/devops-project-management/">Using DevOps</a>
+    
+
+
+                    
+                </li>
+                
+                <li>
+                    
+                    
+
+
+
+
+    
+        <a href="/docs/devops-user-guide/how-to-integrate/sonarqube/">Tool Integration</a>
+    
+
+
+                    
+                </li>
+                
+                <li>
+                    
+                    
+
+
+
+
+    
+        <a href="/docs/devops-user-guide/examples/go-project-pipeline/">Examples</a>
+    
+
+
+                    
+                </li>
+                
+            
+        </ul>
+    </li>
+    
+    <li>
+        <h2>
+            <span><img src="/images/docs/docs.svg" alt="Access Control and Account Management"></span>
+            <a href="/docs/access-control-and-account-management/">Access Control and Account Management</a>
+        </h2>
+        
+        
+        <ul>
+
+            
+                
+                <li>
+                    
+                    <a href="/docs/access-control-and-account-management/configuring-authentication/" title="Configure Authentication">Configure Authentication</a>
+                    
+                </li>
+                
+            
+        </ul>
+    </li>
+    
+    <li>
+        <h2>
+            <span><img src="/images/docs/docs.svg" alt="Project Administration Guide"></span>
+            <a href="/docs/project-administration/">Project Administration Guide</a>
+        </h2>
+        
+        
+        <ul>
+
+            
+                
+                <li>
+                    
+                    <a href="/docs/project-administration/project-quota/" title="Project Quotas">Project Quotas</a>
+                    
+                </li>
+                
+                <li>
+                    
+                    <a href="/docs/project-administration/project-gateway/" title="Project Gateway">Project Gateway</a>
+                    
+                </li>
+                
+                <li>
+                    
+                    <a href="/docs/project-administration/project-network-isolation/" title="Project Network Isolation">Project Network Isolation</a>
+                    
+                </li>
+                
+                <li>
+                    
+                    <a href="/docs/project-administration/project-and-multicluster-project/" title="Projects and Multi-cluster Projects">Projects and Multi-cluster Projects</a>
+                    
+                </li>
+                
+                <li>
+                    
+                    <a href="/docs/project-administration/role-and-member-management/" title="Role and Member Management">Role and Member Management</a>
+                    
+                </li>
+                
+            
+        </ul>
+    </li>
+    
+    <li>
+        <h2>
+            <span><img src="/images/docs/docs.svg" alt="App Store"></span>
+            <a href="/docs/application-store/">App Store</a>
+        </h2>
+        
+        
+        <ul>
+
+            
+                
+                <li>
+                    
+                    
+
+
+
+
+    
+        <a href="/docs/application-store/app-developer-guide/helm-developer-guide/">Application Developer Guide</a>
+    
+
+
+                    
+                </li>
+                
+                <li>
+                    
+                    
+
+
+
+
+    
+        <a href="/docs/application-store/built-in-apps/rabbitmq-app/">Built-in Applications</a>
+    
+
+
+                    
+                </li>
+                
+                <li>
+                    
+                    
+
+
+
+
+    
+        <a href="/docs/application-store/external-apps/gitlab-app/">External Applications</a>
+    
+
+
+                    
+                </li>
+                
+                <li>
+                    
+                    <a href="/docs/application-store/app-lifecycle-management/" title="Application Lifecycle Management">Application Lifecycle Management</a>
+                    
+                </li>
+                
+            
+        </ul>
+    </li>
+    
+    <li>
+        <h2>
+            <span><img src="/images/docs/docs.svg" alt="Toolbox"></span>
+            <a href="/docs/toolbox/">Toolbox</a>
+        </h2>
+        
+        
+        <ul>
+
+            
+                
+                <li>
+                    
+                    <a href="/docs/toolbox/log-query/" title="Log Query">Log Query</a>
+                    
+                </li>
+                
+                <li>
+                    
+                    <a href="/docs/toolbox/events-query/" title="Event Query">Event Query</a>
+                    
+                </li>
+                
+                <li>
+                    
+                    
+
+
+
+
+    
+        <a href="/docs/toolbox/auditing/auditing-receive-customize/">Auditing</a>
+    
+
+
+                    
+                </li>
+                
+                <li>
+                    
+                    <a href="/docs/toolbox/web-kubectl/" title="Web Kubectl">Web Kubectl</a>
+                    
+                </li>
+                
+                <li>
+                    
+                    <a href="/docs/toolbox/history/" title="History">History</a>
+                    
+                </li>
+                
+            
+        </ul>
+    </li>
+    
+    <li>
+        <h2>
+            <span><img src="/images/docs/docs.svg" alt="FAQ"></span>
+            <a href="/docs/faq/">FAQ</a>
+        </h2>
+        
+        
+        <ul>
+
+            
+                
+                <li>
+                    
+                    <a href="/docs/faq/console-faq/" title="Questions about KubeSphere Console">Questions about KubeSphere Console</a>
+                    
+                </li>
+                
+                <li>
+                    
+                    <a href="/docs/faq/telemetry/" title="Telemetry in KubeSphere">Telemetry in KubeSphere</a>
+                    
+                </li>
+                
+            
+        </ul>
+    </li>
+    
+    <li>
+        <h2>
+            <span><img src="/images/docs/docs.svg" alt="Reference"></span>
+            <a href="/docs/reference/">Reference</a>
+        </h2>
+        
+        
+        <ul>
+
+            
+                
+                <li>
+                    
+                    <a href="/docs/reference/glossary/" title="Glossary">Glossary</a>
+                    
+                </li>
+                
+                <li>
+                    
+                    <a href="/docs/reference/api-docs/" title="KubeSphere API">KubeSphere API</a>
+                    
+                </li>
+                
+                <li>
+                    
+                    
+
+
+
+
+    
+        <a href="/docs/reference/api-changes/logging/">API Changes</a>
+    
+
+
+                    
+                </li>
+                
+            
+        </ul>
+    </li>
+    
+    
+    <li style="height: 0; margin: 0; padding: 0;"></li>
+    
+    <li style="height: 0; margin: 0; padding: 0;"></li>
+    
+    <li style="height: 0; margin: 0; padding: 0;"></li>
+    
+    <li style="height: 0; margin: 0; padding: 0;"></li>
+    
+    <li style="height: 0; margin: 0; padding: 0;"></li>
+    
+    <li style="height: 0; margin: 0; padding: 0;"></li>
+    
+    <li style="height: 0; margin: 0; padding: 0;"></li>
+    
+    <li style="height: 0; margin: 0; padding: 0;"></li>
+    
+    <li style="height: 0; margin: 0; padding: 0;"></li>
+    
+    <li style="height: 0; margin: 0; padding: 0;"></li>
+    
+    <li style="height: 0; margin: 0; padding: 0;"></li>
+    
+    <li style="height: 0; margin: 0; padding: 0;"></li>
+    
+    <li style="height: 0; margin: 0; padding: 0;"></li>
+    
+    <li style="height: 0; margin: 0; padding: 0;"></li>
+    
+    <li style="height: 0; margin: 0; padding: 0;"></li>
+    
+    <li style="height: 0; margin: 0; padding: 0;"></li>
+    
+    <li style="height: 0; margin: 0; padding: 0;"></li>
+    
+    <li style="height: 0; margin: 0; padding: 0;"></li>
+    
+</ul>
+        </div>
+    
+    </section>
+    
+    <section class="section-2">
+        <div class="common-layout">
+            <div class="left-div left-tree">
+                <div class="inner-tree">
+                    <div>
+  <nav class='nav-menu'>
+		
+		
+		
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+    
+
+
+
+
+
+
+<ul class="ul-active">
+	
+	
+	
+	<li class="list">
+		
+		
+
+
+
+
+<p class="list-title">
+	<span class="arrow "></span>
+	<span>Applications</span>
+</p>
+
+
+<ul class="">
+	
+	
+	
+	<li class="list">
+		
+		<a href="/docs/project-user-guide/application/app-template/">App Templates</a>
+		
+	</li>
+	
+	
+	<li class="list">
+		
+		<a href="/docs/project-user-guide/application/deploy-app-from-template/">Deploy Application from App Template</a>
+		
+	</li>
+	
+	
+	<li class="list">
+		
+		<a href="/docs/project-user-guide/application/deploy-app-from-appstore/">Deploy Application from App Store</a>
+		
+	</li>
+	
+	
+	<li class="list">
+		
+		<a href="/docs/project-user-guide/application/compose-app/">Compose a Microservice App</a>
+		
+	</li>
+	
+</ul>
+
+		
+	</li>
+	
+	
+	<li class="list">
+		
+		
+
+
+
+
+<p class="list-title">
+	<span class="arrow arrow-open"></span>
+	<span>Application Workloads</span>
+</p>
+
+
+<ul class="ul-active">
+	
+	
+	
+	<li class="list">
+		
+		<a href="/docs/project-user-guide/application-workloads/deployments/">Deployments</a>
+		
+	</li>
+	
+	
+	<li class="list">
+		
+		<a href="/docs/project-user-guide/application-workloads/statefulsets/">StatefulSets</a>
+		
+	</li>
+	
+	
+	<li class="list">
+		
+		<a href="/docs/project-user-guide/application-workloads/daemonsets/">DaemonSets</a>
+		
+	</li>
+	
+	
+	<li class="list">
+		
+		<a href="/docs/project-user-guide/application-workloads/services/">Services</a>
+		
+	</li>
+	
+	
+	<li class="list">
+		
+		<a href="/docs/project-user-guide/application-workloads/jobs/">Jobs</a>
+		
+	</li>
+	
+	
+	<li class="list">
+		
+		<a href="/docs/project-user-guide/application-workloads/cronjob/">CronJobs</a>
+		
+	</li>
+	
+	
+	<li class="list">
+		
+		<a href="/docs/project-user-guide/application-workloads/ingress/">Routes</a>
+		
+	</li>
+	
+	
+	<li class="list active">
+		
+		<a href="/docs/project-user-guide/application-workloads/container-image-settings/">Container Image Settings</a>
+		
+	</li>
+	
+</ul>
+
+		
+	</li>
+	
+	
+	<li class="list">
+		
+		
+
+
+
+
+<p class="list-title">
+	<span class="arrow "></span>
+	<span>Configurations</span>
+</p>
+
+
+<ul class="">
+	
+	
+	
+	<li class="list">
+		
+		<a href="/docs/project-user-guide/configuration/configmaps/">ConfigMaps</a>
+		
+	</li>
+	
+	
+	<li class="list">
+		
+		<a href="/docs/project-user-guide/configuration/secrets/">Secrets</a>
+		
+	</li>
+	
+	
+	<li class="list">
+		
+		<a href="/docs/project-user-guide/configuration/image-registry/">Image Registry</a>
+		
+	</li>
+	
+</ul>
+
+		
+	</li>
+	
+	
+	<li class="list">
+		
+		
+
+
+
+
+<p class="list-title">
+	<span class="arrow "></span>
+	<span>Custom Application Monitoring</span>
+</p>
+
+
+<ul class="">
+	
+	
+	
+	<li class="list">
+		
+		<a href="/docs/project-user-guide/custom-application-monitoring/introduction/">Introduction</a>
+		
+	</li>
+	
+	
+	<li class="list">
+		
+		
+
+
+
+
+<p class="list-title">
+	<span class="arrow "></span>
+	<span>Examples</span>
+</p>
+
+
+<ul class="">
+	
+	
+	
+	<li class="list">
+		
+		<a href="/docs/project-user-guide/custom-application-monitoring/examples/monitor-mysql/">Monitor MySQL</a>
+		
+	</li>
+	
+	
+	<li class="list">
+		
+		<a href="/docs/project-user-guide/custom-application-monitoring/examples/monitor-sample-web/">Monitor Sample Web</a>
+		
+	</li>
+	
+</ul>
+
+		
+	</li>
+	
+	
+	<li class="list">
+		
+		
+
+
+
+
+<p class="list-title">
+	<span class="arrow "></span>
+	<span>Visualization</span>
+</p>
+
+
+<ul class="">
+	
+	
+	
+	<li class="list">
+		
+		<a href="/docs/project-user-guide/custom-application-monitoring/visualization/overview/">Overview</a>
+		
+	</li>
+	
+	
+	<li class="list">
+		
+		<a href="/docs/project-user-guide/custom-application-monitoring/visualization/panel/">Panels</a>
+		
+	</li>
+	
+	
+	<li class="list">
+		
+		<a href="/docs/project-user-guide/custom-application-monitoring/visualization/querying/">Querying</a>
+		
+	</li>
+	
+</ul>
+
+		
+	</li>
+	
+</ul>
+
+		
+	</li>
+	
+	
+	<li class="list">
+		
+		
+
+
+
+
+<p class="list-title">
+	<span class="arrow "></span>
+	<span>Grayscale Release</span>
+</p>
+
+
+<ul class="">
+	
+	
+	
+	<li class="list">
+		
+		<a href="/docs/project-user-guide/grayscale-release/overview/">Overview</a>
+		
+	</li>
+	
+	
+	<li class="list">
+		
+		<a href="/docs/project-user-guide/grayscale-release/blue-green-deployment/">Blue-green Deployment</a>
+		
+	</li>
+	
+	
+	<li class="list">
+		
+		<a href="/docs/project-user-guide/grayscale-release/canary-release/">Canary Release</a>
+		
+	</li>
+	
+	
+	<li class="list">
+		
+		<a href="/docs/project-user-guide/grayscale-release/traffic-mirroring/">Traffic Mirroring</a>
+		
+	</li>
+	
+</ul>
+
+		
+	</li>
+	
+	
+	<li class="list">
+		
+		
+
+
+
+
+<p class="list-title">
+	<span class="arrow "></span>
+	<span>Volume Management</span>
+</p>
+
+
+<ul class="">
+	
+	
+	
+	<li class="list">
+		
+		<a href="/docs/project-user-guide/storage/volumes/">Volumes</a>
+		
+	</li>
+	
+	
+	<li class="list">
+		
+		<a href="/docs/project-user-guide/storage/volume-snapshots/">Volume Snapshots</a>
+		
+	</li>
+	
+</ul>
+
+		
+	</li>
+	
+	
+	<li class="list">
+		
+		
+
+
+
+
+<p class="list-title">
+	<span class="arrow "></span>
+	<span>Alerting</span>
+</p>
+
+
+<ul class="">
+	
+	
+	
+	<li class="list">
+		
+		<a href="/docs/project-user-guide/alerting/alerting-policy/">Alerting Policy (Workload Level)</a>
+		
+	</li>
+	
+	
+	<li class="list">
+		
+		<a href="/docs/project-user-guide/alerting/alerting-message/">Alerting Message (Workload Level)</a>
+		
+	</li>
+	
+</ul>
+
+		
+	</li>
+	
+</ul>
+
+  </nav>
+</div>
+
+
+<script>
+	$('.nav-menu .list-title').click(function() {
+		$(this).find('.arrow').toggleClass('arrow-open')
+		$(this).next().toggleClass('ul-active')
+	})
+</script>
+
+                    
+                </div>
+            </div>
+            <div class="second-section-menu">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="middle-div">
+                <div class="top-div common-flex-layout">
+                    <div class="contributor-div">
+                        <span>Last updated:</span>
+                        <span class="update-time"></span>
+                        <a href="https://github.com/kubesphere/website/blob/master/content/en/docs%5cproject-user-guide%5capplication-workloads%5ccontainer-image-settings.md" target="_blank" rel="noopener noreferrer">
+                            <ul class="contributor-avatar"></ul>
+                        </a>
+                        <span class="more-contributor"></span>
+                    </div>
+                    <div class="mutual-div common-flex-layout">
+                        <div class="edit-div">
+                            <a href="https://github.com/kubesphere/website/edit/master/content/en/docs%5cproject-user-guide%5capplication-workloads%5ccontainer-image-settings.md" target="_blank" rel="noopener noreferrer">
+                                <span class="icon-span"></span>
+                                <span>Edit</span>
+                            </a>
+                        </div>
+                        <div class="feedback-div">
+                            <a href="https://github.com/kubesphere/website/issues/new" target="_blank" rel="noopener noreferrer">
+                            <span class="icon-span"></span>
+                            <span>Feedback</span>
+                            </a>
+                        </div>
+                        <div class="share-div">
+                            <div>
+                                <span class="icon-span"></span>
+                                <span>Share</span>
+                            </div>
+                            <ul>
+                                <li>
+                                    <img src="/images/docs/twitter.svg" alt="twitter">
+                                    <a href="http://twitter.com/share?url=https%3a%2f%2fkubesphere-v3.netlify.app%2fdocs%2fproject-user-guide%2fapplication-workloads%2fcontainer-image-settings%2f&text=Container%20Image%20Settings" target="_blank" rel="noopener noreferrer">twitter</a>
+                                </li>
+                                <li>
+                                    <img src="/images/docs/linkedIn.svg" alt="linkedIn">
+                                    <a href="http://www.linkedin.com/shareArticle?mini=true&url=https%3a%2f%2fkubesphere-v3.netlify.app%2fdocs%2fproject-user-guide%2fapplication-workloads%2fcontainer-image-settings%2f" target="_blank" rel="noopener noreferrer">linkedIn</a>
+                                </li>
+                                <li>
+                                    <img src="/images/docs/facebook.svg" alt="facebook">
+                                    <a href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fkubesphere-v3.netlify.app%2fdocs%2fproject-user-guide%2fapplication-workloads%2fcontainer-image-settings%2f" target="_blank" rel="noopener noreferrer">facebook</a>
+                                </li>
+                                <li>
+                                    <img src="/images/docs/reddit.svg" alt="reddit">
+                                    <a href="http://reddit.com/submit?url=https%3a%2f%2fkubesphere-v3.netlify.app%2fdocs%2fproject-user-guide%2fapplication-workloads%2fcontainer-image-settings%2f&title=Container%20Image%20Settings" target="_blank" rel="noopener noreferrer">reddit</a>
+                                </li>
+                                <li>
+                                    <img src="/images/docs/email.svg" alt="email" >
+                                    <a href="mailto:kubesphere@gmail.com" target="_blank" rel="noopener noreferrer">email</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="content-div main-div">
+                    <div class="md-body">
+                        <h1>Container Image Settings</h1>
+                        <p>When you create Deployments, StatefulSets or DaemonSets, you need to specify a container image. At the same time, KubeSphere provides users with various options to customize workload configurations, such as health check probes, environment variables and start commands. This page illustrates detailed explanations of different properties in <strong>Container Image</strong>.</p>
+<div class="notices tip">
+  
+  <p>Tip</p>
+  <div>You can enable <strong>Edit Mode</strong> in the top right corner to see corresponding values in the manifest file (YAML format) of properties on the dashboard.</div>
+</div>
+<h2 id="container-image">Container Image</h2>
+<h3 id="pod-replicas">Pod Replicas</h3>
+<p>Set the number of replicated Pods by clicking the <strong>plus</strong> or <strong>minus</strong> icon, indicated by the <code>.spec.replicas</code> field in the manifest file. This option is not available for DaemonSets.</p>
+<p><img src="/images/docs/project-user-guide/workloads/pod-replicas.jpg" alt="pod-replicas"></p>
+<h3 id="add-container-image">Add Container Image</h3>
+<p>After you click <strong>Add Container Image</strong>, you will see an image as below.</p>
+<p><img src="/images/docs/project-user-guide/workloads/add-container-explan.jpg" alt="add-container-explan"></p>
+<h4 id="image-search-bar">Image Search Bar</h4>
+<p>You can click the cube icon on the right to select an image from the list or input an image name to search it. KubeSphere provides Docker Hub images and your private image repository. If you want to use your private image repository, you need to create a Docker Hub secret first in <strong>Secrets</strong> under <strong>Configurations</strong>.</p>
+<div class="notices note">
+  
+  <p>Note</p>
+  <div>Remember to press <strong>Enter</strong> on your keyboard after you input an image name in the search bar.</div>
+</div>
+<h4 id="image-tag">Image Tag</h4>
+<p>You can input a tag like <code>imagename:tag</code>. If you do not specify it, it will default to the latest version.</p>
+<h4 id="container-name">Container Name</h4>
+<p>The container name is automatically created by KubeSphere, which is indicated by <code>.spec.containers.name</code>.</p>
+<h4 id="container-type">Container Type</h4>
+<p>If you choose <strong>Init Container</strong>, it means the init container will be created for the workload. For more information about init containers, please visit <a href="https://kubernetes.io/docs/concepts/workloads/pods/init-containers/?spm=a2c4g.11186623.2.19.16704b3e9qHXPb" target="_blank" rel="noopener noreferrer">Init Containers</a>.</p>
+<h4 id="resource-request">Resource Request</h4>
+<p>The resource quota reserved by the container includes both CPU and memory resources. It means the container monopolizes the resource, preventing other services or processes from competing for resources due to insufficient resources, causing the application to become unavailable.</p>
+<ul>
+<li>The CPU request is indicated by <code>.spec.containers[].resources.requests.cpu</code> in the manifest file. The CPU request can be exceeded.</li>
+<li>The memory request is indicated by <code>.spec.containers[].resources.requests.memory</code> in the manifest file. The memory request can be exceeded but the container may clear up when node memory is insufficient.</li>
+</ul>
+<p><img src="/images/docs/project-user-guide/workloads/resource-request-limit.jpg" alt="resource-request-limit"></p>
+<h4 id="resource-limit">Resource Limit</h4>
+<p>You can specify the upper limit of the resources that the application can use, including CPU and memory, to prevent excessive resources from being occupied.</p>
+<ul>
+<li>The CPU limit is indicated by <code>.spec.containers[].resources.limits.cpu</code> in the manifest file. The CPU limit can be exceeded for a short time, and the container will not be stopped.</li>
+<li>The memory limit is indicated by <code>.spec.containers[].resources.limits.memory</code> in the manifest file. The memory limit cannot be exceeded. If it exceeds, the container may be stopped or scheduled to another machine with sufficient resources.</li>
+</ul>
+<div class="notices note">
+  
+  <p>Note</p>
+  <div>The CPU resource is measure in CPU units, or <strong>Core</strong> in KubeSphere. The memory resource is measured in bytes, or <strong>Mi</strong> in KubeSphere.</div>
+</div>
+<h4 id="portservice-settings"><strong>Port/Service Settings</strong></h4>
+<p>You need to set the access protocol for the container as well as port information. To use the default setting, click <strong>Use Default Ports</strong>.</p>
+<h4 id="image-pull-policy"><strong>Image Pull Policy</strong></h4>
+<p>This value is indicated by the <code>imagePullPolicy</code> field. On the dashboard, you can choose one of the following three options from the drop-down list.</p>
+<p><img src="/images/docs/project-user-guide/workloads/image-pull-policy.jpg" alt="image-pull-policy"></p>
+<ul>
+<li>
+<p><strong>Use Local Image First (ifNotPresent)</strong>: It means that the image is pulled only if it does not exist locally.</p>
+</li>
+<li>
+<p><strong>Redownload Image (Always)</strong>: It means that the image is pulled whenever the pod starts.</p>
+</li>
+<li>
+<p><strong>Only Use Local Image  (Never)</strong>: It means that the image is not pulled no matter the image exists or not.</p>
+</li>
+</ul>
+<div class="notices tip">
+  
+  <p>Tip</p>
+  <div><ul>
+<li>The default value is <code>IfNotPresent</code>, but the value of images tagged with <code>:latest</code> is <code>Always</code> by default.</li>
+<li>Docker will check it when pulling the image. If MD5 has not changed, it will not pull.</li>
+<li>The <code>:latest</code> should be avoided as much as possible in the production environment, and the latest image can be automatically pulled by the <code>:latest</code> in the development environment.</li>
+</ul>
+</div>
+</div>
+<h4 id="health-checker"><strong>Health Checker</strong></h4>
+<p>Support <strong>Liveness</strong>, <strong>Readiness</strong>, and <strong>Startup</strong>. The survival check is used to detect when to restart the container.</p>
+<p><img src="/images/docs/project-user-guide/workloads/container-health-check.jpg" alt="container-health-check"></p>
+<ul>
+<li>
+<p><strong>Container Liveness Check</strong>: Liveness probes are used to know whether a container is running, indicated by <code>livenessProbe</code>.</p>
+</li>
+<li>
+<p><strong>Container Readiness Check</strong>: Readiness probes are used to know whether a container is ready to serve requests, indicated by <code>readinessProbe</code>.</p>
+</li>
+<li>
+<p><strong>Container Startup Check</strong>: Startup probes are used to know whether a container application has started, indicated by <code>startupProbe</code>.</p>
+</li>
+</ul>
+<p>Liveness, Readiness and Startup Check have all included the configurations below:</p>
+<ul>
+<li>
+<p><strong>HTTPGetAction (HTTP Request Check)</strong>: Perform an HTTP <code>Get</code> request on the specified port and path on the IP address of the container. If the response status code is greater than or equal to 200 and less than 400, the diagnosis is considered successful. The supported parameters include:</p>
+<p><img src="/images/docs/project-user-guide/workloads/http-request-check.jpg" alt="http-request-check"></p>
+<ul>
+<li><strong>Scheme</strong>: HTTP or HTTPS, specified by <code>scheme</code>.</li>
+<li><strong>Path</strong>: The path to access the HTTP server, specified by <code>path</code>.</li>
+<li><strong>Port</strong>: The access port or port name is exposed by the container. The port number must be between 1 and 65535. The value is specified by <code>port</code>.</li>
+<li><strong>Initial Delays</strong>: The number of seconds after the container has started before liveness probes are initiated, specified by <code>initialDelaySeconds</code>. It defaults to 0.</li>
+<li><strong>Period Seconds</strong>: The probe frequency (in seconds), specified by <code>periodSeconds</code>. It defaults to 10. The minimum value is 1.</li>
+<li><strong>Timeouts</strong>: The number of seconds after which the probe times out, specified by <code>timeoutSeconds</code>. It defaults to 1. The minimum value is 1.</li>
+<li><strong>Success Threshold</strong>: The minimum consecutive successes for the probe to be considered successful after having failed, specified by <code>successThreshold</code>. It defaults to 1 and must be 1 for liveness and startup. The minimum value is 1.</li>
+<li><strong>Failure Threshold</strong>: The minimum consecutive failures for the probe to be considered failed after having succeeded, specified by <code>failureThreshold</code>. It defaults to 3. The minimum value is 1.</li>
+</ul>
+</li>
+<li>
+<p><strong>TCPSocketAction (TCP Port Check)</strong>: Perform a TCP check on the specified port on the IP address of the container. If the port is open, the diagnosis is considered successful. The supported parameters include:</p>
+<p><img src="/images/docs/project-user-guide/workloads/tcp-port-check.jpg" alt="tcp-port-check"></p>
+<ul>
+<li><strong>Port</strong>: The access port or port name is exposed by the container. The port number must be between 1 and 65535. The value is specified by <code>port</code>.</li>
+<li><strong>Initial Delays</strong>: The number of seconds after the container has started before liveness probes are initiated, specified by <code>initialDelaySeconds</code>. It defaults to 0.</li>
+<li><strong>Period Seconds</strong>: The probe frequency (in seconds), specified by <code>periodSeconds</code>. It defaults to 10. The minimum value is 1.</li>
+<li><strong>Timeouts</strong>: The number of seconds after which the probe times out, specified by <code>timeoutSeconds</code>. It defaults to 1. The minimum value is 1.</li>
+<li><strong>Success Threshold</strong>: The minimum consecutive successes for the probe to be considered successful after having failed, specified by <code>successThreshold</code>. It defaults to 1 and must be 1 for liveness and startup. The minimum value is 1.</li>
+<li><strong>Failure Threshold</strong>: The minimum consecutive failures for the probe to be considered failed after having succeeded, specified by <code>failureThreshold</code>. It defaults to 3. The minimum value is 1.</li>
+</ul>
+</li>
+<li>
+<p><strong>ExecAction (Exec Command Check)</strong>: Execute the specified command in the container. If the return code is 0 when the command exits, the diagnosis is considered successful. The supported parameters include:</p>
+<p><img src="/images/docs/project-user-guide/workloads/exec-command-check.jpg" alt="exec-command-check"></p>
+<ul>
+<li><strong>Command</strong>: A detection command used to detect the health of the container, specified by <code>exec.command</code>.</li>
+<li><strong>Initial Delays</strong>: The number of seconds after the container has started before liveness probes are initiated, specified by <code>initialDelaySeconds</code>. It defaults to 0.</li>
+<li><strong>Period Seconds</strong>: The probe frequency (in seconds), specified by <code>periodSeconds</code>. It defaults to 10. The minimum value is 1.</li>
+<li><strong>Timeouts</strong>: The number of seconds after which the probe times out, specified by <code>timeoutSeconds</code>. It defaults to 1. The minimum value is 1.</li>
+<li><strong>Success Threshold</strong>: The minimum consecutive successes for the probe to be considered successful after having failed, specified by <code>successThreshold</code>. It defaults to 1 and must be 1 for liveness and startup. The minimum value is 1.</li>
+<li><strong>Failure Threshold</strong>: The minimum consecutive failures for the probe to be considered failed after having succeeded, specified by <code>failureThreshold</code>. It defaults to 3. The minimum value is 1.</li>
+</ul>
+</li>
+</ul>
+<p>For more information about health checks, please visit <a href="https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#container-probes" target="_blank" rel="noopener noreferrer">Container Probes</a>.</p>
+<h4 id="start-command"><strong>Start Command</strong></h4>
+<p>By default, the container runs the default image command.</p>
+<p><img src="/images/docs/project-user-guide/workloads/start-command.jpg" alt="start-command"></p>
+<ul>
+<li><strong>Run Command</strong> refers to the <code>command</code> field of containers in the manifest file.</li>
+<li><strong>Parameters</strong> refers to the <code>args</code> field of containers in the manifest file.</li>
+</ul>
+<p>For more information about the command, please visit <a href="https://kubernetes.io/docs/tasks/inject-data-application/define-command-argument-container/" target="_blank" rel="noopener noreferrer">Define a Command and Arguments for a Container</a>.</p>
+<h4 id="environment-variables"><strong>Environment Variables</strong></h4>
+<p>Configure environment variables for Pods in the form of key-value pairs.</p>
+<p><img src="/images/docs/project-user-guide/workloads/envi-var.jpg" alt="envi-var"></p>
+<ul>
+<li>name: The name of the environment variable, specified by <code>env.name</code>.</li>
+<li>value: The value of the variable reference, specified by <code>env.value</code>.</li>
+<li>type: The type of environment variables. It supports customization, configuration items, keys, and variable/variable references.</li>
+</ul>
+<p>For more information about the command, please visit <a href="https://kubernetes.io/docs/tasks/inject-data-application/environment-variable-expose-pod-information/?spm=a2c4g.11186623.2.20.16704b3e9qHXPb" target="_blank" rel="noopener noreferrer">Pod variable</a>.</p>
+<h4 id="container-security-context"><strong>Container Security Context</strong></h4>
+<p>A security context defines privilege and access control settings for a Pod or Container. For more information about the security context, please visit <a href="https://kubernetes.io/docs/concepts/policy/pod-security-policy/" target="_blank" rel="noopener noreferrer">Pod Security Policies</a>.</p>
+<p><img src="/images/docs/project-user-guide/workloads/security-context.jpg" alt="security-context"></p>
+<h4 id="sync-host-timezone"><strong>Sync Host Timezone</strong></h4>
+<p>The time zone of the container will be consistent with that of the host after synchronization.</p>
+<h2 id="update-strategy"><strong>Update Strategy</strong></h2>
+<h3 id="pod-update">Pod Update</h3>
+<p>Update strategies are different for different workloads.</p>
+<div class="code-tabs">
+  <ul class="nav nav-tabs"></ul>
+  <div class="tab-content">
+
+<div class="tab-pane" title="Deployments">
+  <p>The <code>.spec.strategy</code> field specifies the strategy used to replace old Pods with new ones. <code>.spec.strategy.type</code> can be <code>Recreate</code> or <code>RollingUpdate</code>. <code>RollingUpdate</code> is the default value.</p>
+<ul>
+<li>
+<p><strong>RollingUpdate (Recommended)</strong></p>
+<p>A rolling update means the instance of the old version will be gradually replaced with new ones. During the upgrade process, the traffic will be load balanced and distributed to the old and new instances simultaneously, so the service will not be interrupted.</p>
+</li>
+<li>
+<p><strong>Recreate</strong></p>
+<p>All existing Pods will be killed before new ones are created. Please note that the service will be interrupted during the update process.</p>
+</li>
+</ul>
+<p>For more information about update strategies, please visit <a href="https://kubernetes.io/docs/concepts/workloads/controllers/deployment/#strategy">Strategy in Deployments</a>.</p>
+
+</div>
+
+<div class="tab-pane" title="StatefulSets">
+  <p>The drop-down menu under <strong>Update Strategy</strong> is indicated by the <code>.spec.updateStrategy</code> field of a StatefulSet in the manifest file. It allows you to handle updates of Pod containers, tags, resource requests or limits, and annotations. There are two strategies:</p>
+<ul>
+<li>
+<p><strong>RollingUpdate (Recommended)</strong></p>
+<p>If <code>.spec.template</code> is updated, the Pods in the StatefulSet will be automatically deleted with new pods created as replacements. Pods are updated in reserve ordinal order, sequentially deleted and created. A new Pod update will not begin until the previous Pod becomes up and running after it is updated.</p>
+</li>
+<li>
+<p><strong>OnDelete</strong></p>
+<p>If <code>.spec.template</code> is updated, the Pods in the StatefulSet will not be automatically updated. You need to manually delete old Pods so that the controller can create new Pods.</p>
+</li>
+</ul>
+<p>For more information about update strategies, please visit <a href="https://kubernetes.io/docs/concepts/workloads/controllers/statefulset/#update-strategies">StatefulSet Update Strategies</a>.</p>
+
+</div>
+
+<div class="tab-pane" title="DaemonSets">
+  <p>The drop-down menu under <strong>Update Strategy</strong> is indicated by the <code>.spec.updateStrategy</code> field of a DaemonSet in the manifest file. It allows you to handle updates of Pod containers, tags, resource requests or limits, and annotations. There are two strategies:</p>
+<ul>
+<li>
+<p><strong>RollingUpdate (Recommended)</strong></p>
+<p>If <code>.spec.template</code> is updated, old DaemonSet pods will be killed with new pods created automatically in a controlled fashion. At most one pod of the DaemonSet will be running on each node during the whole update process.</p>
+</li>
+<li>
+<p><strong>OnDelete</strong></p>
+<p>If <code>.spec.template</code> is updated, new DaemonSet pods will only be created when you manually delete old DaemonSet pods. This is the same behavior of DaemonSets in Kubernetes version 1.5 or before.</p>
+</li>
+</ul>
+<p>For more information about update strategies, please visit <a href="https://kubernetes.io/docs/tasks/manage-daemon/update-daemon-set/#daemonset-update-strategy">DaemonSet Update Strategy</a>.</p>
+
+</div>
+
+</div>
+</div>
+<h3 id="the-number-of-pods-when-updated">The Number of Pods When Updated</h3>
+<div class="code-tabs">
+  <ul class="nav nav-tabs"></ul>
+  <div class="tab-content">
+
+<div class="tab-pane" title="Deployments">
+  <p><strong>The number of Pods when updated</strong> in a Deployment is different from that of a StatefulSet.</p>
+<ul>
+<li><strong>The maximum unavailable number of Pods</strong>: The maximum number of Pods that can be unavailable during the update, specified by <code>maxUnavailable</code>. The default value is 25%.</li>
+<li><strong>The maximum surge number of Pods</strong>: The maximum number of Pods that can be scheduled above the desired number of Pods, specified by <code>maxSurge</code>. The default value is 25%.</li>
+</ul>
+
+</div>
+
+<div class="tab-pane" title="StatefulSets">
+  When you partition an update, all Pods with an ordinal greater than or equal to the value you set in Partition are updated when you update the StatefulSet’s Pod specification. This field is specified by <code>.spec.updateStrategy.rollingUpdate.partition</code>, whose default value is 0. For more information about partitions, please visit <a href="https://kubernetes.io/docs/concepts/workloads/controllers/statefulset/#partitions">Partitions</a>.
+</div>
+
+<div class="tab-pane" title="DaemonSets">
+  <p><strong>The number of Pods when updated</strong> in a DaemonSet is different from that of a StatefulSet.</p>
+<ul>
+<li><strong>The maximum unavailable number of Pods</strong>: The maximum number of pods that can be unavailable during the update, specified by <code>maxUnavailable</code>. The default value is 20%.</li>
+<li><strong>MinReadySeconds</strong>: The minimum number of seconds before a newly created Pod of DaemonSet is treated as available, specified by <code>minReadySeconds</code>. The default value is 0.</li>
+</ul>
+
+</div>
+
+</div>
+</div>
+<h3 id="pod-security-context">Pod Security Context</h3>
+<p>A security context defines privilege and access control settings for a Pod or Container. For more information about Pod Security Policies, please visit <a href="https://kubernetes.io/docs/concepts/policy/pod-security-policy/" target="_blank" rel="noopener noreferrer">Pod Security Policies</a>.</p>
+<h3 id="deployment-mode">Deployment Mode</h3>
+<p>You can select different deployment modes to switch between inter-pod affinity and inter-pod anti-affinity. In Kubernetes, inter-pod affinity is specified as field <code>podAffinity</code> of field <code>affinity</code> while inter-pod anti-affinity is specified as field <code>podAntiAffinity</code> of field <code>affinity</code>. In KubeSphere, both <code>podAffinity</code> and <code>podAntiAffinity</code> are set to <code>preferredDuringSchedulingIgnoredDuringExecution</code>. You can enable <strong>Edit Mode</strong> in the top right corner to see field details.</p>
+<ul>
+<li><strong>Pod Decentralized Deployment</strong> represents anti-affinity.</li>
+<li><strong>Pod Aggregation Deployment</strong> represents affinity.</li>
+</ul>
+<p>For more information about affinity and anti-affinity, please visit <a href="https://kubernetes.io/docs/concepts/scheduling-eviction/assign-pod-node/#inter-pod-affinity-and-anti-affinity" target="_blank" rel="noopener noreferrer">Pod affinity</a>.</p>
+
+                    </div>
+                </div>
+                
+                
+                <div class="page-div common-flex-layout">
+                    
+                    
+                        <a class="last" href="/docs/project-user-guide/application-workloads/ingress/">
+                            <img src="/images/docs/last.svg" alt="Previous">
+                            Previous
+                            <span>: Routes</span>
+                        </a>
+                    
+                    
+                    
+                    
+                        <a class="next" href="/docs/cluster-administration/cluster-settings/log-collections/add-kafka-as-receiver/">
+                            Next
+                            <span>: Add Kafka as Receiver</span>
+                            <img src="/images/docs/next.svg" alt="Next">
+                        </a>            
+                    
+                    
+                </div>
+                
+                <div></div>
+            </div>
+            
+            <div class="aside">
+                <div class="inner-div">
+                    <div class='title'>
+                        What’s on this Page
+                    </div>
+                    <div class='tabs'>
+                        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#container-image">Container Image</a>
+      <ul>
+        <li><a href="#pod-replicas">Pod Replicas</a></li>
+        <li><a href="#add-container-image">Add Container Image</a></li>
+      </ul>
+    </li>
+    <li><a href="#update-strategy"><strong>Update Strategy</strong></a>
+      <ul>
+        <li><a href="#pod-update">Pod Update</a></li>
+        <li><a href="#the-number-of-pods-when-updated">The Number of Pods When Updated</a></li>
+        <li><a href="#pod-security-context">Pod Security Context</a></li>
+        <li><a href="#deployment-mode">Deployment Mode</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    
+    
+    <script type="text/javascript" src="/js/aside.34d4ca232760855916fede489417772adb45cdceab8541c6f6826e5d83a0b68e071a44f76a077fe90e39afe213cc1aab40272900f7cbdffb45068c7746c7b183.js" integrity="sha512-NNTKIydghVkW/t5IlBd3KttFzc6rhUHG9oJuXYOgto4HGkT3agd/6Q45r&#43;ITzBqrQCcpAPfL3/tFBox3Rsexgw=="></script>
+    
+    
+    
+    <script type="text/javascript" src="/js/markdown-tab.224c8a343197870e80877ad07e19b932b807d3fde3abccde667f2156378cb00497ebb11d2f872f09ea91e7282e87655f8cb4ef163da46e34d00dca44dbf52aad.js" integrity="sha512-IkyKNDGXhw6Ah3rQfhm5MrgH0/3jq8zeZn8hVjeMsASX67EdL4cvCeqR5yguh2VfjLTvFj2kbjTQDcpE2/UqrQ=="></script>
+    
+    <script>
+        var languageCode = 'en'
+        var filePath = 'docs\\project-user-guide\\application-workloads\\container-image-settings.md'
+        var githubUrl = 'https:\/\/github.com\/kubesphere\/website'
+        
+    
+        var getLatestTime = function(data) {
+            var commit = data[0].commit
+            return commit.author.date.replace("T", " ").replace("Z", "")
+        }
+    
+        var filterData = function(data) {
+            var arr = []
+            var length = data.length
+            for (var i = 0; i < length; i++) {
+                var author = data[i].author
+                if (author) {
+                    var avatar_url = author.avatar_url
+                    if (avatar_url && !arr.includes(avatar_url)) {
+                        arr.push(avatar_url)
+                    }
+                }
+    
+            }
+            return arr
+        }
+        var getFileContributors = function() {
+            var url = 'https://api.github.com/repos/kubesphere/website/commits?path=content/' + languageCode + '/' + filePath
+            $.getJSON(url, function(data) {
+                if (!data || data.length === 0) {
+                    $('.contributor-div').hide()
+                    return
+                }
+                var newData = filterData(data)
+                var time = getLatestTime(data)
+                renderLatestTime(time)
+                renderContributors(newData)
+            })
+        }
+        var renderContributors = function(data) {
+            var contributor = $('.contributor-avatar')
+            var length = data.length
+            var len = 5
+            $.each(data.slice(0, len), function(index, item) {
+                var img = $("<img />", {
+                    "src": item
+                })
+                $("<li />", {
+                    "html": img
+                }).appendTo(contributor);
+            });
+            var t = length - len
+            if (t > 0) {
+                $('.more-contributor').html('+' + t)
+            }
+        }
+    
+        var renderLatestTime = function(time) {
+            $('.update-time').html(time)
+        }
+    
+        var bindClickMenu = function() {
+            var sectionMenu = $(".section-menu")
+            $('.section-control').on('click', function(e){
+                if (sectionMenu.is(":hidden")) {
+                    sectionMenu.show();
+                } else {
+                    sectionMenu.hide()
+                }
+    
+                $(document).one("click", function(){
+                    sectionMenu.hide()
+                });
+    
+                e.stopPropagation()
+            })
+    
+            sectionMenu.on("click", function(e){
+                e.stopPropagation();
+            })
+        }
+    
+        var bindClickSecondMenu = function() {
+            var sectionMenu = $(".section-2 .left-div")
+            $('.second-section-menu').on('click', function(e){
+                sectionMenu.css("left", "0")
+    
+                $(document).one("click", function(){
+                    sectionMenu.css("left", "-274px")
+                });
+    
+                e.stopPropagation()
+            })
+    
+            sectionMenu.on("click", function(e){
+                e.stopPropagation();
+            })
+        }
+    
+        var useViewer = function() {
+            var viewer = new Viewer(document.querySelector('.md-body'), {
+                url: 'src'
+            })
+        }
+    
+        var __main = function() {
+            getFileContributors()
+            bindClickMenu()
+            bindClickSecondMenu()
+            useViewer()
+        }
+    
+        __main()
+    
+    </script>
+</main>
+
+<footer>
+    <div class="down-main">
+        <div class='img-div'>
+            <a class='wechat' href="javascript:void(0);">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28" height="28" viewBox="0 0 28 28">
+    <defs>
+        <path id="a" d="M0 0h15.673v12.156H0z"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd" transform="translate(1 1)">
+        <circle cx="13" cy="13" r="13" stroke="#B6C2CD"/>
+        <g transform="translate(5 7)">
+            <mask id="b" fill="#fff">
+                <use xlink:href="#a"/>
+            </mask>
+            <path fill="currentColor" d="M15.673 7.898c0-2.061-2.173-3.74-4.619-3.74-2.59 0-4.625 1.679-4.625 3.74 0 2.066 2.035 3.738 4.625 3.738.542 0 1.09-.13 1.632-.256l1.493.776-.408-1.29c1.09-.776 1.902-1.81 1.902-2.968zm-6.119-.645c-.27 0-.541-.257-.541-.514 0-.256.27-.514.541-.514.41 0 .681.258.681.514 0 .257-.271.514-.681.514zm2.994 0c-.27 0-.541-.257-.541-.514 0-.256.27-.514.54-.514.41 0 .681.258.681.514 0 .257-.277.514-.68.514z" mask="url(#b)"/>
+            <path fill="currentColor" d="M10.602 3.674c.177 0 .356.011.533.029C10.657 1.576 8.27 0 5.543 0 2.498 0 0 1.974 0 4.485c0 1.45.829 2.64 2.216 3.564l-.552 1.588 1.94-.929c.693.129 1.251.263 1.94.263.17 0 .343-.005.515-.022a3.68 3.68 0 0 1-.172-1.104c0-2.302 2.081-4.171 4.715-4.171zM7.618 2.243c.417 0 .693.263.693.66s-.276.66-.693.66c-.418 0-.835-.263-.835-.66.006-.398.423-.66.835-.66zm-3.88 1.319c-.417 0-.834-.263-.834-.66s.417-.66.834-.66c.418 0 .695.263.695.66 0 .392-.277.66-.695.66z" mask="url(#b)"/>
+        </g>
+    </g>
+</svg>
+
+                <div class="hide-div">
+                    <p>Follow the official account</p>
+                    <img src="/images/footer/wechat_code.svg" alt="">
+                </div>
+            </a>
+            <a class='facebook-a' href="https://www.facebook.com/kubesphere" target="_blank"></a>
+            <a class='twitter-a' href="https://twitter.com/KubeSphere" target="_blank" rel="noopener noreferrer"></a>
+            <a class='linkedin-a' href="https://www.linkedin.com/company/kubesphere/" target="_blank" rel="noopener noreferrer"></a>
+            <a class='youtube-a' href="https://www.youtube.com/channel/UCyTdUQUYjf7XLjxECx63Hpw" target="_blank" rel="noopener noreferrer"></a>
+            <a class='slack-a' href="https://join.slack.com/t/kubesphere/shared_invite/enQtNTE3MDIxNzUxNzQ0LTZkNTdkYWNiYTVkMTM5ZThhODY1MjAyZmVlYWEwZmQ3ODQ1NmM1MGVkNWEzZTRhNzk0MzM5MmY4NDc3ZWVhMjE" target="_blank" rel="noopener noreferrer"></a>
+            <a class='github-a' href="https://github.com/kubesphere/kubesphere" target="_blank" rel="noopener noreferrer"></a>
+            <a class='medium-a' href="https://itnext.io/@kubesphere" target="_blank" rel="noopener noreferrer"></a>
+        </div>
+        <p class='p1'>KubeSphere®️ 2020 All Rights Reserved.</p>
+    </div>
+</footer>
+</body>
+
+</html>

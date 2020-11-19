@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Reference on </title>
+    <link>https://kubesphere-v3.netlify.app/docs/reference/</link>
+    <description>Recent content in Reference on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    
+	<atom:link href="https://kubesphere-v3.netlify.app/docs/reference/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Glossary</title>
+      <link>https://kubesphere-v3.netlify.app/docs/reference/glossary/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kubesphere-v3.netlify.app/docs/reference/glossary/</guid>
+      <description>This glossary includes technical terms that are specific to KubeSphere, as well as more general terms that provide useful context.
+General   Workspace A logical unit to organize a tenant&amp;rsquo;s workload projects / Kubernetes namespaces, DevOps projects, manage resource access and share information within the team.
+  System Workspace The special place to organize system projects from KubeSphere, Kubernetes and optional components such as OpenPitrix, Istio, monitorng etc.</description>
+    </item>
+    
+    <item>
+      <title>KubeSphere API</title>
+      <link>https://kubesphere-v3.netlify.app/docs/reference/api-docs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kubesphere-v3.netlify.app/docs/reference/api-docs/</guid>
+      <description>In KubeSphere v3.0, we move the functionalities of ks-apigateway, ks-account into ks-apiserver to make the architecture more compact and straight forward. In order to use KubeSphere API, you need to expose ks-apiserver to your client.
+Step 1: Expose KubeSphere API service If you are going to access KubeSphere inside the cluster, you can skip the following section and just use the KubeSphere API server endpoint http://ks-apiserver.kubesphere-system.svc.
+On the other hand, you need to expose the KubeSphere API server endpoint to the outside of the cluster first.</description>
+    </item>
+    
+  </channel>
+</rss>

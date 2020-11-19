@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>page1 on </title>
+    <link>https://kubesphere-v3.netlify.app/tr/trends/</link>
+    <description>Recent content in page1 on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>tr-TR</language>
+    
+	<atom:link href="https://kubesphere-v3.netlify.app/tr/trends/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+  </channel>
+</rss>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Open Source Community - Open Source Community - KubeSphere | Enterprise container platform, built on Kubernetes on </title>
+    <link>https://kubesphere-v3.netlify.app/blogs/</link>
+    <description>Recent content in Open Source Community - Open Source Community - KubeSphere | Enterprise container platform, built on Kubernetes on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    
+	<atom:link href="https://kubesphere-v3.netlify.app/blogs/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>A Container Platform: What is the Value of KubeSphere</title>
+      <link>https://kubesphere-v3.netlify.app/blogs/value-of-kubesphere/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kubesphere-v3.netlify.app/blogs/value-of-kubesphere/</guid>
+      <description>A Promising Newcomer As a promising newcomer of the cloud native family, KubeSphere has gained widespread recognition among its users and developers since it joined the open source community nearly two years ago. This article illustrates the position and value of KubeSphere from scratch in a straightforward way and sheds light on why different teams have chosen KubeSphere.
+For Enterprises KubeSphere is a multi-tenant container platform built on Kubernetes with applications at its core.</description>
+    </item>
+    
+    <item>
+      <title>Kubernetes Multi-cluster Deployment: Federation and KubeSphere</title>
+      <link>https://kubesphere-v3.netlify.app/blogs/multi-cluster-deployment/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kubesphere-v3.netlify.app/blogs/multi-cluster-deployment/</guid>
+      <description>Scenarios for Multi-cluster Deployment As the container technology and Kubernetes see a surge in popularity among their users, it is not uncommon for enterprises to run multiple clusters for their business. In general, here are the main scenarios where multiple clusters can be adopted.
+High Availability You can deploy workloads on multiple clusters by using a global VIP or DNS to send requests to corresponding backend clusters. When a cluster malfunctions or fails to handle requests, the VIP or DNS records can be transferred to a health cluster.</description>
+    </item>
+    
+    <item>
+      <title>Monitoring Kubernetes Control Plane using KubeSphere</title>
+      <link>https://kubesphere-v3.netlify.app/blogs/monitoring-k8s-control-plane/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kubesphere-v3.netlify.app/blogs/monitoring-k8s-control-plane/</guid>
+      <description>Introduction to Kubernetes Control Plane In a Kubernetes cluster, there are two machines roles including master nodes and worker nodes. The master node runs the Kubernetes control plane, which is responsible for the management of the worker nodes, makes scheduling decisions, and implements changes to drive the cluster to a desired state. The worker nodes, as the name implies, they run the workloads and Pod on them.
+As is shown in the graph, there are four components running in the Kubernetes control plane, each of them is critical for running a healthy Kubernetes cluster, they act as the different roles within the cluster:</description>
+    </item>
+    
+    <item>
+      <title>Porter: An Innovative Cloud Native Service Proxy in CNCF Landscape</title>
+      <link>https://kubesphere-v3.netlify.app/blogs/porter-in-cncf-landscape/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kubesphere-v3.netlify.app/blogs/porter-in-cncf-landscape/</guid>
+      <description>Porter, a load balancer developed for bare metal Kubernetes clusters, was officially included in CNCF Landscape last week. This marks a great milestone for its parent project KubeSphere as it continues to deliver cloud native technologies to the wider community.
+Cloud Native Computing Foundation, or CNCF, was built for the establishment of sustainable ecosystems for cloud native software. Its Interactive Landscape is dynamically generated, serving as a technology roadmap for various industries.</description>
+    </item>
+    
+    <item>
+      <title>TiDB on KubeSphere: Using Cloud-Native Distributed Database on Kubernetes Platform Tailored for Hybrid Cloud</title>
+      <link>https://kubesphere-v3.netlify.app/blogs/tidb-on-kubesphere-using-qke/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kubesphere-v3.netlify.app/blogs/tidb-on-kubesphere-using-qke/</guid>
+      <description>In a world where Kubernetes has become the de facto standard to build application services that span multiple containers, running a cloud-native distributed database represents an important part of the experience of using Kubernetes. In this connection, TiDB, a cloud-native, open-source NewSQL database that supports Hybrid Transactional and Analytical Processing (HTAP) workloads, meets those needs admirably. Its architecture is suitable for Kubernetes, and it is MySQL compatible. TiDB also features horizontal scalability, strong consistency, and high availability.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Open Source Community - Open Source Community - KubeSphere | Enterprise container platform, built on Kubernetes on </title>
+    <link>https://kubesphere-v3.netlify.app/projects/</link>
+    <description>Recent content in Open Source Community - Open Source Community - KubeSphere | Enterprise container platform, built on Kubernetes on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    
+	<atom:link href="https://kubesphere-v3.netlify.app/projects/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+  </channel>
+</rss>

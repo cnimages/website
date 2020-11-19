@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Project Administration on </title>
+    <link>https://kubesphere-v3.netlify.app/docs/project-administration/</link>
+    <description>Recent content in Project Administration on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    
+	<atom:link href="https://kubesphere-v3.netlify.app/docs/project-administration/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Project Quotas</title>
+      <link>https://kubesphere-v3.netlify.app/docs/project-administration/project-quota/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kubesphere-v3.netlify.app/docs/project-administration/project-quota/</guid>
+      <description>TBD</description>
+    </item>
+    
+    <item>
+      <title>Project Gateway</title>
+      <link>https://kubesphere-v3.netlify.app/docs/project-administration/project-gateway/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kubesphere-v3.netlify.app/docs/project-administration/project-gateway/</guid>
+      <description>TBD</description>
+    </item>
+    
+    <item>
+      <title>Project Network Isolation</title>
+      <link>https://kubesphere-v3.netlify.app/docs/project-administration/project-network-isolation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kubesphere-v3.netlify.app/docs/project-administration/project-network-isolation/</guid>
+      <description>KubeSphere project network isolation lets project administrators enforce which network traffic is allowed using rules.
+Prerequisites  You have already enabled Network Policy. Please refer to network-policy if it is not ready yet. Use an account of the admin role at the project level. For example, use the account project-admin created in Create Workspace, Project, Account and Role.  Note
+For the implementation of the Network Policy, you can refer to kubesphere-network-policy Enable/Disable Project Network Isolation By default project network isolation is disabled, you can turn on network isolation via Project Settings/Network Isolation Note</description>
+    </item>
+    
+    <item>
+      <title>Projects and Multi-cluster Projects</title>
+      <link>https://kubesphere-v3.netlify.app/docs/project-administration/project-and-multicluster-project/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kubesphere-v3.netlify.app/docs/project-administration/project-and-multicluster-project/</guid>
+      <description>A project in KubeSphere is a Kubernetes namespace, which is used to organize resources into non-overlapping groups. It represents a logical partitioning capability as it divides cluster resources between multiple tenants.
+A multi-cluster project runs across clusters, empowering users to achieve high availability and isolate occurring issues to a certain cluster while not affecting your business. For more information, see Multi-cluster Management.
+This chapter demonstrates the basic operations of project administration, such as creation and deletion.</description>
+    </item>
+    
+    <item>
+      <title>Role and Member Management</title>
+      <link>https://kubesphere-v3.netlify.app/docs/project-administration/role-and-member-management/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kubesphere-v3.netlify.app/docs/project-administration/role-and-member-management/</guid>
+      <description>This guide demonstrates how to manage roles and members in your project. For more information about KubeSphere roles, see Overview of Role Management.
+In project scope, you can grant the following resources&amp;rsquo; permissions to a role:
+ Application Workloads Storage Configurations Monitoring &amp;amp; Alerting Project Settings Access Control  Prerequisites At least one project has been created, such as demo-project. Besides, you need an account of the admin role (e.g. project-admin) at the project level.</description>
+    </item>
+    
+  </channel>
+</rss>

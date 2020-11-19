@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>账户管理和权限控制 on </title>
+    <link>https://kubesphere-v3.netlify.app/zh/docs/access-control-and-account-management/</link>
+    <description>Recent content in 账户管理和权限控制 on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    
+	<atom:link href="https://kubesphere-v3.netlify.app/zh/docs/access-control-and-account-management/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>OAuth2 Identity Provider</title>
+      <link>https://kubesphere-v3.netlify.app/zh/docs/access-control-and-account-management/oauth2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kubesphere-v3.netlify.app/zh/docs/access-control-and-account-management/oauth2/</guid>
+      <description>概览 KubeSphere 可以通过标准的 OAuth2 协议对接外部的 OAuth2 Provider，通过外部 OAuth2 Server 完成账户认证后可以关联登录到 KubeSphere。 完整的认证流程如下：
+GitHubIdentityProvider KubeSphere 默认提供了 GitHubIdentityProvider 做为 OAuth2 认证插件的开发示例，配置及使用方式如下:
+参数配置 IdentityProvider 的参数通过 kubesphere-system 项目下 kubesphere-config 这个 ConfigMap 进行配置
+通过 kubectl -n kubesphere-system edit cm kubesphere-config 进行编辑，配置示例:
+apiVersion: v1 data: kubesphere.yaml: | authentication: authenticateRateLimiterMaxTries: 10 authenticateRateLimiterDuration: 10m0s loginHistoryRetentionPeriod: 7d maximumClockSkew: 10s multipleLogin: true kubectlImage: kubesphere/kubectl:v1.0.0 jwtSecret: &amp;#34;jwt secret&amp;#34; oauthOptions: accessTokenMaxAge: 1h accessTokenInactivityTimeout: 30m identityProviders: - name: github type: GitHubIdentityProvider mappingMethod: mixed provider: clientID: &amp;#39;Iv1.</description>
+    </item>
+    
+  </channel>
+</rss>

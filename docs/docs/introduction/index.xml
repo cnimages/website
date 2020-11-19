@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Introduction on </title>
+    <link>https://kubesphere-v3.netlify.app/docs/introduction/</link>
+    <description>Recent content in Introduction on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    
+	<atom:link href="https://kubesphere-v3.netlify.app/docs/introduction/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>What is KubeSphere</title>
+      <link>https://kubesphere-v3.netlify.app/docs/introduction/what-is-kubesphere/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kubesphere-v3.netlify.app/docs/introduction/what-is-kubesphere/</guid>
+      <description>Overview KubeSphere is a distributed operating system managing cloud-native applications with Kubernetes as its kernel, providing a plug-and-play architecture for the seamless integration of third-party applications to boost its ecosystem.
+KubeSphere also represents a multi-tenant enterprise-grade container platform with full-stack automated IT operation and streamlined DevOps workflows. It provides developer-friendly wizard web UI, helping enterprises to build out a more robust and feature-rich platform. It boasts the most common functionalities needed for enterprise Kubernetes strategies, such as Kubernetes resource management, DevOps (CI/CD), application lifecycle management, monitoring, logging, service mesh, multi-tenancy, alerting and notification, auditing, storage and networking, autoscaling, access control, GPU support, multi-cluster deployment and management, network policy, registry management, and security management.</description>
+    </item>
+    
+    <item>
+      <title>Features</title>
+      <link>https://kubesphere-v3.netlify.app/docs/introduction/features/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kubesphere-v3.netlify.app/docs/introduction/features/</guid>
+      <description>Overview As an open source container platform, KubeSphere provides enterprises with a robust, secure and feature-rich platform, boasting the most common functionalities needed for enterprises adopting Kubernetes, such as multi-cluster deployment and management, network policy configuration, Service Mesh (Istio-based), DevOps projects (CI/CD), security management, Source-to-Image and Binary-to-Image, multi-tenant management, multi-dimensional monitoring, log query and collection, alerting and notification, auditing, application management, and image registry management.
+It also supports various open source storage and network solutions, as well as cloud storage services.</description>
+    </item>
+    
+    <item>
+      <title>Architecture</title>
+      <link>https://kubesphere-v3.netlify.app/docs/introduction/architecture/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kubesphere-v3.netlify.app/docs/introduction/architecture/</guid>
+      <description>Separation of frontend and backend KubeSphere separates frontend from backend, and it itself is a cloud native application and provides open standard REST APIs for external systems to use. Please see API documentation for details. The following figure is the system architecture. KubeSphere can run anywhere from on-premise datacenter to any cloud to edge. In addition, it can be deployed on any Kubernetes distribution.
+Components List    Back-end component Function description     ks-apiserver The KubeSphere API server validates and configures data for the API objects which include Kubernetes objects.</description>
+    </item>
+    
+    <item>
+      <title>Advantages</title>
+      <link>https://kubesphere-v3.netlify.app/docs/introduction/advantages/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kubesphere-v3.netlify.app/docs/introduction/advantages/</guid>
+      <description>Vision Kubernetes has become the de facto standard for deploying containerized applications at scale in private, public and hybrid cloud environments. However, many people can easily get confused when they start to use Kubernetes as it is complicated and has many additional components to manage. Some components need to be installed and deployed by users themselves, such as storage and network services. At present, Kubernetes only provides open-source solutions or projects, which can be difficult to install, maintain and operate to some extent.</description>
+    </item>
+    
+    <item>
+      <title>Use Cases</title>
+      <link>https://kubesphere-v3.netlify.app/docs/introduction/scenarios/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kubesphere-v3.netlify.app/docs/introduction/scenarios/</guid>
+      <description>KubeSphere is applicable in a variety of scenarios. For enterprises that deploy their business system on bare metal, their business modules are tightly coupled with each other. That means it is extremely difficult for resources to be horizontally scaled. In this connection, KubeSphere provides enterprises with containerized environments with a complete set of features for management and operation. It empowers enterprises to rise to the challenges in the middle of their digital transformation, including agile software development, automated operation and maintenance, microservices governance, traffic management, autoscaling, high availability, as well as DevOps and CI/CD.</description>
+    </item>
+    
+    <item>
+      <title>Glossary</title>
+      <link>https://kubesphere-v3.netlify.app/docs/introduction/glossary/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kubesphere-v3.netlify.app/docs/introduction/glossary/</guid>
+      <description>This document describes some frequently used glossaries in KubeSphere as shown below:
+   Object Concepts     Project It is Kubernetes Namespace which provides virtual isolation for the resources in KubeSphere, see Namespace.   Pod A Pod is the smallest deployable computing unit that can be created and managed in KubeSphere, see Pods.   Deployment Deployment is used to describe a desired state in a deployment object, and the deployment controller changes the actual state to the desired state at a controlled rate, see Deployment.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>在 Kubernetes 安装 KubeSphere on </title>
+    <link>https://kubesphere-v3.netlify.app/zh/docs/installing-on-kubernetes/</link>
+    <description>Recent content in 在 Kubernetes 安装 KubeSphere on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    
+	<atom:link href="https://kubesphere-v3.netlify.app/zh/docs/installing-on-kubernetes/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+  </channel>
+</rss>

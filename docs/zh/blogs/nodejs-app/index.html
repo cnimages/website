@@ -1,0 +1,1249 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<title>基于 Kubernetes 部署 node.js APP</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="description" content="KubeSphere 是在 Kubernetes 之上构建的以应用为中心的多租户容器平台，提供全栈的 IT 自动化运维的能力，简化企业的 DevOps 工作流。KubeSphere 提供了运维友好的向导式操作界面，帮助企业快速构建一个强大和功能丰富的容器云平台。">
+<meta name="keywords" content="KubeSphere, Kubernetes, 容器平台, DevOps, 混合云">
+
+<meta property="og:type" content="article"/>
+<meta property="og:title" content="基于 Kubernetes 部署 node.js APP"/>
+<meta property="og:description" content="KubeSphere 是在 Kubernetes 之上构建的以应用为中心的多租户容器平台，提供全栈的 IT 自动化运维的能力，简化企业的 DevOps 工作流。KubeSphere 提供了运维友好的向导式操作界面，帮助企业快速构建一个强大和功能丰富的容器云平台。"/>
+<meta property="og:image" content="https://pek3b.qingstor.com/kubesphere-docs/png/20190930145646.png"/>
+<meta property="og:url" content="https://kubesphere-v3.netlify.app/zh/blogs/nodejs-app/"/>
+
+<meta name="docsearch:language" content="zh-CN" /><link rel="stylesheet" href="/fonts/Roboto/stylesheet.css">
+<link rel="stylesheet" href="/fonts/ProximaNova/stylesheet.css">
+<link rel="stylesheet" href="/css/jquery.modal.min.css">
+<link rel="stylesheet" href="/css/viewer.min.css">
+
+
+<link rel="stylesheet" href="/scss/common.min.fd2f2584615728a729ee87ecf658d2f2e62d4c55dc6ca4c90029116aa21ee2e8.css">
+
+
+
+
+
+
+
+
+
+
+
+<script src='/js/jquery-3.5.0.min.js'></script>
+<script src='/js/viewer.min.js'></script>
+<script src='/js/jquery.modal.min.js'></script>
+
+
+
+
+
+
+
+
+
+
+<script type='text/javascript'>
+!function(e,t,n,g,i){e[i]=e[i]||function(){(e[i].q=e[i].q||[]).push(arguments)},n=t.createElement("script"),tag=t.getElementsByTagName("script")[0],n.async=1,n.src=('https:'==document.location.protocol?'https://':'http://')+g,tag.parentNode.insertBefore(n,tag)}(window,document,"script","assets.giocdn.com/2.1/gio.js","gio");
+  gio('init', '8a24ae300cbf8b8c', {});
+  
+  
+  gio('send');
+</script>
+
+
+
+
+
+    <link rel="stylesheet" href="/scss/content.min.cd01785de7a83de330d32ac3aef7e5f4e0aa8c5e62c21008e4779016e3fd9517.css">
+    
+    
+    <link rel="stylesheet" href="/scss/markdown.min.0de31cde2c91847e0e6c6f43d52658e6347b056a9da347546c21a7786900bfcf.css">
+</head>
+
+
+<body>
+   
+  
+<header class="navigation">
+    
+    <div class="join-div">
+        <div class="content">
+            🚀 KubeSphere v3.0.0 正式 GA！<a href="https://www.qingcloud.com/kubesphere2020#tz2" target="_blank" rel="noopener noreferrer">免费回看 v3.0 发布会视频 📺</a>
+            <a href="https://kubesphere.com.cn/forum/d/2062-awesome-kubesphere-kubesphere-3-0" target="_blank" rel="noopener noreferrer">了解一键快速安装入门的最佳方式📚 →</a>
+            <img id="close-join" src="/images/header/close.svg" alt="close">
+        </div>
+    </div>
+    
+    <div class="common-layout">
+        <div class="header-container">
+            <a href="/zh/">
+                <img src="/images/header/logo.svg" alt="" class="logo">
+            </a>
+
+            <ul class="nav">
+                
+                
+                
+
+                
+                
+                    
+                
+                    
+                
+                    
+                
+
+                <li  class="menu-li" >
+                    <span class='menu-span'>应用场景</span>
+                    <ul class="dropdown-menu menu-2">
+                        
+                        <li >
+                            
+                            <a href="/zh/devops/">拥抱一站式 DevOps 工作流</a>
+                            
+                        </li>
+                        
+                        <li >
+                            
+                            <a href="/zh/service-mesh/">在 Kubernetes 运行微服务</a>
+                            
+                        </li>
+                        
+                        <li >
+                            
+                            <a href="/zh/observability/">构建丰富的云原生可观察性</a>
+                            
+                        </li>
+                        
+                    </ul>
+                </li>
+                
+
+                
+                
+
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+
+                <li  class="menu-li" >
+                    <span class='menu-span'>资源</span>
+                    <ul class="dropdown-menu menu-3">
+                        
+                        <li >
+                            
+                            <a href="/zh/projects/">开源项目</a>
+                            
+                        </li>
+                        
+                        <li >
+                            
+                            <a href="/zh/conferences/">开源峰会</a>
+                            
+                        </li>
+                        
+                        <li >
+                            
+                            <a href="/zh/blogs/">技术博客</a>
+                            
+                        </li>
+                        
+                        <li >
+                            
+                            <a href="/zh/videos/">视频资源</a>
+                            
+                        </li>
+                        
+                    </ul>
+                </li>
+                
+
+                
+                
+
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+
+                <li  class="menu-li" >
+                    <span class='menu-span'>文档中心</span>
+                    <ul class="dropdown-menu menu-4">
+                        
+                        <li >
+                            
+                            <a href="/zh/docs/">v3.0.0 <img src='/images/header/star.svg' alt='star'></a>
+                            
+                        </li>
+                        
+                        <li >
+                            
+                            <a href="https://v2-1.docs.kubesphere.io/docs/zh-CN/" target="_blank" rel="noopener noreferrer">v2.1.x</a>
+                            
+                        </li>
+                        
+                        <li >
+                            
+                            <a href="https://v2-0.docs.kubesphere.io/docs/zh-CN/" target="_blank" rel="noopener noreferrer">v2.0.x</a>
+                            
+                        </li>
+                        
+                        <li >
+                            
+                            <a href="https://v1-0.docs.kubesphere.io/docs/zh-CN/" target="_blank" rel="noopener noreferrer">v1.0.0</a>
+                            
+                        </li>
+                        
+                    </ul>
+                </li>
+                
+
+                
+                
+
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+
+                <li  class="menu-li" >
+                    <span class='menu-span'>开源社区</span>
+                    <ul class="dropdown-menu menu-5">
+                        
+                        <li >
+                            
+                            <a href="/zh/contribution/">参与贡献</a>
+                            
+                        </li>
+                        
+                        <li >
+                            
+                            <a href="/zh/case/">案例学习</a>
+                            
+                        </li>
+                        
+                        <li >
+                            
+                            <a href="/zh/partner/">合作伙伴</a>
+                            
+                        </li>
+                        
+                        <li >
+                            
+                            <a href="/zh/news/">动态</a>
+                            
+                        </li>
+                        
+                        <li >
+                            
+                            <a href="https://github.com/kubesphere/kubesphere/blob/master/docs/roadmap.md" target="_blank" rel="noopener noreferrer">版本计划</a>
+                            
+                        </li>
+                        
+                        <li >
+                            
+                            <a href="https://kubesphere.com.cn/" target="_blank" rel="noopener noreferrer">中国站</a>
+                            
+                        </li>
+                        
+                    </ul>
+                </li>
+                
+
+                
+                
+                <li >
+                    
+                    <a data-docs="用户论坛" href="https://kubesphere.com.cn/forum" target="_blank" rel="noopener noreferrer">用户论坛</a>
+                    
+                </li>
+                
+
+                
+
+            </ul>
+            <div class="right-menu">
+                <ul>
+                    <li class="language-menu">
+                        <div>
+                            <img src="/images/header/black.svg" alt="">
+                            <span>简体中文</span>
+                        </div>
+                        
+                        <ul class="dropdown-menu">
+                            
+                            <li onclick="location = '\/zh\/blogs\/nodejs-app\/'">简体中文</li>
+                            
+                        </ul>
+                        
+                    </li>
+                    <li class='btn-li'>
+                        <a href="https://demo.kubesphere.io/login" target="_blank" rel="noopener noreferrer">
+                            <button class="demo-btn">Demo →</button>
+                        </a>
+                        <ol class="dropdown-menu">
+                            <li>1.体验账号： demo1 / Demo123</li>
+                            <li>2.该账号仅开放了部分 UI 界面查看权限</li>
+                            <li>3.建议自行安装体验完整的管理功能</li>
+                        </ol>
+                    </li>
+                    <li class='link-li'>
+                        <a class='link-1' href="https://join.slack.com/t/kubesphere/shared_invite/enQtNTE3MDIxNzUxNzQ0LTZkNTdkYWNiYTVkMTM5ZThhODY1MjAyZmVlYWEwZmQ3ODQ1NmM1MGVkNWEzZTRhNzk0MzM5MmY4NDc3ZWVhMjE" target="_blank" rel="noopener noreferrer"></a>
+                        <a class='link-2' href="https://twitter.com/KubeSphere" target="_blank" rel="noopener noreferrer"></a>
+                        <a class='link-3' href="https://github.com/kubesphere/kubesphere" target="_blank" rel="noopener noreferrer"></a>
+                    </li>
+                    <li class="menu-icon">
+                        <img src="/images/header/menu.svg" alt="">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-for-menu" class="modal">
+        <ul class="nav">
+            
+            
+            
+
+            
+            
+                
+            
+                
+            
+                
+            
+
+            <li data-check="0"  class="menu-li" >
+                <span class='menu-span'>应用场景</span>
+                <ul class="dropdown-menu">
+                    
+                    <li >
+                        <a href="/zh/devops/">拥抱一站式 DevOps 工作流</a>
+                    </li>
+                    
+                    <li >
+                        <a href="/zh/service-mesh/">在 Kubernetes 运行微服务</a>
+                    </li>
+                    
+                    <li >
+                        <a href="/zh/observability/">构建丰富的云原生可观察性</a>
+                    </li>
+                    
+                </ul>
+            </li>
+            
+
+            
+            
+
+            
+            
+                
+            
+                
+            
+                
+            
+                
+            
+
+            <li data-check="0"  class="menu-li" >
+                <span class='menu-span'>资源</span>
+                <ul class="dropdown-menu">
+                    
+                    <li >
+                        <a href="/zh/projects/">开源项目</a>
+                    </li>
+                    
+                    <li >
+                        <a href="/zh/conferences/">开源峰会</a>
+                    </li>
+                    
+                    <li >
+                        <a href="/zh/blogs/">技术博客</a>
+                    </li>
+                    
+                    <li >
+                        <a href="/zh/videos/">视频资源</a>
+                    </li>
+                    
+                </ul>
+            </li>
+            
+
+            
+            
+
+            
+            
+                
+            
+                
+            
+                
+            
+                
+            
+
+            <li data-check="0"  class="menu-li" >
+                <span class='menu-span'>文档中心</span>
+                <ul class="dropdown-menu">
+                    
+                    <li >
+                        <a href="/zh/docs/">v3.0.0 <img src='/images/header/star.svg' alt='star'></a>
+                    </li>
+                    
+                    <li >
+                        <a href="https://v2-1.docs.kubesphere.io/docs/zh-CN/">v2.1.x</a>
+                    </li>
+                    
+                    <li >
+                        <a href="https://v2-0.docs.kubesphere.io/docs/zh-CN/">v2.0.x</a>
+                    </li>
+                    
+                    <li >
+                        <a href="https://v1-0.docs.kubesphere.io/docs/zh-CN/">v1.0.0</a>
+                    </li>
+                    
+                </ul>
+            </li>
+            
+
+            
+            
+
+            
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+
+            <li data-check="0"  class="menu-li" >
+                <span class='menu-span'>开源社区</span>
+                <ul class="dropdown-menu">
+                    
+                    <li >
+                        <a href="/zh/contribution/">参与贡献</a>
+                    </li>
+                    
+                    <li >
+                        <a href="/zh/case/">案例学习</a>
+                    </li>
+                    
+                    <li >
+                        <a href="/zh/partner/">合作伙伴</a>
+                    </li>
+                    
+                    <li >
+                        <a href="/zh/news/">动态</a>
+                    </li>
+                    
+                    <li >
+                        <a href="https://github.com/kubesphere/kubesphere/blob/master/docs/roadmap.md">版本计划</a>
+                    </li>
+                    
+                    <li >
+                        <a href="https://kubesphere.com.cn/">中国站</a>
+                    </li>
+                    
+                </ul>
+            </li>
+            
+
+            
+            
+            <li ><a data-docs="用户论坛" href="https://kubesphere.com.cn/forum">用户论坛</a></li>
+            
+
+            
+
+        </ul>
+        <div class="btn-div">
+            <a href="https://demo.kubesphere.io/login" target="_blank" rel="noopener noreferrer">
+                <button class="demo-btn">Demo →</button>
+            </a>
+        </div>
+        <div class="link-div">
+            <a href="https://join.slack.com/t/kubesphere/shared_invite/enQtNTE3MDIxNzUxNzQ0LTZkNTdkYWNiYTVkMTM5ZThhODY1MjAyZmVlYWEwZmQ3ODQ1NmM1MGVkNWEzZTRhNzk0MzM5MmY4NDc3ZWVhMjE" target="_blank" rel="noopener noreferrer">
+                <img src="/images/header/slack-hover.svg" alt="">
+            </a>
+            <a href="https://twitter.com/KubeSphere" target="_blank" rel="noopener noreferrer">
+                <img src="/images/header/twitter-hover.svg" alt="">
+            </a>
+            <a href="https://github.com/kubesphere/kubesphere" target="_blank" rel="noopener noreferrer">
+                <img src="/images/header/github-hover.svg" alt="">
+            </a>
+        </div>
+    </div>
+</header>
+<script>
+var bindNavMouseEvent = function(selector) {
+    var flag = false
+    $(selector).mouseenter(function() {
+        if (flag) {
+            return false
+        }
+        flag = true
+        $(this).find('.dropdown-menu').fadeIn(200, function() {
+            flag = false
+        })
+    });
+    $(selector).mouseleave(function() {
+        $(this).find('.dropdown-menu').fadeOut(200)
+    });
+}
+
+var bindScrollChangeHeader = function() {
+    var check = 100
+    var header = $('header')
+    window.addEventListener('scroll', function() {
+        var scrollY = window.scrollY;
+        if (scrollY > 100) {
+            header.addClass('navigationScroll')
+        } else {
+            header.removeClass('navigationScroll')
+        }
+    })
+}
+
+var bindClickShowMenu = function() {
+    $('.menu-icon').click(function() {
+        $('#modal-for-menu').modal()
+    })
+}
+
+var bindClickModalLi = function() {
+    $('.modal .menu-li').click(function() {
+        var check = $(this).data('check')
+        if (check === 0) {
+            $(this).data('check', 1)
+            $(this).find('.dropdown-menu').slideDown(200)
+        } else {
+            $(this).data('check', 0)
+            $(this).find('.dropdown-menu').slideUp(200)
+        }
+        $(this).find('.menu-span').toggleClass('up')
+    })
+}
+
+var bindClickClose = function() {
+    $('#close-join').click(function() {
+        $('.navigation .join-div').hide()
+        $('.main-section').removeClass('padding')
+    })
+}
+
+var language = 'zh'
+
+bindClickClose()
+
+bindScrollChangeHeader()
+
+bindNavMouseEvent('.header-container .menu-li')
+bindNavMouseEvent('.header-container .language-menu')
+bindNavMouseEvent('.header-container .btn-li')
+
+bindClickShowMenu()
+bindClickModalLi()
+
+
+</script>
+
+  <section class="main-section  padding">
+      <div class="common-layout">
+          <div class='breadcrumb'>
+              
+              <span><a href='/zh/blogs'>技术博客</a> > </span>
+              <span>基于 Kubernetes 部署 node.js APP</span>
+          </div>
+          <div class='main-div middle-div'>
+              <div class='author'>Leo Liu</div>
+              <div class='date'>发布于：2019-08-25</div>
+              <h1>基于 Kubernetes 部署 node.js APP</h1>
+              <div class="share-1">
+                  <div class="share">
+  <a href="http://twitter.com/share?url=https%3a%2f%2fkubesphere-v3.netlify.app%2fzh%2fblogs%2fnodejs-app%2f&text=%e5%9f%ba%e4%ba%8e%20Kubernetes%20%e9%83%a8%e7%bd%b2%20node.js%20APP" target="_blank" rel="noopener noreferrer">
+    <img src="/images/share/Twitter.svg" alt="twitter icon">
+  </a>
+  <a href="http://reddit.com/submit?url=https%3a%2f%2fkubesphere-v3.netlify.app%2fzh%2fblogs%2fnodejs-app%2f&title=%e5%9f%ba%e4%ba%8e%20Kubernetes%20%e9%83%a8%e7%bd%b2%20node.js%20APP" target="_blank" rel="noopener noreferrer">
+    <img src="/images/share/Reddit.svg" alt="reddit icon">
+  </a>
+  <a href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fkubesphere-v3.netlify.app%2fzh%2fblogs%2fnodejs-app%2f" target="_blank" rel="noopener noreferrer">
+    <img src="/images/share/Facebook.svg" alt="facebook icon">
+  </a>
+  <a href="http://www.linkedin.com/shareArticle?mini=true&url=https%3a%2f%2fkubesphere-v3.netlify.app%2fzh%2fblogs%2fnodejs-app%2f" target="_blank" rel="noopener noreferrer">
+    <img src="/images/share/Linkedin.svg" alt="linkedin icon">
+  </a>
+  <a href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fkubesphere-v3.netlify.app%2fzh%2fblogs%2fnodejs-app%2f&t=%e5%9f%ba%e4%ba%8e%20Kubernetes%20%e9%83%a8%e7%bd%b2%20node.js%20APP" target="_blank" rel="noopener noreferrer">
+    <img src="/images/share/HackerNews.svg" alt="hackernews icon">
+  </a>
+</div>
+              </div>
+              <div class='content'>
+                  <div class='md-body'>
+                      <h3 id="什么是-kubernetes">什么是 Kubernetes</h3>
+<p>Kubernetes 是一个开源容器编排引擎，可以帮助开发者或运维人员部署和管理容器化的应用，能够轻松完成日常开发运维过程中诸如 滚动更新，横向自动扩容，服务发现，负载均衡等需求。<a href="https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/" target="_blank" rel="noopener noreferrer">了解更多</a></p>
+<h3 id="安装-kubernetes">安装 Kubernetes</h3>
+<p>可以通过快速安装 kubernetes 集群：</p>
+<ul>
+<li><a href="https://github.com/kubesphere/kubesphere" target="_blank" rel="noopener noreferrer">KubeSphere Installer</a></li>
+<li><a href="https://kubernetes.io/docs/setup/learning-environment/minikube/" target="_blank" rel="noopener noreferrer">minikube</a></li>
+<li><a href="https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/create-cluster-kubeadm/" target="_blank" rel="noopener noreferrer">kubeadm</a></li>
+</ul>
+<h3 id="kubernetes-术语介绍">Kubernetes 术语介绍</h3>
+<h4 id="podhttpskubernetesiodocsconceptsworkloadspodspod"><a href="https://kubernetes.io/docs/concepts/workloads/pods/pod/" target="_blank" rel="noopener noreferrer">Pod</a></h4>
+<p>Pod 是 Kubernetes 最小调度单位，是一个或一组容器的集合。</p>
+<h4 id="deploymenthttpskubernetesiodocsconceptsworkloadscontrollersdeployment"><a href="https://kubernetes.io/docs/concepts/workloads/controllers/deployment/" target="_blank" rel="noopener noreferrer">Deployment</a></h4>
+<p>提供对 Pod 的声明式副本控制。指定 Pod 模版，Pod 副本数量, 更新策略等。</p>
+<h4 id="servicehttpskubernetesiodocsconceptsservices-networkingconnect-applications-service"><a href="https://kubernetes.io/docs/concepts/services-networking/connect-applications-service/" target="_blank" rel="noopener noreferrer">Service</a></h4>
+<p>Service 定义了 Pod 的逻辑分组和一种可以访问它们的策略。借助Service，应用可以方便的实现服务发现与负载均衡。</p>
+<h4 id="label--selectorhttpskubernetesiodocsconceptsoverviewworking-with-objectslabels"><a href="https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/" target="_blank" rel="noopener noreferrer">Label &amp;amp; Selector</a></h4>
+<p>Kubernetes 中使用 Label 去关联各个资源。</p>
+<ol>
+<li>通过资源对象(Deployment, etc.)上定义的 Label Selector 来筛选 Pod 数量。</li>
+<li>通过 Service 的 Label Selector 来选择对应的 Pod， 自动建立起每个 Service 到对应 Pod 的请求转发路由表。</li>
+<li>通过对某些 Node 定义特定的 Label，并且在 Pod 中添加 NodeSelector 属性，可以实现 Pod 的定向调度(运行在哪些节点上)。</li>
+</ol>
+<h3 id="nodejs-模板项目">Nodejs 模板项目</h3>
+<p><a href="https://github.com/gothinkster/node-express-realworld-example-app" target="_blank" rel="noopener noreferrer">node-express-realworld-example-app</a> 是一款 node.js 编写的后端示例应用。使用 Express 作为网络框架，使用 mongodb 持久化数据，使用 jwt 作用户认证等。</p>
+<h4 id="项目分析">项目分析</h4>
+<ol>
+<li>分析 package.json, 将使用 <code>npm start</code> 作为容器启动命令，并依赖于一个 <code>realworld-mongo</code> 的容器服务。</li>
+</ol>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json">{
+  <span style="color:#f92672">&#34;scripts&#34;</span>: {
+    <span style="color:#f92672">&#34;mongo:start&#34;</span>: <span style="color:#e6db74">&#34;docker run --name realworld-mongo -p 27017:27017 mongo &amp; sleep 5&#34;</span>,
+    <span style="color:#f92672">&#34;start&#34;</span>: <span style="color:#e6db74">&#34;node ./app.js&#34;</span>,
+    <span style="color:#f92672">&#34;dev&#34;</span>: <span style="color:#e6db74">&#34;nodemon ./app.js&#34;</span>,
+    <span style="color:#f92672">&#34;test&#34;</span>: <span style="color:#e6db74">&#34;newman run ./tests/api-tests.postman.json -e ./tests/env-api-tests.postman.json&#34;</span>,
+    <span style="color:#f92672">&#34;stop&#34;</span>: <span style="color:#e6db74">&#34;lsof -ti :3000 | xargs kill&#34;</span>,
+    <span style="color:#f92672">&#34;mongo:stop&#34;</span>: <span style="color:#e6db74">&#34;docker stop realworld-mongo &amp;&amp; docker rm realworld-mongo&#34;</span>
+  },
+}
+</code></pre></div><ol start="2">
+<li>全局搜索 <code>process.env.</code>并分析代码, 生产环境需要 的环境变量有:</li>
+</ol>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">NODE_ENV                <span style="color:#75715e"># 应设置为 production</span>
+MONGODB_URI             <span style="color:#75715e"># mondodb 服务路径</span>
+PORT                    <span style="color:#75715e"># nodejs 服务端口, 默认3000</span>
+SECRET                  <span style="color:#75715e"># jwt token 的私钥</span>
+</code></pre></div><h4 id="在项目根目录添加-dockerfile">在项目根目录添加 Dockerfile:</h4>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Dockerfile" data-lang="Dockerfile"><span style="color:#66d9ef">FROM</span><span style="color:#e6db74"> mhart/alpine-node:8</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">WORKDIR</span><span style="color:#e6db74"> /root/demo</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">COPY</span> ./package.json .<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">RUN</span> npm install<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">COPY</span> . .<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">EXPOSE</span><span style="color:#e6db74"> 3000</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">CMD</span> [<span style="color:#e6db74">&#34;npm&#34;</span>, <span style="color:#e6db74">&#34;start&#34;</span>]<span style="color:#960050;background-color:#1e0010">
+</span></code></pre></div><h4 id="打包镜像">打包镜像</h4>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">docker build -t example-app .
+</code></pre></div><h4 id="推送镜像到-docker-hubhttpshubdockercom">推送镜像到 <a href="https://hub.docker.com/" target="_blank" rel="noopener noreferrer">Docker Hub</a></h4>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">docker login -u $DOCKERHUB_USER -p $DOCKERHUB_PASSWORD
+docker tag example-app $DOCKERHUB_USER/example-app:v0.1.0
+docker push $DOCKERHUB_USER/example-app:v0.1.0
+</code></pre></div><h3 id="部署-mongodb">部署 MongoDB</h3>
+<p>此应用将分为两个服务部署，一个是包含 Nodejs 主程序的 example-app 服务，一个提供存储的 mognodb 服务。</p>
+<p>mongodb 使用 <a href="https://hub.docker.com/_/mongo">https://hub.docker.com/_/mongo</a> 作为镜像，因为有持久化数据，在单节点模式下可以使用 HostPath 挂载存储（多节点模式或挂载 PVC 存储形式推荐使用 <a href="https://kubesphere.io/" target="_blank" rel="noopener noreferrer">KubeSphere</a> 部署集群, 省去繁琐的配置），通过 Service 将服务暴露到 k8s 内部。</p>
+<p>mongodb.yaml</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#66d9ef">apiVersion</span>: apps/v1
+<span style="color:#66d9ef">kind</span>: Deployment
+<span style="color:#66d9ef">metadata</span>:
+  <span style="color:#66d9ef">namespace</span>: default
+  <span style="color:#66d9ef">labels</span>: <span style="color:#75715e">&amp;ref_0</span>
+    <span style="color:#66d9ef">app</span>: mongodb
+  <span style="color:#66d9ef">name</span>: mongodb
+<span style="color:#66d9ef">spec</span>:
+  <span style="color:#66d9ef">replicas</span>: <span style="color:#ae81ff">1</span>
+  <span style="color:#66d9ef">selector</span>:
+    <span style="color:#66d9ef">matchLabels</span>: <span style="color:#75715e">*ref_0</span>
+  <span style="color:#66d9ef">template</span>:
+    <span style="color:#66d9ef">metadata</span>:
+      <span style="color:#66d9ef">labels</span>: <span style="color:#75715e">*ref_0</span>
+    <span style="color:#66d9ef">spec</span>:
+      <span style="color:#66d9ef">containers</span>:
+        - <span style="color:#66d9ef">name</span>: container-ur9rxw
+          <span style="color:#66d9ef">image</span>: mongo
+          <span style="color:#66d9ef">imagePullPolicy</span>: IfNotPresent
+          <span style="color:#66d9ef">ports</span>:
+            - <span style="color:#66d9ef">name</span>: http-mongo
+              <span style="color:#66d9ef">protocol</span>: TCP
+              <span style="color:#66d9ef">containerPort</span>: <span style="color:#ae81ff">27017</span>
+          <span style="color:#66d9ef">volumeMounts</span>:
+            - <span style="color:#66d9ef">readOnly</span>: <span style="color:#66d9ef">false</span>
+              <span style="color:#66d9ef">mountPath</span>: /data/db
+              <span style="color:#66d9ef">name</span>: mongodb
+      <span style="color:#66d9ef">serviceAccount</span>: default
+      <span style="color:#66d9ef">volumes</span>:
+      - <span style="color:#66d9ef">hostPath</span>:
+          <span style="color:#66d9ef">path</span>: /data/db
+          <span style="color:#66d9ef">type</span>: DirectoryOrCreate
+        <span style="color:#66d9ef">name</span>: mongodb-pvc
+  <span style="color:#66d9ef">strategy</span>:
+    <span style="color:#66d9ef">rollingUpdate</span>:
+      <span style="color:#66d9ef">maxSurge</span>: <span style="color:#ae81ff">1</span>
+      <span style="color:#66d9ef">maxUnavailable</span>: <span style="color:#ae81ff">1</span>
+    <span style="color:#66d9ef">type</span>: RollingUpdate
+
+</code></pre></div><p>配置文件中主要包含：</p>
+<ol>
+<li>定义了 Pod 运行时的镜像 <code>mongo</code>，</li>
+<li>暴露 mognodb 服务到 27017 端口</li>
+<li>声明了一个 hostPath，将主机上的 /data/db 路径挂载到容器的 /data/db 路径上(mongodb 默认数据存放路径)。</li>
+</ol>
+<p>在 kubernetes 集群中执行 kubectl 部署</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">kubectl apply -f mongodb.yaml
+</code></pre></div><p>查看 pod 运行情况：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">root@i-auleonob:/home/ubuntu# kubectl get pods
+NAME                       READY   STATUS    RESTARTS   AGE
+mongodb-54f949cb5c-r48bj   1/1     Running   <span style="color:#ae81ff">0</span>          42s
+</code></pre></div><p>pod 已成功运行起来</p>
+<p>查看 mongodb 服务日志:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">root@i-auleonob:/home/ubuntu# kubectl logs mongodb-54f949cb5c-r48bj
+2019-09-09T14:05:05.127+0000 I  CONTROL  <span style="color:#f92672">[</span>main<span style="color:#f92672">]</span> Automatically disabling TLS 1.0, to force-enable TLS 1.0 specify --sslDisabledProtocols <span style="color:#e6db74">&#39;none&#39;</span>
+2019-09-09T14:05:05.132+0000 I  CONTROL  <span style="color:#f92672">[</span>initandlisten<span style="color:#f92672">]</span> MongoDB starting : pid<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span> port<span style="color:#f92672">=</span><span style="color:#ae81ff">27017</span> dbpath<span style="color:#f92672">=</span>/data/db 64-bit host<span style="color:#f92672">=</span>mongodb-54f949cb5c-r48bj
+2019-09-09T14:05:05.132+0000 I  CONTROL  <span style="color:#f92672">[</span>initandlisten<span style="color:#f92672">]</span> db version v4.2.0
+2019-09-09T14:05:05.132+0000 I  CONTROL  <span style="color:#f92672">[</span>initandlisten<span style="color:#f92672">]</span> git version: a4b751dcf51dd249c5865812b390cfd1c0129c30
+2019-09-09T14:05:05.132+0000 I  CONTROL  <span style="color:#f92672">[</span>initandlisten<span style="color:#f92672">]</span> OpenSSL version: OpenSSL 1.1.1  <span style="color:#ae81ff">11</span> Sep <span style="color:#ae81ff">2018</span>
+...
+2019-09-09T14:05:06.180+0000 I  NETWORK  <span style="color:#f92672">[</span>initandlisten<span style="color:#f92672">]</span> Listening on 0.0.0.0
+2019-09-09T14:05:06.180+0000 I  NETWORK  <span style="color:#f92672">[</span>initandlisten<span style="color:#f92672">]</span> waiting <span style="color:#66d9ef">for</span> connections on port <span style="color:#ae81ff">27017</span>
+...
+</code></pre></div><p>从日志可以看到 mongodb 已成功启动，并监听 27017 端口,  但此时在集群中还无法访问该端口，需要创建一个服务将端口映射到集群。</p>
+<h3 id="创建-mongodb-服务">创建 MongoDB 服务</h3>
+<p>mongodb-service.yaml</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#66d9ef">apiVersion</span>: v1
+<span style="color:#66d9ef">kind</span>: Service
+<span style="color:#66d9ef">metadata</span>:
+  <span style="color:#66d9ef">namespace</span>: default
+  <span style="color:#66d9ef">labels</span>: <span style="color:#75715e">&amp;ref_0</span>
+    <span style="color:#66d9ef">app</span>: mongodb
+  <span style="color:#66d9ef">name</span>: mongodb-service
+<span style="color:#66d9ef">spec</span>:
+  <span style="color:#66d9ef">type</span>: ClusterIP
+  <span style="color:#66d9ef">sessionAffinity</span>: None
+  <span style="color:#66d9ef">selector</span>: <span style="color:#75715e">*ref_0</span>
+  <span style="color:#66d9ef">ports</span>:
+    - <span style="color:#66d9ef">name</span>: http-mongo
+      <span style="color:#66d9ef">protocol</span>: TCP
+      <span style="color:#66d9ef">port</span>: <span style="color:#ae81ff">27017</span>
+      <span style="color:#66d9ef">targetPort</span>: <span style="color:#ae81ff">27017</span>
+
+</code></pre></div><p>在 kubernetes 集群中执行 kubectl 创建服务</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">kubectl apply -f mongodb-service.yaml
+</code></pre></div><p>查看服务详情</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">root@i-auleonob:/home/ubuntu# kubectl describe svc/mongodb-service
+Name:              mongodb-service
+Namespace:         default
+Labels:            app<span style="color:#f92672">=</span>mongodb
+Annotations:       kubectl.kubernetes.io/last-applied-configuration:
+                     <span style="color:#f92672">{</span><span style="color:#e6db74">&#34;apiVersion&#34;</span>:<span style="color:#e6db74">&#34;v1&#34;</span>,<span style="color:#e6db74">&#34;kind&#34;</span>:<span style="color:#e6db74">&#34;Service&#34;</span>,<span style="color:#e6db74">&#34;metadata&#34;</span>:<span style="color:#f92672">{</span><span style="color:#e6db74">&#34;annotations&#34;</span>:<span style="color:#f92672">{}</span>,<span style="color:#e6db74">&#34;labels&#34;</span>:<span style="color:#f92672">{</span><span style="color:#e6db74">&#34;app&#34;</span>:<span style="color:#e6db74">&#34;mongodb&#34;</span><span style="color:#f92672">}</span>,<span style="color:#e6db74">&#34;name&#34;</span>:<span style="color:#e6db74">&#34;mongodb-service&#34;</span>,<span style="color:#e6db74">&#34;namespace&#34;</span>:<span style="color:#e6db74">&#34;default&#34;</span>...
+Selector:          app<span style="color:#f92672">=</span>mongodb
+Type:              ClusterIP
+IP:                10.102.156.99
+Port:              http-mongo  27017/TCP
+TargetPort:        27017/TCP
+Endpoints:         192.168.219.10:27017
+Session Affinity:  None
+Events:            &lt;none&gt;
+</code></pre></div><p>透过 <a href="https://kubernetes.io/docs/concepts/services-networking/service/#dns" target="_blank" rel="noopener noreferrer">Kubernetes DNS</a>，在集群内部可以使用 <code>mongodb-service.default:27017</code> 访问到 mongodb 服务。</p>
+<h3 id="部署-example-app">部署 Example App</h3>
+<p>example-app 无需挂载存储卷，但容器的启动时需要必要的环境变量。在 env 中填入必要的环境变量，通过 mongodb-service.default 来访问 mongodb 服务。该端口无需暴露到主机上，service 类型选择使用 <a href="https://kubernetes.io/docs/concepts/services-networking/service/#publishing-services-service-types" target="_blank" rel="noopener noreferrer">ClusterIP</a>。</p>
+<p>example-app.yaml</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#66d9ef">apiVersion</span>: apps/v1
+<span style="color:#66d9ef">kind</span>: Deployment
+<span style="color:#66d9ef">metadata</span>:
+  <span style="color:#66d9ef">namespace</span>: default
+  <span style="color:#66d9ef">labels</span>:
+    <span style="color:#66d9ef">version</span>: v1
+    <span style="color:#66d9ef">app</span>: example-app
+  <span style="color:#66d9ef">name</span>: example-app-v1
+<span style="color:#66d9ef">spec</span>:
+  <span style="color:#66d9ef">replicas</span>: <span style="color:#ae81ff">1</span>
+  <span style="color:#66d9ef">selector</span>:
+    <span style="color:#66d9ef">matchLabels</span>:
+      <span style="color:#66d9ef">version</span>: v1
+      <span style="color:#66d9ef">app</span>: example-app
+  <span style="color:#66d9ef">template</span>:
+    <span style="color:#66d9ef">metadata</span>:
+      <span style="color:#66d9ef">labels</span>:
+        <span style="color:#66d9ef">version</span>: v1
+        <span style="color:#66d9ef">app</span>: example-app
+    <span style="color:#66d9ef">spec</span>:
+      <span style="color:#66d9ef">containers</span>:
+      - <span style="color:#66d9ef">name</span>: container-l6cx0m
+        <span style="color:#66d9ef">image</span>: leoendlessx/example-app:v0<span style="color:#ae81ff">.1.0</span>
+        <span style="color:#66d9ef">imagePullPolicy</span>: IfNotPresent
+        <span style="color:#66d9ef">ports</span>:
+        - <span style="color:#66d9ef">name</span>: http-app
+          <span style="color:#66d9ef">protocol</span>: TCP
+          <span style="color:#66d9ef">containerPort</span>: <span style="color:#ae81ff">3000</span>
+        <span style="color:#66d9ef">env</span>:
+        - <span style="color:#66d9ef">name</span>: NODE_ENV
+          <span style="color:#66d9ef">value</span>: production
+        - <span style="color:#66d9ef">name</span>: MONGODB_URI
+          <span style="color:#66d9ef">value</span>: mongodb-service.default    <span style="color:#75715e"># 使 用kubernetes 内部 DNS 来访问 mongodb 服务</span>
+        - <span style="color:#66d9ef">name</span>: SECRET
+          <span style="color:#66d9ef">value</span>: asecretkey
+      <span style="color:#66d9ef">serviceAccount</span>: default
+  <span style="color:#66d9ef">strategy</span>:
+    <span style="color:#66d9ef">type</span>: RollingUpdate
+    <span style="color:#66d9ef">rollingUpdate</span>:
+      <span style="color:#66d9ef">maxUnavailable</span>: <span style="color:#ae81ff">25</span>%
+      <span style="color:#66d9ef">maxSurge</span>: <span style="color:#ae81ff">25</span>%
+
+</code></pre></div><p>在 kubernetes 集群中执行 kubectl 部署</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">kubectl apply -f example-app.yaml
+</code></pre></div><p>查看 Pod 状态及日志</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">root@i-auleonob:/home/ubuntu# kubectl get pods
+NAME                              READY   STATUS    RESTARTS   AGE
+example-app-v1-5678d8db79-7nhkd   1/1     Running   <span style="color:#ae81ff">0</span>          26s
+mongodb-54f949cb5c-r48bj          1/1     Running   <span style="color:#ae81ff">0</span>          71m
+root@i-auleonob:/home/ubuntu# kubectl logs example-app-v1-5678d8db79-7nhkd
+
+&gt; conduit-node@1.0.0 start /root/demo
+&gt; node ./app.js
+
+Warning: connect.session<span style="color:#f92672">()</span> MemoryStore is not
+designed <span style="color:#66d9ef">for</span> a production environment, as it will leak
+memory, and will not scale past a single process.
+Listening on port <span style="color:#ae81ff">3000</span>
+</code></pre></div><p>example-app 程序已成功启动，现在需将服务暴露主机节点上访问，以便主机网络将端口映射到外网。service 类型选择 <a href="https://kubernetes.io/docs/concepts/services-networking/service/#nodeport" target="_blank" rel="noopener noreferrer">NodePort</a></p>
+<h3 id="创建-example-app-服务到并暴露到主机">创建 Example App 服务到并暴露到主机</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#66d9ef">apiVersion</span>: v1
+<span style="color:#66d9ef">kind</span>: Service
+<span style="color:#66d9ef">metadata</span>:
+  <span style="color:#66d9ef">namespace</span>: default
+  <span style="color:#66d9ef">labels</span>: <span style="color:#75715e">&amp;ref_0</span>
+    <span style="color:#66d9ef">version</span>: v1
+    <span style="color:#66d9ef">app</span>: example-app
+  <span style="color:#66d9ef">name</span>: example-app
+<span style="color:#66d9ef">spec</span>:
+  <span style="color:#66d9ef">type</span>: NodePort
+  <span style="color:#66d9ef">sessionAffinity</span>: ClientIP
+  <span style="color:#66d9ef">selector</span>: <span style="color:#75715e">*ref_0</span>
+  <span style="color:#66d9ef">ports</span>:
+    - <span style="color:#66d9ef">name</span>: http-app
+      <span style="color:#66d9ef">protocol</span>: TCP
+      <span style="color:#66d9ef">port</span>: <span style="color:#ae81ff">3000</span>
+      <span style="color:#66d9ef">targetPort</span>: <span style="color:#ae81ff">3000</span>
+
+</code></pre></div><p>在 kubernetes 集群中执行 kubectl 创建服务</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">kubectl apply -f example-app-service.yaml
+</code></pre></div><p>查看服务详情</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">root@i-auleonob:/home/ubuntu# kubectl describe svc/example-app
+Name:                     example-app
+Namespace:                default
+Labels:                   app<span style="color:#f92672">=</span>example-app
+                          version<span style="color:#f92672">=</span>v1
+Annotations:              kubectl.kubernetes.io/last-applied-configuration:
+                            <span style="color:#f92672">{</span><span style="color:#e6db74">&#34;apiVersion&#34;</span>:<span style="color:#e6db74">&#34;v1&#34;</span>,<span style="color:#e6db74">&#34;kind&#34;</span>:<span style="color:#e6db74">&#34;Service&#34;</span>,<span style="color:#e6db74">&#34;metadata&#34;</span>:<span style="color:#f92672">{</span><span style="color:#e6db74">&#34;annotations&#34;</span>:<span style="color:#f92672">{}</span>,<span style="color:#e6db74">&#34;labels&#34;</span>:<span style="color:#f92672">{</span><span style="color:#e6db74">&#34;app&#34;</span>:<span style="color:#e6db74">&#34;example-app&#34;</span>,<span style="color:#e6db74">&#34;version&#34;</span>:<span style="color:#e6db74">&#34;v1&#34;</span><span style="color:#f92672">}</span>,<span style="color:#e6db74">&#34;name&#34;</span>:<span style="color:#e6db74">&#34;example-app&#34;</span>,<span style="color:#e6db74">&#34;names...
+</span><span style="color:#e6db74">Selector:                 app=example-app,version=v1
+</span><span style="color:#e6db74">Type:                     NodePort
+</span><span style="color:#e6db74">IP:                       10.106.109.178
+</span><span style="color:#e6db74">Port:                     http-app  3000/TCP
+</span><span style="color:#e6db74">TargetPort:               3000/TCP
+</span><span style="color:#e6db74">NodePort:                 http-app  30375/TCP
+</span><span style="color:#e6db74">Endpoints:                192.168.219.48:3000
+</span><span style="color:#e6db74">Session Affinity:         ClientIP
+</span><span style="color:#e6db74">External Traffic Policy:  Cluster
+</span><span style="color:#e6db74">Events:                   &lt;none&gt;
+</span></code></pre></div><p>在节点上访问：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">root@i-auleonob:/home/ubuntu# curl 127.0.0.1:30375
+<span style="color:#f92672">{</span><span style="color:#e6db74">&#34;errors&#34;</span>:<span style="color:#f92672">{</span><span style="color:#e6db74">&#34;message&#34;</span>:<span style="color:#e6db74">&#34;Not Found&#34;</span>,<span style="color:#e6db74">&#34;error&#34;</span>:<span style="color:#f92672">{}}}</span>
+</code></pre></div><p>可见 example-app 可以正常访问，不过仍需要确认是否能正常访问 mongodb。</p>
+<blockquote>
+<p>example-app 容器需要等待 mongodb service 可用时, 才可以正常启动。在 mongodb service 可用后, 手动删除旧的 example-app Pod 即可。</p>
+</blockquote>
+<h3 id="测试-example-app-服务">测试 Example App 服务</h3>
+<h4 id="注册用户">注册用户</h4>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">curl -X POST <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>  <span style="color:#e6db74">&#39;http://127.0.0.1:30375/api/users&#39;</span> <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>  -H <span style="color:#e6db74">&#39;Content-Type: application/json&#39;</span> <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>  -H <span style="color:#e6db74">&#39;X-Requested-With: XMLHttpRequest&#39;</span> <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>  -H <span style="color:#e6db74">&#39;cache-control: no-cache&#39;</span> <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>  -d <span style="color:#e6db74">&#39;{&#34;user&#34;:{&#34;email&#34;:&#34;john@jacob.com&#34;, &#34;password&#34;:&#34;johnnyjacob&#34;, &#34;username&#34;:&#34;johnjacob&#34;}}&#39;</span>
+<span style="color:#f92672">{</span><span style="color:#e6db74">&#34;user&#34;</span>:<span style="color:#f92672">{</span><span style="color:#e6db74">&#34;username&#34;</span>:<span style="color:#e6db74">&#34;johnjacob&#34;</span>,<span style="color:#e6db74">&#34;email&#34;</span>:<span style="color:#e6db74">&#34;john@jacob.com&#34;</span>,<span style="color:#e6db74">&#34;token&#34;</span>:<span style="color:#e6db74">&#34;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVkNzY3MmMzMzdjNGI5MTAwMGVhZmIzYyIsInVzZXJuYW1lIjoiam9obmphY29iIiwiZXhwIjoxNTczMjI3NzE1LCJpYXQiOjE1NjgwNDM3MTV9.24OGisacl8-n4SooYr8kdcAOYTBvz27sC1mUyU3VkKM&#34;</span><span style="color:#f92672">}}</span>
+</code></pre></div><h4 id="登录">登录</h4>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">curl -X POST <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>  <span style="color:#e6db74">&#39;http://127.0.0.1:30375/api/users/login&#39;</span> <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>  -H <span style="color:#e6db74">&#39;Content-Type: application/json&#39;</span> <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>  -H <span style="color:#e6db74">&#39;X-Requested-With: XMLHttpRequest&#39;</span> <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>  -H <span style="color:#e6db74">&#39;cache-control: no-cache&#39;</span> <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>  -d <span style="color:#e6db74">&#39;{&#34;user&#34;:{&#34;email&#34;:&#34;john@jacob.com&#34;, &#34;password&#34;:&#34;johnnyjacob&#34;}}&#39;</span>
+<span style="color:#f92672">{</span><span style="color:#e6db74">&#34;user&#34;</span>:<span style="color:#f92672">{</span><span style="color:#e6db74">&#34;username&#34;</span>:<span style="color:#e6db74">&#34;johnjacob&#34;</span>,<span style="color:#e6db74">&#34;email&#34;</span>:<span style="color:#e6db74">&#34;john@jacob.com&#34;</span>,<span style="color:#e6db74">&#34;token&#34;</span>:<span style="color:#e6db74">&#34;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVkNzY3MmMzMzdjNGI5MTAwMGVhZmIzYyIsInVzZXJuYW1lIjoiam9obmphY29iIiwiZXhwIjoxNTczMjI3ODcwLCJpYXQiOjE1NjgwNDM4NzB9.a5p0mCLZLSNbTCECjK9j-5hrgg-tA7mI5iENKdik5Xc&#34;</span><span style="color:#f92672">}}</span>
+</code></pre></div><h4 id="创建-article">创建 Article</h4>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">curl -X POST <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>  <span style="color:#e6db74">&#39;http://127.0.0.1:30375/api/articles&#39;</span> <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>  -H <span style="color:#e6db74">&#39;Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVkNzY3MmMzMzdjNGI5MTAwMGVhZmIzYyIsInVzZXJuYW1lIjoiam9obmphY29iIiwiZXhwIjoxNTczMjI3ODcwLCJpYXQiOjE1NjgwNDM4NzB9.a5p0mCLZLSNbTCECjK9j-5hrgg-tA7mI5iENKdik5Xc&#39;</span> <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>  -H <span style="color:#e6db74">&#39;Content-Type: application/json&#39;</span> <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>  -H <span style="color:#e6db74">&#39;X-Requested-With: XMLHttpRequest&#39;</span> <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>  -H <span style="color:#e6db74">&#39;cache-control: no-cache&#39;</span> <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>  -d <span style="color:#e6db74">&#39;{&#34;article&#34;:{&#34;title&#34;:&#34;How to train your dragon&#34;, &#34;description&#34;:&#34;Ever wonder how?&#34;, &#34;body&#34;:&#34;Very carefully.&#34;, &#34;tagList&#34;:[&#34;dragons&#34;,&#34;training&#34;]}}&#39;</span>
+<span style="color:#f92672">{</span><span style="color:#e6db74">&#34;article&#34;</span>:<span style="color:#f92672">{</span><span style="color:#e6db74">&#34;slug&#34;</span>:<span style="color:#e6db74">&#34;how-to-train-your-dragon-estl69&#34;</span>,<span style="color:#e6db74">&#34;title&#34;</span>:<span style="color:#e6db74">&#34;How to train your dragon&#34;</span>,<span style="color:#e6db74">&#34;description&#34;</span>:<span style="color:#e6db74">&#34;Ever wonder how?&#34;</span>,<span style="color:#e6db74">&#34;body&#34;</span>:<span style="color:#e6db74">&#34;Very carefully.&#34;</span>,<span style="color:#e6db74">&#34;createdAt&#34;</span>:<span style="color:#e6db74">&#34;2019-09-09T15:46:26.935Z&#34;</span>,<span style="color:#e6db74">&#34;updatedAt&#34;</span>:<span style="color:#e6db74">&#34;2019-09-09T15:46:26.935Z&#34;</span>,<span style="color:#e6db74">&#34;tagList&#34;</span>:<span style="color:#f92672">[</span><span style="color:#e6db74">&#34;dragons&#34;</span>,<span style="color:#e6db74">&#34;training&#34;</span><span style="color:#f92672">]</span>,<span style="color:#e6db74">&#34;favorited&#34;</span>:false,<span style="color:#e6db74">&#34;favoritesCount&#34;</span>:0,<span style="color:#e6db74">&#34;author&#34;</span>:<span style="color:#f92672">{</span><span style="color:#e6db74">&#34;username&#34;</span>:<span style="color:#e6db74">&#34;johnjacob&#34;</span>,<span style="color:#e6db74">&#34;image&#34;</span>:<span style="color:#e6db74">&#34;https://static.productionready.io/images/smiley-cyrus.jpg&#34;</span>,<span style="color:#e6db74">&#34;following&#34;</span>:false<span style="color:#f92672">}}}</span>
+</code></pre></div><h4 id="获取所有-articles">获取所有 Articles</h4>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">curl -X GET <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>  <span style="color:#e6db74">&#39;http://127.0.0.1:30375/api/articles&#39;</span> <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>  -H <span style="color:#e6db74">&#39;Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVkNzY3MmMzMzdjNGI5MTAwMGVhZmIzYyIsInVzZXJuYW1lIjoiam9obmphY29iIiwiZXhwIjoxNTczMjI3ODcwLCJpYXQiOjE1NjgwNDM4NzB9.a5p0mCLZLSNbTCECjK9j-5hrgg-tA7mI5iENKdik5Xc&#39;</span> <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>  -H <span style="color:#e6db74">&#39;Content-Type: application/json&#39;</span> <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>  -H <span style="color:#e6db74">&#39;X-Requested-With: XMLHttpRequest&#39;</span> <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>  -H <span style="color:#e6db74">&#39;cache-control: no-cache&#39;</span>
+<span style="color:#f92672">{</span><span style="color:#e6db74">&#34;articles&#34;</span>:<span style="color:#f92672">[{</span><span style="color:#e6db74">&#34;slug&#34;</span>:<span style="color:#e6db74">&#34;how-to-train-your-dragon-estl69&#34;</span>,<span style="color:#e6db74">&#34;title&#34;</span>:<span style="color:#e6db74">&#34;How to train your dragon&#34;</span>,<span style="color:#e6db74">&#34;description&#34;</span>:<span style="color:#e6db74">&#34;Ever wonder how?&#34;</span>,<span style="color:#e6db74">&#34;body&#34;</span>:<span style="color:#e6db74">&#34;Very carefully.&#34;</span>,<span style="color:#e6db74">&#34;createdAt&#34;</span>:<span style="color:#e6db74">&#34;2019-09-09T15:46:26.935Z&#34;</span>,<span style="color:#e6db74">&#34;updatedAt&#34;</span>:<span style="color:#e6db74">&#34;2019-09-09T15:46:26.935Z&#34;</span>,<span style="color:#e6db74">&#34;tagList&#34;</span>:<span style="color:#f92672">[</span><span style="color:#e6db74">&#34;dragons&#34;</span>,<span style="color:#e6db74">&#34;training&#34;</span><span style="color:#f92672">]</span>,<span style="color:#e6db74">&#34;favorited&#34;</span>:false,<span style="color:#e6db74">&#34;favoritesCount&#34;</span>:0,<span style="color:#e6db74">&#34;author&#34;</span>:<span style="color:#f92672">{</span><span style="color:#e6db74">&#34;username&#34;</span>:<span style="color:#e6db74">&#34;johnjacob&#34;</span>,<span style="color:#e6db74">&#34;image&#34;</span>:<span style="color:#e6db74">&#34;https://static.productionready.io/images/smiley-cyrus.jpg&#34;</span>,<span style="color:#e6db74">&#34;following&#34;</span>:false<span style="color:#f92672">}}]</span>,<span style="color:#e6db74">&#34;articlesCount&#34;</span>:1<span style="color:#f92672">}</span>
+</code></pre></div><p>通过测试可发现 example-app 与 mongodb 服务运行正常。</p>
+<!-- ### 使用 KubeSphere UI 部署服务
+[KubeSphere](https://kubesphere.io/) 是一款简单易用的 kubernetes 开源发行版, 可视化的部署操作大大降低运维难度。 -->
+
+                  </div>
+              </div>
+              <div class="share-2">
+                  <div class="share">
+  <a href="http://twitter.com/share?url=https%3a%2f%2fkubesphere-v3.netlify.app%2fzh%2fblogs%2fnodejs-app%2f&text=%e5%9f%ba%e4%ba%8e%20Kubernetes%20%e9%83%a8%e7%bd%b2%20node.js%20APP" target="_blank" rel="noopener noreferrer">
+    <img src="/images/share/Twitter.svg" alt="twitter icon">
+  </a>
+  <a href="http://reddit.com/submit?url=https%3a%2f%2fkubesphere-v3.netlify.app%2fzh%2fblogs%2fnodejs-app%2f&title=%e5%9f%ba%e4%ba%8e%20Kubernetes%20%e9%83%a8%e7%bd%b2%20node.js%20APP" target="_blank" rel="noopener noreferrer">
+    <img src="/images/share/Reddit.svg" alt="reddit icon">
+  </a>
+  <a href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fkubesphere-v3.netlify.app%2fzh%2fblogs%2fnodejs-app%2f" target="_blank" rel="noopener noreferrer">
+    <img src="/images/share/Facebook.svg" alt="facebook icon">
+  </a>
+  <a href="http://www.linkedin.com/shareArticle?mini=true&url=https%3a%2f%2fkubesphere-v3.netlify.app%2fzh%2fblogs%2fnodejs-app%2f" target="_blank" rel="noopener noreferrer">
+    <img src="/images/share/Linkedin.svg" alt="linkedin icon">
+  </a>
+  <a href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fkubesphere-v3.netlify.app%2fzh%2fblogs%2fnodejs-app%2f&t=%e5%9f%ba%e4%ba%8e%20Kubernetes%20%e9%83%a8%e7%bd%b2%20node.js%20APP" target="_blank" rel="noopener noreferrer">
+    <img src="/images/share/HackerNews.svg" alt="hackernews icon">
+  </a>
+</div>
+              </div>
+          </div>
+          <div class='aside'>
+              <div class="inner-div">
+                <div class='title'>目录</div>
+                <div class='tabs'><nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#什么是-kubernetes">什么是 Kubernetes</a></li>
+        <li><a href="#安装-kubernetes">安装 Kubernetes</a></li>
+        <li><a href="#kubernetes-术语介绍">Kubernetes 术语介绍</a></li>
+        <li><a href="#nodejs-模板项目">Nodejs 模板项目</a></li>
+        <li><a href="#部署-mongodb">部署 MongoDB</a></li>
+        <li><a href="#创建-mongodb-服务">创建 MongoDB 服务</a></li>
+        <li><a href="#部署-example-app">部署 Example App</a></li>
+        <li><a href="#创建-example-app-服务到并暴露到主机">创建 Example App 服务到并暴露到主机</a></li>
+        <li><a href="#测试-example-app-服务">测试 Example App 服务</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+              </div>
+          </div>
+      </div>
+  </section>
+  <footer>
+    
+    <div class="footer">
+        <div class="footer-main common-layout">
+            <div class="up-main">
+                <div class="left-div">
+                    <img src="/images/logo.svg" alt="" class="foot-logo">
+                    <p>通过邮件接收 KubeSphere 最新的技术博客与产品更新的通知</p>
+                    <div>
+                        <form
+                            action="https://kubesphere.us10.list-manage.com/subscribe/post?u=c85ea2b944b08b951f607bdd4&amp;id=83f673a2d9"
+                            method="post"
+                            target="_blank"
+                            novalidate
+                        >
+                            <input name="EMAIL" id="email-input" type="text" placeholder='请输入你的邮箱地址'>
+                            <button type="submit" id="email-submit">订阅</button>
+                        </form>
+                    </div>
+                    <span id="message" data-message1='请提供您的邮箱' data-message2='请输入有效的邮箱地址!'></span>
+                </div>
+                <div class="right-div">
+                    <ul class="common-flex-layout">
+                        
+                        
+                            <li>
+                                <div class="h3">应用场景</div>
+                                
+                                
+                                <a href="/zh/devops/">拥抱一站式 DevOps</a>
+                                
+                                
+                                
+                                <a href="/zh/service-mesh/">在 K8s 运行微服务</a>
+                                
+                                
+                                
+                                <a href="/zh/observability/">构建云原生可观察性</a>
+                                
+                                
+                                
+                                <a href="https://porterlb.io" target="_blank" rel="noopener noreferrer">物理机 K8s 暴露服务</a>
+                                
+                                
+                                
+                                <a href="https://github.com/kubesphere/kubekey" target="_blank" rel="noopener noreferrer">K8s 一键部署与运维</a>
+                                
+                                
+                                
+                                <a href="https://openpitrix.io/" target="_blank" rel="noopener noreferrer">多云应用管理平台</a>
+                                
+                                
+                                
+                                <a href="https://github.com/kubesphere/fluentbit-operator" target="_blank" rel="noopener noreferrer">Fluent-Bit 管理日志</a>
+                                
+                                
+                            </li>
+                        
+                            <li>
+                                <div class="h3">资源</div>
+                                
+                                
+                                <a href="/zh/projects/">开源项目</a>
+                                
+                                
+                                
+                                <a href="/zh/blogs/">技术博客</a>
+                                
+                                
+                                
+                                <a href="/zh/conferences/">开源峰会</a>
+                                
+                                
+                                
+                                <a href="/zh/videos/">视频资源</a>
+                                
+                                
+                            </li>
+                        
+                            <li>
+                                <div class="h3">文档中心</div>
+                                
+                                
+                                <a href="/../../zh/docs/introduction/what-is-kubesphere/">产品介绍</a>
+                                
+                                
+                                
+                                <a href="/../../zh/docs/quick-start/all-in-one-on-linux/">如何安装</a>
+                                
+                                
+                                
+                                <a href="/../../zh/docs/quick-start/create-workspace-and-project/">快速入门</a>
+                                
+                                
+                                
+                                <a href="/../../docs/api-reference/api-docs/">API 文档</a>
+                                
+                                
+                            </li>
+                        
+                            <li>
+                                <div class="h3">开源社区</div>
+                                
+                                
+                                <a href="/zh/contribution">参与贡献</a>
+                                
+                                
+                                
+                                <a href="/zh/case/">案例学习</a>
+                                
+                                
+                                
+                                <a href="/zh/partner/">合作伙伴</a>
+                                
+                                
+                                
+                                <a href="https://github.com/kubesphere/kubesphere/blob/master/docs/roadmap.md" target="_blank" rel="noopener noreferrer">版本计划</a>
+                                
+                                
+                                
+                                <a href="https://kubesphere.com.cn/" target="_blank" rel="noopener noreferrer">中国站</a>
+                                
+                                
+                                
+                                <a href="https://kubesphere.com.cn/forum" target="_blank" rel="noopener noreferrer">中文论坛</a>
+                                
+                                
+                                
+                                <a href="https://kubesphere.io" target="_blank" rel="noopener noreferrer">全球站</a>
+                                
+                                
+                                
+                                <a href="https://kubesphere.eu" target="_blank" rel="noopener noreferrer">欧洲站</a>
+                                
+                                
+                                
+                                <a href="https://kubesphereturkey.com" target="_blank" rel="noopener noreferrer">土耳其站</a>
+                                
+                                
+                                
+                                <a href="https://kubesphere.es" target="_blank" rel="noopener noreferrer">西班牙站</a>
+                                
+                                
+                            </li>
+                        
+                        
+                    </ul>
+                </div>
+            </div>
+            <div class="down-main">
+                <div class='img-div'>
+                    <a class='wechat' href="javascript:void(0);">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28" height="28" viewBox="0 0 28 28">
+    <defs>
+        <path id="a" d="M0 0h15.673v12.156H0z"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd" transform="translate(1 1)">
+        <circle cx="13" cy="13" r="13" stroke="#B6C2CD"/>
+        <g transform="translate(5 7)">
+            <mask id="b" fill="#fff">
+                <use xlink:href="#a"/>
+            </mask>
+            <path fill="currentColor" d="M15.673 7.898c0-2.061-2.173-3.74-4.619-3.74-2.59 0-4.625 1.679-4.625 3.74 0 2.066 2.035 3.738 4.625 3.738.542 0 1.09-.13 1.632-.256l1.493.776-.408-1.29c1.09-.776 1.902-1.81 1.902-2.968zm-6.119-.645c-.27 0-.541-.257-.541-.514 0-.256.27-.514.541-.514.41 0 .681.258.681.514 0 .257-.271.514-.681.514zm2.994 0c-.27 0-.541-.257-.541-.514 0-.256.27-.514.54-.514.41 0 .681.258.681.514 0 .257-.277.514-.68.514z" mask="url(#b)"/>
+            <path fill="currentColor" d="M10.602 3.674c.177 0 .356.011.533.029C10.657 1.576 8.27 0 5.543 0 2.498 0 0 1.974 0 4.485c0 1.45.829 2.64 2.216 3.564l-.552 1.588 1.94-.929c.693.129 1.251.263 1.94.263.17 0 .343-.005.515-.022a3.68 3.68 0 0 1-.172-1.104c0-2.302 2.081-4.171 4.715-4.171zM7.618 2.243c.417 0 .693.263.693.66s-.276.66-.693.66c-.418 0-.835-.263-.835-.66.006-.398.423-.66.835-.66zm-3.88 1.319c-.417 0-.834-.263-.834-.66s.417-.66.834-.66c.418 0 .695.263.695.66 0 .392-.277.66-.695.66z" mask="url(#b)"/>
+        </g>
+    </g>
+</svg>
+
+                        <div class="hide-div">
+                            <p>Follow the official account</p>
+                            <img src="/images/footer/wechat_code.svg" alt="">
+                        </div>
+                    </a>
+                    <a class='facebook-a' href="https://www.facebook.com/kubesphere" target="_blank"></a>
+                    <a class='twitter-a' href="https://twitter.com/KubeSphere" target="_blank" rel="noopener noreferrer"></a>
+                    <a class='linkedin-a' href="https://www.linkedin.com/company/kubesphere/" target="_blank" rel="noopener noreferrer"></a>
+                    
+                    <a class='youtube-a' href="https://www.youtube.com/channel/UCyTdUQUYjf7XLjxECx63Hpw" target="_blank" rel="noopener noreferrer"></a>
+                    <a class='slack-a' href="https://join.slack.com/t/kubesphere/shared_invite/enQtNTE3MDIxNzUxNzQ0LTZkNTdkYWNiYTVkMTM5ZThhODY1MjAyZmVlYWEwZmQ3ODQ1NmM1MGVkNWEzZTRhNzk0MzM5MmY4NDc3ZWVhMjE" target="_blank" rel="noopener noreferrer"></a>
+                    <a class='github-a' href="https://github.com/kubesphere/kubesphere" target="_blank" rel="noopener noreferrer"></a>
+                    <a class='medium-a' href="https://itnext.io/@kubesphere" target="_blank" rel="noopener noreferrer"></a>
+                </div>
+                <p class='p1'>KubeSphere®️ 2020 All Rights Reserved.</p>
+                
+            </div>
+        </div>
+    </div>
+
+</footer>
+
+<script>
+    var bindSubmit = function() {
+        var input = $('#email-input')
+        $('#email-submit').click(function(event) {
+            event.stopPropagation()
+            var email = input.val()
+            var message1 = $('#message').data('message1')
+            var message2 = $('#message').data('message2')
+            if (!email) {
+                event.preventDefault()
+                showMessage(message1)
+            } else if (!validateEmail(email)) {
+                event.preventDefault()
+                showMessage(message2)
+            }
+        })
+    }
+
+    var bindHideMessage = function() {
+        $(window).click(function() {
+            $('#message').hide()
+        })
+    }
+
+    var showMessage = function(message) {
+        $('#message').html(message).show()
+    }
+
+    var validateEmail = function(email) {
+        var reg = /^[A-Za-z0-9]+([_\.][A-Za-z0-9]+)*@([A-Za-z0-9\-]+\.)+[A-Za-z]{2,6}$/
+        return reg.test(email)
+    }
+
+    var lazyLoad = function(allImg, imgNum) {
+        for (var i = 0; i < imgNum; i++) {
+            var img = allImg.eq(i)
+            var loaded = img.attr("data-loaded");
+            if (loaded) {
+                continue
+            }
+            if (img.offset().top < parseInt($(window).height()) + parseInt($(window).scrollTop())) {
+                var src = img.attr("src")
+                img.attr("src", src)
+                img.attr("data-loaded", true)
+            }
+        }
+    }
+
+    var bindLayLoad = function() {
+        var allImg = $('img')
+        var imgNum = allImg.length
+        lazyLoad(allImg, imgNum)
+        $(window).scroll(function() {
+            lazyLoad(allImg, imgNum)
+        });
+    }
+
+    
+    bindSubmit()
+    bindHideMessage()
+</script>
+
+  
+  
+  <script type="text/javascript" src="/js/aside.34d4ca232760855916fede489417772adb45cdceab8541c6f6826e5d83a0b68e071a44f76a077fe90e39afe213cc1aab40272900f7cbdffb45068c7746c7b183.js" integrity="sha512-NNTKIydghVkW/t5IlBd3KttFzc6rhUHG9oJuXYOgto4HGkT3agd/6Q45r&#43;ITzBqrQCcpAPfL3/tFBox3Rsexgw=="></script>
+  
+  
+  
+  <script type="text/javascript" src="/js/markdown-tab.224c8a343197870e80877ad07e19b932b807d3fde3abccde667f2156378cb00497ebb11d2f872f09ea91e7282e87655f8cb4ef163da46e34d00dca44dbf52aad.js" integrity="sha512-IkyKNDGXhw6Ah3rQfhm5MrgH0/3jq8zeZn8hVjeMsASX67EdL4cvCeqR5yguh2VfjLTvFj2kbjTQDcpE2/UqrQ=="></script>
+  
+  <script>
+    var viewer = new Viewer(document.querySelector('.md-body'), {
+        url: 'src'
+    })
+  </script>
+</body>
+
+</html>
