@@ -1,4 +1,4 @@
-baseURL = "https://www.cn-images.com"
+baseURL = "https://www1.cn-images.com"
 
 [markup]
   [markup.tableOfContents]
