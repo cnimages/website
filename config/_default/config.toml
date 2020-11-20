@@ -1,4 +1,414 @@
-baseURL = "https://cnimages.github.io/website/"
+baseURL = "https://cnimages.github.io/website"
+[markup]
+  [markup.tableOfContents]
+    endLevel = 3
+    ordered = false
+    startLevel = 2
+  [markup.goldmark.renderer]
+    unsafe= true
+
+
+[params]
+logo = "images/logo.svg"
+
+githubUrl = "https://github.com/cnimages/website"
+
+githubBlobUrl = "https://github.com/cnimages/website/blob/master/content"
+
+githubEditUrl = "https://github.com/cnimages/website/edit/master/content"
+
+mailchimpSubscribeUrl = "https://kubesphere.us10.list-manage.com/subscribe/post?u=c85ea2b944b08b951f607bdd4&id=83f673a2d9"
+
+gcs_engine_id = "018068616810858123755%3Apb1pt8sx6ve"
+
+githubLink = "https://github.com/cnimages/kubesphere"
+slackLink = "https://join.slack.com/t/kubesphere/shared_invite/enQtNTE3MDIxNzUxNzQ0LTZkNTdkYWNiYTVkMTM5ZThhODY1MjAyZmVlYWEwZmQ3ODQ1NmM1MGVkNWEzZTRhNzk0MzM5MmY4NDc3ZWVhMjE"
+youtubeLink = "https://www.youtube.com/channel/UCyTdUQUYjf7XLjxECx63Hpw"
+facebookLink = "https://www.facebook.com/kubesphere"
+twitterLink = "https://twitter.com/KubeSphere"
+mediumLink = "https://itnext.io/@kubesphere"
+linkedinLink = "https://www.linkedin.com/company/kubesphere/"
+
+
+[languages.en]
+contentDir = "content/en"
+weight = 1
+languageCode = "en-US"
+languageName = "English"
+
+[languages.en.params]
+title = "KubeSphere | The Kubernetes platform tailored for hybrid multicloud"
+description = "KubeSphere is a distributed operating system managing cloud native applications with Kubernetes as its kernel, and provides plug-and-play architecture for the seamless integration of third-party applications to boost its ecosystem."
+keywords = "KubeSphere, Kubernetes, container platform, DevOps, hybrid cloud, cloud native"
+snapshot = "/images/common/snapshot-en.png"
+
+[[languages.en.menu.main]]
+weight = 2
+name = "Scenarios"
+hasChildren = true
+
+  [[languages.en.menu.main]]
+  parent = "Scenarios"
+  name = "Embracing One-stop DevOps Workflow"
+  URL = "devops/"
+  weight = 1
+
+  [[languages.en.menu.main]]
+  parent = "Scenarios"
+  name = "Running Microservices on Kubernetes"
+  URL = "service-mesh/"
+  weight = 2
+
+  [[languages.en.menu.main]]
+  parent = "Scenarios"
+  name = "Building Cloud Native Observability"
+  URL = "observability/"
+  weight = 3
+
+[[languages.en.menu.main]]
+weight = 3
+name = "Resources"
+hasChildren = true
+
+  [[languages.en.menu.main]]
+  parent = "Resources"
+  name = "Open Source Projects"
+  URL = "projects/"
+  weight = 1
+
+  [[languages.en.menu.main]]
+  parent = "Resources"
+  name = "KubeCon & QCon"
+  URL = "conferences/"
+  weight = 2
+
+  [[languages.en.menu.main]]
+  parent = "Resources"
+  name = "Technology Blogs"
+  URL = "blogs/"
+  weight = 3
+
+  [[languages.en.menu.main]]
+  parent = "Resources"
+  name = "Video Resources"
+  URL = "videos/"
+  weight = 4
+
+[[languages.en.menu.main]]
+weight = 4
+name = "Documentation"
+hasChildren = true
+
+    [[languages.en.menu.main]]
+    parent = "Documentation"
+    name = "v3.0.0 <img src='/images/header/star.svg' alt='star'>"
+    URL = "docs/"
+    weight = 1
+
+    [[languages.en.menu.main]]
+    parent = "Documentation"
+    name = "v2.1.x"
+    URL = "https://v2-1.docs.kubesphere.io/docs"
+    weight = 2
+
+    [[languages.en.menu.main]]
+    parent = "Documentation"
+    name = "v2.0.x"
+    URL = "https://v2-0.docs.kubesphere.io/docs/"
+    weight = 3
+
+    [[languages.en.menu.main]]
+    parent = "Documentation"
+    name = "v1.0.0"
+    URL = "https://v1-0.docs.kubesphere.io/docs/"
+    weight = 4
+
+[[languages.en.menu.main]]
+weight = 5
+hasChildren = true
+name = "Community"
+    [[languages.en.menu.main]]
+    parent = "Community"
+    name = "Contribution"
+    URL = "contribution/"
+    weight = 1
+
+    [[languages.en.menu.main]]
+    parent = "Community"
+    name = "Case Studies"
+    URL = "case/"
+    weight = 2
+
+    [[languages.en.menu.main]]
+    parent = "Community"
+    name = "Partner"
+    URL = "partner/"
+    weight = 3
+
+    [[languages.en.menu.main]]
+    parent = "Community"
+    name = "News"
+    URL = "news/"
+    weight = 4
+
+    [[languages.en.menu.main]]
+    parent = "Community"
+    name = "RoadMap"
+    URL = "https://github.com/cnimages/kubesphere/blob/master/docs/roadmap.md"
+    weight = 5
+
+[languages.zh]
+weight = 2
+contentDir = "content/zh"
+languageCode = "zh-CN"
+languageName = "简体中文"
+
+[languages.zh.params]
+title = "KubeSphere | 面向云原生应用的容器混合云"
+description = "KubeSphere 是在 Kubernetes 之上构建的以应用为中心的多租户容器平台，提供全栈的 IT 自动化运维的能力，简化企业的 DevOps 工作流。KubeSphere 提供了运维友好的向导式操作界面，帮助企业快速构建一个强大和功能丰富的容器云平台。"
+keywords = "KubeSphere, Kubernetes, 容器平台, DevOps, 混合云"
+snapshot = "/images/common/snapshot-zh.png"
+
+[[languages.zh.menu.main]]
+weight = 2
+name = "应用场景"
+hasChildren = true
+
+  [[languages.zh.menu.main]]
+  parent = "应用场景"
+  name = "拥抱一站式 DevOps 工作流"
+  URL = "devops/"
+  weight = 2
+
+  [[languages.zh.menu.main]]
+  parent = "应用场景"
+  name = "在 Kubernetes 运行微服务"
+  URL = "service-mesh/"
+  weight = 4
+
+  [[languages.zh.menu.main]]
+  parent = "应用场景"
+  name = "构建丰富的云原生可观察性"
+  URL = "observability/"
+  weight = 8
+
+[[languages.zh.menu.main]]
+weight = 3
+name = "资源"
+hasChildren = true
+
+  [[languages.zh.menu.main]]
+  parent = "资源"
+  name = "开源项目"
+  URL = "projects/"
+  weight = 1
+
+  [[languages.zh.menu.main]]
+  parent = "资源"
+  name = "开源峰会"
+  URL = "conferences/"
+  weight = 2
+
+  [[languages.zh.menu.main]]
+  parent = "资源"
+  name = "技术博客"
+  URL = "blogs/"
+  weight = 3
+
+  [[languages.zh.menu.main]]
+  parent = "资源"
+  name = "视频资源"
+  URL = "videos/"
+  weight = 4
+
+[[languages.zh.menu.main]]
+weight = 4
+hasChildren = true
+name = "文档中心"
+    [[languages.zh.menu.main]]
+    parent = "文档中心"
+    name = "v3.0.0 <img src='/images/header/star.svg' alt='star'>"
+    URL = "docs/"
+    weight = 1
+
+    [[languages.zh.menu.main]]
+    parent = "文档中心"
+    name = "v2.1.x"
+    URL = "https://v2-1.docs.kubesphere.io/docs/zh-CN/"
+    weight = 2
+
+    [[languages.zh.menu.main]]
+    parent = "文档中心"
+    name = "v2.0.x"
+    URL = "https://v2-0.docs.kubesphere.io/docs/zh-CN/"
+    weight = 3
+
+    [[languages.zh.menu.main]]
+    parent = "文档中心"
+    name = "v1.0.0"
+    URL = "https://v1-0.docs.kubesphere.io/docs/zh-CN/"
+    weight = 4
+
+[[languages.zh.menu.main]]
+weight = 5
+hasChildren = true
+name = "开源社区"
+    [[languages.zh.menu.main]]
+    parent = "开源社区"
+    name = "参与贡献"
+    URL = "contribution/"
+    weight = 1
+
+    [[languages.zh.menu.main]]
+    parent = "开源社区"
+    name = "案例学习"
+    URL = "case/"
+    weight = 2
+
+    [[languages.zh.menu.main]]
+    parent = "开源社区"
+    name = "合作伙伴"
+    URL = "partner/"
+    weight = 3
+
+    [[languages.zh.menu.main]]
+    parent = "开源社区"
+    name = "动态"
+    URL = "news/"
+    weight = 4
+
+    [[languages.zh.menu.main]]
+    parent = "开源社区"
+    name = "版本计划"
+    URL = "https://github.com/kubesphere/kubesphere/blob/master/docs/roadmap.md"
+    weight = 5
+
+    [[languages.zh.menu.main]]
+    parent = "开源社区"
+    name = "中国站"
+    URL = "https://kubesphere.com.cn/"
+    weight = 6
+
+[[languages.zh.menu.main]]
+weight = 6
+name = "用户论坛"
+URL = "https://kubesphere.com.cn/forum"
+
+
+[languages.tr]
+weight = 3
+contentDir = "content/tr"
+languageCode = "tr-TR"
+languageName = "Türkçe"
+
+[[languages.tr.menu.main]]
+weight = 2
+name = "Senaryolar"
+hasChildren = true
+
+  [[languages.tr.menu.main]]
+  parent = "Senaryolar"
+  name = "Multi-cluster"
+  URL = "multi-cluster"
+  weight = 1
+
+  [[languages.tr.menu.main]]
+  parent = "Senaryolar"
+  name = "DevOps"
+  URL = "devOps"
+  weight = 2
+
+  [[languages.tr.menu.main]]
+  parent = "Senaryolar"
+  name = "Network"
+  URL = "network"
+  weight = 3
+
+  [[languages.tr.menu.main]]
+  parent = "Senaryolar"
+  name = "Service Mesh"
+  URL = "service-mesh"
+  weight = 4
+
+  [[languages.tr.menu.main]]
+  parent = "Senaryolar"
+  name = "Storage"
+  URL = "storage"
+  weight = 5
+
+  [[languages.tr.menu.main]]
+  parent = "Senaryolar"
+  name = "AppStore"
+  URL = "app-store"
+  weight = 6
+
+  [[languages.tr.menu.main]]
+  parent = "Senaryolar"
+  name = "Multi-tenancy"
+  URL = "multi-tenancy"
+  weight = 7
+
+  [[languages.tr.menu.main]]
+  parent = "Senaryolar"
+  name = "Observability"
+  URL = "observability"
+  weight = 8
+
+[[languages.tr.menu.main]]
+weight = 3
+name = "Kaynaklar"
+hasChildren = true
+
+  [[languages.tr.menu.main]]
+  parent = "Kaynaklar"
+  name = "Open Source Projeler"
+  URL = "projects"
+  weight = 1
+
+  [[languages.tr.menu.main]]
+  parent = "Kaynaklar"
+  name = "KubeCon & QCon"
+  URL = "conferences"
+  weight = 2
+
+  [[languages.tr.menu.main]]
+  parent = "Kaynaklar"
+  name = "Blog Yazıları"
+  URL = "blogs"
+  weight = 3
+
+  [[languages.tr.menu.main]]
+  parent = "Kaynaklar"
+  name = "Videolar"
+  URL = "videos"
+  weight = 4
+
+[[languages.tr.menu.main]]
+weight = 4
+name = "Dokümantasyon"
+URL = "docs"
+
+[[languages.tr.menu.main]]
+weight = 5
+hasChildren = true
+name = "Topluluk"
+    [[languages.tr.menu.main]]
+    parent = "Topluluk"
+    name = "Contribution"
+    URL = "contribution"
+    weight = 1
+
+    [[languages.tr.menu.main]]
+    parent = "Topluluk"
+    name = "Case Studies"
+    URL = "case"
+    weight = 2
+
+    [[languages.tr.menu.main]]
+    parent = "Topluluk"
+    name = "Partnerler"
+    URL = "partner"
+    weight = 3
 
 [markup]
   [markup.tableOfContents]
