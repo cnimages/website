@@ -1,4 +1,4 @@
-baseURL = "https://cnimages.github.io/website"
+baseURL = "https://www.cn-images.com"
 
 [markup]
   [markup.tableOfContents]
