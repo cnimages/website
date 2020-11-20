@@ -1,4 +1,4 @@
-baseURL = "https://kubesphere-v3.netlify.app"
+baseURL = "https://cnimages.github.io/website"
 
 [markup]
   [markup.tableOfContents]
@@ -12,17 +12,17 @@ baseURL = "https://kubesphere-v3.netlify.app"
 [params]
 logo = "images/logo.svg"
 
-githubUrl = "https://github.com/kubesphere/website"
+githubUrl = "https://github.com/cnimages/website"
 
-githubBlobUrl = "https://github.com/kubesphere/website/blob/master/content"
+githubBlobUrl = "https://github.com/cnimages/website/blob/master/content"
 
-githubEditUrl = "https://github.com/kubesphere/website/edit/master/content"
+githubEditUrl = "https://github.com/cnimages/website/edit/master/content"
 
 mailchimpSubscribeUrl = "https://kubesphere.us10.list-manage.com/subscribe/post?u=c85ea2b944b08b951f607bdd4&id=83f673a2d9"
 
 gcs_engine_id = "018068616810858123755%3Apb1pt8sx6ve"
 
-githubLink = "https://github.com/kubesphere/kubesphere"
+githubLink = "https://github.com/cnimages/kubesphere"
 slackLink = "https://join.slack.com/t/kubesphere/shared_invite/enQtNTE3MDIxNzUxNzQ0LTZkNTdkYWNiYTVkMTM5ZThhODY1MjAyZmVlYWEwZmQ3ODQ1NmM1MGVkNWEzZTRhNzk0MzM5MmY4NDc3ZWVhMjE"
 youtubeLink = "https://www.youtube.com/channel/UCyTdUQUYjf7XLjxECx63Hpw"
 facebookLink = "https://www.facebook.com/kubesphere"
@@ -155,7 +155,7 @@ name = "Community"
     [[languages.en.menu.main]]
     parent = "Community"
     name = "RoadMap"
-    URL = "https://github.com/kubesphere/kubesphere/blob/master/docs/roadmap.md"
+    URL = "https://github.com/cnimages/kubesphere/blob/master/docs/roadmap.md"
     weight = 5
 
 [languages.zh]
