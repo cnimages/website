@@ -3,364 +3,364 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/docs/release/</loc>
+    <loc>https://cnimages.github.io/website/zh/docs/release/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://kubesphere-v3.netlify.app/docs/release/"
+                href="https://cnimages.github.io/website/docs/release/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://kubesphere-v3.netlify.app/zh/docs/release/"
+                href="https://cnimages.github.io/website/zh/docs/release/"
                 />
   </url>
   
   <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/docs/workspace-administration/what-is-workspace/</loc>
+    <loc>https://cnimages.github.io/website/zh/docs/workspace-administration/what-is-workspace/</loc>
   </url>
   
   <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/docs/release/release-v300/</loc>
+    <loc>https://cnimages.github.io/website/zh/docs/release/release-v300/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://kubesphere-v3.netlify.app/docs/release/release-v300/"
+                href="https://cnimages.github.io/website/docs/release/release-v300/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://kubesphere-v3.netlify.app/zh/docs/release/release-v300/"
+                href="https://cnimages.github.io/website/zh/docs/release/release-v300/"
                 />
   </url>
   
   <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/docs/workspace-administration/upload-helm-based-application/</loc>
+    <loc>https://cnimages.github.io/website/zh/docs/workspace-administration/upload-helm-based-application/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://kubesphere-v3.netlify.app/docs/workspace-administration/upload-helm-based-application/"
+                href="https://cnimages.github.io/website/docs/workspace-administration/upload-helm-based-application/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://kubesphere-v3.netlify.app/zh/docs/workspace-administration/upload-helm-based-application/"
+                href="https://cnimages.github.io/website/zh/docs/workspace-administration/upload-helm-based-application/"
                 />
   </url>
   
   <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/docs/workspace-administration/import-helm-repository/</loc>
+    <loc>https://cnimages.github.io/website/zh/docs/workspace-administration/import-helm-repository/</loc>
   </url>
   
   <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/docs/release/release-v211/</loc>
+    <loc>https://cnimages.github.io/website/zh/docs/release/release-v211/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://kubesphere-v3.netlify.app/docs/release/release-v211/"
+                href="https://cnimages.github.io/website/docs/release/release-v211/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://kubesphere-v3.netlify.app/zh/docs/release/release-v211/"
+                href="https://cnimages.github.io/website/zh/docs/release/release-v211/"
                 />
   </url>
   
   <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/docs/cluster-administration/storageclass/</loc>
+    <loc>https://cnimages.github.io/website/zh/docs/cluster-administration/storageclass/</loc>
   </url>
   
   <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/docs/cluster-administration/cluster-settings/cluster-visibility-and-authorization/</loc>
+    <loc>https://cnimages.github.io/website/zh/docs/cluster-administration/cluster-settings/cluster-visibility-and-authorization/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://kubesphere-v3.netlify.app/docs/cluster-administration/cluster-settings/cluster-visibility-and-authorization/"
+                href="https://cnimages.github.io/website/docs/cluster-administration/cluster-settings/cluster-visibility-and-authorization/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://kubesphere-v3.netlify.app/zh/docs/cluster-administration/cluster-settings/cluster-visibility-and-authorization/"
+                href="https://cnimages.github.io/website/zh/docs/cluster-administration/cluster-settings/cluster-visibility-and-authorization/"
                 />
   </url>
   
   <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/docs/release/release-v210/</loc>
+    <loc>https://cnimages.github.io/website/zh/docs/release/release-v210/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://kubesphere-v3.netlify.app/docs/release/release-v210/"
+                href="https://cnimages.github.io/website/docs/release/release-v210/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://kubesphere-v3.netlify.app/zh/docs/release/release-v210/"
+                href="https://cnimages.github.io/website/zh/docs/release/release-v210/"
                 />
   </url>
   
   <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/docs/workspace-administration/role-and-member-management/</loc>
+    <loc>https://cnimages.github.io/website/zh/docs/workspace-administration/role-and-member-management/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://kubesphere-v3.netlify.app/docs/workspace-administration/role-and-member-management/"
+                href="https://cnimages.github.io/website/docs/workspace-administration/role-and-member-management/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://kubesphere-v3.netlify.app/zh/docs/workspace-administration/role-and-member-management/"
+                href="https://cnimages.github.io/website/zh/docs/workspace-administration/role-and-member-management/"
                 />
   </url>
   
   <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/docs/cluster-administration/nodes/</loc>
+    <loc>https://cnimages.github.io/website/zh/docs/cluster-administration/nodes/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://kubesphere-v3.netlify.app/docs/cluster-administration/nodes/"
+                href="https://cnimages.github.io/website/docs/cluster-administration/nodes/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://kubesphere-v3.netlify.app/zh/docs/cluster-administration/nodes/"
+                href="https://cnimages.github.io/website/zh/docs/cluster-administration/nodes/"
                 />
   </url>
   
   <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/docs/reference/glossary/</loc>
+    <loc>https://cnimages.github.io/website/zh/docs/reference/glossary/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://kubesphere-v3.netlify.app/docs/reference/glossary/"
+                href="https://cnimages.github.io/website/docs/reference/glossary/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://kubesphere-v3.netlify.app/zh/docs/reference/glossary/"
+                href="https://cnimages.github.io/website/zh/docs/reference/glossary/"
                 />
   </url>
   
   <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/docs/reference/api-docs/</loc>
+    <loc>https://cnimages.github.io/website/zh/docs/reference/api-docs/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://kubesphere-v3.netlify.app/docs/reference/api-docs/"
+                href="https://cnimages.github.io/website/docs/reference/api-docs/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://kubesphere-v3.netlify.app/zh/docs/reference/api-docs/"
+                href="https://cnimages.github.io/website/zh/docs/reference/api-docs/"
                 />
   </url>
   
   <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/docs/reference/api-changes/logging/</loc>
+    <loc>https://cnimages.github.io/website/zh/docs/reference/api-changes/logging/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://kubesphere-v3.netlify.app/docs/reference/api-changes/logging/"
+                href="https://cnimages.github.io/website/docs/reference/api-changes/logging/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://kubesphere-v3.netlify.app/zh/docs/reference/api-changes/logging/"
+                href="https://cnimages.github.io/website/zh/docs/reference/api-changes/logging/"
                 />
   </url>
   
   <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/docs/reference/api-changes/monitoring/</loc>
+    <loc>https://cnimages.github.io/website/zh/docs/reference/api-changes/monitoring/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://kubesphere-v3.netlify.app/docs/reference/api-changes/monitoring/"
+                href="https://cnimages.github.io/website/docs/reference/api-changes/monitoring/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://kubesphere-v3.netlify.app/zh/docs/reference/api-changes/monitoring/"
+                href="https://cnimages.github.io/website/zh/docs/reference/api-changes/monitoring/"
                 />
   </url>
   
   <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/docs/release/release-v202/</loc>
+    <loc>https://cnimages.github.io/website/zh/docs/release/release-v202/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://kubesphere-v3.netlify.app/docs/release/release-v202/"
+                href="https://cnimages.github.io/website/docs/release/release-v202/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://kubesphere-v3.netlify.app/zh/docs/release/release-v202/"
+                href="https://cnimages.github.io/website/zh/docs/release/release-v202/"
                 />
   </url>
   
   <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/docs/cluster-administration/cluster-status-monitoring/</loc>
+    <loc>https://cnimages.github.io/website/zh/docs/cluster-administration/cluster-status-monitoring/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://kubesphere-v3.netlify.app/docs/cluster-administration/cluster-status-monitoring/"
+                href="https://cnimages.github.io/website/docs/cluster-administration/cluster-status-monitoring/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://kubesphere-v3.netlify.app/zh/docs/cluster-administration/cluster-status-monitoring/"
+                href="https://cnimages.github.io/website/zh/docs/cluster-administration/cluster-status-monitoring/"
                 />
   </url>
   
   <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/docs/release/release-v201/</loc>
+    <loc>https://cnimages.github.io/website/zh/docs/release/release-v201/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://kubesphere-v3.netlify.app/docs/release/release-v201/"
+                href="https://cnimages.github.io/website/docs/release/release-v201/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://kubesphere-v3.netlify.app/zh/docs/release/release-v201/"
+                href="https://cnimages.github.io/website/zh/docs/release/release-v201/"
                 />
   </url>
   
   <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/docs/cluster-administration/application-resources-monitoring/</loc>
+    <loc>https://cnimages.github.io/website/zh/docs/cluster-administration/application-resources-monitoring/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://kubesphere-v3.netlify.app/docs/cluster-administration/application-resources-monitoring/"
+                href="https://cnimages.github.io/website/docs/cluster-administration/application-resources-monitoring/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://kubesphere-v3.netlify.app/zh/docs/cluster-administration/application-resources-monitoring/"
+                href="https://cnimages.github.io/website/zh/docs/cluster-administration/application-resources-monitoring/"
                 />
   </url>
   
   <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/docs/release/release-v200/</loc>
+    <loc>https://cnimages.github.io/website/zh/docs/release/release-v200/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://kubesphere-v3.netlify.app/docs/release/release-v200/"
+                href="https://cnimages.github.io/website/docs/release/release-v200/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://kubesphere-v3.netlify.app/zh/docs/release/release-v200/"
+                href="https://cnimages.github.io/website/zh/docs/release/release-v200/"
                 />
   </url>
   
   <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/docs/introduction/</loc>
+    <loc>https://cnimages.github.io/website/zh/docs/introduction/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://kubesphere-v3.netlify.app/docs/introduction/"
+                href="https://cnimages.github.io/website/docs/introduction/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://kubesphere-v3.netlify.app/zh/docs/introduction/"
+                href="https://cnimages.github.io/website/zh/docs/introduction/"
                 />
   </url>
   
   <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/docs/introduction/what-is-kubesphere/</loc>
+    <loc>https://cnimages.github.io/website/zh/docs/introduction/what-is-kubesphere/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://kubesphere-v3.netlify.app/docs/introduction/what-is-kubesphere/"
+                href="https://cnimages.github.io/website/docs/introduction/what-is-kubesphere/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://kubesphere-v3.netlify.app/zh/docs/introduction/what-is-kubesphere/"
+                href="https://cnimages.github.io/website/zh/docs/introduction/what-is-kubesphere/"
                 />
   </url>
   
   <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/docs/introduction/features/</loc>
+    <loc>https://cnimages.github.io/website/zh/docs/introduction/features/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://kubesphere-v3.netlify.app/docs/introduction/features/"
+                href="https://cnimages.github.io/website/docs/introduction/features/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://kubesphere-v3.netlify.app/zh/docs/introduction/features/"
+                href="https://cnimages.github.io/website/zh/docs/introduction/features/"
                 />
   </url>
   
   <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/docs/introduction/architecture/</loc>
+    <loc>https://cnimages.github.io/website/zh/docs/introduction/architecture/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://kubesphere-v3.netlify.app/docs/introduction/architecture/"
+                href="https://cnimages.github.io/website/docs/introduction/architecture/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://kubesphere-v3.netlify.app/zh/docs/introduction/architecture/"
+                href="https://cnimages.github.io/website/zh/docs/introduction/architecture/"
                 />
   </url>
   
   <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/docs/introduction/advantages/</loc>
+    <loc>https://cnimages.github.io/website/zh/docs/introduction/advantages/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://kubesphere-v3.netlify.app/docs/introduction/advantages/"
+                href="https://cnimages.github.io/website/docs/introduction/advantages/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://kubesphere-v3.netlify.app/zh/docs/introduction/advantages/"
+                href="https://cnimages.github.io/website/zh/docs/introduction/advantages/"
                 />
   </url>
   
   <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/docs/introduction/scenarios/</loc>
+    <loc>https://cnimages.github.io/website/zh/docs/introduction/scenarios/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://kubesphere-v3.netlify.app/docs/introduction/scenarios/"
+                href="https://cnimages.github.io/website/docs/introduction/scenarios/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://kubesphere-v3.netlify.app/zh/docs/introduction/scenarios/"
+                href="https://cnimages.github.io/website/zh/docs/introduction/scenarios/"
                 />
   </url>
   
   <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/docs/introduction/glossary/</loc>
+    <loc>https://cnimages.github.io/website/zh/docs/introduction/glossary/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://kubesphere-v3.netlify.app/docs/introduction/glossary/"
+                href="https://cnimages.github.io/website/docs/introduction/glossary/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://kubesphere-v3.netlify.app/zh/docs/introduction/glossary/"
+                href="https://cnimages.github.io/website/zh/docs/introduction/glossary/"
                 />
   </url>
   
   <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/docs/quick-start/</loc>
+    <loc>https://cnimages.github.io/website/zh/docs/quick-start/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://kubesphere-v3.netlify.app/docs/quick-start/"
+                href="https://cnimages.github.io/website/docs/quick-start/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://kubesphere-v3.netlify.app/zh/docs/quick-start/"
+                href="https://cnimages.github.io/website/zh/docs/quick-start/"
                 />
   </url>
   
@@ -393,426 +393,44 @@
   </url>
   
   <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/docs/installing-on-linux/</loc>
+    <loc>https://cnimages.github.io/website/zh/docs/installing-on-linux/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://kubesphere-v3.netlify.app/docs/installing-on-linux/"
+                href="https://cnimages.github.io/website/docs/installing-on-linux/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://kubesphere-v3.netlify.app/zh/docs/installing-on-linux/"
+                href="https://cnimages.github.io/website/zh/docs/installing-on-linux/"
                 />
   </url>
   
   <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/docs/cluster-administration/cluster-wide-alerting-and-notification/alertmanager/</loc>
+    <loc>https://cnimages.github.io/website/zh/docs/cluster-administration/cluster-wide-alerting-and-notification/alertmanager/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://kubesphere-v3.netlify.app/docs/cluster-administration/cluster-wide-alerting-and-notification/alertmanager/"
+                href="https://cnimages.github.io/website/docs/cluster-administration/cluster-wide-alerting-and-notification/alertmanager/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://kubesphere-v3.netlify.app/zh/docs/cluster-administration/cluster-wide-alerting-and-notification/alertmanager/"
+                href="https://cnimages.github.io/website/zh/docs/cluster-administration/cluster-wide-alerting-and-notification/alertmanager/"
                 />
   </url>
   
   <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/docs/cluster-administration/cluster-wide-alerting-and-notification/notification-manager/</loc>
+    <loc>https://cnimages.github.io/website/zh/docs/cluster-administration/cluster-wide-alerting-and-notification/notification-manager/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://kubesphere-v3.netlify.app/docs/cluster-administration/cluster-wide-alerting-and-notification/notification-manager/"
+                href="https://cnimages.github.io/website/docs/cluster-administration/cluster-wide-alerting-and-notification/notification-manager/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://kubesphere-v3.netlify.app/zh/docs/cluster-administration/cluster-wide-alerting-and-notification/notification-manager/"
-                />
-  </url>
-  
-  <url>
-    <loc></loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href=""
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href=""
-                />
-  </url>
-  
-  <url>
-    <loc></loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href=""
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href=""
-                />
-  </url>
-  
-  <url>
-    <loc></loc>
-  </url>
-  
-  <url>
-    <loc></loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href=""
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href=""
-                />
-  </url>
-  
-  <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/docs/cluster-administration/cluster-settings/log-collections/introduction/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://kubesphere-v3.netlify.app/docs/cluster-administration/cluster-settings/log-collections/introduction/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://kubesphere-v3.netlify.app/zh/docs/cluster-administration/cluster-settings/log-collections/introduction/"
-                />
-  </url>
-  
-  <url>
-    <loc></loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href=""
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href=""
-                />
-  </url>
-  
-  <url>
-    <loc></loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href=""
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href=""
-                />
-  </url>
-  
-  <url>
-    <loc></loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href=""
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href=""
-                />
-  </url>
-  
-  <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/docs/installing-on-kubernetes/introduction/overview/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://kubesphere-v3.netlify.app/docs/installing-on-kubernetes/introduction/overview/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://kubesphere-v3.netlify.app/zh/docs/installing-on-kubernetes/introduction/overview/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/docs/project-user-guide/configuration/configmaps/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://kubesphere-v3.netlify.app/docs/project-user-guide/configuration/configmaps/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://kubesphere-v3.netlify.app/zh/docs/project-user-guide/configuration/configmaps/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/docs/devops-user-guide/introduction/credential/</loc>
-  </url>
-  
-  <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/docs/devops-user-guide/introduction/pipeline/</loc>
-  </url>
-  
-  <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/docs/project-user-guide/grayscale-release/overview/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://kubesphere-v3.netlify.app/docs/project-user-guide/grayscale-release/overview/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://kubesphere-v3.netlify.app/zh/docs/project-user-guide/grayscale-release/overview/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/docs/project-user-guide/project-administration/project-quota/</loc>
-  </url>
-  
-  <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/docs/project-user-guide/storage/volumes/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://kubesphere-v3.netlify.app/docs/project-user-guide/storage/volumes/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://kubesphere-v3.netlify.app/zh/docs/project-user-guide/storage/volumes/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/docs/installing-on-linux/introduction/intro/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://kubesphere-v3.netlify.app/docs/installing-on-linux/introduction/intro/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://kubesphere-v3.netlify.app/zh/docs/installing-on-linux/introduction/intro/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/docs/installing-on-linux/introduction/multioverview/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://kubesphere-v3.netlify.app/docs/installing-on-linux/introduction/multioverview/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://kubesphere-v3.netlify.app/zh/docs/installing-on-linux/introduction/multioverview/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/docs/installing-on-linux/introduction/port-firewall/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://kubesphere-v3.netlify.app/docs/installing-on-linux/introduction/port-firewall/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://kubesphere-v3.netlify.app/zh/docs/installing-on-linux/introduction/port-firewall/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/docs/installing-on-kubernetes/introduction/prerequisites/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://kubesphere-v3.netlify.app/docs/installing-on-kubernetes/introduction/prerequisites/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://kubesphere-v3.netlify.app/zh/docs/installing-on-kubernetes/introduction/prerequisites/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/docs/project-user-guide/grayscale-release/blue-green-deployment/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://kubesphere-v3.netlify.app/docs/project-user-guide/grayscale-release/blue-green-deployment/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://kubesphere-v3.netlify.app/zh/docs/project-user-guide/grayscale-release/blue-green-deployment/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/docs/project-user-guide/grayscale-release/canary-release/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://kubesphere-v3.netlify.app/docs/project-user-guide/grayscale-release/canary-release/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://kubesphere-v3.netlify.app/zh/docs/project-user-guide/grayscale-release/canary-release/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/docs/project-user-guide/configuration/image-registry/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://kubesphere-v3.netlify.app/docs/project-user-guide/configuration/image-registry/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://kubesphere-v3.netlify.app/zh/docs/project-user-guide/configuration/image-registry/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/docs/installing-on-linux/introduction/vars/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://kubesphere-v3.netlify.app/docs/installing-on-linux/introduction/vars/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://kubesphere-v3.netlify.app/zh/docs/installing-on-linux/introduction/vars/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/docs/project-user-guide/project-administration/project-gateway/</loc>
-  </url>
-  
-  <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/docs/project-user-guide/project-administration/project-members/</loc>
-  </url>
-  
-  <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/docs/project-user-guide/configuration/secrets/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://kubesphere-v3.netlify.app/docs/project-user-guide/configuration/secrets/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://kubesphere-v3.netlify.app/zh/docs/project-user-guide/configuration/secrets/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/docs/project-user-guide/grayscale-release/traffic-mirroring/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://kubesphere-v3.netlify.app/docs/project-user-guide/grayscale-release/traffic-mirroring/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://kubesphere-v3.netlify.app/zh/docs/project-user-guide/grayscale-release/traffic-mirroring/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/docs/project-user-guide/project-administration/project-roles/</loc>
-  </url>
-  
-  <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/docs/project-user-guide/storage/volume-snapshots/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://kubesphere-v3.netlify.app/docs/project-user-guide/storage/volume-snapshots/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://kubesphere-v3.netlify.app/zh/docs/project-user-guide/storage/volume-snapshots/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/docs/workspace-administration/workspace-network-isolation/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://kubesphere-v3.netlify.app/docs/workspace-administration/workspace-network-isolation/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://kubesphere-v3.netlify.app/zh/docs/workspace-administration/workspace-network-isolation/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/docs/installing-on-linux/introduction/storage-configuration/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://kubesphere-v3.netlify.app/docs/installing-on-linux/introduction/storage-configuration/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://kubesphere-v3.netlify.app/zh/docs/installing-on-linux/introduction/storage-configuration/"
-                />
-  </url>
-  
-  <url>
-    <loc></loc>
-  </url>
-  
-  <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/docs/cluster-administration/cluster-settings/log-collections/add-es-as-receiver/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://kubesphere-v3.netlify.app/docs/cluster-administration/cluster-settings/log-collections/add-es-as-receiver/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://kubesphere-v3.netlify.app/zh/docs/cluster-administration/cluster-settings/log-collections/add-es-as-receiver/"
+                href="https://cnimages.github.io/website/zh/docs/cluster-administration/cluster-wide-alerting-and-notification/notification-manager/"
                 />
   </url>
   
@@ -850,6 +468,30 @@
   
   <url>
     <loc></loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href=""
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href=""
+                />
+  </url>
+  
+  <url>
+    <loc>https://cnimages.github.io/website/zh/docs/cluster-administration/cluster-settings/log-collections/introduction/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://cnimages.github.io/website/docs/cluster-administration/cluster-settings/log-collections/introduction/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://cnimages.github.io/website/zh/docs/cluster-administration/cluster-settings/log-collections/introduction/"
+                />
   </url>
   
   <url>
@@ -895,338 +537,282 @@
   </url>
   
   <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/docs/project-user-guide/application-workloads/app-template/</loc>
-  </url>
-  
-  <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/docs/installing-on-linux/public-cloud/install-ks-on-azure-vms/</loc>
+    <loc>https://cnimages.github.io/website/zh/docs/installing-on-kubernetes/introduction/overview/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://kubesphere-v3.netlify.app/docs/installing-on-linux/public-cloud/install-ks-on-azure-vms/"
+                href="https://cnimages.github.io/website/docs/installing-on-kubernetes/introduction/overview/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://kubesphere-v3.netlify.app/zh/docs/installing-on-linux/public-cloud/install-ks-on-azure-vms/"
+                href="https://cnimages.github.io/website/zh/docs/installing-on-kubernetes/introduction/overview/"
                 />
   </url>
   
   <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/docs/installing-on-linux/public-cloud/kubesphere-on-qingcloud-instance/</loc>
+    <loc>https://cnimages.github.io/website/zh/docs/project-user-guide/configuration/configmaps/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://kubesphere-v3.netlify.app/docs/installing-on-linux/public-cloud/kubesphere-on-qingcloud-instance/"
+                href="https://cnimages.github.io/website/docs/project-user-guide/configuration/configmaps/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://kubesphere-v3.netlify.app/zh/docs/installing-on-linux/public-cloud/kubesphere-on-qingcloud-instance/"
+                href="https://cnimages.github.io/website/zh/docs/project-user-guide/configuration/configmaps/"
                 />
   </url>
   
   <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/docs/project-user-guide/application-workloads/deployments/</loc>
+    <loc>https://cnimages.github.io/website/zh/docs/devops-user-guide/introduction/credential/</loc>
+  </url>
+  
+  <url>
+    <loc>https://cnimages.github.io/website/zh/docs/devops-user-guide/introduction/pipeline/</loc>
+  </url>
+  
+  <url>
+    <loc>https://cnimages.github.io/website/zh/docs/project-user-guide/grayscale-release/overview/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://kubesphere-v3.netlify.app/docs/project-user-guide/application-workloads/deployments/"
+                href="https://cnimages.github.io/website/docs/project-user-guide/grayscale-release/overview/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://kubesphere-v3.netlify.app/zh/docs/project-user-guide/application-workloads/deployments/"
+                href="https://cnimages.github.io/website/zh/docs/project-user-guide/grayscale-release/overview/"
                 />
   </url>
   
   <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/docs/installing-on-linux/public-cloud/install-ks-on-huaweicloud-ecs/</loc>
+    <loc>https://cnimages.github.io/website/zh/docs/project-user-guide/project-administration/project-quota/</loc>
   </url>
   
   <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/docs/installing-on-linux/public-cloud/install-kubesphere-on-ali-ecs/</loc>
-  </url>
-  
-  <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/docs/application-store/app-developer-guide/helm-developer-guide/</loc>
+    <loc>https://cnimages.github.io/website/zh/docs/project-user-guide/storage/volumes/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://kubesphere-v3.netlify.app/docs/application-store/app-developer-guide/helm-developer-guide/"
+                href="https://cnimages.github.io/website/docs/project-user-guide/storage/volumes/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://kubesphere-v3.netlify.app/zh/docs/application-store/app-developer-guide/helm-developer-guide/"
+                href="https://cnimages.github.io/website/zh/docs/project-user-guide/storage/volumes/"
                 />
   </url>
   
   <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/docs/application-store/app-developer-guide/helm-specification/</loc>
+    <loc>https://cnimages.github.io/website/zh/docs/installing-on-linux/introduction/intro/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://kubesphere-v3.netlify.app/docs/application-store/app-developer-guide/helm-specification/"
+                href="https://cnimages.github.io/website/docs/installing-on-linux/introduction/intro/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://kubesphere-v3.netlify.app/zh/docs/application-store/app-developer-guide/helm-specification/"
+                href="https://cnimages.github.io/website/zh/docs/installing-on-linux/introduction/intro/"
                 />
   </url>
   
   <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/docs/installing-on-kubernetes/on-prem-kubernetes/install-ks-on-linux-airgapped/</loc>
+    <loc>https://cnimages.github.io/website/zh/docs/installing-on-linux/introduction/multioverview/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://kubesphere-v3.netlify.app/docs/installing-on-kubernetes/on-prem-kubernetes/install-ks-on-linux-airgapped/"
+                href="https://cnimages.github.io/website/docs/installing-on-linux/introduction/multioverview/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://kubesphere-v3.netlify.app/zh/docs/installing-on-kubernetes/on-prem-kubernetes/install-ks-on-linux-airgapped/"
+                href="https://cnimages.github.io/website/zh/docs/installing-on-linux/introduction/multioverview/"
                 />
   </url>
   
   <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/docs/application-store/built-in-apps/gitlab-app/</loc>
-  </url>
-  
-  <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/docs/access-control-and-account-management/oauth2/</loc>
-  </url>
-  
-  <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/docs/cluster-administration/platform-settings/role-member-management/</loc>
-  </url>
-  
-  <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/docs/devops-user-guide/devops-administration/role-and-member-management/</loc>
-  </url>
-  
-  <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/docs/project-user-guide/application-workloads/statefulsets/</loc>
+    <loc>https://cnimages.github.io/website/zh/docs/installing-on-linux/introduction/port-firewall/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://kubesphere-v3.netlify.app/docs/project-user-guide/application-workloads/statefulsets/"
+                href="https://cnimages.github.io/website/docs/installing-on-linux/introduction/port-firewall/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://kubesphere-v3.netlify.app/zh/docs/project-user-guide/application-workloads/statefulsets/"
+                href="https://cnimages.github.io/website/zh/docs/installing-on-linux/introduction/port-firewall/"
                 />
   </url>
   
   <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/docs/installing-on-kubernetes/uninstalling/uninstalling-kubesphere-from-k8s/</loc>
+    <loc>https://cnimages.github.io/website/zh/docs/installing-on-kubernetes/introduction/prerequisites/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://kubesphere-v3.netlify.app/docs/installing-on-kubernetes/uninstalling/uninstalling-kubesphere-from-k8s/"
+                href="https://cnimages.github.io/website/docs/installing-on-kubernetes/introduction/prerequisites/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://kubesphere-v3.netlify.app/zh/docs/installing-on-kubernetes/uninstalling/uninstalling-kubesphere-from-k8s/"
+                href="https://cnimages.github.io/website/zh/docs/installing-on-kubernetes/introduction/prerequisites/"
                 />
   </url>
   
   <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/docs/application-store/built-in-apps/%E5%9C%A8kubesphere%E4%B8%AD%E9%83%A8%E7%BD%B2mongodb/</loc>
-  </url>
-  
-  <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/docs/application-store/built-in-apps/%E5%9C%A8kubesphere%E4%B8%AD%E9%83%A8%E7%BD%B2nginx/</loc>
-  </url>
-  
-  <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/docs/application-store/built-in-apps/%E5%9C%A8kubesphere%E4%B8%AD%E9%83%A8%E7%BD%B2redis/</loc>
-  </url>
-  
-  <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/docs/application-store/built-in-apps/harbor-app/</loc>
+    <loc>https://cnimages.github.io/website/zh/docs/project-user-guide/grayscale-release/blue-green-deployment/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://kubesphere-v3.netlify.app/docs/application-store/built-in-apps/harbor-app/"
+                href="https://cnimages.github.io/website/docs/project-user-guide/grayscale-release/blue-green-deployment/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://kubesphere-v3.netlify.app/zh/docs/application-store/built-in-apps/harbor-app/"
+                href="https://cnimages.github.io/website/zh/docs/project-user-guide/grayscale-release/blue-green-deployment/"
                 />
   </url>
   
   <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/docs/application-store/built-in-apps/redis-app/</loc>
+    <loc>https://cnimages.github.io/website/zh/docs/project-user-guide/grayscale-release/canary-release/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://kubesphere-v3.netlify.app/docs/application-store/built-in-apps/redis-app/"
+                href="https://cnimages.github.io/website/docs/project-user-guide/grayscale-release/canary-release/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://kubesphere-v3.netlify.app/zh/docs/application-store/built-in-apps/redis-app/"
+                href="https://cnimages.github.io/website/zh/docs/project-user-guide/grayscale-release/canary-release/"
                 />
   </url>
   
   <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/docs/installing-on-kubernetes/hosted-kubernetes/install-kubesphere-on-oke/</loc>
+    <loc>https://cnimages.github.io/website/zh/docs/project-user-guide/configuration/image-registry/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://kubesphere-v3.netlify.app/docs/installing-on-kubernetes/hosted-kubernetes/install-kubesphere-on-oke/"
+                href="https://cnimages.github.io/website/docs/project-user-guide/configuration/image-registry/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://kubesphere-v3.netlify.app/zh/docs/installing-on-kubernetes/hosted-kubernetes/install-kubesphere-on-oke/"
+                href="https://cnimages.github.io/website/zh/docs/project-user-guide/configuration/image-registry/"
                 />
   </url>
   
   <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/docs/project-user-guide/application-workloads/daemonsets/</loc>
+    <loc>https://cnimages.github.io/website/zh/docs/installing-on-linux/introduction/vars/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://kubesphere-v3.netlify.app/docs/project-user-guide/application-workloads/daemonsets/"
+                href="https://cnimages.github.io/website/docs/installing-on-linux/introduction/vars/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://kubesphere-v3.netlify.app/zh/docs/project-user-guide/application-workloads/daemonsets/"
+                href="https://cnimages.github.io/website/zh/docs/installing-on-linux/introduction/vars/"
                 />
   </url>
   
   <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/docs/installing-on-kubernetes/hosted-kubernetes/install-ks-on-tencent-tke/</loc>
+    <loc>https://cnimages.github.io/website/zh/docs/project-user-guide/project-administration/project-gateway/</loc>
   </url>
   
   <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/docs/installing-on-kubernetes/hosted-kubernetes/install-kubesphere-on-huaweicloud-cce/</loc>
+    <loc>https://cnimages.github.io/website/zh/docs/project-user-guide/project-administration/project-members/</loc>
   </url>
   
   <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/docs/project-user-guide/application-workloads/composing-app/</loc>
-  </url>
-  
-  <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/docs/project-user-guide/application-workloads/cronjob/</loc>
+    <loc>https://cnimages.github.io/website/zh/docs/project-user-guide/configuration/secrets/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://kubesphere-v3.netlify.app/docs/project-user-guide/application-workloads/cronjob/"
+                href="https://cnimages.github.io/website/docs/project-user-guide/configuration/secrets/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://kubesphere-v3.netlify.app/zh/docs/project-user-guide/application-workloads/cronjob/"
+                href="https://cnimages.github.io/website/zh/docs/project-user-guide/configuration/secrets/"
                 />
   </url>
   
   <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/docs/project-user-guide/application-workloads/ingress/</loc>
+    <loc>https://cnimages.github.io/website/zh/docs/project-user-guide/grayscale-release/traffic-mirroring/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://kubesphere-v3.netlify.app/docs/project-user-guide/application-workloads/ingress/"
+                href="https://cnimages.github.io/website/docs/project-user-guide/grayscale-release/traffic-mirroring/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://kubesphere-v3.netlify.app/zh/docs/project-user-guide/application-workloads/ingress/"
+                href="https://cnimages.github.io/website/zh/docs/project-user-guide/grayscale-release/traffic-mirroring/"
                 />
   </url>
   
   <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/docs/project-user-guide/application-workloads/s2i-template/</loc>
+    <loc>https://cnimages.github.io/website/zh/docs/project-user-guide/project-administration/project-roles/</loc>
   </url>
   
   <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/docs/project-user-guide/application-workloads/services/</loc>
+    <loc>https://cnimages.github.io/website/zh/docs/project-user-guide/storage/volume-snapshots/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://kubesphere-v3.netlify.app/docs/project-user-guide/application-workloads/services/"
+                href="https://cnimages.github.io/website/docs/project-user-guide/storage/volume-snapshots/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://kubesphere-v3.netlify.app/zh/docs/project-user-guide/application-workloads/services/"
+                href="https://cnimages.github.io/website/zh/docs/project-user-guide/storage/volume-snapshots/"
                 />
   </url>
   
   <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/docs/installing-on-kubernetes/hosted-kubernetes/install-kubesphere-on-eks/</loc>
+    <loc>https://cnimages.github.io/website/zh/docs/workspace-administration/workspace-network-isolation/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://kubesphere-v3.netlify.app/docs/installing-on-kubernetes/hosted-kubernetes/install-kubesphere-on-eks/"
+                href="https://cnimages.github.io/website/docs/workspace-administration/workspace-network-isolation/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://kubesphere-v3.netlify.app/zh/docs/installing-on-kubernetes/hosted-kubernetes/install-kubesphere-on-eks/"
+                href="https://cnimages.github.io/website/zh/docs/workspace-administration/workspace-network-isolation/"
                 />
   </url>
   
   <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/docs/installing-on-kubernetes/hosted-kubernetes/install-kubesphere-on-do/</loc>
+    <loc>https://cnimages.github.io/website/zh/docs/installing-on-linux/introduction/storage-configuration/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://kubesphere-v3.netlify.app/docs/installing-on-kubernetes/hosted-kubernetes/install-kubesphere-on-do/"
+                href="https://cnimages.github.io/website/docs/installing-on-linux/introduction/storage-configuration/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://kubesphere-v3.netlify.app/zh/docs/installing-on-kubernetes/hosted-kubernetes/install-kubesphere-on-do/"
+                href="https://cnimages.github.io/website/zh/docs/installing-on-linux/introduction/storage-configuration/"
                 />
   </url>
   
   <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/docs/installing-on-kubernetes/hosted-kubernetes/install-kubesphere-on-gke/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://kubesphere-v3.netlify.app/docs/installing-on-kubernetes/hosted-kubernetes/install-kubesphere-on-gke/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://kubesphere-v3.netlify.app/zh/docs/installing-on-kubernetes/hosted-kubernetes/install-kubesphere-on-gke/"
-                />
+    <loc></loc>
   </url>
   
   <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/docs/installing-on-kubernetes/hosted-kubernetes/install-kubesphere-on-aks/</loc>
+    <loc>https://cnimages.github.io/website/zh/docs/cluster-administration/cluster-settings/log-collections/add-es-as-receiver/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://kubesphere-v3.netlify.app/docs/installing-on-kubernetes/hosted-kubernetes/install-kubesphere-on-aks/"
+                href="https://cnimages.github.io/website/docs/cluster-administration/cluster-settings/log-collections/add-es-as-receiver/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://kubesphere-v3.netlify.app/zh/docs/installing-on-kubernetes/hosted-kubernetes/install-kubesphere-on-aks/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/docs/cluster-administration/cluster-settings/log-collections/add-kafka-as-receiver/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://kubesphere-v3.netlify.app/docs/cluster-administration/cluster-settings/log-collections/add-kafka-as-receiver/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://kubesphere-v3.netlify.app/zh/docs/cluster-administration/cluster-settings/log-collections/add-kafka-as-receiver/"
+                href="https://cnimages.github.io/website/zh/docs/cluster-administration/cluster-settings/log-collections/add-es-as-receiver/"
                 />
   </url>
   
@@ -1259,101 +845,11 @@
   </url>
   
   <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/docs/multicluster-management/import-cloud-hosted-k8s/import-aliyun-ack/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://kubesphere-v3.netlify.app/docs/multicluster-management/import-cloud-hosted-k8s/import-aliyun-ack/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://kubesphere-v3.netlify.app/zh/docs/multicluster-management/import-cloud-hosted-k8s/import-aliyun-ack/"
-                />
+    <loc></loc>
   </url>
   
   <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/docs/multicluster-management/import-on-prem-k8s/import-kubeadm-k8s/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://kubesphere-v3.netlify.app/docs/multicluster-management/import-on-prem-k8s/import-kubeadm-k8s/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://kubesphere-v3.netlify.app/zh/docs/multicluster-management/import-on-prem-k8s/import-kubeadm-k8s/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/docs/multicluster-management/remove-cluster/kubefed-in-kubesphere/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://kubesphere-v3.netlify.app/docs/multicluster-management/remove-cluster/kubefed-in-kubesphere/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://kubesphere-v3.netlify.app/zh/docs/multicluster-management/remove-cluster/kubefed-in-kubesphere/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/docs/multicluster-management/import-cloud-hosted-k8s/import-aws-eks/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://kubesphere-v3.netlify.app/docs/multicluster-management/import-cloud-hosted-k8s/import-aws-eks/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://kubesphere-v3.netlify.app/zh/docs/multicluster-management/import-cloud-hosted-k8s/import-aws-eks/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/docs/installing-on-linux/cluster-operation/add-new-nodes/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://kubesphere-v3.netlify.app/docs/installing-on-linux/cluster-operation/add-new-nodes/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://kubesphere-v3.netlify.app/zh/docs/installing-on-linux/cluster-operation/add-new-nodes/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/docs/installing-on-linux/cluster-operation/remove-nodes/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://kubesphere-v3.netlify.app/docs/installing-on-linux/cluster-operation/remove-nodes/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://kubesphere-v3.netlify.app/zh/docs/installing-on-linux/cluster-operation/remove-nodes/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/docs/cluster-administration/cluster-settings/log-collections/add-fluentd-as-receiver/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://kubesphere-v3.netlify.app/docs/cluster-administration/cluster-settings/log-collections/add-fluentd-as-receiver/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://kubesphere-v3.netlify.app/zh/docs/cluster-administration/cluster-settings/log-collections/add-fluentd-as-receiver/"
-                />
+    <loc></loc>
   </url>
   
   <url>
@@ -1367,160 +863,6 @@
                 rel="alternate"
                 hreflang="zh"
                 href=""
-                />
-  </url>
-  
-  <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/docs/installing-on-linux/uninstalling/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://kubesphere-v3.netlify.app/docs/installing-on-linux/uninstalling/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://kubesphere-v3.netlify.app/zh/docs/installing-on-linux/uninstalling/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/docs/installing-on-linux/uninstalling/uninstalling-kubesphere-and-kubernetes/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://kubesphere-v3.netlify.app/docs/installing-on-linux/uninstalling/uninstalling-kubesphere-and-kubernetes/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://kubesphere-v3.netlify.app/zh/docs/installing-on-linux/uninstalling/uninstalling-kubesphere-and-kubernetes/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/docs/installing-on-linux/faq/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://kubesphere-v3.netlify.app/docs/installing-on-linux/faq/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://kubesphere-v3.netlify.app/zh/docs/installing-on-linux/faq/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/docs/installing-on-linux/faq/configure-booster/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://kubesphere-v3.netlify.app/docs/installing-on-linux/faq/configure-booster/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://kubesphere-v3.netlify.app/zh/docs/installing-on-linux/faq/configure-booster/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/docs/installing-on-kubernetes/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://kubesphere-v3.netlify.app/docs/installing-on-kubernetes/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://kubesphere-v3.netlify.app/zh/docs/installing-on-kubernetes/"
-                />
-  </url>
-  
-  <url>
-    <loc></loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href=""
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href=""
-                />
-  </url>
-  
-  <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/docs/installing-on-kubernetes/faq/faq1/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://kubesphere-v3.netlify.app/docs/installing-on-kubernetes/faq/faq1/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://kubesphere-v3.netlify.app/zh/docs/installing-on-kubernetes/faq/faq1/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/docs/multicluster-management/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://kubesphere-v3.netlify.app/docs/multicluster-management/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://kubesphere-v3.netlify.app/zh/docs/multicluster-management/"
-                />
-  </url>
-  
-  <url>
-    <loc></loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href=""
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href=""
-                />
-  </url>
-  
-  <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/docs/multicluster-management/introduction/overview/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://kubesphere-v3.netlify.app/docs/multicluster-management/introduction/overview/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://kubesphere-v3.netlify.app/zh/docs/multicluster-management/introduction/overview/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/docs/multicluster-management/introduction/kubefed-in-kubesphere/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://kubesphere-v3.netlify.app/docs/multicluster-management/introduction/kubefed-in-kubesphere/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://kubesphere-v3.netlify.app/zh/docs/multicluster-management/introduction/kubefed-in-kubesphere/"
                 />
   </url>
   
@@ -1553,16 +895,338 @@
   </url>
   
   <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/docs/quick-start/all-in-one-on-linux/</loc>
+    <loc>https://cnimages.github.io/website/zh/docs/project-user-guide/application-workloads/app-template/</loc>
+  </url>
+  
+  <url>
+    <loc>https://cnimages.github.io/website/zh/docs/installing-on-linux/public-cloud/install-ks-on-azure-vms/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://kubesphere-v3.netlify.app/docs/quick-start/all-in-one-on-linux/"
+                href="https://cnimages.github.io/website/docs/installing-on-linux/public-cloud/install-ks-on-azure-vms/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://kubesphere-v3.netlify.app/zh/docs/quick-start/all-in-one-on-linux/"
+                href="https://cnimages.github.io/website/zh/docs/installing-on-linux/public-cloud/install-ks-on-azure-vms/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://cnimages.github.io/website/zh/docs/installing-on-linux/public-cloud/kubesphere-on-qingcloud-instance/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://cnimages.github.io/website/docs/installing-on-linux/public-cloud/kubesphere-on-qingcloud-instance/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://cnimages.github.io/website/zh/docs/installing-on-linux/public-cloud/kubesphere-on-qingcloud-instance/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://cnimages.github.io/website/zh/docs/project-user-guide/application-workloads/deployments/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://cnimages.github.io/website/docs/project-user-guide/application-workloads/deployments/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://cnimages.github.io/website/zh/docs/project-user-guide/application-workloads/deployments/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://cnimages.github.io/website/zh/docs/installing-on-linux/public-cloud/install-ks-on-huaweicloud-ecs/</loc>
+  </url>
+  
+  <url>
+    <loc>https://cnimages.github.io/website/zh/docs/installing-on-linux/public-cloud/install-kubesphere-on-ali-ecs/</loc>
+  </url>
+  
+  <url>
+    <loc>https://cnimages.github.io/website/zh/docs/application-store/app-developer-guide/helm-developer-guide/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://cnimages.github.io/website/docs/application-store/app-developer-guide/helm-developer-guide/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://cnimages.github.io/website/zh/docs/application-store/app-developer-guide/helm-developer-guide/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://cnimages.github.io/website/zh/docs/application-store/app-developer-guide/helm-specification/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://cnimages.github.io/website/docs/application-store/app-developer-guide/helm-specification/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://cnimages.github.io/website/zh/docs/application-store/app-developer-guide/helm-specification/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://cnimages.github.io/website/zh/docs/installing-on-kubernetes/on-prem-kubernetes/install-ks-on-linux-airgapped/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://cnimages.github.io/website/docs/installing-on-kubernetes/on-prem-kubernetes/install-ks-on-linux-airgapped/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://cnimages.github.io/website/zh/docs/installing-on-kubernetes/on-prem-kubernetes/install-ks-on-linux-airgapped/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://cnimages.github.io/website/zh/docs/application-store/built-in-apps/gitlab-app/</loc>
+  </url>
+  
+  <url>
+    <loc>https://cnimages.github.io/website/zh/docs/access-control-and-account-management/oauth2/</loc>
+  </url>
+  
+  <url>
+    <loc>https://cnimages.github.io/website/zh/docs/cluster-administration/platform-settings/role-member-management/</loc>
+  </url>
+  
+  <url>
+    <loc>https://cnimages.github.io/website/zh/docs/devops-user-guide/devops-administration/role-and-member-management/</loc>
+  </url>
+  
+  <url>
+    <loc>https://cnimages.github.io/website/zh/docs/project-user-guide/application-workloads/statefulsets/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://cnimages.github.io/website/docs/project-user-guide/application-workloads/statefulsets/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://cnimages.github.io/website/zh/docs/project-user-guide/application-workloads/statefulsets/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://cnimages.github.io/website/zh/docs/installing-on-kubernetes/uninstalling/uninstalling-kubesphere-from-k8s/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://cnimages.github.io/website/docs/installing-on-kubernetes/uninstalling/uninstalling-kubesphere-from-k8s/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://cnimages.github.io/website/zh/docs/installing-on-kubernetes/uninstalling/uninstalling-kubesphere-from-k8s/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://cnimages.github.io/website/zh/docs/application-store/built-in-apps/%E5%9C%A8kubesphere%E4%B8%AD%E9%83%A8%E7%BD%B2mongodb/</loc>
+  </url>
+  
+  <url>
+    <loc>https://cnimages.github.io/website/zh/docs/application-store/built-in-apps/%E5%9C%A8kubesphere%E4%B8%AD%E9%83%A8%E7%BD%B2nginx/</loc>
+  </url>
+  
+  <url>
+    <loc>https://cnimages.github.io/website/zh/docs/application-store/built-in-apps/%E5%9C%A8kubesphere%E4%B8%AD%E9%83%A8%E7%BD%B2redis/</loc>
+  </url>
+  
+  <url>
+    <loc>https://cnimages.github.io/website/zh/docs/application-store/built-in-apps/harbor-app/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://cnimages.github.io/website/docs/application-store/built-in-apps/harbor-app/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://cnimages.github.io/website/zh/docs/application-store/built-in-apps/harbor-app/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://cnimages.github.io/website/zh/docs/application-store/built-in-apps/redis-app/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://cnimages.github.io/website/docs/application-store/built-in-apps/redis-app/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://cnimages.github.io/website/zh/docs/application-store/built-in-apps/redis-app/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://cnimages.github.io/website/zh/docs/installing-on-kubernetes/hosted-kubernetes/install-kubesphere-on-oke/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://cnimages.github.io/website/docs/installing-on-kubernetes/hosted-kubernetes/install-kubesphere-on-oke/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://cnimages.github.io/website/zh/docs/installing-on-kubernetes/hosted-kubernetes/install-kubesphere-on-oke/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://cnimages.github.io/website/zh/docs/project-user-guide/application-workloads/daemonsets/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://cnimages.github.io/website/docs/project-user-guide/application-workloads/daemonsets/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://cnimages.github.io/website/zh/docs/project-user-guide/application-workloads/daemonsets/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://cnimages.github.io/website/zh/docs/installing-on-kubernetes/hosted-kubernetes/install-ks-on-tencent-tke/</loc>
+  </url>
+  
+  <url>
+    <loc>https://cnimages.github.io/website/zh/docs/installing-on-kubernetes/hosted-kubernetes/install-kubesphere-on-huaweicloud-cce/</loc>
+  </url>
+  
+  <url>
+    <loc>https://cnimages.github.io/website/zh/docs/project-user-guide/application-workloads/composing-app/</loc>
+  </url>
+  
+  <url>
+    <loc>https://cnimages.github.io/website/zh/docs/project-user-guide/application-workloads/cronjob/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://cnimages.github.io/website/docs/project-user-guide/application-workloads/cronjob/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://cnimages.github.io/website/zh/docs/project-user-guide/application-workloads/cronjob/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://cnimages.github.io/website/zh/docs/project-user-guide/application-workloads/ingress/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://cnimages.github.io/website/docs/project-user-guide/application-workloads/ingress/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://cnimages.github.io/website/zh/docs/project-user-guide/application-workloads/ingress/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://cnimages.github.io/website/zh/docs/project-user-guide/application-workloads/s2i-template/</loc>
+  </url>
+  
+  <url>
+    <loc>https://cnimages.github.io/website/zh/docs/project-user-guide/application-workloads/services/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://cnimages.github.io/website/docs/project-user-guide/application-workloads/services/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://cnimages.github.io/website/zh/docs/project-user-guide/application-workloads/services/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://cnimages.github.io/website/zh/docs/installing-on-kubernetes/hosted-kubernetes/install-kubesphere-on-eks/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://cnimages.github.io/website/docs/installing-on-kubernetes/hosted-kubernetes/install-kubesphere-on-eks/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://cnimages.github.io/website/zh/docs/installing-on-kubernetes/hosted-kubernetes/install-kubesphere-on-eks/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://cnimages.github.io/website/zh/docs/installing-on-kubernetes/hosted-kubernetes/install-kubesphere-on-do/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://cnimages.github.io/website/docs/installing-on-kubernetes/hosted-kubernetes/install-kubesphere-on-do/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://cnimages.github.io/website/zh/docs/installing-on-kubernetes/hosted-kubernetes/install-kubesphere-on-do/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://cnimages.github.io/website/zh/docs/installing-on-kubernetes/hosted-kubernetes/install-kubesphere-on-gke/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://cnimages.github.io/website/docs/installing-on-kubernetes/hosted-kubernetes/install-kubesphere-on-gke/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://cnimages.github.io/website/zh/docs/installing-on-kubernetes/hosted-kubernetes/install-kubesphere-on-gke/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://cnimages.github.io/website/zh/docs/installing-on-kubernetes/hosted-kubernetes/install-kubesphere-on-aks/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://cnimages.github.io/website/docs/installing-on-kubernetes/hosted-kubernetes/install-kubesphere-on-aks/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://cnimages.github.io/website/zh/docs/installing-on-kubernetes/hosted-kubernetes/install-kubesphere-on-aks/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://cnimages.github.io/website/zh/docs/cluster-administration/cluster-settings/log-collections/add-kafka-as-receiver/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://cnimages.github.io/website/docs/cluster-administration/cluster-settings/log-collections/add-kafka-as-receiver/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://cnimages.github.io/website/zh/docs/cluster-administration/cluster-settings/log-collections/add-kafka-as-receiver/"
                 />
   </url>
   
@@ -1595,282 +1259,100 @@
   </url>
   
   <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/docs/multicluster-management/enable-multicluster/direct-connection/</loc>
+    <loc>https://cnimages.github.io/website/zh/docs/multicluster-management/import-cloud-hosted-k8s/import-aliyun-ack/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://kubesphere-v3.netlify.app/docs/multicluster-management/enable-multicluster/direct-connection/"
+                href="https://cnimages.github.io/website/docs/multicluster-management/import-cloud-hosted-k8s/import-aliyun-ack/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://kubesphere-v3.netlify.app/zh/docs/multicluster-management/enable-multicluster/direct-connection/"
+                href="https://cnimages.github.io/website/zh/docs/multicluster-management/import-cloud-hosted-k8s/import-aliyun-ack/"
                 />
   </url>
   
   <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/docs/multicluster-management/enable-multicluster/agent-connection/</loc>
+    <loc>https://cnimages.github.io/website/zh/docs/multicluster-management/import-on-prem-k8s/import-kubeadm-k8s/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://kubesphere-v3.netlify.app/docs/multicluster-management/enable-multicluster/agent-connection/"
+                href="https://cnimages.github.io/website/docs/multicluster-management/import-on-prem-k8s/import-kubeadm-k8s/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://kubesphere-v3.netlify.app/zh/docs/multicluster-management/enable-multicluster/agent-connection/"
+                href="https://cnimages.github.io/website/zh/docs/multicluster-management/import-on-prem-k8s/import-kubeadm-k8s/"
                 />
   </url>
   
   <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/docs/multicluster-management/enable-multicluster/retrieve-kubeconfig/</loc>
+    <loc>https://cnimages.github.io/website/zh/docs/multicluster-management/remove-cluster/kubefed-in-kubesphere/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://kubesphere-v3.netlify.app/docs/multicluster-management/enable-multicluster/retrieve-kubeconfig/"
+                href="https://cnimages.github.io/website/docs/multicluster-management/remove-cluster/kubefed-in-kubesphere/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://kubesphere-v3.netlify.app/zh/docs/multicluster-management/enable-multicluster/retrieve-kubeconfig/"
+                href="https://cnimages.github.io/website/zh/docs/multicluster-management/remove-cluster/kubefed-in-kubesphere/"
                 />
   </url>
   
   <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/docs/quick-start/minimal-kubesphere-on-k8s/</loc>
+    <loc>https://cnimages.github.io/website/zh/docs/multicluster-management/import-cloud-hosted-k8s/import-aws-eks/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://kubesphere-v3.netlify.app/docs/quick-start/minimal-kubesphere-on-k8s/"
+                href="https://cnimages.github.io/website/docs/multicluster-management/import-cloud-hosted-k8s/import-aws-eks/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://kubesphere-v3.netlify.app/zh/docs/quick-start/minimal-kubesphere-on-k8s/"
+                href="https://cnimages.github.io/website/zh/docs/multicluster-management/import-cloud-hosted-k8s/import-aws-eks/"
                 />
   </url>
   
   <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/docs/quick-start/create-workspace-and-project/</loc>
+    <loc>https://cnimages.github.io/website/zh/docs/installing-on-linux/cluster-operation/add-new-nodes/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://kubesphere-v3.netlify.app/docs/quick-start/create-workspace-and-project/"
+                href="https://cnimages.github.io/website/docs/installing-on-linux/cluster-operation/add-new-nodes/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://kubesphere-v3.netlify.app/zh/docs/quick-start/create-workspace-and-project/"
+                href="https://cnimages.github.io/website/zh/docs/installing-on-linux/cluster-operation/add-new-nodes/"
                 />
   </url>
   
   <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/docs/quick-start/deploy-bookinfo-to-k8s/</loc>
+    <loc>https://cnimages.github.io/website/zh/docs/installing-on-linux/cluster-operation/remove-nodes/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://kubesphere-v3.netlify.app/docs/quick-start/deploy-bookinfo-to-k8s/"
+                href="https://cnimages.github.io/website/docs/installing-on-linux/cluster-operation/remove-nodes/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://kubesphere-v3.netlify.app/zh/docs/quick-start/deploy-bookinfo-to-k8s/"
+                href="https://cnimages.github.io/website/zh/docs/installing-on-linux/cluster-operation/remove-nodes/"
                 />
   </url>
   
   <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/docs/quick-start/wordpress-deployment/</loc>
+    <loc>https://cnimages.github.io/website/zh/docs/cluster-administration/cluster-settings/log-collections/add-fluentd-as-receiver/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://kubesphere-v3.netlify.app/docs/quick-start/wordpress-deployment/"
+                href="https://cnimages.github.io/website/docs/cluster-administration/cluster-settings/log-collections/add-fluentd-as-receiver/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://kubesphere-v3.netlify.app/zh/docs/quick-start/wordpress-deployment/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/docs/quick-start/enable-pluggable-components/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://kubesphere-v3.netlify.app/docs/quick-start/enable-pluggable-components/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://kubesphere-v3.netlify.app/zh/docs/quick-start/enable-pluggable-components/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/docs/pluggable-components/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://kubesphere-v3.netlify.app/docs/pluggable-components/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://kubesphere-v3.netlify.app/zh/docs/pluggable-components/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/docs/pluggable-components/overview/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://kubesphere-v3.netlify.app/docs/pluggable-components/overview/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://kubesphere-v3.netlify.app/zh/docs/pluggable-components/overview/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/docs/pluggable-components/app-store/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://kubesphere-v3.netlify.app/docs/pluggable-components/app-store/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://kubesphere-v3.netlify.app/zh/docs/pluggable-components/app-store/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/docs/pluggable-components/devops/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://kubesphere-v3.netlify.app/docs/pluggable-components/devops/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://kubesphere-v3.netlify.app/zh/docs/pluggable-components/devops/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/docs/pluggable-components/auditing-logs/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://kubesphere-v3.netlify.app/docs/pluggable-components/auditing-logs/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://kubesphere-v3.netlify.app/zh/docs/pluggable-components/auditing-logs/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/docs/pluggable-components/events/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://kubesphere-v3.netlify.app/docs/pluggable-components/events/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://kubesphere-v3.netlify.app/zh/docs/pluggable-components/events/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/docs/pluggable-components/logging/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://kubesphere-v3.netlify.app/docs/pluggable-components/logging/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://kubesphere-v3.netlify.app/zh/docs/pluggable-components/logging/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/docs/pluggable-components/faq/logging/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://kubesphere-v3.netlify.app/docs/pluggable-components/faq/logging/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://kubesphere-v3.netlify.app/zh/docs/pluggable-components/faq/logging/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/docs/pluggable-components/service-mesh/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://kubesphere-v3.netlify.app/docs/pluggable-components/service-mesh/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://kubesphere-v3.netlify.app/zh/docs/pluggable-components/service-mesh/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/docs/pluggable-components/faq/monitoring/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://kubesphere-v3.netlify.app/docs/pluggable-components/faq/monitoring/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://kubesphere-v3.netlify.app/zh/docs/pluggable-components/faq/monitoring/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/docs/pluggable-components/alerting-notification/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://kubesphere-v3.netlify.app/docs/pluggable-components/alerting-notification/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://kubesphere-v3.netlify.app/zh/docs/pluggable-components/alerting-notification/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/docs/pluggable-components/network-policy/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://kubesphere-v3.netlify.app/docs/pluggable-components/network-policy/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://kubesphere-v3.netlify.app/zh/docs/pluggable-components/network-policy/"
+                href="https://cnimages.github.io/website/zh/docs/cluster-administration/cluster-settings/log-collections/add-fluentd-as-receiver/"
                 />
   </url>
   
@@ -1889,128 +1371,72 @@
   </url>
   
   <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/docs/upgrade/</loc>
+    <loc>https://cnimages.github.io/website/zh/docs/installing-on-linux/uninstalling/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://kubesphere-v3.netlify.app/docs/upgrade/"
+                href="https://cnimages.github.io/website/docs/installing-on-linux/uninstalling/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://kubesphere-v3.netlify.app/zh/docs/upgrade/"
+                href="https://cnimages.github.io/website/zh/docs/installing-on-linux/uninstalling/"
                 />
   </url>
   
   <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/docs/upgrade/upgrade-overview/</loc>
+    <loc>https://cnimages.github.io/website/zh/docs/installing-on-linux/uninstalling/uninstalling-kubesphere-and-kubernetes/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://kubesphere-v3.netlify.app/docs/upgrade/upgrade-overview/"
+                href="https://cnimages.github.io/website/docs/installing-on-linux/uninstalling/uninstalling-kubesphere-and-kubernetes/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://kubesphere-v3.netlify.app/zh/docs/upgrade/upgrade-overview/"
+                href="https://cnimages.github.io/website/zh/docs/installing-on-linux/uninstalling/uninstalling-kubesphere-and-kubernetes/"
                 />
   </url>
   
   <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/docs/upgrade/upgrade-with-kubekey/</loc>
+    <loc>https://cnimages.github.io/website/zh/docs/installing-on-linux/faq/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://kubesphere-v3.netlify.app/docs/upgrade/upgrade-with-kubekey/"
+                href="https://cnimages.github.io/website/docs/installing-on-linux/faq/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://kubesphere-v3.netlify.app/zh/docs/upgrade/upgrade-with-kubekey/"
+                href="https://cnimages.github.io/website/zh/docs/installing-on-linux/faq/"
                 />
   </url>
   
   <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/docs/upgrade/upgrade-with-ks-installer/</loc>
+    <loc>https://cnimages.github.io/website/zh/docs/installing-on-linux/faq/configure-booster/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://kubesphere-v3.netlify.app/docs/upgrade/upgrade-with-ks-installer/"
+                href="https://cnimages.github.io/website/docs/installing-on-linux/faq/configure-booster/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://kubesphere-v3.netlify.app/zh/docs/upgrade/upgrade-with-ks-installer/"
+                href="https://cnimages.github.io/website/zh/docs/installing-on-linux/faq/configure-booster/"
                 />
   </url>
   
   <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/docs/upgrade/what-changed/</loc>
+    <loc>https://cnimages.github.io/website/zh/docs/installing-on-kubernetes/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://kubesphere-v3.netlify.app/docs/upgrade/what-changed/"
+                href="https://cnimages.github.io/website/docs/installing-on-kubernetes/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://kubesphere-v3.netlify.app/zh/docs/upgrade/what-changed/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/docs/upgrade/upgrade-faq/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://kubesphere-v3.netlify.app/docs/upgrade/upgrade-faq/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://kubesphere-v3.netlify.app/zh/docs/upgrade/upgrade-faq/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/docs/cluster-administration/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://kubesphere-v3.netlify.app/docs/cluster-administration/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://kubesphere-v3.netlify.app/zh/docs/cluster-administration/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/docs/cluster-administration/cluster-wide-alerting-and-notification/alerting-policy/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://kubesphere-v3.netlify.app/docs/cluster-administration/cluster-wide-alerting-and-notification/alerting-policy/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://kubesphere-v3.netlify.app/zh/docs/cluster-administration/cluster-wide-alerting-and-notification/alerting-policy/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/docs/cluster-administration/cluster-wide-alerting-and-notification/alerting-message/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://kubesphere-v3.netlify.app/docs/cluster-administration/cluster-wide-alerting-and-notification/alerting-message/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://kubesphere-v3.netlify.app/zh/docs/cluster-administration/cluster-wide-alerting-and-notification/alerting-message/"
+                href="https://cnimages.github.io/website/zh/docs/installing-on-kubernetes/"
                 />
   </url>
   
@@ -2029,739 +1455,1313 @@
   </url>
   
   <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/docs/cluster-administration/cluster-settings/mail-server/</loc>
+    <loc>https://cnimages.github.io/website/zh/docs/installing-on-kubernetes/faq/faq1/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://kubesphere-v3.netlify.app/docs/cluster-administration/cluster-settings/mail-server/"
+                href="https://cnimages.github.io/website/docs/installing-on-kubernetes/faq/faq1/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://kubesphere-v3.netlify.app/zh/docs/cluster-administration/cluster-settings/mail-server/"
+                href="https://cnimages.github.io/website/zh/docs/installing-on-kubernetes/faq/faq1/"
                 />
   </url>
   
   <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/docs/workspace-administration/</loc>
+    <loc>https://cnimages.github.io/website/zh/docs/multicluster-management/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://kubesphere-v3.netlify.app/docs/workspace-administration/"
+                href="https://cnimages.github.io/website/docs/multicluster-management/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://kubesphere-v3.netlify.app/zh/docs/workspace-administration/"
+                href="https://cnimages.github.io/website/zh/docs/multicluster-management/"
                 />
   </url>
   
   <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/docs/project-user-guide/</loc>
+    <loc></loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://kubesphere-v3.netlify.app/docs/project-user-guide/"
+                href=""
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://kubesphere-v3.netlify.app/zh/docs/project-user-guide/"
+                href=""
                 />
   </url>
   
   <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/docs/devops-user-guide/</loc>
+    <loc>https://cnimages.github.io/website/zh/docs/multicluster-management/introduction/overview/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://kubesphere-v3.netlify.app/docs/devops-user-guide/"
+                href="https://cnimages.github.io/website/docs/multicluster-management/introduction/overview/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://kubesphere-v3.netlify.app/zh/docs/devops-user-guide/"
+                href="https://cnimages.github.io/website/zh/docs/multicluster-management/introduction/overview/"
                 />
   </url>
   
   <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/docs/application-store/</loc>
+    <loc>https://cnimages.github.io/website/zh/docs/multicluster-management/introduction/kubefed-in-kubesphere/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://kubesphere-v3.netlify.app/docs/application-store/"
+                href="https://cnimages.github.io/website/docs/multicluster-management/introduction/kubefed-in-kubesphere/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://kubesphere-v3.netlify.app/zh/docs/application-store/"
+                href="https://cnimages.github.io/website/zh/docs/multicluster-management/introduction/kubefed-in-kubesphere/"
                 />
   </url>
   
   <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/docs/access-control-and-account-management/</loc>
+    <loc></loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://kubesphere-v3.netlify.app/docs/access-control-and-account-management/"
+                href=""
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://kubesphere-v3.netlify.app/zh/docs/access-control-and-account-management/"
+                href=""
                 />
   </url>
   
   <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/docs/cluster-administration/shut-down-and-restart-cluster-gracefully/</loc>
+    <loc></loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://kubesphere-v3.netlify.app/docs/cluster-administration/shut-down-and-restart-cluster-gracefully/"
+                href=""
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://kubesphere-v3.netlify.app/zh/docs/cluster-administration/shut-down-and-restart-cluster-gracefully/"
+                href=""
                 />
   </url>
   
   <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/docs/faq/</loc>
+    <loc>https://cnimages.github.io/website/zh/docs/quick-start/all-in-one-on-linux/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://kubesphere-v3.netlify.app/docs/faq/"
+                href="https://cnimages.github.io/website/docs/quick-start/all-in-one-on-linux/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://kubesphere-v3.netlify.app/zh/docs/faq/"
+                href="https://cnimages.github.io/website/zh/docs/quick-start/all-in-one-on-linux/"
                 />
   </url>
   
   <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/docs/faq/console-faq/</loc>
+    <loc></loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://kubesphere-v3.netlify.app/docs/faq/console-faq/"
+                href=""
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://kubesphere-v3.netlify.app/zh/docs/faq/console-faq/"
+                href=""
                 />
   </url>
   
   <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/docs/faq/telemetry/</loc>
+    <loc></loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://kubesphere-v3.netlify.app/docs/faq/telemetry/"
+                href=""
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://kubesphere-v3.netlify.app/zh/docs/faq/telemetry/"
+                href=""
                 />
   </url>
   
   <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/docs/reference/</loc>
+    <loc>https://cnimages.github.io/website/zh/docs/multicluster-management/enable-multicluster/direct-connection/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://kubesphere-v3.netlify.app/docs/reference/"
+                href="https://cnimages.github.io/website/docs/multicluster-management/enable-multicluster/direct-connection/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://kubesphere-v3.netlify.app/zh/docs/reference/"
+                href="https://cnimages.github.io/website/zh/docs/multicluster-management/enable-multicluster/direct-connection/"
                 />
   </url>
   
   <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/docs/reference/api-changes/</loc>
+    <loc>https://cnimages.github.io/website/zh/docs/multicluster-management/enable-multicluster/agent-connection/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://kubesphere-v3.netlify.app/docs/reference/api-changes/"
+                href="https://cnimages.github.io/website/docs/multicluster-management/enable-multicluster/agent-connection/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://kubesphere-v3.netlify.app/zh/docs/reference/api-changes/"
+                href="https://cnimages.github.io/website/zh/docs/multicluster-management/enable-multicluster/agent-connection/"
                 />
   </url>
   
   <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/case/anchnet/</loc>
+    <loc>https://cnimages.github.io/website/zh/docs/multicluster-management/enable-multicluster/retrieve-kubeconfig/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://kubesphere-v3.netlify.app/case/anchnet/"
+                href="https://cnimages.github.io/website/docs/multicluster-management/enable-multicluster/retrieve-kubeconfig/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://kubesphere-v3.netlify.app/zh/case/anchnet/"
+                href="https://cnimages.github.io/website/zh/docs/multicluster-management/enable-multicluster/retrieve-kubeconfig/"
                 />
   </url>
   
   <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/api/</loc>
+    <loc>https://cnimages.github.io/website/zh/docs/quick-start/minimal-kubesphere-on-k8s/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://kubesphere-v3.netlify.app/api/"
+                href="https://cnimages.github.io/website/docs/quick-start/minimal-kubesphere-on-k8s/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://kubesphere-v3.netlify.app/zh/api/"
+                href="https://cnimages.github.io/website/zh/docs/quick-start/minimal-kubesphere-on-k8s/"
                 />
   </url>
   
   <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/case/aqara/</loc>
+    <loc>https://cnimages.github.io/website/zh/docs/quick-start/create-workspace-and-project/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://kubesphere-v3.netlify.app/case/aqara/"
+                href="https://cnimages.github.io/website/docs/quick-start/create-workspace-and-project/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://kubesphere-v3.netlify.app/zh/case/aqara/"
+                href="https://cnimages.github.io/website/zh/docs/quick-start/create-workspace-and-project/"
                 />
   </url>
   
   <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/case/benlai/</loc>
+    <loc>https://cnimages.github.io/website/zh/docs/quick-start/deploy-bookinfo-to-k8s/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://kubesphere-v3.netlify.app/case/benlai/"
+                href="https://cnimages.github.io/website/docs/quick-start/deploy-bookinfo-to-k8s/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://kubesphere-v3.netlify.app/zh/case/benlai/"
+                href="https://cnimages.github.io/website/zh/docs/quick-start/deploy-bookinfo-to-k8s/"
                 />
   </url>
   
   <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/categories/</loc>
+    <loc>https://cnimages.github.io/website/zh/docs/quick-start/wordpress-deployment/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://kubesphere-v3.netlify.app/categories/"
+                href="https://cnimages.github.io/website/docs/quick-start/wordpress-deployment/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://cnimages.github.io/website/zh/docs/quick-start/wordpress-deployment/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://cnimages.github.io/website/zh/docs/quick-start/enable-pluggable-components/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://cnimages.github.io/website/docs/quick-start/enable-pluggable-components/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://cnimages.github.io/website/zh/docs/quick-start/enable-pluggable-components/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://cnimages.github.io/website/zh/docs/pluggable-components/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://cnimages.github.io/website/docs/pluggable-components/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://cnimages.github.io/website/zh/docs/pluggable-components/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://cnimages.github.io/website/zh/docs/pluggable-components/overview/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://cnimages.github.io/website/docs/pluggable-components/overview/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://cnimages.github.io/website/zh/docs/pluggable-components/overview/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://cnimages.github.io/website/zh/docs/pluggable-components/app-store/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://cnimages.github.io/website/docs/pluggable-components/app-store/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://cnimages.github.io/website/zh/docs/pluggable-components/app-store/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://cnimages.github.io/website/zh/docs/pluggable-components/devops/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://cnimages.github.io/website/docs/pluggable-components/devops/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://cnimages.github.io/website/zh/docs/pluggable-components/devops/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://cnimages.github.io/website/zh/docs/pluggable-components/auditing-logs/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://cnimages.github.io/website/docs/pluggable-components/auditing-logs/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://cnimages.github.io/website/zh/docs/pluggable-components/auditing-logs/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://cnimages.github.io/website/zh/docs/pluggable-components/events/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://cnimages.github.io/website/docs/pluggable-components/events/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://cnimages.github.io/website/zh/docs/pluggable-components/events/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://cnimages.github.io/website/zh/docs/pluggable-components/logging/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://cnimages.github.io/website/docs/pluggable-components/logging/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://cnimages.github.io/website/zh/docs/pluggable-components/logging/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://cnimages.github.io/website/zh/docs/pluggable-components/faq/logging/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://cnimages.github.io/website/docs/pluggable-components/faq/logging/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://cnimages.github.io/website/zh/docs/pluggable-components/faq/logging/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://cnimages.github.io/website/zh/docs/pluggable-components/service-mesh/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://cnimages.github.io/website/docs/pluggable-components/service-mesh/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://cnimages.github.io/website/zh/docs/pluggable-components/service-mesh/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://cnimages.github.io/website/zh/docs/pluggable-components/faq/monitoring/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://cnimages.github.io/website/docs/pluggable-components/faq/monitoring/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://cnimages.github.io/website/zh/docs/pluggable-components/faq/monitoring/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://cnimages.github.io/website/zh/docs/pluggable-components/alerting-notification/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://cnimages.github.io/website/docs/pluggable-components/alerting-notification/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://cnimages.github.io/website/zh/docs/pluggable-components/alerting-notification/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://cnimages.github.io/website/zh/docs/pluggable-components/network-policy/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://cnimages.github.io/website/docs/pluggable-components/network-policy/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://cnimages.github.io/website/zh/docs/pluggable-components/network-policy/"
+                />
+  </url>
+  
+  <url>
+    <loc></loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href=""
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href=""
+                />
+  </url>
+  
+  <url>
+    <loc>https://cnimages.github.io/website/zh/docs/upgrade/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://cnimages.github.io/website/docs/upgrade/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://cnimages.github.io/website/zh/docs/upgrade/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://cnimages.github.io/website/zh/docs/upgrade/upgrade-overview/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://cnimages.github.io/website/docs/upgrade/upgrade-overview/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://cnimages.github.io/website/zh/docs/upgrade/upgrade-overview/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://cnimages.github.io/website/zh/docs/upgrade/upgrade-with-kubekey/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://cnimages.github.io/website/docs/upgrade/upgrade-with-kubekey/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://cnimages.github.io/website/zh/docs/upgrade/upgrade-with-kubekey/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://cnimages.github.io/website/zh/docs/upgrade/upgrade-with-ks-installer/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://cnimages.github.io/website/docs/upgrade/upgrade-with-ks-installer/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://cnimages.github.io/website/zh/docs/upgrade/upgrade-with-ks-installer/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://cnimages.github.io/website/zh/docs/upgrade/what-changed/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://cnimages.github.io/website/docs/upgrade/what-changed/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://cnimages.github.io/website/zh/docs/upgrade/what-changed/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://cnimages.github.io/website/zh/docs/upgrade/upgrade-faq/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://cnimages.github.io/website/docs/upgrade/upgrade-faq/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://cnimages.github.io/website/zh/docs/upgrade/upgrade-faq/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://cnimages.github.io/website/zh/docs/cluster-administration/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://cnimages.github.io/website/docs/cluster-administration/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://cnimages.github.io/website/zh/docs/cluster-administration/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://cnimages.github.io/website/zh/docs/cluster-administration/cluster-wide-alerting-and-notification/alerting-policy/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://cnimages.github.io/website/docs/cluster-administration/cluster-wide-alerting-and-notification/alerting-policy/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://cnimages.github.io/website/zh/docs/cluster-administration/cluster-wide-alerting-and-notification/alerting-policy/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://cnimages.github.io/website/zh/docs/cluster-administration/cluster-wide-alerting-and-notification/alerting-message/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://cnimages.github.io/website/docs/cluster-administration/cluster-wide-alerting-and-notification/alerting-message/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://cnimages.github.io/website/zh/docs/cluster-administration/cluster-wide-alerting-and-notification/alerting-message/"
+                />
+  </url>
+  
+  <url>
+    <loc></loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href=""
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href=""
+                />
+  </url>
+  
+  <url>
+    <loc>https://cnimages.github.io/website/zh/docs/cluster-administration/cluster-settings/mail-server/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://cnimages.github.io/website/docs/cluster-administration/cluster-settings/mail-server/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://cnimages.github.io/website/zh/docs/cluster-administration/cluster-settings/mail-server/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://cnimages.github.io/website/zh/docs/workspace-administration/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://cnimages.github.io/website/docs/workspace-administration/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://cnimages.github.io/website/zh/docs/workspace-administration/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://cnimages.github.io/website/zh/docs/project-user-guide/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://cnimages.github.io/website/docs/project-user-guide/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://cnimages.github.io/website/zh/docs/project-user-guide/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://cnimages.github.io/website/zh/docs/devops-user-guide/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://cnimages.github.io/website/docs/devops-user-guide/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://cnimages.github.io/website/zh/docs/devops-user-guide/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://cnimages.github.io/website/zh/docs/application-store/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://cnimages.github.io/website/docs/application-store/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://cnimages.github.io/website/zh/docs/application-store/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://cnimages.github.io/website/zh/docs/access-control-and-account-management/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://cnimages.github.io/website/docs/access-control-and-account-management/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://cnimages.github.io/website/zh/docs/access-control-and-account-management/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://cnimages.github.io/website/zh/docs/cluster-administration/shut-down-and-restart-cluster-gracefully/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://cnimages.github.io/website/docs/cluster-administration/shut-down-and-restart-cluster-gracefully/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://cnimages.github.io/website/zh/docs/cluster-administration/shut-down-and-restart-cluster-gracefully/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://cnimages.github.io/website/zh/docs/faq/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://cnimages.github.io/website/docs/faq/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://cnimages.github.io/website/zh/docs/faq/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://cnimages.github.io/website/zh/docs/faq/console-faq/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://cnimages.github.io/website/docs/faq/console-faq/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://cnimages.github.io/website/zh/docs/faq/console-faq/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://cnimages.github.io/website/zh/docs/faq/telemetry/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://cnimages.github.io/website/docs/faq/telemetry/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://cnimages.github.io/website/zh/docs/faq/telemetry/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://cnimages.github.io/website/zh/docs/reference/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://cnimages.github.io/website/docs/reference/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://cnimages.github.io/website/zh/docs/reference/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://cnimages.github.io/website/zh/docs/reference/api-changes/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://cnimages.github.io/website/docs/reference/api-changes/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://cnimages.github.io/website/zh/docs/reference/api-changes/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://cnimages.github.io/website/zh/case/anchnet/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://cnimages.github.io/website/case/anchnet/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://cnimages.github.io/website/zh/case/anchnet/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://cnimages.github.io/website/zh/api/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://cnimages.github.io/website/api/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://cnimages.github.io/website/zh/api/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://cnimages.github.io/website/zh/case/aqara/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://cnimages.github.io/website/case/aqara/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://cnimages.github.io/website/zh/case/aqara/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://cnimages.github.io/website/zh/case/benlai/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://cnimages.github.io/website/case/benlai/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://cnimages.github.io/website/zh/case/benlai/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://cnimages.github.io/website/zh/categories/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://cnimages.github.io/website/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="tr"
-                href="https://kubesphere-v3.netlify.app/tr/categories/"
+                href="https://cnimages.github.io/website/tr/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://kubesphere-v3.netlify.app/zh/categories/"
+                href="https://cnimages.github.io/website/zh/categories/"
                 />
   </url>
   
   <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/contribution/request/</loc>
+    <loc>https://cnimages.github.io/website/zh/contribution/request/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://kubesphere-v3.netlify.app/contribution/request/"
+                href="https://cnimages.github.io/website/contribution/request/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://kubesphere-v3.netlify.app/zh/contribution/request/"
+                href="https://cnimages.github.io/website/zh/contribution/request/"
                 />
   </url>
   
   <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/devops/</loc>
+    <loc>https://cnimages.github.io/website/zh/devops/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://kubesphere-v3.netlify.app/devops/"
+                href="https://cnimages.github.io/website/devops/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://kubesphere-v3.netlify.app/zh/devops/"
+                href="https://cnimages.github.io/website/zh/devops/"
                 />
   </url>
   
   <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/case/huaxia-bank/</loc>
+    <loc>https://cnimages.github.io/website/zh/case/huaxia-bank/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://kubesphere-v3.netlify.app/case/huaxia-bank/"
+                href="https://cnimages.github.io/website/case/huaxia-bank/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://kubesphere-v3.netlify.app/zh/case/huaxia-bank/"
+                href="https://cnimages.github.io/website/zh/case/huaxia-bank/"
                 />
   </url>
   
   <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/blogs/release-210/</loc>
+    <loc>https://cnimages.github.io/website/zh/blogs/release-210/</loc>
   </url>
   
   <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/blogs/kubesphere-3.0.0-ga-announcement/</loc>
+    <loc>https://cnimages.github.io/website/zh/blogs/kubesphere-3.0.0-ga-announcement/</loc>
   </url>
   
   <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/api/crd/</loc>
+    <loc>https://cnimages.github.io/website/zh/api/crd/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://kubesphere-v3.netlify.app/api/crd/"
+                href="https://cnimages.github.io/website/api/crd/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://kubesphere-v3.netlify.app/zh/api/crd/"
+                href="https://cnimages.github.io/website/zh/api/crd/"
                 />
   </url>
   
   <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/api/kubesphere/</loc>
+    <loc>https://cnimages.github.io/website/zh/api/kubesphere/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://kubesphere-v3.netlify.app/api/kubesphere/"
+                href="https://cnimages.github.io/website/api/kubesphere/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://kubesphere-v3.netlify.app/zh/api/kubesphere/"
+                href="https://cnimages.github.io/website/zh/api/kubesphere/"
                 />
   </url>
   
   <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/</loc>
+    <loc>https://cnimages.github.io/website/zh/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://kubesphere-v3.netlify.app/"
+                href="https://cnimages.github.io/website/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="tr"
-                href="https://kubesphere-v3.netlify.app/tr/"
+                href="https://cnimages.github.io/website/tr/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://kubesphere-v3.netlify.app/zh/"
+                href="https://cnimages.github.io/website/zh/"
                 />
   </url>
   
   <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/blogs/console-opensource/</loc>
+    <loc>https://cnimages.github.io/website/zh/blogs/console-opensource/</loc>
   </url>
   
   <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/blogs/kubesphere-release-note-post/</loc>
+    <loc>https://cnimages.github.io/website/zh/blogs/kubesphere-release-note-post/</loc>
   </url>
   
   <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/blogs/skywalking-kubesphere/</loc>
+    <loc>https://cnimages.github.io/website/zh/blogs/skywalking-kubesphere/</loc>
   </url>
   
   <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/blogs/tidb-on-kbesphere-using-qke/</loc>
+    <loc>https://cnimages.github.io/website/zh/blogs/tidb-on-kbesphere-using-qke/</loc>
   </url>
   
   <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/case/maxnerva/</loc>
+    <loc>https://cnimages.github.io/website/zh/case/maxnerva/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://kubesphere-v3.netlify.app/case/maxnerva/"
+                href="https://cnimages.github.io/website/case/maxnerva/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://kubesphere-v3.netlify.app/zh/case/maxnerva/"
+                href="https://cnimages.github.io/website/zh/case/maxnerva/"
                 />
   </url>
   
   <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/blogs/netapp/</loc>
+    <loc>https://cnimages.github.io/website/zh/blogs/netapp/</loc>
   </url>
   
   <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/blogs/openpitrix-insight/</loc>
+    <loc>https://cnimages.github.io/website/zh/blogs/openpitrix-insight/</loc>
   </url>
   
   <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/partner/request/</loc>
+    <loc>https://cnimages.github.io/website/zh/partner/request/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://kubesphere-v3.netlify.app/partner/request/"
+                href="https://cnimages.github.io/website/partner/request/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://kubesphere-v3.netlify.app/zh/partner/request/"
+                href="https://cnimages.github.io/website/zh/partner/request/"
                 />
   </url>
   
   <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/conferences/porter/</loc>
+    <loc>https://cnimages.github.io/website/zh/conferences/porter/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://kubesphere-v3.netlify.app/conferences/porter/"
+                href="https://cnimages.github.io/website/conferences/porter/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://kubesphere-v3.netlify.app/zh/conferences/porter/"
+                href="https://cnimages.github.io/website/zh/conferences/porter/"
                 />
   </url>
   
   <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/service-mesh/</loc>
+    <loc>https://cnimages.github.io/website/zh/service-mesh/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://kubesphere-v3.netlify.app/service-mesh/"
+                href="https://cnimages.github.io/website/service-mesh/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://kubesphere-v3.netlify.app/zh/service-mesh/"
+                href="https://cnimages.github.io/website/zh/service-mesh/"
                 />
   </url>
   
   <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/support/</loc>
+    <loc>https://cnimages.github.io/website/zh/support/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://kubesphere-v3.netlify.app/support/"
+                href="https://cnimages.github.io/website/support/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://kubesphere-v3.netlify.app/zh/support/"
+                href="https://cnimages.github.io/website/zh/support/"
                 />
   </url>
   
   <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/tags/</loc>
+    <loc>https://cnimages.github.io/website/zh/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://kubesphere-v3.netlify.app/tags/"
+                href="https://cnimages.github.io/website/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="tr"
-                href="https://kubesphere-v3.netlify.app/tr/tags/"
+                href="https://cnimages.github.io/website/tr/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://kubesphere-v3.netlify.app/zh/tags/"
+                href="https://cnimages.github.io/website/zh/tags/"
                 />
   </url>
   
   <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/case/vng/</loc>
+    <loc>https://cnimages.github.io/website/zh/case/vng/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://kubesphere-v3.netlify.app/case/vng/"
+                href="https://cnimages.github.io/website/case/vng/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://kubesphere-v3.netlify.app/zh/case/vng/"
+                href="https://cnimages.github.io/website/zh/case/vng/"
                 />
   </url>
   
   <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/blogs/kubesphere-values/</loc>
+    <loc>https://cnimages.github.io/website/zh/blogs/kubesphere-values/</loc>
   </url>
   
   <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/conferences/logging/</loc>
+    <loc>https://cnimages.github.io/website/zh/conferences/logging/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://kubesphere-v3.netlify.app/conferences/logging/"
+                href="https://cnimages.github.io/website/conferences/logging/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://kubesphere-v3.netlify.app/zh/conferences/logging/"
+                href="https://cnimages.github.io/website/zh/conferences/logging/"
                 />
   </url>
   
   <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/blogs/devops-automatic-testing/</loc>
+    <loc>https://cnimages.github.io/website/zh/blogs/devops-automatic-testing/</loc>
   </url>
   
   <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/blogs/install-cert-managner-on-k8s/</loc>
+    <loc>https://cnimages.github.io/website/zh/blogs/install-cert-managner-on-k8s/</loc>
   </url>
   
   <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/news/</loc>
+    <loc>https://cnimages.github.io/website/zh/news/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://kubesphere-v3.netlify.app/news/"
+                href="https://cnimages.github.io/website/news/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://kubesphere-v3.netlify.app/zh/news/"
+                href="https://cnimages.github.io/website/zh/news/"
                 />
   </url>
   
   <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/contribution/</loc>
+    <loc>https://cnimages.github.io/website/zh/contribution/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://kubesphere-v3.netlify.app/contribution/"
+                href="https://cnimages.github.io/website/contribution/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="tr"
-                href="https://kubesphere-v3.netlify.app/tr/contribution/"
+                href="https://cnimages.github.io/website/tr/contribution/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://kubesphere-v3.netlify.app/zh/contribution/"
+                href="https://cnimages.github.io/website/zh/contribution/"
                 />
   </url>
   
   <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/observability/</loc>
+    <loc>https://cnimages.github.io/website/zh/observability/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://kubesphere-v3.netlify.app/observability/"
+                href="https://cnimages.github.io/website/observability/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://kubesphere-v3.netlify.app/zh/observability/"
+                href="https://cnimages.github.io/website/zh/observability/"
                 />
   </url>
   
   <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/partner/</loc>
+    <loc>https://cnimages.github.io/website/zh/partner/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://kubesphere-v3.netlify.app/partner/"
+                href="https://cnimages.github.io/website/partner/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="tr"
-                href="https://kubesphere-v3.netlify.app/tr/partner/"
+                href="https://cnimages.github.io/website/tr/partner/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://kubesphere-v3.netlify.app/zh/partner/"
+                href="https://cnimages.github.io/website/zh/partner/"
                 />
   </url>
   
   <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/blogs/kubesphere-orion/</loc>
+    <loc>https://cnimages.github.io/website/zh/blogs/kubesphere-orion/</loc>
   </url>
   
   <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/docs/installing-on-linux/on-premises/install-kubesphere-on-vmware-vsphere/</loc>
+    <loc>https://cnimages.github.io/website/zh/docs/installing-on-linux/on-premises/install-kubesphere-on-vmware-vsphere/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://kubesphere-v3.netlify.app/docs/installing-on-linux/on-premises/install-kubesphere-on-vmware-vsphere/"
+                href="https://cnimages.github.io/website/docs/installing-on-linux/on-premises/install-kubesphere-on-vmware-vsphere/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://kubesphere-v3.netlify.app/zh/docs/installing-on-linux/on-premises/install-kubesphere-on-vmware-vsphere/"
+                href="https://cnimages.github.io/website/zh/docs/installing-on-linux/on-premises/install-kubesphere-on-vmware-vsphere/"
                 />
   </url>
   
   <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/conferences/csi/</loc>
+    <loc>https://cnimages.github.io/website/zh/conferences/csi/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://kubesphere-v3.netlify.app/conferences/csi/"
+                href="https://cnimages.github.io/website/conferences/csi/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://kubesphere-v3.netlify.app/zh/conferences/csi/"
+                href="https://cnimages.github.io/website/zh/conferences/csi/"
                 />
   </url>
   
   <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/blogs/prow/</loc>
+    <loc>https://cnimages.github.io/website/zh/blogs/prow/</loc>
   </url>
   
   <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/conferences/jenkins-x/</loc>
+    <loc>https://cnimages.github.io/website/zh/conferences/jenkins-x/</loc>
   </url>
   
   <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/blogs/nodejs-app/</loc>
+    <loc>https://cnimages.github.io/website/zh/blogs/nodejs-app/</loc>
   </url>
   
   <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/blogs/spring-cloud-on-kubeshpere/</loc>
+    <loc>https://cnimages.github.io/website/zh/blogs/spring-cloud-on-kubeshpere/</loc>
   </url>
   
   <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/blogs/create-pipeline-across-multi-clusters/</loc>
+    <loc>https://cnimages.github.io/website/zh/blogs/create-pipeline-across-multi-clusters/</loc>
   </url>
   
   <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/conferences/</loc>
+    <loc>https://cnimages.github.io/website/zh/conferences/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://kubesphere-v3.netlify.app/conferences/"
+                href="https://cnimages.github.io/website/conferences/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="tr"
-                href="https://kubesphere-v3.netlify.app/tr/conferences/"
+                href="https://cnimages.github.io/website/tr/conferences/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://kubesphere-v3.netlify.app/zh/conferences/"
+                href="https://cnimages.github.io/website/zh/conferences/"
                 />
   </url>
   
   <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/projects/</loc>
+    <loc>https://cnimages.github.io/website/zh/projects/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://kubesphere-v3.netlify.app/projects/"
+                href="https://cnimages.github.io/website/projects/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="tr"
-                href="https://kubesphere-v3.netlify.app/tr/projects/"
+                href="https://cnimages.github.io/website/tr/projects/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://kubesphere-v3.netlify.app/zh/projects/"
+                href="https://cnimages.github.io/website/zh/projects/"
                 />
   </url>
   
   <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/blogs/microservice-blog/</loc>
+    <loc>https://cnimages.github.io/website/zh/blogs/microservice-blog/</loc>
   </url>
   
   <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/blogs/kubernetes-kubesphere-ha/</loc>
+    <loc>https://cnimages.github.io/website/zh/blogs/kubernetes-kubesphere-ha/</loc>
   </url>
   
   <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/blogs/</loc>
+    <loc>https://cnimages.github.io/website/zh/blogs/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://kubesphere-v3.netlify.app/blogs/"
+                href="https://cnimages.github.io/website/blogs/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="tr"
-                href="https://kubesphere-v3.netlify.app/tr/blogs/"
+                href="https://cnimages.github.io/website/tr/blogs/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://kubesphere-v3.netlify.app/zh/blogs/"
+                href="https://cnimages.github.io/website/zh/blogs/"
                 />
   </url>
   
   <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/docs/</loc>
+    <loc>https://cnimages.github.io/website/zh/docs/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://kubesphere-v3.netlify.app/docs/"
+                href="https://cnimages.github.io/website/docs/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="tr"
-                href="https://kubesphere-v3.netlify.app/tr/docs/"
+                href="https://cnimages.github.io/website/tr/docs/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://kubesphere-v3.netlify.app/zh/docs/"
+                href="https://cnimages.github.io/website/zh/docs/"
                 />
   </url>
   
   <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/blogs/benlai-devops/</loc>
+    <loc>https://cnimages.github.io/website/zh/blogs/benlai-devops/</loc>
   </url>
   
   <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/case/</loc>
+    <loc>https://cnimages.github.io/website/zh/case/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://kubesphere-v3.netlify.app/case/"
+                href="https://cnimages.github.io/website/case/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="tr"
-                href="https://kubesphere-v3.netlify.app/tr/case/"
+                href="https://cnimages.github.io/website/tr/case/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://kubesphere-v3.netlify.app/zh/case/"
+                href="https://cnimages.github.io/website/zh/case/"
                 />
   </url>
   
   <url>
-    <loc>https://kubesphere-v3.netlify.app/zh/videos/</loc>
+    <loc>https://cnimages.github.io/website/zh/videos/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://kubesphere-v3.netlify.app/videos/"
+                href="https://cnimages.github.io/website/videos/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="tr"
-                href="https://kubesphere-v3.netlify.app/tr/videos/"
+                href="https://cnimages.github.io/website/tr/videos/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://kubesphere-v3.netlify.app/zh/videos/"
+                href="https://cnimages.github.io/website/zh/videos/"
                 />
   </url>
   

@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>开源峰会 on </title>
-    <link>https://kubesphere-v3.netlify.app/zh/conferences/</link>
+    <link>https://cnimages.github.io/website/zh/conferences/</link>
     <description>Recent content in 开源峰会 on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
     
-	<atom:link href="https://kubesphere-v3.netlify.app/zh/conferences/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://cnimages.github.io/website/zh/conferences/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Porter-面向裸金属环境的 Kubernetes 开源负载均衡器</title>
-      <link>https://kubesphere-v3.netlify.app/zh/conferences/porter/</link>
+      <link>https://cnimages.github.io/website/zh/conferences/porter/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://kubesphere-v3.netlify.app/zh/conferences/porter/</guid>
+      <guid>https://cnimages.github.io/website/zh/conferences/porter/</guid>
       <description>我们知道，在 Kubernetes 集群中可以使用 “LoadBalancer” 类型的服务将后端工作负载暴露在外部。云厂商通常为 Kubernetes 提供云上的 LB 插件，但这需要将集群部署在特定 IaaS 平台上。然而，许多企业用户通常都将 Kubernetes 集群部署在裸机上，尤其是用于生产环境时。而且对于本地裸机集群，Kubernetes 不提供 LB 实施。Porter 是一个专为裸金属 Kubernetes 集群环境而设计的开源的负载均衡器项目，可完美地解决此类问题。
 Kubernetes 服务介绍 在 Kubernetes 集群中，网络是非常基础也非常重要的一部分。对于大规模的节点和容器来说，要保证网络的连通性、网络转发的高效，同时能做的 IP 和 Port 自动化分配和管理，并提供给用户非常直观和简单的方式来访问需要的应用，这是非常复杂且细致的设计。
 Kubernetes 本身在这方面下了很大的功夫，它通过 CNI、Service、DNS、Ingress 等一系列概念，解决了服务发现、负载均衡的问题，也大大简化了用户的使用和配置。其中的 Service 是 Kubernetes 微服务的基础，Kubernetes 是通过 kube-proxy 这个组件来实现服务的。kube-proxy 运行在每个节点上，监听 API Server 中服务对象的变化，通过管理 iptables 来实现网络的转发。用户可以创建多种形式的 Service，比如基于 Label Selector 、Headless 或者 ExternalName 的 Service，kube-proxy 会为 Service 创建一个虚拟的 IP（即 Cluster IP），用于集群内部访问服务。
@@ -25,10 +25,10 @@ NodePort 如果将服务的类型设置为 NodePort，kube-proxy 就会为这个
     
     <item>
       <title>云原生可观察性之日志管理</title>
-      <link>https://kubesphere-v3.netlify.app/zh/conferences/logging/</link>
+      <link>https://cnimages.github.io/website/zh/conferences/logging/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://kubesphere-v3.netlify.app/zh/conferences/logging/</guid>
+      <guid>https://cnimages.github.io/website/zh/conferences/logging/</guid>
       <description>日志通常含有非常有价值的信息，日志管理是云原生可观察性的重要组成部分。不同于物理机或虚拟机，在容器与 Kubernetes 环境中，日志有标准的输出方式(stdout)，这使得进行平台级统一的日志收集、分析与管理水到渠成，并体现出日志数据独特的价值。本文将介绍云原生领域比较主流的日志管理方案 EFK 、 KubeSphere 团队开发的 FluentBit Operator 以及 KubeSphere 在多租户日志管理方面的实践。此外还将介绍受 Prometheus 启发专为 Kubernetes 日志管理开发，具有低成本可扩展等特性的开源软件 Loki。
 什么是可观察性 近年来随着以 Kubernetes 为代表的云原生技术的崛起，可观察性 ( Observability ) 作为一种新的理念逐渐走入人们的视野。云原生基金会 ( CNCF ) 在其 Landscape 里已经将可观察性单独列为一个分类，狭义上主要包含监控、日志和追踪等，广义上还包括告警、事件、审计等。在此领域陆续涌现出了众多新兴开源软件如 Prometheus, Grafana, Fluentd, Loki, Jaeger 等。
 日志作为可观察性的重要组成部分在开发、运维、测试、审计等过程中起着非常重要的作用。著名的应用开发十二要素中提到：“日志使得应用程序运行的动作变得透明，应用本身从不考虑存储自己的输出流。 不应该试图去写或者管理日志文件。每一个运行的进程都会直接输出到标准输出（stdout）。每个进程的输出流由运行环境截获，并将其他输出流整理在一起，然后一并发送给一个或多个最终的处理程序，用于查看或是长期存档。”
@@ -39,10 +39,10 @@ Kubernetes 官网文档给出的通用日志架构如下图所示，包含日志
     
     <item>
       <title>基于 CSI Kubernetes 存储插件的开发实践</title>
-      <link>https://kubesphere-v3.netlify.app/zh/conferences/csi/</link>
+      <link>https://cnimages.github.io/website/zh/conferences/csi/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://kubesphere-v3.netlify.app/zh/conferences/csi/</guid>
+      <guid>https://cnimages.github.io/website/zh/conferences/csi/</guid>
       <description>现在很多用户都会将自己的应用迁移到 Kubernetes 容器平台中。在 Kubernetes 容器平台中，存储是支撑用户应用的基石。随着用户不断的将自己的应用深度部署在 K8S 容器平台中，但是我们现有的 Kubernetes 存储插件无论从多样性还是存储的功能来说，都无法满足用户日益增长的需求。我们急需开发新的存储插件，将我们的存储服务和 Kubernetes 容器平台相对接。
 Kubernetes 存储插件分类 今天的主题是基于 CSI Kubernetes 存储插件的开发实践，我们会通过以下四部分为大家详细讲解 CSI 插件有什么功能，如何部署一个 CSI 插件，以及 CSI 的实践原理。
 首先，我们会介绍 Kubernetes 存储插件的分类情况；然后为大家介绍如何开发一款 QingCloud 云平台 CSI 插件；之后，会介绍如何将 QingCloud 云平台 CSI 插件部署到 Kubernetes 容器平台中；最后，介绍如何对开发的 CSI 插件进行质量管理。
@@ -52,10 +52,10 @@ Kubernetes 存储插件分类 今天的主题是基于 CSI Kubernetes 存储插�
     
     <item>
       <title>基于 Kubernetes 的 Serverless Jenkins —  Jenkins X</title>
-      <link>https://kubesphere-v3.netlify.app/zh/conferences/jenkins-x/</link>
+      <link>https://cnimages.github.io/website/zh/conferences/jenkins-x/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://kubesphere-v3.netlify.app/zh/conferences/jenkins-x/</guid>
+      <guid>https://cnimages.github.io/website/zh/conferences/jenkins-x/</guid>
       <description>在云原生时代，应用模块不断被拆分，使得模块的数量不断上涨并且关系也越加复杂。企业在落地云原生技术的时候同事也需要有强大的 DevOps 手段，没有 DevOps 的云原生不可能是成功的。Jenkins X 是 CDF（持续交付基金会）与 Jenkins 社区在云原生时代的 DevOps产品，本文我们将介绍 Jenkins X 以及 Jenkins X 背后的技术。
 背景 Jenkins 在2004年诞生。根据官网的数据统计（截止2019年3月）有 250,000 的 Jenkins 服务器正在运行、15,000,000+ Jenkins 用户、1000+ Jenkins插件。Jenkins 在 DevOps 领域取得了巨大的成功，但随着技术的不断发展与用户数量的不断上升，传统 Jenkins 所暴露出来的问题也越来越多。在这里我们将介绍传统 Jenkins 所遇到的挑战。
 Jenkins 所遇到的挑战 - 单点故障 在传统的 Jenkins 当中，我们首先会遇到的问题就是 Jenkins 的单点故障问题。 Jenkins 的历史非常悠久，在当时大多数程序都是单机程序，Jenkins也不例外。 对比其他系统，Jenkins 的单点故障问题会更加凸显，熟悉 Jenkins 的用户都知道，它是一个基于插件的系统，而我们会经常安装插件，这时候我们就需要重启 Jenkins 服务器。这将导致共用这个平台的所有用户都无法使用。

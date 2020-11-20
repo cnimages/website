@@ -2,50 +2,50 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>news on </title>
-    <link>https://kubesphere-v3.netlify.app/news/</link>
+    <link>https://cnimages.github.io/website/news/</link>
     <description>Recent content in news on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     
-	<atom:link href="https://kubesphere-v3.netlify.app/news/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://cnimages.github.io/website/news/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Embrace KubeSphere Spanish Community and European Market: Geko and KubeSphere Build Partnership</title>
-      <link>https://kubesphere-v3.netlify.app/news/kubesphere-geko-partnership/</link>
+      <link>https://cnimages.github.io/website/news/kubesphere-geko-partnership/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://kubesphere-v3.netlify.app/news/kubesphere-geko-partnership/</guid>
+      <guid>https://cnimages.github.io/website/news/kubesphere-geko-partnership/</guid>
       <description>July 22, 2020 - KubeSphere and Geko are pleased to announce a joint partnership to deliver outstanding value to KubeSphere users in Spain, and further to Europe. As part of KubeSphere’s endeavor to bring the fruitful result of open source to users around the world, this marks a great milestone for the container platform as we are embracing a more diversified and vibrant community.
 Spain is home to one of the most active open source communities in Europe.</description>
     </item>
     
     <item>
       <title>KubeSphere 3.0.0 GA: Born for Hybrid Cloud Apps</title>
-      <link>https://kubesphere-v3.netlify.app/news/kubesphere-3.0.0-ga-announcement/</link>
+      <link>https://cnimages.github.io/website/news/kubesphere-3.0.0-ga-announcement/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://kubesphere-v3.netlify.app/news/kubesphere-3.0.0-ga-announcement/</guid>
+      <guid>https://cnimages.github.io/website/news/kubesphere-3.0.0-ga-announcement/</guid>
       <description>August 31, 2020 - KubeSphere open source community today announces the General Availability of KubeSphere 3.0.0!
 KubeSphere 3.0.0 highlights key features for hybrid clouds. It is born for multi-cloud operation, multi-cluster deployment, multi-team cooperation and multi-tenant management, boasting powerful enhancements for cluster management, observability, storage and network management, multi-tenant security, App Store, installation and more. It provides better user experiences as it becomes more interactive and responsive. KubeSphere 3.0.0 is by far the most important version ever released.</description>
     </item>
     
     <item>
       <title>Radore and KubeSphere: Walk into the Future of Hybrid Cloud and Build Ecosystem Together</title>
-      <link>https://kubesphere-v3.netlify.app/news/kubesphere-radore-partnership/</link>
+      <link>https://cnimages.github.io/website/news/kubesphere-radore-partnership/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://kubesphere-v3.netlify.app/news/kubesphere-radore-partnership/</guid>
+      <guid>https://cnimages.github.io/website/news/kubesphere-radore-partnership/</guid>
       <description>June 30, 2020 - In the online launch event of KubeSphere v3.0, Ray Zhou, leader of KubeSphere project, officially announced the exciting news of establishing a strong partnership with Radore, a Turkish enterprise with over 14 years of expertise. The cooperation aims to provide diversified cloud computing solutions for both Turkish companies and individuals, laying a solid foundation for KubeSphere to go global in the future.
 “In fact, it is Radore that came to us first.</description>
     </item>
     
     <item>
       <title>Spanish and Traditional Chinese Localization Available in KubeSphere Web Console</title>
-      <link>https://kubesphere-v3.netlify.app/news/spanish-traditional-chinese-available/</link>
+      <link>https://cnimages.github.io/website/news/spanish-traditional-chinese-available/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://kubesphere-v3.netlify.app/news/spanish-traditional-chinese-available/</guid>
+      <guid>https://cnimages.github.io/website/news/spanish-traditional-chinese-available/</guid>
       <description>The web console of KubeSphere v3.0 now supports the localization of Spanish and Traditional Chinese. In User Settings, you can select the language of web console in the drop-down menu.
 Here, we would like to thank Geko Cloud, our Spanish partner that provides the Spanish localization. This serves as a great start for the cooperation between KubeSphere and Geko as the two sides promise to further develop the Spanish community. With a brand-new Spanish web console, KubeSphere aims to create better user experiences for users around the world who prefer Spanish UI.</description>
     </item>

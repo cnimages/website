@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>在 Linux 上安装 KubeSphere on </title>
-    <link>https://kubesphere-v3.netlify.app/zh/docs/installing-on-linux/</link>
+    <link>https://cnimages.github.io/website/zh/docs/installing-on-linux/</link>
     <description>Recent content in 在 Linux 上安装 KubeSphere on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
     
-	<atom:link href="https://kubesphere-v3.netlify.app/zh/docs/installing-on-linux/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://cnimages.github.io/website/zh/docs/installing-on-linux/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>

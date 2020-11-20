@@ -2,49 +2,49 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Enable Pluggable Components on </title>
-    <link>https://kubesphere-v3.netlify.app/docs/pluggable-components/</link>
+    <link>https://cnimages.github.io/website/docs/pluggable-components/</link>
     <description>Recent content in Enable Pluggable Components on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     
-	<atom:link href="https://kubesphere-v3.netlify.app/docs/pluggable-components/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://cnimages.github.io/website/docs/pluggable-components/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Overview</title>
-      <link>https://kubesphere-v3.netlify.app/docs/pluggable-components/overview/</link>
+      <link>https://cnimages.github.io/website/docs/pluggable-components/overview/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://kubesphere-v3.netlify.app/docs/pluggable-components/overview/</guid>
+      <guid>https://cnimages.github.io/website/docs/pluggable-components/overview/</guid>
       <description>TBD</description>
     </item>
     
     <item>
       <title>KubeSphere App Store</title>
-      <link>https://kubesphere-v3.netlify.app/docs/pluggable-components/app-store/</link>
+      <link>https://cnimages.github.io/website/docs/pluggable-components/app-store/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://kubesphere-v3.netlify.app/docs/pluggable-components/app-store/</guid>
+      <guid>https://cnimages.github.io/website/docs/pluggable-components/app-store/</guid>
       <description>What is KubeSphere App Store As an open-source and app-centric container platform, KubeSphere provides users with a Helm-based app store for application lifecycle management on the back of OpenPitrix, an open-source web-based system to package, deploy and manage different types of apps. KubeSphere App Store allows ISVs, developers and users to upload, test, deploy and release apps with just several clicks in a one-stop shop.
 Internally, KubeSphere App Store can serve as a place for different teams to share data, middleware, and office applications.</description>
     </item>
     
     <item>
       <title>KubeSphere DevOps System</title>
-      <link>https://kubesphere-v3.netlify.app/docs/pluggable-components/devops/</link>
+      <link>https://cnimages.github.io/website/docs/pluggable-components/devops/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://kubesphere-v3.netlify.app/docs/pluggable-components/devops/</guid>
+      <guid>https://cnimages.github.io/website/docs/pluggable-components/devops/</guid>
       <description>What is KubeSphere DevOps System KubeSphere DevOps System is designed for CI/CD workflows in Kubernetes. Based on Jenkins, it provides one-stop solutions to help both development and Ops teams build, test and publish apps to Kubernetes in a straight-forward way. It also features plugin management, Binary-to-Image (B2I), Source-to-Image (S2I), code dependency caching, code quality analysis, pipeline logging, etc.
 The DevOps system offers an enabling environment for users as apps can be automatically released to the same platform.</description>
     </item>
     
     <item>
       <title>KubeSphere Auditing Logs</title>
-      <link>https://kubesphere-v3.netlify.app/docs/pluggable-components/auditing-logs/</link>
+      <link>https://cnimages.github.io/website/docs/pluggable-components/auditing-logs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://kubesphere-v3.netlify.app/docs/pluggable-components/auditing-logs/</guid>
+      <guid>https://cnimages.github.io/website/docs/pluggable-components/auditing-logs/</guid>
       <description>What are KubeSphere Auditing Logs KubeSphere Auditing Log System provides a security-relevant chronological set of records documenting the sequence of activities related to individual users, managers, or other components of the system. Each request to KubeSphere generates an event that is then written to a webhook and processed according to a certain rule.
 For more information, see Auditing Log Query.
 Enable Auditing Logs before Installation Installing on Linux When you implement multi-node installation KubeSphere on Linux, you need to create a configuration file, which lists all KubeSphere components.</description>
@@ -52,46 +52,46 @@ Enable Auditing Logs before Installation Installing on Linux When you implement 
     
     <item>
       <title>KubeSphere Events</title>
-      <link>https://kubesphere-v3.netlify.app/docs/pluggable-components/events/</link>
+      <link>https://cnimages.github.io/website/docs/pluggable-components/events/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://kubesphere-v3.netlify.app/docs/pluggable-components/events/</guid>
+      <guid>https://cnimages.github.io/website/docs/pluggable-components/events/</guid>
       <description>What are KubeSphere Events KubeSphere events allow users to keep track of what is happening inside a cluster, such as node scheduling status and image pulling result. They will be accurately recorded with the specific reason, status and message displayed in the web console. To query events, users can quickly launch the web Toolkit and enter related information in the search bar with different filters (e.g keyword and project) available. Events can also be archived to third-party tools, such as Elasticsearch, Kafka or Fluentd.</description>
     </item>
     
     <item>
       <title>KubeSphere Logging System</title>
-      <link>https://kubesphere-v3.netlify.app/docs/pluggable-components/logging/</link>
+      <link>https://cnimages.github.io/website/docs/pluggable-components/logging/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://kubesphere-v3.netlify.app/docs/pluggable-components/logging/</guid>
+      <guid>https://cnimages.github.io/website/docs/pluggable-components/logging/</guid>
       <description>What is KubeSphere Logging System KubeSphere provides a powerful, holistic and easy-to-use logging system for log collection, query and management. It covers logs at varied levels, including tenants, infrastructure resources, and applications. Users can search logs from different dimensions, such as project, workload, Pod and keyword. Compared with Kibana, the tenant-based logging system of KubeSphere features better isolation and security among tenants as each tenant can only view his or her own logs.</description>
     </item>
     
     <item>
       <title>KubeSphere Service Mesh</title>
-      <link>https://kubesphere-v3.netlify.app/docs/pluggable-components/service-mesh/</link>
+      <link>https://cnimages.github.io/website/docs/pluggable-components/service-mesh/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://kubesphere-v3.netlify.app/docs/pluggable-components/service-mesh/</guid>
+      <guid>https://cnimages.github.io/website/docs/pluggable-components/service-mesh/</guid>
       <description>What is KubeSphere Service Mesh On the basis of Istio, KubeSphere Service Mesh visualizes microservices governance and traffic management. It features a powerful toolkit including circuit breaking, blue-green deployment, canary release, traffic mirroring, distributed tracing, observability and traffic control. Developers can easily get started with Service Mesh without any code hacking, with the learning curve of Istio greatly reduced. All features of KubeSphere Service Mesh are designed to meet users&amp;rsquo; demand for their business.</description>
     </item>
     
     <item>
       <title>KubeSphere Alerting and Notification</title>
-      <link>https://kubesphere-v3.netlify.app/docs/pluggable-components/alerting-notification/</link>
+      <link>https://cnimages.github.io/website/docs/pluggable-components/alerting-notification/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://kubesphere-v3.netlify.app/docs/pluggable-components/alerting-notification/</guid>
+      <guid>https://cnimages.github.io/website/docs/pluggable-components/alerting-notification/</guid>
       <description>What are KubeSphere Alerting and Notification Alerting and Notification are two important building blocks of observability, closely related monitoring and logging. The alerting system in KubeSphere, coupled with the proactive failure notification system, allows users to know activities of interest based on alert policies. When a predefined threshold of a certain metric is reached, an alert will be sent to preconfigured recipients, the notification method of which can be set by yourself, including Email, WeChat Work and Slack.</description>
     </item>
     
     <item>
       <title>Network Policy</title>
-      <link>https://kubesphere-v3.netlify.app/docs/pluggable-components/network-policy/</link>
+      <link>https://cnimages.github.io/website/docs/pluggable-components/network-policy/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://kubesphere-v3.netlify.app/docs/pluggable-components/network-policy/</guid>
+      <guid>https://cnimages.github.io/website/docs/pluggable-components/network-policy/</guid>
       <description>What is Network Policy Starting from v3.0.0, users can configure network policies of native Kubernetes in KubeSphere. Network Policies are an application-centric construct, enabling you to specify how a pod is allowed to communicate with various network entities over the network. With network policies, users can achieve network isolation within the same cluster, which means firewalls can be set up between certain instances (pods).
 Note
  Please make sure that the CNI network plugin used by the cluster supports Network Policies before you enable it.</description>

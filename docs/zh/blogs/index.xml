@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>技术博客 on </title>
-    <link>https://kubesphere-v3.netlify.app/zh/blogs/</link>
+    <link>https://cnimages.github.io/website/zh/blogs/</link>
     <description>Recent content in 技术博客 on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
     
-	<atom:link href="https://kubesphere-v3.netlify.app/zh/blogs/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://cnimages.github.io/website/zh/blogs/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>KubeSphere 2.1.1 发布！全面支持 Kubernetes 1.17！多项功能与用户体验优化！</title>
-      <link>https://kubesphere-v3.netlify.app/zh/blogs/release-210/</link>
+      <link>https://cnimages.github.io/website/zh/blogs/release-210/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://kubesphere-v3.netlify.app/zh/blogs/release-210/</guid>
+      <guid>https://cnimages.github.io/website/zh/blogs/release-210/</guid>
       <description>2.1.0 正式发布 2019 年 11 月 11 日，KubeSphere 开源社区激动地向大家宣布，KubeSphere 2.1.0 正式发布！2.1.0 版本不仅在安装上提供了最快速方便的安装方式，解耦了核心的功能组件并提供了可插拔的安装方式，还提供了非常多的让开源社区用户期待已久的新功能，并修复了已知的 Bug。
 同时，社区对 KubeSphere 组件的高可用进行了深度优化与测试，因此，该版本也是被定义为 Prodcution-ready 的，支持用户在生产环境部署和使用。我们在此对社区用户提交的 issue、PR、Bug 反馈、需求建议、文档改进等一系列贡献表示由衷的感谢，并对 2.1.0 版本做出巨大贡献的开发者们深表谢意。
 在新版本中，KubeSphere 对 安装部署、DevOps、应用商店、存储、可观察性、认证与权限 等模块提供了诸多新功能和深度优化，更好地帮助企业用户在测试生产环境快速落地云原生技术和运维 Kubernetes，使开发者能够更专注在业务本身，赋能运维和测试人员高效地管理集群资源，实现业务快速发布与持续迭代的需求。同时，功能组件的可插拔安装能够满足不同用户的个性化需求，下面先通过一张图来快速介绍 2.1.0 版本各功能模块的新功能与优化项。
@@ -26,10 +26,10 @@ DevOps DevOps 是云原生时代在开发测试与持续交付场景下最核心
     
     <item>
       <title>KubeSphere 3.0.0 GA：面向应用的容器混合云</title>
-      <link>https://kubesphere-v3.netlify.app/zh/blogs/kubesphere-3.0.0-ga-announcement/</link>
+      <link>https://cnimages.github.io/website/zh/blogs/kubesphere-3.0.0-ga-announcement/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://kubesphere-v3.netlify.app/zh/blogs/kubesphere-3.0.0-ga-announcement/</guid>
+      <guid>https://cnimages.github.io/website/zh/blogs/kubesphere-3.0.0-ga-announcement/</guid>
       <description>KubeSphere 3.0.0 GA：面向应用的容器混合云 2020 年 8 月 31 日，KubeSphere 开源社区官方宣布 KubeSphere 3.0.0 GA 版本正式发布！ KubeSphere 3.0.0 主打 “面向应用的容器混合云”，专为 多云、多集群、多团队、多租户 而设计，大幅增强了 集群管理、可观察性、存储管理、网络管理、多租户安全、应用商店、安装部署 等特性，并且进一步提升了交互设计与用户体验，KubeSphere 3.0.0 是 KubeSphere 至今为止最重要的版本更新。作为多云与多集群的统一控制平面，KubeSphere 3.0.0 带来的新功能将帮助企业加速落地 多云与混合云策略，降低企业对任何基础设施之上的 Kubernetes 集群运维管理的门槛，实现现代化应用在容器场景下的快速交付，为企业在生产环境构建云原生技术栈提供了 完整的平台级解决方案。
 IDC 预测，到 2022 年有 70% 的企业会采用 Kubernetes 作为多云与混合云管理工具，到 2023 年将会有一半以上的企业级应用部署在容器化的混合云与多云环境，同时还会有超过 5 亿的数字化应用与服务将会以云原生的方式来开发与构建。
 面对这一发展趋势，KubeSphere 研发总监周小四表示，KubeSphere 3.0.0 已经提前为 以混合云与云原生架构 为变革核心的技术演进提供了最易用的工具型解决方案，在未来还将提供以边缘计算、大数据与和 AI 为应用场景的容器平台。KubeSphere 设计理念始终以应用为中心，专注于用户目标，以极简的交互体验和最低的学习成本，把 Kubernetes 变成了看不见的水和电。
@@ -39,10 +39,10 @@ IDC 预测，到 2022 年有 70% 的企业会采用 Kubernetes 作为多云与�
     
     <item>
       <title>KubeSphere 前端开源，社区架构首次公布</title>
-      <link>https://kubesphere-v3.netlify.app/zh/blogs/console-opensource/</link>
+      <link>https://cnimages.github.io/website/zh/blogs/console-opensource/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://kubesphere-v3.netlify.app/zh/blogs/console-opensource/</guid>
+      <guid>https://cnimages.github.io/website/zh/blogs/console-opensource/</guid>
       <description>Console 开源 从 KubeSphere 第一行代码至今，项目经历了一年多时间的迅速发展，开源社区也这个期间完成孵化，并初具规模。为了让 KubeSphere 项目能够更好地以开源社区的形式发展和演进，让社区开发者能够方便地参与到 KubeSphere 项目的建设，社区宣布将 KubeSphere 前端项目 console 开源，当前开源的版本包含了 KubeSphere 最新发布 v2.1 所有功能的代码，前端的 Feature Map 可以通过这张图快速了解。
 Feature Map
 前端项目的代码已在 github.com/kubesphere/console 可见，欢迎大家 Star + Fork。此前已有多位社区用户与开发者表示，希望能参与到 KubeSphere 项目的前端贡献，现在大家已经可以从 github.com/kubesphere/kubesphere/issues 通过标签 area/console 找到前端相关的 issue，包括 Bug、feature and design。
@@ -55,10 +55,10 @@ KubeSphere 社区架构 KubeSphere 相信 Community over code，一个健康良�
     
     <item>
       <title>KubeSphere 容器平台发布 2.1.1，全面支持 Kubernetes 1.17</title>
-      <link>https://kubesphere-v3.netlify.app/zh/blogs/kubesphere-release-note-post/</link>
+      <link>https://cnimages.github.io/website/zh/blogs/kubesphere-release-note-post/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://kubesphere-v3.netlify.app/zh/blogs/kubesphere-release-note-post/</guid>
+      <guid>https://cnimages.github.io/website/zh/blogs/kubesphere-release-note-post/</guid>
       <description>农历二月二，KubeSphere 开源社区激动地向大家宣布，KubeSphere 容器平台 2.1.1 正式发布！
 KubeSphere 作为 开源的企业级容器平台，对 2.1.1 版本定义的是 进一步增强生产可用性，修复了多个组件的 Bug，升级了内置的多个开源组件。借助 KubeSphere，您可以快速安装与管理原生的 Kubernetes，KubeSphere 2.1.1 已支持至 Kubernetes 1.17，帮助您上手 Kubernetes 新版本中新增的特性。并且，还向前兼容与支持 Kubernetes 1.17 之前的 3 个版本，您可以按需进行安装。
 KubeSphere 能够帮助企业快速构建一个功能丰富的容器云平台。让企业在享受 Kubernetes 的弹性伸缩与敏捷部署的同时，还可以在容器平台拥有 IaaS 平台的存储与网络能力，获得与 IaaS 平台一样稳定的用户体验。比如，我们在 KubeSphere 2.1.1 新增了对阿里云与腾讯云块存储插件的集成，支持为 Pod 挂载公有云的存储，为有状态应用提供更稳定的持久化存储的能力。
@@ -70,10 +70,10 @@ KubeSphere 能够帮助企业快速构建一个功能丰富的容器云平台。
     
     <item>
       <title>KubeSphere 部署 SkyWalking 至 Kubernetes 开启无侵入 APM</title>
-      <link>https://kubesphere-v3.netlify.app/zh/blogs/skywalking-kubesphere/</link>
+      <link>https://cnimages.github.io/website/zh/blogs/skywalking-kubesphere/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://kubesphere-v3.netlify.app/zh/blogs/skywalking-kubesphere/</guid>
+      <guid>https://cnimages.github.io/website/zh/blogs/skywalking-kubesphere/</guid>
       <description>Kubernetes 天然适合分布式的微服务应用。然而，当开发者们将应用从传统的架构迁移到 Kubernetes 以后，会发现分布式的应用依旧存在各种各样的问题，例如大量微服务间的调用关系复杂、系统耗时或瓶颈难以排查、服务异常定位困难等一系列应用性能管理问题，而 APM 正是实时监控并管理微服务应用性能的利器。
 为什么需要 APM APM 无疑是在大规模的微服务开发与运维场景下是必不可少的一环，APM 需要主要从这三个角度去解决三大场景问题：
  测试角度：性能测试调优监控总览，包括容器总体资源状况（如 CPU、内存、IO）与链路总体状况 研发角度：链路服务的细节颗粒追踪，数据分析与数据安全 运维角度：跟踪请求的处理过程，来对系统在前后端处理、服务端调用的性能消耗进行跟踪，实时感知并追踪访问体验差的业务  为什么选择 Apache SkyWalking 社区拥有很丰富的 APM 解决方案，比如著名的 Pinpoint、Zipkin、SkyWalking、CAT 等。在经过一番调研后，KubeSphere 选择将 Apache SkyWalking 作为面向 Kubernetes 的 APM 开源解决方案，将 Apache SkyWalking 集成到了 KubeSphere，作为应用模板在 KubeSphere 容器平台 提供给用户一键部署至 Kubernetes 的能力，进一步增强在微服务应用维度的可观察性。
@@ -83,10 +83,10 @@ Apache SkyWalking 在 2019 年 4 月 17 正式成为 Apache 顶级项目，提�
     
     <item>
       <title>KubeSphere 部署 TiDB 云原生分布式数据库</title>
-      <link>https://kubesphere-v3.netlify.app/zh/blogs/tidb-on-kbesphere-using-qke/</link>
+      <link>https://cnimages.github.io/website/zh/blogs/tidb-on-kbesphere-using-qke/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://kubesphere-v3.netlify.app/zh/blogs/tidb-on-kbesphere-using-qke/</guid>
+      <guid>https://cnimages.github.io/website/zh/blogs/tidb-on-kbesphere-using-qke/</guid>
       <description>TiDB 简介 TiDB 是 PingCAP 公司自主设计、研发的开源分布式关系型数据库，具备水平扩容或者缩容、金融级高可用、实时 HTAP、云原生的分布式数据库、兼容 MySQL 5.7 协议和 MySQL 生态等重要特性。TiDB 适合高可用、强一致要求较高、数据规模较大等各种应用场景。
 KubeSphere 简介 KubeSphere 是在 Kubernetes 之上构建的以应用为中心的多租户容器平台，完全开源，支持多云与多集群管理，提供全栈的 IT 自动化运维的能力，简化企业的 DevOps 工作流。KubeSphere 提供了运维友好的向导式操作界面，帮助企业快速构建一个强大和功能丰富的容器云平台。
 部署环境准备 KubeSphere 是由青云 QingCloud 开源的容器平台，支持在任何基础设施上安装部署。在青云公有云上支持一键部署 KubeSphere（QKE）。
@@ -96,10 +96,10 @@ KubeSphere 简介 KubeSphere 是在 Kubernetes 之上构建的以应用为中心
     
     <item>
       <title>NetApp 存储在 KubeSphere 上的实践</title>
-      <link>https://kubesphere-v3.netlify.app/zh/blogs/netapp/</link>
+      <link>https://cnimages.github.io/website/zh/blogs/netapp/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://kubesphere-v3.netlify.app/zh/blogs/netapp/</guid>
+      <guid>https://cnimages.github.io/website/zh/blogs/netapp/</guid>
       <description>NetApp 是向目前的数据密集型企业提供统一存储解决方案的居世界最前列的公司，其 Data ONTAP是全球首屈一指的存储操作系统。NetApp 的存储解决方案涵盖了专业化的硬件、软件和服务，为开放网络环境提供了无缝的存储管理。 Ontap数据管理软件支持高速闪存、低成本旋转介质和基于云的对象存储等存储配置，为通过块或文件访问协议读写数据的应用程序提供统一存储。 Trident是一个由NetApp维护的完全支持的开源项目。以帮助您满足容器化应用程序的复杂持久性需求。 KubeSphere 是一款开源项目，在目前主流容器调度平台 Kubernetes 之上构建的企业级分布式多租户容器管理平台，提供简单易用的操作界面以及向导式操作方式，在降低用户使用容器调度平台学习成本的同时，极大降低开发、测试、运维的日常工作的复杂度。
 整体方案 在 VMware Workstation 环境下安装 ONTAP; ONTAP 系统上创建 SVM(Storage Virtual Machine) 且对接 nfs 协议；在已有 k8s 环境下部署 Trident,Trident 将使用 ONTAP 系统上提供的信息（svm、managementLIF 和 dataLIF）作为后端来提供卷；在已创建的 k8s 和StorageClass 卷下部署 KubeSphere。
 版本信息  Ontap: 9.5 Trident: v19.07 k8s: 1.15 kubesphere: 2.0.2  步骤 主要描述ontap搭建及配置、Trident搭建和配置和kubesphere搭建及配置等方面。
@@ -108,10 +108,10 @@ OnTap 搭建及配置 在 VMware Workstation 上 Simulate_ONTAP_9.5P6_Installati
     
     <item>
       <title>OpenPitrix Insight</title>
-      <link>https://kubesphere-v3.netlify.app/zh/blogs/openpitrix-insight/</link>
+      <link>https://cnimages.github.io/website/zh/blogs/openpitrix-insight/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://kubesphere-v3.netlify.app/zh/blogs/openpitrix-insight/</guid>
+      <guid>https://cnimages.github.io/website/zh/blogs/openpitrix-insight/</guid>
       <description>云计算在今天已经被绝大多数的企业所采用，具知名云服务厂商 RightScale 最近的调查显示，已经有越来越多的厂商采用多云管理。客户有太多的理由来选择多云管理了，其中最大的原因莫过于采用单一的供应商，会导致被锁定。因此，如何管理多云环境，并在多云的环境下进行自动化，正成为众多企业的刚需，而在这其中，应用程序的管理显得尤为的重要。进一步讲，颇具挑战的是创建一个一站式的应用管理平台，来管理不同类型的应用程序，其中包括传统的应用（或者称之为单体应用，或者传统的主从、分片、peer-to-peer 架构的企业分布式应用）、微服务应用、以及近来发展迅猛的 Serverless 应用等，OpenPitrix 就是为了解决这些问题而生的。用一句话来描述 OpenPitrix：
  OpenPitrix 是一款开源项目，用来在多云环境下打包、部署和管理不同类型的应用，包括传统应用、微服务应用以及 Serverless 应用等，其中云平台包括 AWS、Azure、Kubernetes、QingCloud、OpenStack、VMWare 等。
  微服务，即众所周知的微服务架构，这是程序设计的必然趋势，企业创建新的应用时选择的主要方式。另外，开源项目 Kubernetes 已经成为事实上的编排平台的领导者，其在自动化部署、扩展性、以及管理容器化的应用有着独特的优势。但是，仍然有大量的传统遗留应用用户想在毋须改变其架构的情况下迁入到云平台中，而且对很多用户来讲，采用微服务架构，或者是 Serverless 架构还是比较遥远的事情，所以，我们需要帮助这些用户将他们的传统应用迁入到云计算平台中，这也是 OpenPitrix 很重要的一个功能。
@@ -125,10 +125,10 @@ OnTap 搭建及配置 在 VMware Workstation 上 Simulate_ONTAP_9.5P6_Installati
     
     <item>
       <title>一文说清 KubeSphere 容器平台的价值</title>
-      <link>https://kubesphere-v3.netlify.app/zh/blogs/kubesphere-values/</link>
+      <link>https://cnimages.github.io/website/zh/blogs/kubesphere-values/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://kubesphere-v3.netlify.app/zh/blogs/kubesphere-values/</guid>
+      <guid>https://cnimages.github.io/website/zh/blogs/kubesphere-values/</guid>
       <description>KubeSphere 作为云原生家族 后起之秀，开源近两年的时间以来收获了诸多用户与开发者的认可。本文通过大白话从零诠释 KubeSphere 的定位与价值，以及不同团队为什么会选择 KubeSphere。
 对于企业 KubeSphere 是什么 KubeSphere 是在 Kubernetes 之上构建的 多租户 容器平台，以应用为中心，提供全栈的 IT 自动化运维的能力，简化企业的 DevOps 工作流。使用 KubeSphere 不仅能够帮助企业在公有云或私有化数据中心快速搭建 Kubernetes 集群，还提供了一套功能丰富的向导式操作界面。
 KubeSphere 能够帮助企业快速构建一个功能丰富的容器云平台，让企业在享受 Kubernetes 的弹性伸缩与敏捷部署的同时，还可以在容器平台拥有 IaaS 平台的存储与网络能力，获得与 IaaS 一样稳定的用户体验。比如在 KubeSphere 2.1.1 新增了对阿里云与腾讯云块存储插件的集成，支持为 Pod 挂载公有云的存储，为有状态应用提供更稳定的持久化存储的能力。
@@ -140,10 +140,10 @@ KubeSphere 基于 OpenPitrix 和 Helm 提供了应用商店，对内可作为团
     
     <item>
       <title>使用 KubeSphere DevOps 搭建自动化测试系统</title>
-      <link>https://kubesphere-v3.netlify.app/zh/blogs/devops-automatic-testing/</link>
+      <link>https://cnimages.github.io/website/zh/blogs/devops-automatic-testing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://kubesphere-v3.netlify.app/zh/blogs/devops-automatic-testing/</guid>
+      <guid>https://cnimages.github.io/website/zh/blogs/devops-automatic-testing/</guid>
       <description>测试分层 测试的目的是为了验证预期的功能，发现潜在的缺陷。测试增强了交付合格产品的信心，也给敏捷迭代带来了可能。可以说，测试决定了产品的开发进度。
 网络模型有七层的 OSI 、四层的 TCP，而开发模式有 MTV、MVC、MVP、MVVM 等。高内聚、低耦合，划分职责、分模块、分层。然后结构化、标准化，技术逐步走向成熟。
 测试也分为，UI 测试、API 测试、单元测试。测试并不是一项新技术，更多是产出与成本的一种平衡。
@@ -159,10 +159,10 @@ pipeline {agent {node {label &#39;go&#39;}}stages {stage(&#39;testing&#39
     
     <item>
       <title>使用 KubeSphere 在 Kubernetes 安装 cert-manager 为网站启用 HTTPS</title>
-      <link>https://kubesphere-v3.netlify.app/zh/blogs/install-cert-managner-on-k8s/</link>
+      <link>https://cnimages.github.io/website/zh/blogs/install-cert-managner-on-k8s/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://kubesphere-v3.netlify.app/zh/blogs/install-cert-managner-on-k8s/</guid>
+      <guid>https://cnimages.github.io/website/zh/blogs/install-cert-managner-on-k8s/</guid>
       <description>什么是 cert-manager cert-manager（https://cert-manager.io/）是 Kubernetes 原生的证书管理控制器。它可以帮助从各种来源颁发证书，例如 Let&amp;rsquo;s Encrypt，HashiCorp Vault，Venafi，简单的签名密钥对或自签名。它将确保证书有效并且是最新的，并在证书到期前尝试在配置的时间续订证书。它大致基于 kube-lego 的原理，并从其他类似项目（例如 kube-cert-manager）中借鉴了一些智慧。
 准备工作  需要一个公网可访问的 IP，例如 139.198.121.121 需要一个域名，并且已经解析到到对应的IP，例如  A kubesphere.io 139.198.121.121，我们将 staging.kubesphere.io 域名解析到了 139.198.121.121 在KubeSphere上已经运行网站对应的服务，例如本例中的ks-console  启用项目网关 登录 KubeSphere，进入任意一个企业空间下的项目中。
 在 KubeSphere 中启用对应项目下的网关。
@@ -175,10 +175,10 @@ pipeline {agent {node {label &#39;go&#39;}}stages {stage(&#39;testing&#39
     
     <item>
       <title>在 KubeSphere 安装 Orion vGPU 使用 TensorFlow 运行深度学习训练</title>
-      <link>https://kubesphere-v3.netlify.app/zh/blogs/kubesphere-orion/</link>
+      <link>https://cnimages.github.io/website/zh/blogs/kubesphere-orion/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://kubesphere-v3.netlify.app/zh/blogs/kubesphere-orion/</guid>
+      <guid>https://cnimages.github.io/website/zh/blogs/kubesphere-orion/</guid>
       <description>概览 本文将使用 KubeSphere 容器平台，在 Kubernetes 上部署 Orion vGPU 软件 进行深度学习加速，并基于 Orion vGPU 软件使用经典的 Jupyter Notebook 进行模型训练与推理。
 在开始安装 Orion vGPU 和演示深度学习训练之前，先简单了解一下，什么是 vGPU 以及什么是 Orion vGPU。
 什么是 vGPU vGPU 又称 虚拟 GPU，早在几年前就由 NVIDIA 推出了这个概念以及相关的产品。vGPU 是通过对数据中心（物理机）的 GPU 进行虚拟化，用户可在多个虚拟机或容器中 共享该数据中心的物理 GPU 资源，有效地提高性能并降低成本。vGPU 使得 GPU 与用户之间的关系不再是一对一，而是 一对多。
@@ -188,10 +188,10 @@ pipeline {agent {node {label &#39;go&#39;}}stages {stage(&#39;testing&#39
     
     <item>
       <title>基于 Kubernetes 的 CI/CD 利器 — Prow 入门指南</title>
-      <link>https://kubesphere-v3.netlify.app/zh/blogs/prow/</link>
+      <link>https://cnimages.github.io/website/zh/blogs/prow/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://kubesphere-v3.netlify.app/zh/blogs/prow/</guid>
+      <guid>https://cnimages.github.io/website/zh/blogs/prow/</guid>
       <description>Prow是k8s使用的CI/CD系统(https://github.com/kubernetes/test-infra/tree/master/prow)，用于管理k8s的issue和pr。如果你经常去k8s社区查看pr或者提交过一些Pr后，就会经常看到一个叫k8s-ci-bot的机器人在各个Pr中回复，并且还能合并pr。在k8s-ci-bot中背后工作的就是Prow。Prow是为了弥补github上一些功能上的缺陷，它也是Jenkins-X的一部分，它具备这些功能：
  执行各种Job，包括测试，批处理和制品发布等，能够基于github webhook配置job执行的时间和内容。 一个可插拔的机器人功能（Tide），能够接受/foo这种样式的指令。 自动合并Pr 自带一个网页，能够查看当前任务的执行情况以及Pr的状况，也包括一些帮助信息 基于OWNER文件在同一个repo里配置模块的负责人 能够同时处理很多repo的很多pr 能够导出Prometheus指标  Prow拥有自己的CI/CD系统，但是也能与我们常见的CI/CD一起协作，所以如果你已经习惯了Jenkins或者travis，都可以使用Prow。
 安装指南  官方repo提供了一个基于GKE快速安装指南，本文将基于青云的Iaas搭建Prow环境。不用担心，其中大部分步骤都是平台无关的，整个安装过程能够很方便的在其他平台上使用。
@@ -208,10 +208,10 @@ pipeline {agent {node {label &#39;go&#39;}}stages {stage(&#39;testing&#39
     
     <item>
       <title>基于 Kubernetes 部署 node.js APP</title>
-      <link>https://kubesphere-v3.netlify.app/zh/blogs/nodejs-app/</link>
+      <link>https://cnimages.github.io/website/zh/blogs/nodejs-app/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://kubesphere-v3.netlify.app/zh/blogs/nodejs-app/</guid>
+      <guid>https://cnimages.github.io/website/zh/blogs/nodejs-app/</guid>
       <description>什么是 Kubernetes Kubernetes 是一个开源容器编排引擎，可以帮助开发者或运维人员部署和管理容器化的应用，能够轻松完成日常开发运维过程中诸如 滚动更新，横向自动扩容，服务发现，负载均衡等需求。了解更多
 安装 Kubernetes 可以通过快速安装 kubernetes 集群：
  KubeSphere Installer minikube kubeadm  Kubernetes 术语介绍 Pod Pod 是 Kubernetes 最小调度单位，是一个或一组容器的集合。
@@ -223,10 +223,10 @@ Label &amp;amp;amp; Selector Kubernetes 中使用 Label 去关联各个资源。
     
     <item>
       <title>基于 KubeSphere 的 Spring Could 微服务 CI/CD 实践</title>
-      <link>https://kubesphere-v3.netlify.app/zh/blogs/spring-cloud-on-kubeshpere/</link>
+      <link>https://cnimages.github.io/website/zh/blogs/spring-cloud-on-kubeshpere/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://kubesphere-v3.netlify.app/zh/blogs/spring-cloud-on-kubeshpere/</guid>
+      <guid>https://cnimages.github.io/website/zh/blogs/spring-cloud-on-kubeshpere/</guid>
       <description>本文以 Pig 为例介绍如何在 KubeSphere 上发布一个基于 Spring Cloud 微服务的 CI/CD 项目。
 背景简介 Pig Pig (http://pig4cloud.cn/) 是一个基于 Spring Cloud 的开源微服务开发平台，也是微服务最佳实践。在国内拥有大量拥护者。同时也有商业版本提供技术支持。
 KubeSphere KubeSphere (https://Kubesphere.io) 是在 Kubernetes 之上构建的以应用为中心的多租户容器平台，完全开源，支持多云与多集群管理，提供全栈的 IT 自动化运维的能力，简化企业的 DevOps 工作流。KubeSphere 提供了运维友好的向导式操作界面，帮助企业快速构建一个强大和功能丰富的容器云平台。
@@ -240,10 +240,10 @@ KubeSphere 3.0 集群环境一套，并启用 DevOps 插件
     
     <item>
       <title>如何创建跨 Kubernetes 集群的流水线</title>
-      <link>https://kubesphere-v3.netlify.app/zh/blogs/create-pipeline-across-multi-clusters/</link>
+      <link>https://cnimages.github.io/website/zh/blogs/create-pipeline-across-multi-clusters/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://kubesphere-v3.netlify.app/zh/blogs/create-pipeline-across-multi-clusters/</guid>
+      <guid>https://cnimages.github.io/website/zh/blogs/create-pipeline-across-multi-clusters/</guid>
       <description>随着 Kubernetes 被广泛的作为基础设施，各大云厂商都相继推出了各自的 Kubernetes 集群服务。那么在多个集群上，如何跨集群实践 DevOps 流水线呢？本文将主要以示例的形式给出回答。
  提示，本文需要对 KubeSphere 和 DevOps 相关的知识具有一定了解，具体包括 Kubernetes 资源创建、生成 Sonarqube Token、获取集群 kubeconfig 等。
  KubeSphere DevOps 跨集群架构概览 集群角色说明 在多集群架构中，我们对集群进行了角色定义。每个集群的角色，在安装的配置文件中指定。具体详情，可以参考文档: kubefed-in-kubesphere 。一共有三种角色，host、member、none 。
@@ -259,10 +259,10 @@ KubeSphere 3.0 集群环境一套，并启用 DevOps 插件
     
     <item>
       <title>微服务进阶之路 容器落地避坑指南</title>
-      <link>https://kubesphere-v3.netlify.app/zh/blogs/microservice-blog/</link>
+      <link>https://cnimages.github.io/website/zh/blogs/microservice-blog/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://kubesphere-v3.netlify.app/zh/blogs/microservice-blog/</guid>
+      <guid>https://cnimages.github.io/website/zh/blogs/microservice-blog/</guid>
       <description>微服务架构相对于单体架构有很大的变化，也产生了一些新的设计模式，比如 sidecar，如何开发一个微服务应用是一件有很大挑战性的事情，我们经常会听到有人讨论如何划分微服务，多细的颗粒度才是微服务等问题。初学者经常会处于一个“忐忑不安”的状态，所以我们急需要知道如何才能走上正确的微服务道路，或者需要一些最佳实践指导我们如何设计、开发一个微服务应用。
 不骄不躁不跟风 知己知彼方可百战不殆 虽然现在已经进入到一个不谈微服务就落伍的时代，但作为 IT 从业者，我们一定要站在切身利益出发，多思考几个“为什么”，不要急于跟风。原因很简单，不管外面如何风吹雨打，只要你的房子足够结实、安全、舒服，那一般情况下就不需要拆除重建，所以在决定继续沿用单体架构还是转向微服务架构之前，我们一定要做两件事情：
 第一件事，从外部了解两种架构各自的优劣： 可以看到，单体应用并不是一无是处。
@@ -286,10 +286,10 @@ Miniservice 在开发与部署的独立性和敏捷性方面类似于微服务(m
     
     <item>
       <title>手把手从零部署与运营生产级的 Kubernetes 集群与 KubeSphere</title>
-      <link>https://kubesphere-v3.netlify.app/zh/blogs/kubernetes-kubesphere-ha/</link>
+      <link>https://cnimages.github.io/website/zh/blogs/kubernetes-kubesphere-ha/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://kubesphere-v3.netlify.app/zh/blogs/kubernetes-kubesphere-ha/</guid>
+      <guid>https://cnimages.github.io/website/zh/blogs/kubernetes-kubesphere-ha/</guid>
       <description>本文来自 KubeSphere 社区用户 Liu_wt 投稿，欢迎所有社区用户参与投稿或分享经验案例。
  本文将从零开始，在干净的机器上安装 Docker、Kubernetes (使用 kubeadm)、Calico、Helm 与 KubeSphere，通过手把手的教程演示如何搭建一个高可用生产级的 Kubernetes，并在 Kubernetes 集群之上安装 KubeSphere 容器平台可视化运营集群环境。
 一、准备环境 开始部署之前，请先确定当前满足如下条件，本次集群搭建，所有机器处于同一内网网段，并且可以互相通信。
@@ -300,10 +300,10 @@ Miniservice 在开发与部署的独立性和敏捷性方面类似于微服务(m
     
     <item>
       <title>本来生活的 DevOps 升级之路</title>
-      <link>https://kubesphere-v3.netlify.app/zh/blogs/benlai-devops/</link>
+      <link>https://cnimages.github.io/website/zh/blogs/benlai-devops/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://kubesphere-v3.netlify.app/zh/blogs/benlai-devops/</guid>
+      <guid>https://cnimages.github.io/website/zh/blogs/benlai-devops/</guid>
       <description>我叫杨杨，就职于本来生活网（Benlai.com），负责发布系统架构。我们公司咋说呢，简单说就是卖水果、蔬菜的😄，下面还是来一段官方介绍。
 本来生活简介 本来生活网创办于 2012 年，是一个专注于食品、水果、蔬菜的电商网站，从优质食品供应基地、供应商中精挑细选，剔除中间环节，提供冷链配送、食材食品直送到家服务。致力于通过保障食品安全、提供冷链宅配、基地直送来改善中国食品安全现状，成为中国优质食品提供者。
 技术现状 基础设施   部署在 IDC 机房 拥有 100 多台物理机 虚拟化部署   存在的问题   物理机 95% 以上的占用率 相当多的资源闲置 应用扩容比较慢   拥抱 DevOps 与 Kubernetes 公司走上容器平台的 DevOps 这条康庄大道主要目标有三：

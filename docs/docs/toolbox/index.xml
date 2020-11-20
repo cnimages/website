@@ -2,49 +2,49 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Toolbox on </title>
-    <link>https://kubesphere-v3.netlify.app/docs/toolbox/</link>
+    <link>https://cnimages.github.io/website/docs/toolbox/</link>
     <description>Recent content in Toolbox on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     
-	<atom:link href="https://kubesphere-v3.netlify.app/docs/toolbox/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://cnimages.github.io/website/docs/toolbox/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Log Query</title>
-      <link>https://kubesphere-v3.netlify.app/docs/toolbox/log-query/</link>
+      <link>https://cnimages.github.io/website/docs/toolbox/log-query/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://kubesphere-v3.netlify.app/docs/toolbox/log-query/</guid>
+      <guid>https://cnimages.github.io/website/docs/toolbox/log-query/</guid>
       <description>The logs of applications and systems can help you better understand what is happening inside your cluster and workloads. The logs are particularly useful for debugging problems and monitoring cluster activities. KubeSphere provides a powerful and easy-to-use logging system which offers users the capabilities of log collection, query and management from the perspective of tenants. The tenant-based logging system is much more useful than Kibana since different tenants can only view their own logs, leading to better security.</description>
     </item>
     
     <item>
       <title>Event Query</title>
-      <link>https://kubesphere-v3.netlify.app/docs/toolbox/events-query/</link>
+      <link>https://cnimages.github.io/website/docs/toolbox/events-query/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://kubesphere-v3.netlify.app/docs/toolbox/events-query/</guid>
+      <guid>https://cnimages.github.io/website/docs/toolbox/events-query/</guid>
       <description>Objective Kubernetes events provide insight into what is happening inside a cluster, based on which KubeSphere adds longer historical query and aggregation capabilities, and also supports event query for tenant isolation. This guide demonstrates how you will do multi-level, fine-grained event queries to track the state of your components.
 Prerequisites  KubeSphere Events needs to be enabled.  Hands-on Lab   The event query function is available for all users.</description>
     </item>
     
     <item>
       <title>Web Kubectl</title>
-      <link>https://kubesphere-v3.netlify.app/docs/toolbox/web-kubectl/</link>
+      <link>https://cnimages.github.io/website/docs/toolbox/web-kubectl/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://kubesphere-v3.netlify.app/docs/toolbox/web-kubectl/</guid>
+      <guid>https://cnimages.github.io/website/docs/toolbox/web-kubectl/</guid>
       <description>The Kubernetes command-line tool, kubectl, allows you to run commands on Kubernetes clusters. You can use kubectl to deploy applications, inspect and manage cluster resources, and view logs.
 KubeSphere provides web kubectl on the console for user convenience. By default, in the current version, only the account granted the platform-admin role (such as the default account admin) has the permission to use web kubectl for cluster resource operation and management.</description>
     </item>
     
     <item>
       <title>History</title>
-      <link>https://kubesphere-v3.netlify.app/docs/toolbox/history/</link>
+      <link>https://cnimages.github.io/website/docs/toolbox/history/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://kubesphere-v3.netlify.app/docs/toolbox/history/</guid>
+      <guid>https://cnimages.github.io/website/docs/toolbox/history/</guid>
       <description>When you work in multiple workspaces or projects, your web browser will record the latest path you visited. You can check your history using F1, Win+K, or Command +K, which helps you quickly switch between the resources you access.</description>
     </item>
     

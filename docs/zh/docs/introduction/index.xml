@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>产品介绍 on </title>
-    <link>https://kubesphere-v3.netlify.app/zh/docs/introduction/</link>
+    <link>https://cnimages.github.io/website/zh/docs/introduction/</link>
     <description>Recent content in 产品介绍 on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
     
-	<atom:link href="https://kubesphere-v3.netlify.app/zh/docs/introduction/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://cnimages.github.io/website/zh/docs/introduction/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>什么是 KubeSphere</title>
-      <link>https://kubesphere-v3.netlify.app/zh/docs/introduction/what-is-kubesphere/</link>
+      <link>https://cnimages.github.io/website/zh/docs/introduction/what-is-kubesphere/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://kubesphere-v3.netlify.app/zh/docs/introduction/what-is-kubesphere/</guid>
+      <guid>https://cnimages.github.io/website/zh/docs/introduction/what-is-kubesphere/</guid>
       <description>概述 KubeSphere 是在 Kubernetes 之上构建的面向云原生应用的分布式操作系统，支持多云与多集群管理，提供全栈的 IT 自动化运维的能力，简化企业的 DevOps 工作流。它的架构可以非常方便地使第三方应用与云原生生态组件进行即插即用 (plug-and-play) 的集成。
 作为全栈化容器部署与多租户管理平台，KubeSphere 提供了运维友好的向导式操作界面，帮助企业快速构建一个强大和功能丰富的容器云平台。它拥有 Kubernetes 企业级服务所需的最常见功能，例如 Kubernetes 资源管理、DevOps、多集群部署与管理、应用生命周期管理、微服务治理、日志查询与收集、服务与网络、多租户管理、监控告警、事件审计、存储、访问控制、GPU 支持、网络策略、镜像仓库管理以及安全管理等。
 KubeSphere 围绕 Kubernetes 集成了各种生态系统的工具，提供了一致的用户体验以降低复杂性。同时，它还具备 Kubernetes 尚未提供的新功能，旨在解决 Kubernetes 本身存在的存储、网络、安全和易用性等痛点。KubeSphere 不仅允许开发人员和 DevOps 团队在统一的控制台中使用他们喜欢的工具，而且最重要的是，这些功能与平台松散耦合，因为他们可以选择是否安装这些可拔插组件。
@@ -26,10 +26,10 @@ KubeSphere 为用户屏蔽了基础设施底层复杂的技术细节，帮助企
     
     <item>
       <title>平台功能</title>
-      <link>https://kubesphere-v3.netlify.app/zh/docs/introduction/features/</link>
+      <link>https://cnimages.github.io/website/zh/docs/introduction/features/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://kubesphere-v3.netlify.app/zh/docs/introduction/features/</guid>
+      <guid>https://cnimages.github.io/website/zh/docs/introduction/features/</guid>
       <description>概览 KubeSphere 作为开源的企业级全栈化容器平台，为用户提供了一个健壮、安全、功能丰富、具备极致体验的 Web 控制台。拥有企业级 Kubernetes 所需的最常见的功能，如工作负载管理，网络策略配置，微服务治理（基于 Istio），DevOps 工程 (CI/CD) ，安全管理，Source to Image/Binary to Image，多租户管理，多维度监控，日志查询和收集，告警通知，审计，应用程序管理和镜像管理、应用配置密钥管理等功能模块。
 它还支持各种开源存储和网络解决方案以及云存储服务。例如，KubeSphere 为用户提供了功能强大的云原生工具负载均衡器插件 Porter，这是为 Kubernetes 集群开发的 CNCF 认证的负载均衡插件。
 有了易于使用的图形化 Web 控制台，KubeSphere 简化了用户的学习曲线并推动了更多的企业使用 Kubernetes 。
@@ -44,38 +44,38 @@ Kubernetes 资源管理 对底层 Kubernetes 中的多种类型的资源提供�
     
     <item>
       <title>架构说明</title>
-      <link>https://kubesphere-v3.netlify.app/zh/docs/introduction/architecture/</link>
+      <link>https://cnimages.github.io/website/zh/docs/introduction/architecture/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://kubesphere-v3.netlify.app/zh/docs/introduction/architecture/</guid>
+      <guid>https://cnimages.github.io/website/zh/docs/introduction/architecture/</guid>
       <description>前后端分离 KubeSphere 将 前端 与 后端 分开，实现了面向云原生的设计，后端的各个功能组件可通过 REST API 对接外部系统。 可参考 API文档。下图是系统架构图。 KubeSphere 无底层的基础设施依赖，可以运行在任何 Kubernetes、私有云、公有云、VM 或物理环境（BM）之上。 此外，它可以部署在任何 Kubernetes 发行版上。
 组件列表    后端组件 功能说明     ks-apiserver 整个集群管理的 API 接口和集群内部各个模块之间通信的枢纽，以及集群安全控制。   ks-console 提供 KubeSphere 的控制台服务。   ks-controller-manager 实现业务逻辑的，例如创建企业空间时，为其创建对应的权限；或创建服务策略时，生成对应的 Istio 配置等。   metrics-server Kubernetes 的监控组件，从每个节点的 Kubelet 采集指标信息。   Prometheus 提供群集，节点，工作负载，API对象的监视指标和服务。   Elasticsearch 提供集群的日志索引、查询、数据管理等服务，在安装时也可对接您已有的 ES 减少资源消耗。   Fluent Bit 提供日志接收与转发，可将采集到的⽇志信息发送到 ElasticSearch、Kafka。   Jenkins 提供 CI/CD 流水线服务。   SonarQube 可选安装项，提供代码静态检查与质量分析。   Source-to-Image 将源代码自动将编译并打包成 Docker 镜像，方便快速构建镜像。   Istio 提供微服务治理与流量管控，如灰度发布、金丝雀发布、熔断、流量镜像等。   Jaeger 收集 Sidecar 数据，提供分布式 Tracing 服务。   OpenPitrix 提供应用程序生命周期管理，例如应用模板、应用部署与管理的服务等。   Alert 提供集群、Workload、Pod、容器级别的自定义告警服务。   Notification 是一项综合通知服务； 它当前支持邮件传递方法。   Redis 将 ks-console 与 ks-account 的数据存储在内存中的存储系统。   MySQL 集群后端组件的数据库，监控、告警、DevOps、OpenPitrix 共用 MySQL 服务。   PostgreSQL SonarQube 和 Harbor 的后端数据库。   OpenLDAP 负责集中存储和管理用户账号信息与对接外部的 LDAP。   Storage 内置 CSI 插件对接云平台存储服务，可选安装开源的 NFS/Ceph/Gluster 的客户端。   Network 可选安装 Calico/Flannel 等开源的网络插件，支持对接云平台 SDN。    服务组件 以上列表中每个功能组件下还有多个服务组件，关于服务组件的说明，可参考 服务组件说明。</description>
     </item>
     
     <item>
       <title>Advantages</title>
-      <link>https://kubesphere-v3.netlify.app/zh/docs/introduction/advantages/</link>
+      <link>https://cnimages.github.io/website/zh/docs/introduction/advantages/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://kubesphere-v3.netlify.app/zh/docs/introduction/advantages/</guid>
+      <guid>https://cnimages.github.io/website/zh/docs/introduction/advantages/</guid>
       <description>Vision Kubernetes has become the de facto standard for deploying containerized applications at scale in private, public and hybrid cloud environments. However, many people can easily get confused when they start to use Kubernetes as it is complicated and has many additional components to manage. Some components need to be installed and deployed by users themselves, such as storage and network services. At present, Kubernetes only provides open-source solutions or projects, which can be difficult to install, maintain and operate to some extent.</description>
     </item>
     
     <item>
       <title>Use Cases</title>
-      <link>https://kubesphere-v3.netlify.app/zh/docs/introduction/scenarios/</link>
+      <link>https://cnimages.github.io/website/zh/docs/introduction/scenarios/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://kubesphere-v3.netlify.app/zh/docs/introduction/scenarios/</guid>
+      <guid>https://cnimages.github.io/website/zh/docs/introduction/scenarios/</guid>
       <description>KubeSphere is applicable in a variety of scenarios. For enterprises that deploy their business system on bare metal, their business modules are tightly coupled with each other. That means it is extremely difficult for resources to be horizontally scaled. In this connection, KubeSphere provides enterprises with containerized environments with a complete set of features for management and operation. It empowers enterprises to rise to the challenges in the middle of their digital transformation, including agile software development, automated operation and maintenance, microservices governance, traffic management, autoscaling, high availability, as well as DevOps and CI/CD.</description>
     </item>
     
     <item>
       <title>名词解释</title>
-      <link>https://kubesphere-v3.netlify.app/zh/docs/introduction/glossary/</link>
+      <link>https://cnimages.github.io/website/zh/docs/introduction/glossary/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://kubesphere-v3.netlify.app/zh/docs/introduction/glossary/</guid>
+      <guid>https://cnimages.github.io/website/zh/docs/introduction/glossary/</guid>
       <description>本文档介绍了KubeSphere中一些常用的词汇表，如下所示：
    KubeSphere Kubernetes 对照释义     项目 Namespace， 为 Kubernetes 集群提供虚拟的隔离作用，详见 Namespace。   容器组 Pod，是 Kubernetes 进行资源调度的最小单位，每个 Pod 中运行着一个或多个密切相关的业务容器，详见 Pods。   部署 Deployments，表示用户对 Kubernetes 集群的一次更新操作，详见 Deployment。   有状态副本集 StatefulSet，用于管理有状态的应用程序（例如MySQL），可以保证部署和 scale 的顺序，详见 StatefulSet。   守护进程集 DaemonSet 保证在每个 Node 上都运行一个容器副本，常用来部署一些集群的日志、监控或者其他系统管理应用，例如 fluentd 或 logstash，详见 DaemonSet。   任务 Jobs，在 Kubernetes 中用来控制批处理型任务的资源对象，即仅执行一次的任务，它保证批处理任务的一个或多个 Pod 成功结束。任务管理的 Pod 根据用户的设置将任务成功完成就自动退出了。比如在创建工作负载前，执行任务，将镜像上传至镜像仓库。详见 Job。   定时任务 CronJob，是基于时间的 Job，就类似于 Linux 系统的 crontab，在指定的时间周期运行指定的 Job，在给定时间点只运行一次或周期性地运行。详见 CronJob。   服务 Service，一个 Kubernete 服务是一个最小的对象，类似 Pod，和其它的终端对象一样 详见 Service。   应用路由 Ingress，是授权入站连接到达集群服务的规则集合。可通过 Ingress 配置提供外部可访问的 URL、负载均衡、SSL、基于名称的虚拟主机等，详见 Ingress。   镜像仓库 Image Registries，镜像仓库用于存放 Docker 镜像，包括公共镜像仓库（如 DockerHub）和私有镜像仓库（如 Harbor），详见 Image。   存储卷 PersistentVolumeClaim（PVC），满足用户对于持久化存储的需求，用户将 Pod 内需要持久化的数据挂载至存储卷，删除 Pod 后，数据仍保留在存储卷内。Kubesphere 推荐使用动态分配存储，当集群管理员配置存储类型后，集群用户可一键式分配和回收存储卷，无需关心存储底层细节。详见 PVC。   存储类型 StorageClass，为管理员提供了描述存储 “Class（类）” 的方法，包含 Provisioner、 ReclaimPolicy 和 Parameters 。详见 StorageClass。   流水线 Jenkins Pipeline，简单来说就是一套运行在 Jenkins 上的 CI/CD 工作流框架，将原来独立运行于单个或者多个节点的任务连接起来，实现单个任务难以完成的复杂流程编排和可视化的工作。详见 Pipeline。   企业空间 Workspace，是 KubeSphere 实现多租户模式的基础，是您管理项目、 DevOps 工程和企业成员的基本单位。   主机 Node，Kubernetes 集群中的计算能力由 Node 提供，Kubernetes 集群中的 Node 是所有 Pod 运行所在的工作主机，可以是物理机也可以是虚拟机。详见 Node。    </description>
     </item>

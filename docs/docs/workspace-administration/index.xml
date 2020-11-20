@@ -2,40 +2,40 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Workspace Administration and User Guide on </title>
-    <link>https://kubesphere-v3.netlify.app/docs/workspace-administration/</link>
+    <link>https://cnimages.github.io/website/docs/workspace-administration/</link>
     <description>Recent content in Workspace Administration and User Guide on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     
-	<atom:link href="https://kubesphere-v3.netlify.app/docs/workspace-administration/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://cnimages.github.io/website/docs/workspace-administration/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Workspace Overview</title>
-      <link>https://kubesphere-v3.netlify.app/docs/workspace-administration/workspace-overview/</link>
+      <link>https://cnimages.github.io/website/docs/workspace-administration/workspace-overview/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://kubesphere-v3.netlify.app/docs/workspace-administration/workspace-overview/</guid>
+      <guid>https://cnimages.github.io/website/docs/workspace-administration/workspace-overview/</guid>
       <description>A workspace is a logical unit to organize your projects and DevOps projects and manage app templates and app repositories. It is the place for you to control resource access and share resources within your team in a secure way.
 It is a best practice to create a new workspace for tenants (excluding cluster administrators). A same tenant can work in multiple workspaces, while a workspace allows multiple tenants to access it in different ways.</description>
     </item>
     
     <item>
       <title>Upload Helm-based Applications</title>
-      <link>https://kubesphere-v3.netlify.app/docs/workspace-administration/upload-helm-based-application/</link>
+      <link>https://cnimages.github.io/website/docs/workspace-administration/upload-helm-based-application/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://kubesphere-v3.netlify.app/docs/workspace-administration/upload-helm-based-application/</guid>
+      <guid>https://cnimages.github.io/website/docs/workspace-administration/upload-helm-based-application/</guid>
       <description>KubeSphere provides full lifecycle management for applications. Among others, workspace administrators can upload or create new app templates and test them quickly. Furthermore, they publish well-tested apps to App Store so that other users can deploy them with one click. To develop app templates, workspace administrators need to upload packaged Helm charts to KubeSphere first.
 This tutorial demonstrates how to develop an app template by uploading a packaged Helm chart.</description>
     </item>
     
     <item>
       <title>Role and Member Management</title>
-      <link>https://kubesphere-v3.netlify.app/docs/workspace-administration/role-and-member-management/</link>
+      <link>https://cnimages.github.io/website/docs/workspace-administration/role-and-member-management/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://kubesphere-v3.netlify.app/docs/workspace-administration/role-and-member-management/</guid>
+      <guid>https://cnimages.github.io/website/docs/workspace-administration/role-and-member-management/</guid>
       <description>This guide demonstrates how to manage roles and members in your workspace. For more information about KubeSphere roles, see Overview of Role Management.
 In workspace scope, you can grant the following resources&amp;rsquo; permissions to a role:
  Projects DevOps Access Control Apps Management Workspace Settings  Prerequisites At least one workspace has been created, such as demo-workspace. Besides, you need an account of the workspace-admin role (e.g. ws-admin) at the workspace level.</description>
@@ -43,10 +43,10 @@ In workspace scope, you can grant the following resources&amp;rsquo; permissions
     
     <item>
       <title>Workspace Network Isolation</title>
-      <link>https://kubesphere-v3.netlify.app/docs/workspace-administration/workspace-network-isolation/</link>
+      <link>https://cnimages.github.io/website/docs/workspace-administration/workspace-network-isolation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://kubesphere-v3.netlify.app/docs/workspace-administration/workspace-network-isolation/</guid>
+      <guid>https://cnimages.github.io/website/docs/workspace-administration/workspace-network-isolation/</guid>
       <description>Prerequisites  You have already enabled Network Policy. Please refer to network-policy it is not ready yet. Use an account of the workspace-admin role. For example, use the account ws-admin created in Create Workspace, Project, Account and Role. Note
 For the implementation of the network policy, you can refer to kubesphere-network-policy  Enable/Disable Workspace Network Isolation Workspace network isolation is disabled by default. You can turn on network isolation in Basic Info under Workspace Settings.</description>
     </item>

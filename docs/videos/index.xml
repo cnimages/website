@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Open Source Community - Open Source Community - KubeSphere | Enterprise container platform, built on Kubernetes on </title>
-    <link>https://kubesphere-v3.netlify.app/videos/</link>
+    <link>https://cnimages.github.io/website/videos/</link>
     <description>Recent content in Open Source Community - Open Source Community - KubeSphere | Enterprise container platform, built on Kubernetes on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     
-	<atom:link href="https://kubesphere-v3.netlify.app/videos/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://cnimages.github.io/website/videos/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>

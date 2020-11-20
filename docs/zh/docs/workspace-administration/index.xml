@@ -2,49 +2,49 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Workspace Administration on </title>
-    <link>https://kubesphere-v3.netlify.app/zh/docs/workspace-administration/</link>
+    <link>https://cnimages.github.io/website/zh/docs/workspace-administration/</link>
     <description>Recent content in Workspace Administration on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
     
-	<atom:link href="https://kubesphere-v3.netlify.app/zh/docs/workspace-administration/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://cnimages.github.io/website/zh/docs/workspace-administration/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>What is Workspace</title>
-      <link>https://kubesphere-v3.netlify.app/zh/docs/workspace-administration/what-is-workspace/</link>
+      <link>https://cnimages.github.io/website/zh/docs/workspace-administration/what-is-workspace/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://kubesphere-v3.netlify.app/zh/docs/workspace-administration/what-is-workspace/</guid>
+      <guid>https://cnimages.github.io/website/zh/docs/workspace-administration/what-is-workspace/</guid>
       <description>Workspace is a logical unit to organize your projects, DevOps projects and application management. It is the place for you to manage resource access and share resources within your team in a secure way.
 It is a best practice to create a new workspace for a tenant (non-cluster admin). A tenant can work in multiple workspaces, while a workspace allows multiple tenants to acces in different access modes.</description>
     </item>
     
     <item>
       <title>Upload Helm-based Application</title>
-      <link>https://kubesphere-v3.netlify.app/zh/docs/workspace-administration/upload-helm-based-application/</link>
+      <link>https://cnimages.github.io/website/zh/docs/workspace-administration/upload-helm-based-application/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://kubesphere-v3.netlify.app/zh/docs/workspace-administration/upload-helm-based-application/</guid>
+      <guid>https://cnimages.github.io/website/zh/docs/workspace-administration/upload-helm-based-application/</guid>
       <description>KubeSphere provides full lifecycle management for applications. You can upload or create new app templates and test them quickly. In addition, you can publish your apps to App Store so that other users can deploy with one click. You can upload Helm Chart to develop app templates.
 Prerequisites You need to create a workspace and project-admin account. Please refer to the Create Workspace, Project, Account and Role if not yet.</description>
     </item>
     
     <item>
       <title>Import Helm Repository</title>
-      <link>https://kubesphere-v3.netlify.app/zh/docs/workspace-administration/import-helm-repository/</link>
+      <link>https://cnimages.github.io/website/zh/docs/workspace-administration/import-helm-repository/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://kubesphere-v3.netlify.app/zh/docs/workspace-administration/import-helm-repository/</guid>
+      <guid>https://cnimages.github.io/website/zh/docs/workspace-administration/import-helm-repository/</guid>
       <description>KubeSphere builds application repository services on OpenPitrix, the open source cross-cloud application management platform from QingCloud, which supports for Kubernetes applications based on Helm Chart. In an application repository, each application is a base package repository and if you want to use OpenPitrix for application management, you need to create the repository first. You can store packages to an HTTP/HTTPS server, a minio, or an S3 object storage. The application repository is an external storage independent of OpenPitrix, which can be minio, QingCloud&amp;rsquo;s QingStor object storage, or AWS object storage, in which the contents are the configuration packages of the application developed by developers.</description>
     </item>
     
     <item>
       <title>Role and Member Management</title>
-      <link>https://kubesphere-v3.netlify.app/zh/docs/workspace-administration/role-and-member-management/</link>
+      <link>https://cnimages.github.io/website/zh/docs/workspace-administration/role-and-member-management/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://kubesphere-v3.netlify.app/zh/docs/workspace-administration/role-and-member-management/</guid>
+      <guid>https://cnimages.github.io/website/zh/docs/workspace-administration/role-and-member-management/</guid>
       <description>This guide demonstrates how to manage roles and members in your workspace. For more information about KubeSphere roles, see Overview of Role Management.
 In workspace scope, you can grant the following resources&amp;rsquo; permissions to a role:
  Projects DevOps Access Control Apps Management Workspace Settings  Prerequisites At least one workspace has been created, such as demo-workspace. Besides, you need an account of the workspace-admin role (e.g. ws-admin) at the workspace level.</description>
@@ -52,10 +52,10 @@ In workspace scope, you can grant the following resources&amp;rsquo; permissions
     
     <item>
       <title>Workspace Network Isolation</title>
-      <link>https://kubesphere-v3.netlify.app/zh/docs/workspace-administration/workspace-network-isolation/</link>
+      <link>https://cnimages.github.io/website/zh/docs/workspace-administration/workspace-network-isolation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://kubesphere-v3.netlify.app/zh/docs/workspace-administration/workspace-network-isolation/</guid>
+      <guid>https://cnimages.github.io/website/zh/docs/workspace-administration/workspace-network-isolation/</guid>
       <description>Prerequisites  You have already enabled Network Policy. Please refer to network-policy it is not ready yet. Use an account of the workspace-admin role. For example, use the account ws-admin created in Create Workspace, Project, Account and Role. 备注
 For the implementation of the network policy, you can refer to kubesphere-network-policy  Enable/Disable Workspace Network Isolation Workspace network isolation is disabled by default. You can turn on network isolation in Basic Info under Workspace Settings.</description>
     </item>

@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>KubeSphere | Açık Kaynak Container Platformu on </title>
-    <link>https://kubesphere-v3.netlify.app/tr/</link>
+    <link>https://cnimages.github.io/website/tr/</link>
     <description>Recent content in KubeSphere | Açık Kaynak Container Platformu on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>tr-TR</language>
     <lastBuildDate>Mon, 24 Jun 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://kubesphere-v3.netlify.app/tr/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://cnimages.github.io/website/tr/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Multi-tenant Management: Creating Accounts, Roles, Workspaces, Projects and DevOps Projects</title>
-      <link>https://kubesphere-v3.netlify.app/tr/conferences/admin-quick-start/</link>
+      <link>https://cnimages.github.io/website/tr/conferences/admin-quick-start/</link>
       <pubDate>Mon, 24 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://kubesphere-v3.netlify.app/tr/conferences/admin-quick-start/</guid>
+      <guid>https://cnimages.github.io/website/tr/conferences/admin-quick-start/</guid>
       <description>Objective In this quickstart, as a cluster admin, you will learn how to create workspaces, roles and user accounts, and then invite new users into the workspace to create their projects and DevOps projects. This tutorial is used to help beginners to become familiar with multi-tenant management.
 Prerequisites  You need to install KubeSphere. You need a default admin account.  Hands-on Lab Generally, the hierarchy relationship of Cluster, Workspace, Project and DevOps Project showing as the following graph, and there are common built-in roles existed in these orgnizations within each level.</description>
     </item>
     
     <item>
       <title>Creating a CI/CD Pipeline to Deploy Spring Boot App to Kubernetes</title>
-      <link>https://kubesphere-v3.netlify.app/tr/conferences/cicd-jenkinsfile/</link>
+      <link>https://cnimages.github.io/website/tr/conferences/cicd-jenkinsfile/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://kubesphere-v3.netlify.app/tr/conferences/cicd-jenkinsfile/</guid>
+      <guid>https://cnimages.github.io/website/tr/conferences/cicd-jenkinsfile/</guid>
       <description>Objective This tutorial shows you how to create a CI/CD Pipeline within DevOps project, which is intended for deploying a Spring Boot sample application to Kubernetes.
 Overview Based on the existing Jenkinsfile in the sample GitHub repository, we can create a pipeline to build and complete the stages and steps (e.g. unit test, sonarqube analysis), which totally consists of eight stages as shown below.
 Prerequisites You&amp;rsquo;ve completed all steps in Tutorial 1.</description>
@@ -34,20 +34,20 @@ Prerequisites You&amp;rsquo;ve completed all steps in Tutorial 1.</description>
     
     <item>
       <title>Creating Horizontal Pod Autoscaler for Deployment</title>
-      <link>https://kubesphere-v3.netlify.app/tr/conferences/hpa/</link>
+      <link>https://cnimages.github.io/website/tr/conferences/hpa/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://kubesphere-v3.netlify.app/tr/conferences/hpa/</guid>
+      <guid>https://cnimages.github.io/website/tr/conferences/hpa/</guid>
       <description>The Horizontal Pod Autoscaler automatically scales the number of pods in a deployment based on observed CPU utilization or Memory usage. The controller periodically adjusts the number of replicas in a deployment to match the observed average CPU utilization to the target value specified by user.
 How does the HPA work The Horizontal Pod Autoscaler is implemented as a control loop, with a period controlled by the controller manager’s HPA sync-period flag (with a default value of 15 seconds).</description>
     </item>
     
     <item>
       <title>Deploying a Grafana Application to Kubernetes Using Application Template</title>
-      <link>https://kubesphere-v3.netlify.app/tr/conferences/app-template/</link>
+      <link>https://cnimages.github.io/website/tr/conferences/app-template/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://kubesphere-v3.netlify.app/tr/conferences/app-template/</guid>
+      <guid>https://cnimages.github.io/website/tr/conferences/app-template/</guid>
       <description>Objective This tutorial shows you how to quickly deploy a Grafana application in KubeSphere via App Template, demonstrating the basic functionality of the application repository, application templates, and application management.
 Prerequisites You&amp;rsquo;ve completed all steps in Tutorial 1.
 Hands-on Lab Step 1: Add a Application Repository  Note: The application repository can be either the Object Storage, e.g. QingStor Object Storage, AWS S3, or GitHub Repository. The packages are composed of Helm Chart template files of the applications.</description>
@@ -55,10 +55,10 @@ Hands-on Lab Step 1: Add a Application Repository  Note: The application reposit
     
     <item>
       <title>Managing Canary Release of Microservice Application on Kubernetes with Istio</title>
-      <link>https://kubesphere-v3.netlify.app/tr/conferences/canary-release/</link>
+      <link>https://cnimages.github.io/website/tr/conferences/canary-release/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://kubesphere-v3.netlify.app/tr/conferences/canary-release/</guid>
+      <guid>https://cnimages.github.io/website/tr/conferences/canary-release/</guid>
       <description>Istio’s service mesh is able to manage traffic distribution with complete independence from deployment scaling, which enables a simpler, yet significantly more functional way to realize canary release and rollout. It allows users to introduce a new version of a service by first testing it using a small percentage of user traffic, and then if all goes well, increase, possibly gradually in increments, the percentage while simultaneously phasing out the old version.</description>
     </item>
     

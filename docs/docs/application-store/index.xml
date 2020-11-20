@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>App Store on </title>
-    <link>https://kubesphere-v3.netlify.app/docs/application-store/</link>
+    <link>https://cnimages.github.io/website/docs/application-store/</link>
     <description>Recent content in App Store on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     
-	<atom:link href="https://kubesphere-v3.netlify.app/docs/application-store/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://cnimages.github.io/website/docs/application-store/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Application Lifecycle Management</title>
-      <link>https://kubesphere-v3.netlify.app/docs/application-store/app-lifecycle-management/</link>
+      <link>https://cnimages.github.io/website/docs/application-store/app-lifecycle-management/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://kubesphere-v3.netlify.app/docs/application-store/app-lifecycle-management/</guid>
+      <guid>https://cnimages.github.io/website/docs/application-store/app-lifecycle-management/</guid>
       <description>KubeSphere integrates OpenPitrix, an open-source multi-cloud application management platform, to set up the App Store, managing applications throughout their entire lifecycle. The App Store supports two kinds of application deployment:
  App template provides a way for developers and independent software vendors (ISVs) to share applications with users in a workspace. You can also import third-party app repositories within a workspace. Composing app means users can quickly build a complete application using multiple microservices to compose it.</description>
     </item>

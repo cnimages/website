@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>卸载 on </title>
-    <link>https://kubesphere-v3.netlify.app/zh/docs/installing-on-linux/uninstalling/</link>
+    <link>https://cnimages.github.io/website/zh/docs/installing-on-linux/uninstalling/</link>
     <description>Recent content in 卸载 on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
     
-	<atom:link href="https://kubesphere-v3.netlify.app/zh/docs/installing-on-linux/uninstalling/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://cnimages.github.io/website/zh/docs/installing-on-linux/uninstalling/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>卸载 KubeSphere 和 Kubernetes</title>
-      <link>https://kubesphere-v3.netlify.app/zh/docs/installing-on-linux/uninstalling/uninstalling-kubesphere-and-kubernetes/</link>
+      <link>https://cnimages.github.io/website/zh/docs/installing-on-linux/uninstalling/uninstalling-kubesphere-and-kubernetes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://kubesphere-v3.netlify.app/zh/docs/installing-on-linux/uninstalling/uninstalling-kubesphere-and-kubernetes/</guid>
+      <guid>https://cnimages.github.io/website/zh/docs/installing-on-linux/uninstalling/uninstalling-kubesphere-and-kubernetes/</guid>
       <description>您可以通过以下命令删除集群。
 提示
 卸载将会从计算机中删除 KubeSphere 和 Kubernetes。 此操作是不可逆的，没有任何备份。 请谨慎操作。  如果您以快速入门 ( all-in-one )开始：  ./kk delete cluster 如果从高级模式开始（使用配置文件创建）：  ./kk delete cluster [-f config-sample.yaml]</description>

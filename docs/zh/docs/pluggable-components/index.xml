@@ -2,29 +2,29 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>启用可插拔组件 on </title>
-    <link>https://kubesphere-v3.netlify.app/zh/docs/pluggable-components/</link>
+    <link>https://cnimages.github.io/website/zh/docs/pluggable-components/</link>
     <description>Recent content in 启用可插拔组件 on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
     
-	<atom:link href="https://kubesphere-v3.netlify.app/zh/docs/pluggable-components/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://cnimages.github.io/website/zh/docs/pluggable-components/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>概览</title>
-      <link>https://kubesphere-v3.netlify.app/zh/docs/pluggable-components/overview/</link>
+      <link>https://cnimages.github.io/website/zh/docs/pluggable-components/overview/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://kubesphere-v3.netlify.app/zh/docs/pluggable-components/overview/</guid>
+      <guid>https://cnimages.github.io/website/zh/docs/pluggable-components/overview/</guid>
       <description>TBD</description>
     </item>
     
     <item>
       <title>KubeSphere 应用商店</title>
-      <link>https://kubesphere-v3.netlify.app/zh/docs/pluggable-components/app-store/</link>
+      <link>https://cnimages.github.io/website/zh/docs/pluggable-components/app-store/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://kubesphere-v3.netlify.app/zh/docs/pluggable-components/app-store/</guid>
+      <guid>https://cnimages.github.io/website/zh/docs/pluggable-components/app-store/</guid>
       <description>什么是 KubeSphere 应用商店 作为一个开源的、以应用为中心的容器平台，KubeSphere 在 OpenPitrix 的基础上，为用户提供了一个基于 Helm 的应用商店，用于应用生命周期管理，这是一个开源的基于网络的系统，用于打包、部署和管理不同类型的应用。KubeSphere 应用商店允许 ISV、开发者和用户在一站式服务中只需点击几下就可以上传、测试、部署和发布应用。
 对内，KubeSphere 应用商店可以作为不同团队共享数据、中间件和办公应用的场所。对外，有利于制定行业标准的建设和交付。默认情况下，应用商店中有 15 个应用。启用该功能后，可以通过应用模板添加更多应用。
 有关更多信息，请参阅应用商店。
@@ -35,10 +35,10 @@
     
     <item>
       <title>KubeSphere DevOps 系统</title>
-      <link>https://kubesphere-v3.netlify.app/zh/docs/pluggable-components/devops/</link>
+      <link>https://cnimages.github.io/website/zh/docs/pluggable-components/devops/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://kubesphere-v3.netlify.app/zh/docs/pluggable-components/devops/</guid>
+      <guid>https://cnimages.github.io/website/zh/docs/pluggable-components/devops/</guid>
       <description>什么是 KubeSphere DevOps 系统 KubeSphere DevOps 系统是专为 Kubernetes 中的 CI/CD 工作流设计的。基于 Jenkins，它提供了一站式的解决方案，帮助开发和运维团队以直接的方式构建、测试和发布应用到 Kubernetes。它还具有插件管理、二进制到图像（B2I）、源到图像（S2I）、代码依赖缓存、代码质量分析、流水线日志等功能。
 DevOps 系统为用户提供了一个有利的环境，因为应用可以自动发布到同一个平台。它还兼容第三方私有镜像注册库（如 Harbor）和代码库（如 GitLab/GitHub/SVN/BitBucket）。因此，它通过为用户提供全面的、可视化的 CI/CD 管道来创造优秀的用户体验，这些管道在气垫环境中非常有用。
 有关更多信息，请参阅 DevOps 管理。
@@ -49,10 +49,10 @@ DevOps 系统为用户提供了一个有利的环境，因为应用可以自动�
     
     <item>
       <title>KubeSphere 审计日志</title>
-      <link>https://kubesphere-v3.netlify.app/zh/docs/pluggable-components/auditing-logs/</link>
+      <link>https://cnimages.github.io/website/zh/docs/pluggable-components/auditing-logs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://kubesphere-v3.netlify.app/zh/docs/pluggable-components/auditing-logs/</guid>
+      <guid>https://cnimages.github.io/website/zh/docs/pluggable-components/auditing-logs/</guid>
       <description>什么是 KubeSphere 审计日志 KubeSphere 审计日志系统提供了一套与安全相关的按时间顺序排列的记录，记录了与单个用户、管理人员或系统其他组件相关的活动顺序。对 KubeSphere 的每个请求都会产生一个事件，然后写入 Webhook，并根据一定的规则进行处理。
 有关更多信息，请参阅日志、事件和审计。
 在安装前启用审计日志 在 Linux 上安装 当您在 Linux 上安装 KubeSphere 时，你需要创建一个配置文件，该文件列出了所有 KubeSphere 组件。
@@ -63,10 +63,10 @@ DevOps 系统为用户提供了一个有利的环境，因为应用可以自动�
     
     <item>
       <title>KubeSphere 事件系统</title>
-      <link>https://kubesphere-v3.netlify.app/zh/docs/pluggable-components/events/</link>
+      <link>https://cnimages.github.io/website/zh/docs/pluggable-components/events/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://kubesphere-v3.netlify.app/zh/docs/pluggable-components/events/</guid>
+      <guid>https://cnimages.github.io/website/zh/docs/pluggable-components/events/</guid>
       <description>什么是 KubeSphere 事件系统 KubeSphere 事件系统允许用户跟踪集群内部发生的事情，如节点调度状态和镜像拉取结果。它们将被准确地记录下来，并在Web 控制台中显示具体的原因、状态和信息。要查询事件，用户可以快速启动 Web 工具箱，在搜索栏中输入相关信息，并有不同的过滤器（如关键字和项目）可供选择。事件也可以归档到第三方工具，如 Elasticsearch、Kafka 或 Fluentd。
 有关更多信息，请参见日志记录、事件和审计系统。
 在安装前启用事件系统 在 Linux 上安装 当您在 Linux 上安装 KubeSphere 时，你需要创建一个配置文件，该文件列出了所有 KubeSphere 组件。
@@ -77,10 +77,10 @@ DevOps 系统为用户提供了一个有利的环境，因为应用可以自动�
     
     <item>
       <title>KubeSphere 日志系统</title>
-      <link>https://kubesphere-v3.netlify.app/zh/docs/pluggable-components/logging/</link>
+      <link>https://cnimages.github.io/website/zh/docs/pluggable-components/logging/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://kubesphere-v3.netlify.app/zh/docs/pluggable-components/logging/</guid>
+      <guid>https://cnimages.github.io/website/zh/docs/pluggable-components/logging/</guid>
       <description>什么是 KubeSphere 日志系统 KubeSphere 为日志收集、查询和管理提供了一个强大的、整体的、易于使用的日志系统。它涵盖了不同层次的日志，包括租户、基础设施资源和应用。用户可以从项目、工作量、Pod 和关键字等不同维度对日志进行搜索。与 Kibana 相比，KubeSphere 基于租户的日志系统具有更好的隔离性和租户之间的安全性，因为每个租户只能查看自己的日志。除了 KubeSphere 自身的日志系统，容器平台还允许用户添加第三方日志收集器，如 Elasticsearch、Kafka 和 Fluentd。
 有关更多信息，请参阅日志、事件和审计系统。
 在安装前启用日志系统 在 Linux 上安装 当您在 Linux 上安装 KubeSphere 时，你需要创建一个配置文件，该文件列出了所有 KubeSphere 组件。
@@ -91,10 +91,10 @@ DevOps 系统为用户提供了一个有利的环境，因为应用可以自动�
     
     <item>
       <title>KubeSphere 服务网格</title>
-      <link>https://kubesphere-v3.netlify.app/zh/docs/pluggable-components/service-mesh/</link>
+      <link>https://cnimages.github.io/website/zh/docs/pluggable-components/service-mesh/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://kubesphere-v3.netlify.app/zh/docs/pluggable-components/service-mesh/</guid>
+      <guid>https://cnimages.github.io/website/zh/docs/pluggable-components/service-mesh/</guid>
       <description>什么是 KubeSphere 服务网格 在 Istio 的基础上，KubeSphere 服务网格将微服务治理和流量管理可视化。它拥有强大的工具包，包括断路、蓝绿部署、金丝雀发布、流量镜像、分布式跟踪、可观察性和流量控制。开发者无需任何代码黑客，即可轻松上手服务网格，Istio 的学习曲线大大降低。KubeSphere 服务网格的所有功能都是为了满足用户的业务需求。
 更多信息请参见项目管理与使用中的相关章节。
 在安装前启用服务网格 在 Linux 上安装 当您在 Linux 上安装 KubeSphere 时，你需要创建一个配置文件，该文件列出了所有 KubeSphere 组件。
@@ -104,10 +104,10 @@ DevOps 系统为用户提供了一个有利的环境，因为应用可以自动�
     
     <item>
       <title>KubeSphere 告警和通知系统</title>
-      <link>https://kubesphere-v3.netlify.app/zh/docs/pluggable-components/alerting-notification/</link>
+      <link>https://cnimages.github.io/website/zh/docs/pluggable-components/alerting-notification/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://kubesphere-v3.netlify.app/zh/docs/pluggable-components/alerting-notification/</guid>
+      <guid>https://cnimages.github.io/website/zh/docs/pluggable-components/alerting-notification/</guid>
       <description>什么是 KubeSphere 告警和通知系统 告警和通知是可观察性的两个重要构件，与监控和日志密切相关。KubeSphere 中的告警系统与主动故障通知系统相结合，用户可以根据告警策略了解感兴趣的活动。当达到某个指标的预定义阈值时，会向预先配置的收件人发出警报，通知方式可以自行设置，包括 Email、企业微信和 Slack。有了高功能的预警和通知系统，您就可以在潜在的问题影响到您的业务之前，迅速发现并提前解决。
 更多信息，请参见告警策略和消息。
 备注
@@ -118,10 +118,10 @@ DevOps 系统为用户提供了一个有利的环境，因为应用可以自动�
     
     <item>
       <title>网络策略</title>
-      <link>https://kubesphere-v3.netlify.app/zh/docs/pluggable-components/network-policy/</link>
+      <link>https://cnimages.github.io/website/zh/docs/pluggable-components/network-policy/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://kubesphere-v3.netlify.app/zh/docs/pluggable-components/network-policy/</guid>
+      <guid>https://cnimages.github.io/website/zh/docs/pluggable-components/network-policy/</guid>
       <description>什么是网络策略 从 v3.0.0 开始，用户可以在 KubeSphere 中配置原生 Kubernetes 的网络策略。网络策略是一种以应用为中心的构造，可以让你指定一个 Pod 如何被允许通过网络与各种网络实体进行通信。通过网络策略，用户可以在同一集群内实现网络隔离，这意味着可以在某些实例（Pod）之间设置防火墙。
 备注
  在启用之前，请确保集群使用的 CNI 网络插件支持网络策略。支持网络策略的 CNI 网络插件有很多，包括 Calico、Cilium、Kube-router、Romana 和 Weave Net。 建议您在启用网络策略之前，使用 Calico 作为 CNI 插件。   更多信息请参见网络政策。

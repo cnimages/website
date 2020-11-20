@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Quickstarts on </title>
-    <link>https://kubesphere-v3.netlify.app/docs/quick-start/</link>
+    <link>https://cnimages.github.io/website/docs/quick-start/</link>
     <description>Recent content in Quickstarts on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     
-	<atom:link href="https://kubesphere-v3.netlify.app/docs/quick-start/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://cnimages.github.io/website/docs/quick-start/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>All-in-one Installation on Linux</title>
-      <link>https://kubesphere-v3.netlify.app/docs/quick-start/all-in-one-on-linux/</link>
+      <link>https://cnimages.github.io/website/docs/quick-start/all-in-one-on-linux/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://kubesphere-v3.netlify.app/docs/quick-start/all-in-one-on-linux/</guid>
+      <guid>https://cnimages.github.io/website/docs/quick-start/all-in-one-on-linux/</guid>
       <description>For those who are new to KubeSphere and looking for a quick way to discover the platform, the all-in-one mode is your best choice to get started. It features rapid deployment and hassle-free configuration installation with KubeSphere and Kubernetes all provisioned on your machine.
 Step 1: Prepare Linux Machine See the requirements for hardware and operating system shown below. To get started with all-in-one installation, you only need to prepare one host according to the following requirements.</description>
     </item>
     
     <item>
       <title>Minimal KubeSphere on Kubernetes</title>
-      <link>https://kubesphere-v3.netlify.app/docs/quick-start/minimal-kubesphere-on-k8s/</link>
+      <link>https://cnimages.github.io/website/docs/quick-start/minimal-kubesphere-on-k8s/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://kubesphere-v3.netlify.app/docs/quick-start/minimal-kubesphere-on-k8s/</guid>
+      <guid>https://cnimages.github.io/website/docs/quick-start/minimal-kubesphere-on-k8s/</guid>
       <description>In addition to installing KubeSphere on a Linux machine, you can also deploy it on existing Kubernetes clusters directly. This QuickStart guide walks you through the general steps of completing a minimal KubeSphere installation on Kubernetes. For more information, see Installing on Kubernetes.
 Note
  To install KubeSphere on Kubernetes, your Kubernetes version must be 1.15.x, 1.16.x, 1.17.x, or 1.18.x; Make sure your machine meets the minimal hardware requirement: CPU &amp;gt; 1 Core, Memory &amp;gt; 2 G; A default Storage Class in your Kubernetes cluster needs to be configured before the installation; The CSR signing feature is activated in kube-apiserver when it is started with the --cluster-signing-cert-file and --cluster-signing-key-file parameters.</description>
@@ -33,10 +33,10 @@ Note
     
     <item>
       <title>Create Workspace, Project, Account and Role</title>
-      <link>https://kubesphere-v3.netlify.app/docs/quick-start/create-workspace-and-project/</link>
+      <link>https://cnimages.github.io/website/docs/quick-start/create-workspace-and-project/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://kubesphere-v3.netlify.app/docs/quick-start/create-workspace-and-project/</guid>
+      <guid>https://cnimages.github.io/website/docs/quick-start/create-workspace-and-project/</guid>
       <description>Objective This guide demonstrates how to create roles and user accounts which are required for the following tutorials. Meanwhile, you will learn how to create projects and DevOps projects within your workspace where your workloads are running. After this tutorial, you will become familiar with KubeSphere multi-tenant management system.
 Prerequisites KubeSphere needs to be installed in your machine.
 Estimated Time About 15 minutes.
@@ -45,20 +45,20 @@ Architecture The multi-tenant system of KubeSphere features three levels of hier
     
     <item>
       <title>Deploy Bookinfo and Manage Traffic</title>
-      <link>https://kubesphere-v3.netlify.app/docs/quick-start/deploy-bookinfo-to-k8s/</link>
+      <link>https://cnimages.github.io/website/docs/quick-start/deploy-bookinfo-to-k8s/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://kubesphere-v3.netlify.app/docs/quick-start/deploy-bookinfo-to-k8s/</guid>
+      <guid>https://cnimages.github.io/website/docs/quick-start/deploy-bookinfo-to-k8s/</guid>
       <description>Istio, as an open-source service mesh solution, provides powerful features of traffic management for microservices. Here is the introduction of traffic management from the official website of Istio:
 Istio’s traffic routing rules let you easily control the flow of traffic and API calls between services. Istio simplifies configuration of service-level properties like circuit breakers, timeouts, and retries, and makes it easy to set up important tasks like A/B testing, canary rollouts, and staged rollouts with percentage-based traffic splits.</description>
     </item>
     
     <item>
       <title>Compose and Deploy WordPress</title>
-      <link>https://kubesphere-v3.netlify.app/docs/quick-start/wordpress-deployment/</link>
+      <link>https://cnimages.github.io/website/docs/quick-start/wordpress-deployment/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://kubesphere-v3.netlify.app/docs/quick-start/wordpress-deployment/</guid>
+      <guid>https://cnimages.github.io/website/docs/quick-start/wordpress-deployment/</guid>
       <description>WordPress Introduction WordPress is a free and open-source content management system written in PHP, allowing users to build their own websites. A complete WordPress application includes the following Kubernetes objects with MySQL serving as the backend database.
 Objective This tutorial demonstrates how to create an application (WordPress as an example) in KubeSphere and access it outside the cluster.
 Prerequisites An account project-regular is needed with the role operator assigned in one of your projects (the user has been invited to the project).</description>
@@ -66,10 +66,10 @@ Prerequisites An account project-regular is needed with the role operator assign
     
     <item>
       <title>Enable Pluggable Components</title>
-      <link>https://kubesphere-v3.netlify.app/docs/quick-start/enable-pluggable-components/</link>
+      <link>https://cnimages.github.io/website/docs/quick-start/enable-pluggable-components/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://kubesphere-v3.netlify.app/docs/quick-start/enable-pluggable-components/</guid>
+      <guid>https://cnimages.github.io/website/docs/quick-start/enable-pluggable-components/</guid>
       <description>This tutorial demonstrates how to enable pluggable components of KubeSphere both before and after the installation. KubeSphere features ten pluggable components which are listed below.
    Configuration Item Corresponding Component Description     alerting KubeSphere alerting system Enable users to customize alerting policies to send messages to receivers in time with different time intervals and alerting levels to choose from.   auditing KubeSphere audit log system Provide a security-relevant chronological set of records, recording the sequence of activities that happen in the platform, initiated by different tenants.</description>
     </item>

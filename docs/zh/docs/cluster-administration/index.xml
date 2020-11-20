@@ -2,29 +2,29 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Cluster Administration on </title>
-    <link>https://kubesphere-v3.netlify.app/zh/docs/cluster-administration/</link>
+    <link>https://cnimages.github.io/website/zh/docs/cluster-administration/</link>
     <description>Recent content in Cluster Administration on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
     
-	<atom:link href="https://kubesphere-v3.netlify.app/zh/docs/cluster-administration/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://cnimages.github.io/website/zh/docs/cluster-administration/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>StorageClass</title>
-      <link>https://kubesphere-v3.netlify.app/zh/docs/cluster-administration/storageclass/</link>
+      <link>https://cnimages.github.io/website/zh/docs/cluster-administration/storageclass/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://kubesphere-v3.netlify.app/zh/docs/cluster-administration/storageclass/</guid>
+      <guid>https://cnimages.github.io/website/zh/docs/cluster-administration/storageclass/</guid>
       <description></description>
     </item>
     
     <item>
       <title>节点管理</title>
-      <link>https://kubesphere-v3.netlify.app/zh/docs/cluster-administration/nodes/</link>
+      <link>https://cnimages.github.io/website/zh/docs/cluster-administration/nodes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://kubesphere-v3.netlify.app/zh/docs/cluster-administration/nodes/</guid>
+      <guid>https://cnimages.github.io/website/zh/docs/cluster-administration/nodes/</guid>
       <description>Kubernetes通过将容器放入容器组中并在节点上运行来运行工作负载。节点可以是虚拟机，也可以是物理机，这取决于集群环境。每个节点都包含运行容器组所需的服务，这些服务由控制平面管理。有关节点的更多信息，请参见Kubernetes的官方文档。
 本教程演示了集群管理员对节点可以查看和执行的操作。
 前提条件 您需要一个被授予集群管理角色的帐户。 例如，您可以直接以admin身份登录控制台或使用授权创建新角色并将其分配给帐户。
@@ -38,10 +38,10 @@ CPU和已分配CPU在大多数情况下是不同的，内存和已分配内存�
     
     <item>
       <title>集群状态监控</title>
-      <link>https://kubesphere-v3.netlify.app/zh/docs/cluster-administration/cluster-status-monitoring/</link>
+      <link>https://cnimages.github.io/website/zh/docs/cluster-administration/cluster-status-monitoring/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://kubesphere-v3.netlify.app/zh/docs/cluster-administration/cluster-status-monitoring/</guid>
+      <guid>https://cnimages.github.io/website/zh/docs/cluster-administration/cluster-status-monitoring/</guid>
       <description>KubeSphere 提供了对集群的 CPU、内存、网络和磁盘等相关指标的监控。在集群状态监控页面中，您还可以查看历史监控数据并根据节点的使用情况按不同的指标对节点进行排序。
 前提条件 您需要一个被授予集群管理角色的帐户。 例如，您可以直接以admin身份登录控制台或使用授权创建新角色并将其分配给帐户。
 集群状态监控   单击左上角的平台管理，然后选择集群管理。   如果您已经在导入成员集群时启用了多集群特性，那么您可以选择一个特定集群以查看其应用程序资源。 如果尚未启用该特性，请直接参考下一步。   在监控告警下拉选项里选择“集群状态”以查看集群状态监控的概览，包括集群节点状态、组件状态、集群资源使用情况、ETCD监控和服务组件监控，如下图所示：   集群节点状态   集群节点状态显示在线结点/所有结点状态。 您可以通过单击节点在线状态跳转到如下所示的集群节点页以查看所有节点的实时资源使用情况。   在集群节点中，单击节点名称可以查看结点运行状态中的使用详细信息，包括当前节点中的CPU、内存、容器组、本地存储的信息及其健康状态。   单击监控选项卡，可以根据不同的指标查看节点在特定时期内的运行情况，这些指标包括CPU使用率、CPU平均负载、内存使用率、磁盘使用率、inode使用率、IOPS、磁盘吞吐和网络带宽，如下图所示：   提示
@@ -53,10 +53,10 @@ CPU平均负载 CPU平均负载是单位时间内系统中处于可运行状态�
     
     <item>
       <title>应用资源监控</title>
-      <link>https://kubesphere-v3.netlify.app/zh/docs/cluster-administration/application-resources-monitoring/</link>
+      <link>https://cnimages.github.io/website/zh/docs/cluster-administration/application-resources-monitoring/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://kubesphere-v3.netlify.app/zh/docs/cluster-administration/application-resources-monitoring/</guid>
+      <guid>https://cnimages.github.io/website/zh/docs/cluster-administration/application-resources-monitoring/</guid>
       <description>除了在物理资源级别监控数据外，集群管理员还需要密切跟踪整个平台上的应用资源，例如DevOps项目的数量，以及特定类型的工作负载和服务的数量。应用资源监控提供了平台的资源使用情况和应用程序级别趋势的摘要。
 前提条件 您需要一个被授予集群管理角色的帐户。 例如，您可以直接以admin身份登录控制台或使用授权创建新角色并将其分配给帐户。
 资源使用情况   单击左上角的平台管理，然后选择集群管理。   如果您已经在导入成员集群时启用了多集群特性，那么您可以选择一个特定集群以查看其应用程序资源。 如果尚未启用该特性，请直接参考下一步。   在监控告警下拉选项里选择应用资源以查看应用程序资源监控的概览，包括群集中所有资源使用情况的摘要，如下图所示。   其中，群集资源使用情况和应用资源使用情况保留最近7天的监控数据，而且支持自定义时间范围查询。   单击特定资源以查看特定时间段内的详细使用情况和趋势，例如集群资源使用情况下的CPU。详细信息页面允许您按项目查看特定的监控数据。 高度交互的仪表板使用户可以自定义时间范围，显示给定时间点的确切资源使用情况。   用量排行 用量排行支持对项目资源使用情况进行排序，因此平台管理员可以了解当前集群中每个项目的资源使用情况，包括CPU使用量，内存使用量，容器组数量以及网络流出速率和网络流入速率。您可以通过下拉列表中的任一指标按升序或降序对项目进行排序。 此功能对于快速查找消耗大量CPU或内存的应用程序（容器组）非常有用。 </description>
@@ -64,10 +64,10 @@ CPU平均负载 CPU平均负载是单位时间内系统中处于可运行状态�
     
     <item>
       <title>Cluster Shutdown and Restart</title>
-      <link>https://kubesphere-v3.netlify.app/zh/docs/cluster-administration/shut-down-and-restart-cluster-gracefully/</link>
+      <link>https://cnimages.github.io/website/zh/docs/cluster-administration/shut-down-and-restart-cluster-gracefully/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://kubesphere-v3.netlify.app/zh/docs/cluster-administration/shut-down-and-restart-cluster-gracefully/</guid>
+      <guid>https://cnimages.github.io/website/zh/docs/cluster-administration/shut-down-and-restart-cluster-gracefully/</guid>
       <description>This document describes the process of gracefully shutting down your cluster and how to restart it. You might need to temporarily shut down your cluster for maintenance reasons.
 警告
 Shutting down a cluster is very dangerous. You must fully understand the operation and its consequences. Please make an etcd backup before you proceed. Usually, it is recommended to maintain your nodes one by one instead of restarting the whole cluster. Prerequisites  Take an etcd backup prior to shutting down a cluster.</description>
