@@ -1,6 +1,6 @@
 [languages.en]
 contentDir = "content/en"
-weight = 1
+weight = 2
 languageCode = "en-US"
 languageName = "English"
 
@@ -113,7 +113,7 @@ name = "Community"
     weight = 3
 
 [languages.zh]
-weight = 2
+weight = 1
 contentDir = "content/zh"
 languageCode = "zh-CN"
 languageName = "简体中文"

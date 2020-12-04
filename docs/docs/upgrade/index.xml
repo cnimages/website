@@ -1,71 +1,0 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Upgrade on </title>
-    <link>https://cnimages.github.io/website/docs/upgrade/</link>
-    <description>Recent content in Upgrade on </description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-US</language>
-    
-	<atom:link href="https://cnimages.github.io/website/docs/upgrade/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Overview</title>
-      <link>https://cnimages.github.io/website/docs/upgrade/upgrade-overview/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://cnimages.github.io/website/docs/upgrade/upgrade-overview/</guid>
-      <description>Kubernetes KubeSphere v3.0.0 is compatible with Kubernetes 1.15.x, 1.16.x, 1.17.x and 1.18.x:
-  If your KubeSphere v2.1.x is installed on Kubernetes 1.15.x+, you can choose to only upgrade KubeSphere to v3.0.0 or upgrade Kubernetes (to a higher version) and KubeSphere (to v3.0.0) at the same time.
-  If your KubeSphere v2.1.x is installed on Kubernetes 1.14.x, you have to upgrade Kubernetes (to 1.15.x+) and KubeSphere (to v3.0.0 ) at the same time.</description>
-    </item>
-    
-    <item>
-      <title>Upgrade with KubeKey</title>
-      <link>https://cnimages.github.io/website/docs/upgrade/upgrade-with-kubekey/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://cnimages.github.io/website/docs/upgrade/upgrade-with-kubekey/</guid>
-      <description>KubeKey is recommended for users whose KubeSphere and Kubernetes were both deployed by KubeSphere Installer. If your Kubernetes cluster was provisioned by yourself or cloud providers, please refer to Upgrade with ks-installer.
-Prerequisites   You need to have a KubeSphere cluster running version 2.1.1.
-Warning
-If your KubeSphere version is v2.1.0 or earlier, please upgrade to v2.1.1 first.   Download KubeKey.
-  Download KubeKey from GitHub Release Page or use the following command directly.</description>
-    </item>
-    
-    <item>
-      <title>Upgrade with ks-installer</title>
-      <link>https://cnimages.github.io/website/docs/upgrade/upgrade-with-ks-installer/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://cnimages.github.io/website/docs/upgrade/upgrade-with-ks-installer/</guid>
-      <description>ks-installer is recommended for users whose Kubernetes clusters were not set up via KubeSphere Installer, but hosted by cloud vendors. This tutorial is for upgrading KubeSphere only. Cluster operators are responsible for upgrading Kubernetes themselves beforehand.
-Prerequisites   You need to have a KubeSphere cluster running version 2.1.1.
-Warning
-If your KubeSphere version is v2.1.0 or earlier, please upgrade to v2.1.1 first.   Make sure you read Release Notes For 3.</description>
-    </item>
-    
-    <item>
-      <title>Changes after Upgrade</title>
-      <link>https://cnimages.github.io/website/docs/upgrade/what-changed/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://cnimages.github.io/website/docs/upgrade/what-changed/</guid>
-      <description>This section covers the changes after upgrade for existing settings in previous versions. If you want to know all the new features and enhancements in KubeSphere 3.0.0, see Release Notes for 3.0.0 directly.
-Access Control The definition of custom roles has been simplified. Some closely-related permission items have been aggregated into permission groups. Custom roles will not change during the upgrade and can be used directly after the upgrade if they conform to new policy rules for authorization assignment.</description>
-    </item>
-    
-    <item>
-      <title>FAQ</title>
-      <link>https://cnimages.github.io/website/docs/upgrade/upgrade-faq/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://cnimages.github.io/website/docs/upgrade/upgrade-faq/</guid>
-      <description>How to upgrade Qingcloud CSI after upgrading? Currently Qingcloud CSI will not be upgraded by KubeKey. You can run the following command to upgrade CSI manually after finishing KubeSphere upgrade:
-git clone https://github.com/yunify/qingcloud-csi.gitcd qingcloud-csi/git checkout v1.1.1kubectl delete -f deploy/disk/kubernetes/releases/qingcloud-csi-disk-v1.1.1.yamlkubectl delete sc csi-qingcloudhelm repo add test https://charts.kubesphere.io/testhelm install test/csi-qingcloud --name-template csi-qingcloud --namespace kube-system \--set config.qy_access_key_id=KEY,config.qy_secret_access_key=SECRET,config.zone=ZONE,sc.type=2Wait until csi controller and daemonset are running
-$ kubectl get po -n kube-system | grep csicsi-qingcloud-controller-56979d46cb-qk9ck 5/5 Running 0 24hcsi-qingcloud-node-4s8n5 2/2 Running 0 24hcsi-qingcloud-node-65dqn 2/2 Running 0 24hcsi-qingcloud-node-khk49 2/2 Running 0 24hcsi-qingcloud-node-nz9q9 2/2 Running 0 24hcsi-qingcloud-node-pxr56 2/2 Running 0 24hcsi-qingcloud-node-whqhk 2/2 Running 0 24hThen run the following command to check csi image version is 1.</description>
-    </item>
-    
-  </channel>
-</rss>
