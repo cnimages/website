@@ -177,13 +177,13 @@ hasChildren = true
 
   [[languages.zh.menu.main]]
   parent = "应用场景"
-  name = "拥抱一站式 DevOps 工作流"
+  name = "工业场景"
   URL = "devops/"
   weight = 2
 
   [[languages.zh.menu.main]]
   parent = "应用场景"
-  name = "在 Kubernetes 运行微服务"
+  name = "医药场景"
   URL = "service-mesh/"
   weight = 4
 

@@ -1,7 +1,7 @@
 - id: Technology Blogs
   translation: 技术博客
-- id: KubeSphere®️ 2020 All Rights Reserved.
-  translation: "KubeSphere®️ 2020 All Rights Reserved."
+- id: CN-IMAGES®️ 2020 All Rights Reserved.
+  translation: "CN-IMAGES®️ 2020 All Rights Reserved."
 - id: Published on
   translation: 发布于
 - id: KubeCon & QCon
@@ -10,8 +10,8 @@
   translation: 订阅
 - id: Please enter your email address
   translation: 请输入你的邮箱地址
-- id: Receive the latest news, articles and updates from KubeSphere
-  translation: "通过邮件接收 KubeSphere 最新的技术博客与产品更新的通知"
+- id: Receive the latest news, articles and updates
+  translation: "通过邮件接收最新的技术博客与产品更新的通知"
 - id: Welcome to the KubeSphere Documentation
   translation: 欢迎使用 KubeSphere 文档
 - id: We will introduce the services and features of KubeSphere with clear and concise pictures and texts as far as possible.

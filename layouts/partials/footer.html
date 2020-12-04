@@ -5,7 +5,7 @@
             <div class="up-main">
                 <div class="left-div">
                     <img src="{{ .Site.Params.logo | relURL }}" alt="{{ .Site.Title }}" class="foot-logo">
-                    <p>{{ i18n "Receive the latest news, articles and updates from KubeSphere" }}</p>
+                    <p>{{ i18n "Receive the latest news, articles and updates" }}</p>
                     <div>
                         <form
                             action="{{ .Site.Params.mailchimpSubscribeUrl }}"
@@ -39,31 +39,8 @@
                 </div>
             </div>
             <div class="down-main">
-                <div class='img-div'>
-                    <a class='wechat' href="javascript:void(0);">
-                        {{ "/static/images/footer/wechat.svg" | readFile | safeHTML }}
-                        <div class="hide-div">
-                            <p>Follow the official account</p>
-                            <img src="/images/footer/wechat_code.svg" alt="">
-                        </div>
-                    </a>
-                    <a class='facebook-a' href="https://www.facebook.com/kubesphere" target="_blank"></a>
-                    <a class='twitter-a' href="{{ .Site.Params.twitterLink }}" target="_blank" rel="noopener noreferrer"></a>
-                    <a class='linkedin-a' href="{{ .Site.Params.linkedinLink }}" target="_blank" rel="noopener noreferrer"></a>
-                    <!-- <a class='wechat' href="javascript:void(0);">
-                        {{ "/static/images/footer/group.svg" | readFile | safeHTML }}
-                        <div class="hide-div">
-                            <p>Join the WeChat group</p>
-                            <img src="/images/footer/group_code.svg" alt="">
-                            <p>进群请备注 “公司 - 姓名”</p>
-                        </div>
-                    </a> -->
-                    <a class='youtube-a' href="{{ .Site.Params.youtubeLink }}" target="_blank" rel="noopener noreferrer"></a>
-                    <a class='slack-a' href="{{ .Site.Params.slackLink }}" target="_blank" rel="noopener noreferrer"></a>
-                    <a class='github-a' href="{{ .Site.Params.githubLink }}" target="_blank" rel="noopener noreferrer"></a>
-                    <a class='medium-a' href="{{ .Site.Params.mediumLink }}" target="_blank" rel="noopener noreferrer"></a>
-                </div>
-                <p class='p1'>{{ i18n "KubeSphere®️ 2020 All Rights Reserved." }}</p>
+                
+                <p class='p1'>{{ i18n "CN-IMAGES®️ 2020 All Rights Reserved." }}</p>
                 {{ if .Site.Params.showCaseNumber }}
                 <p class="case">
                     <a

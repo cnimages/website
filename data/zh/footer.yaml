@@ -1,69 +1,57 @@
 footer:
   list:
-    - title: 应用场景
+    - title: 关于我们
       list:
-        - content: 拥抱一站式 DevOps
+        - content: 公司简介
           link: devops/
 
-        - content: 在 K8s 运行微服务
+        - content: 销售网络
           link: service-mesh/
 
-        - content: 构建云原生可观察性
+        - content: 合作伙伴
           link: observability/
 
-        - content: 物理机 K8s 暴露服务
-          link: 'https://porterlb.io'
-
-        - content: K8s 一键部署与运维
-          link: 'https://github.com/kubesphere/kubekey'
-
-        - content: 多云应用管理平台
-          link: 'https://openpitrix.io/'
-
-        - content: Fluent-Bit 管理日志
-          link: 'https://github.com/kubesphere/fluentbit-operator'
-
-    - title: 资源
+        - content: 联系我们
+          link: observability/
+          
+    - title: 新闻公告
       list:
         - content: 开源项目
           link: projects/
         - content: 技术博客
           link: blogs/
-        - content: 开源峰会
+        - content: 公司活动
           link: conferences/
         - content: 视频资源
           link: videos/
 
-    - title: 文档中心
+    - title: 产品中心
       list:
-        - content: 产品介绍
+        - content: 智能相机
           link: '../../../zh/docs/introduction/what-is-kubesphere/'
-        - content: 如何安装
+        - content: 2D视觉产品
           link: '../../../zh/docs/quick-start/all-in-one-on-linux/'
-        - content: 快速入门
+        - content: 3D视觉产品
           link: '../../../zh/docs/quick-start/create-workspace-and-project/'
-        - content: API 文档
+        - content: 科教实验系统
           link: '../../../docs/api-reference/api-docs/'
 
-    - title: 开源社区
+    - title: 应用案例
       list:
-        - content: 参与贡献
+        - content: 交通行业
           link: contribution
-        - content: 案例学习
+        - content: 汽车行业
           link: case/
-        - content: 合作伙伴
+        - content: 物流行业
           link: partner/
-        - content: 版本计划
-          link: https://github.com/kubesphere/kubesphere/blob/master/docs/roadmap.md
-        - content: 中国站
-          link: https://kubesphere.com.cn/
-        - content: 中文论坛
-          link: https://kubesphere.com.cn/forum
-        - content: 全球站
+        - content: 玻璃瓶行业
           link: https://kubesphere.io
-        - content: 欧洲站
-          link: https://kubesphere.eu
-        - content: 土耳其站
-          link: https://kubesphereturkey.com
-        - content: 西班牙站
-          link: https://kubesphere.es
+        - content: 高校科研
+          link: https://kubesphere.io
+        
+    - title: 人才招聘
+      list:
+        - content: 社会招聘
+          link: contribution
+        - content: 校园招聘
+          link: case/
